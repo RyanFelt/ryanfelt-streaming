@@ -6,7 +6,7 @@ export const Header = () => {
     <div>
       <h1>
         <a href="/" className="App-header">
-          simple-react-streaming
+          Ryan Felt
         </a>
       </h1>
     </div>
