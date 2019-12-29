@@ -3,6 +3,7 @@
     "id": "be3ed35f-5dad-492f-aa97-b9867aa183be",
     "title": "the-office",
     "type": "SERIES",
+    "active": true,
     "bannerImage": "michael.jpg",
     "seasons": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "bonus"]
   },
@@ -10,6 +11,7 @@
     "id": "cec773fe-a467-4b57-8ca9-ae46dd5cee82",
     "title": "parks-and-recreation",
     "type": "SERIES",
+    "active": true,
     "bannerImage": "leslie.jpg",
     "seasons": ["1", "2", "3", "4", "5", "6"]
   },
@@ -17,6 +19,7 @@
     "id": "fb66663d-7b9d-416b-99ff-3e6ccbea805b",
     "title": "seinfeld",
     "type": "SERIES",
+    "active": false,
     "bannerImage": "kramer.jpg",
     "seasons": ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
   },
@@ -24,6 +27,7 @@
     "id": "4414a02b-e366-411a-a0a0-41093411e898",
     "title": "brooklyn-nine-nine",
     "type": "SERIES",
+    "active": false,
     "bannerImage": "b99.jpg",
     "seasons": ["1"]
   }

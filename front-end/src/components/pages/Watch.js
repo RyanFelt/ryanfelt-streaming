@@ -72,7 +72,7 @@ export const Watch = () => {
             {allEpisodes.length ? (
               <RandomEpisode film={film} allEpisodes={allEpisodes} />
             ) : (
-              ""
+              <div />
             )}
           </div>
 

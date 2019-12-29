@@ -12,7 +12,7 @@ export const Video = ({ filmTitle, videoFile }) => {
       align="center"
       width="85%"
       controls
-      // autoplay="true"
+      autoPlay
     />
   );
 };

@@ -81,14 +81,14 @@ export const Film = () => {
                   setSeason={setSeason}
                 />
               ) : (
-                ""
+                <div />
               )}
             </div>
 
             {allEpisodes.length ? (
               <RandomEpisode film={film} allEpisodes={allEpisodes} />
             ) : (
-              ""
+              <div />
             )}
           </div>
 
