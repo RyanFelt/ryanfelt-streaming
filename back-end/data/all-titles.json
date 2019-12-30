@@ -27,8 +27,16 @@
     "id": "4414a02b-e366-411a-a0a0-41093411e898",
     "title": "brooklyn-nine-nine",
     "type": "SERIES",
-    "active": false,
+    "active": true,
     "bannerImage": "b99.jpg",
     "seasons": ["1"]
+  },
+  {
+    "id": "c309c6dc-1ae8-45f9-b078-51bed3312a0a",
+    "title": "arrested-development",
+    "type": "SERIES",
+    "active": true,
+    "bannerImage": "arrested-development.jpg",
+    "seasons": ["1", "2", "3"]
   }
 ]

@@ -23,7 +23,7 @@ export const Film = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:4000/api/getAllFilms?film=${film}`)
+      .get(`${process.env.REACT_APP_BACKEND_URL}/api/getAllFilms?film=${film}`)
       .then(res => {
         setAllEpisodes(res.data);
       })
@@ -35,7 +35,7 @@ export const Film = () => {
       });
 
     axios
-      .get("http://localhost:4000/api/getAllTitles")
+      .get(`${process.env.REACT_APP_BACKEND_URL}/api/getAllTitles`)
       .then(res => {
         for (let x = 0; x < res.data.length; x++) {
           if (res.data[x].title === film) {

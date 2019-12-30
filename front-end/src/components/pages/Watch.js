@@ -25,7 +25,7 @@ export const Watch = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:4000/api/getAllFilms?film=${film}`)
+      .get(`${process.env.REACT_APP_BACKEND_URL}/api/getAllFilms?film=${film}`)
       .then(res => {
         setAllEpisodes(res.data);
       })
@@ -77,7 +77,7 @@ export const Watch = () => {
           </div>
 
           <h1>{filmTitle}</h1>
-          <h5>Season: {episode.season}</h5>
+          <h5>Season: {episode.season} </h5>
           <h5>Episode: {episode.episode}</h5>
 
           <div className="flex-row">
