@@ -38,5 +38,14 @@
     "active": true,
     "bannerImage": "arrested-development.jpg",
     "seasons": ["1", "2", "3"]
+  },
+  {
+    "id": "ac78ad95-f803-4739-aa1f-0885d52063ff",
+    "title": "star-wars:-the-force-awakens",
+    "type": "MOVIES",
+    "active": true,
+    "bannerImage": "na.png",
+    "year": "2015",
+    "videoFile": "StarWarsTheForceAwakens.mp4"
   }
 ]

@@ -50,7 +50,7 @@ export const Film = () => {
       .catch(err => {
         console.log("ERROR::", err);
       });
-  }, []);
+  }, [film, history, currentSeason]);
 
   const seasonEpisodes = season => {
     let currentSeasonEpisodes = [];

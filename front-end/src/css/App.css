@@ -73,3 +73,23 @@ flex-row-buttons {
   width: 100px;
   height: 100px;
 }
+
+.image-container {
+  position: relative;
+  font-family: Arial;
+}
+
+.image-text {
+  position: absolute;
+  bottom: 12%;
+  left: 2%;
+  background-color: black;
+  opacity: 0.7;
+  color: white;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+.textbox {
+  width: 80%;
+}

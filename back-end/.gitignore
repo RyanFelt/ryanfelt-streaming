@@ -4,3 +4,5 @@ package-lock.json
 
 # testing
 /coverage
+
+.DS_Store
