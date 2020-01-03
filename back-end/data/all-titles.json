@@ -46,6 +46,19 @@
     "active": true,
     "bannerImage": "na.png",
     "year": "2015",
-    "videoFile": "StarWarsTheForceAwakens.mp4"
+    "videoFile": "StarWarsTheForceAwakens.mp4",
+    "genre": "SCI_FI",
+    "rating": "PG-13"
+  },
+  {
+    "id": "c6991138-697a-46c1-9e34-e617d8d528a9",
+    "title": "the-greatest-showman",
+    "type": "MOVIES",
+    "active": true,
+    "bannerImage": "na.png",
+    "year": "2017",
+    "videoFile": "TheGreatestShowman.mp4",
+    "genre": "Drama",
+    "rating": "PG"
   }
 ]

@@ -56,13 +56,14 @@ export const WatchSeries = () => {
     if (allEpisodes.length && !episode.videoFile) {
       history.push("/404");
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [episode, history]);
 
   return (
     <div className="App">
       <br />
       {episode.videoFile ? (
-        <div>
+        <>
           <div className="flex-row-buttons">
             <div className="back-button">
               <Button href={`/film/${film}`} variant="dark">
@@ -77,6 +78,7 @@ export const WatchSeries = () => {
             )}
           </div>
 
+          <br />
           <h1>{filmTitle}</h1>
           <h5>Season: {episode.season} </h5>
           <h5>Episode: {episode.episode}</h5>
@@ -96,7 +98,7 @@ export const WatchSeries = () => {
               direction="right"
             />
           </div>
-        </div>
+        </>
       ) : (
         <LoadingSpinner />
       )}

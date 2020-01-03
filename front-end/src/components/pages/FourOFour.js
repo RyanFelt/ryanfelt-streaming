@@ -9,6 +9,7 @@ export const FourOFour = () => {
           <a href="/">Return</a>
         </h5>
         <h1>404</h1>
+        <h5>Not Found</h5>
       </div>
     </div>
   );

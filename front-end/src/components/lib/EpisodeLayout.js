@@ -9,7 +9,7 @@ export const EpisodeLayout = props => {
     responseTable.push(cell(episodes[x], film));
   }
 
-  return <div className="container-vertical">{responseTable}</div>;
+  return <div className="flex-column">{responseTable}</div>;
 };
 
 const cell = (episode, film) => {

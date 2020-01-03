@@ -26,7 +26,7 @@
   justify-content: space-between;
 }
 
-.container-vertical {
+.flex-column {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -63,6 +63,11 @@ flex-row-buttons {
   text-decoration: none;
 }
 
+.full-page {
+  height: 100%;
+  width: 100%;
+}
+
 .center-of-page {
   position: absolute;
   top: 0;
@@ -92,4 +97,9 @@ flex-row-buttons {
 
 .textbox {
   width: 80%;
+}
+
+.video-player {
+  padding-right: 10px;
+  padding-left: 10px;
 }

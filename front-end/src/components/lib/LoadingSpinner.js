@@ -4,8 +4,10 @@ import { Spinner } from "react-bootstrap";
 
 export const LoadingSpinner = () => {
   return (
-    <div className="center-of-page">
-      <Spinner animation="border" />
+    <div className="full-page">
+      <div className="center-of-page">
+        <Spinner animation="border" />
+      </div>
     </div>
   );
 };

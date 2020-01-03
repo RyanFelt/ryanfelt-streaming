@@ -4,7 +4,7 @@ import { useLocation } from "react-router";
 import axios from "axios";
 import qs from "query-string";
 import { LoadingSpinner } from "../lib/LoadingSpinner";
-import { titleUpperCase } from "../../utils/titleUpperCase";
+import { FilmTile } from "../lib/FilmTile";
 
 export const Home = () => {
   const { search } = useLocation();
@@ -23,7 +23,6 @@ export const Home = () => {
             return filter === item.type.toLowerCase();
           });
         }
-
         setFilms(filmsData);
       });
   }, [filter]);
@@ -31,10 +30,10 @@ export const Home = () => {
   return (
     <div className="App">
       {films.length ? (
-        <div>
+        <div className="flex-column">
           {films.map(item => {
             return (
-              <DisplayImage
+              <FilmTile
                 path={item.title}
                 image={item.bannerImage}
                 type={item.type}
@@ -47,28 +46,6 @@ export const Home = () => {
       ) : (
         <LoadingSpinner />
       )}
-    </div>
-  );
-};
-
-const DisplayImage = ({ path, image, type, videoFile }) => {
-  let href = `/watch?${videoFile}`;
-  if (type === "SERIES") {
-    href = `/film/${path}`;
-  }
-
-  return (
-    <div className="image-container">
-      <a href={href}>
-        <img
-          width="100%"
-          src={`${process.env.REACT_APP_BACKEND_URL}/images/${image}`}
-          alt={path}
-        />
-        <div className="image-text">
-          <h4>{titleUpperCase(path)}</h4>
-        </div>
-      </a>
     </div>
   );
 };

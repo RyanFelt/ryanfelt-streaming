@@ -32,7 +32,7 @@ export const Watch = () => {
   return (
     <div className="App">
       {filmInfo.videoFile ? (
-        <div>
+        <>
           <br />
           <div className="flex-row-buttons">
             <div className="back-button">
@@ -43,13 +43,14 @@ export const Watch = () => {
             <div className="random-episode"></div>
           </div>
 
+          <br />
           <h1>{titleUpperCase(filmInfo.title)}</h1>
           <h5>{filmInfo.year} </h5>
 
           <div className="flex-row">
             <Video filmTitle={"movies"} videoFile={videoFile} />
           </div>
-        </div>
+        </>
       ) : (
         <LoadingSpinner />
       )}

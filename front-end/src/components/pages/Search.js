@@ -70,13 +70,13 @@ export const Search = () => {
       {!wordsSearched.length ? (
         <div />
       ) : (
-        <div>
+        <>
           <h5>Results... {results.length}</h5>
 
           {results.map(film => {
             return <div key={film.title}>{titleUpperCase(film.title)}</div>;
           })}
-        </div>
+        </>
       )}
     </div>
   );

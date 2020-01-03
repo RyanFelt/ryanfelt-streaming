@@ -42,6 +42,7 @@ export const Film = () => {
             setFilmInfo(res.data[x]);
             if (!currentSeason) {
               setCurrentSeason(res.data[x].seasons[0]);
+              localStorage.setItem(`${film}_SEASON`, res.data[x].seasons[0]);
             }
             break;
           }
@@ -50,7 +51,8 @@ export const Film = () => {
       .catch(err => {
         console.log("ERROR::", err);
       });
-  }, [film, history, currentSeason]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [film, history]);
 
   const seasonEpisodes = season => {
     let currentSeasonEpisodes = [];
@@ -71,7 +73,8 @@ export const Film = () => {
   return (
     <div className="App">
       {allEpisodes.length ? (
-        <div>
+        <>
+          <br />
           <div className="container">
             <div className="back-button">
               {filmInfo.seasons ? (
@@ -91,13 +94,14 @@ export const Film = () => {
               <div />
             )}
           </div>
+          <br />
 
           <h1>{filmTitle}</h1>
           <h5>Season: {currentSeason}</h5>
           <hr />
 
           <EpisodeLayout episodes={seasonEpisodes(currentSeason)} film={film} />
-        </div>
+        </>
       ) : (
         <LoadingSpinner />
       )}
