@@ -47,6 +47,7 @@
     "bannerImage": "na.png",
     "year": "2015",
     "videoFile": "StarWarsTheForceAwakens.mp4",
+    "videoLocation": "videos/lvs_1",
     "genre": "SCI_FI",
     "rating": "PG-13"
   },
@@ -57,7 +58,8 @@
     "active": true,
     "bannerImage": "na.png",
     "year": "2017",
-    "videoFile": "TheGreatestShowman.mp4",
+    "videoFile": "test.mp4",
+    "videoLocation": "videos/lvs_1",
     "genre": "Drama",
     "rating": "PG"
   }

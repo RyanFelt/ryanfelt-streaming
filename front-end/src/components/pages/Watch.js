@@ -48,7 +48,7 @@ export const Watch = () => {
           <h5>{filmInfo.year} </h5>
 
           <div className="flex-row">
-            <Video filmTitle={"movies"} videoFile={videoFile} />
+            <Video filmTitle={"movies"} film={filmInfo} />
           </div>
         </>
       ) : (
