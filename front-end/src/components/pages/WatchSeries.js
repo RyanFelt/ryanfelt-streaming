@@ -90,7 +90,7 @@ export const WatchSeries = () => {
               direction="left"
             />
 
-            <Video filmTitle={filmTitle} videoFile={episode.videoFile} />
+            <Video filmTitle={filmTitle} film={episode} />
 
             <NextPrevious
               film={film}
