@@ -9,14 +9,5 @@ export const Video = ({ filmTitle, film }) => {
     src = `${process.env.REACT_APP_BACKEND_URL}/${film.videoLocation}/${film.videoFile}`;
   }
 
-  return (
-    <video
-      className="video-player"
-      src={src}
-      align="center"
-      width="75%"
-      controls
-      autoPlay
-    />
-  );
+  return <video src={src} align="center" width="75%" controls autoPlay />;
 };

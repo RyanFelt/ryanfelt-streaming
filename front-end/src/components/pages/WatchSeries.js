@@ -6,7 +6,6 @@ import { Button } from "react-bootstrap";
 import "../../css/App.css";
 import { titleUpperCase } from "../../utils/titleUpperCase";
 import { RandomEpisode } from "../lib/RandomEpisode";
-import { NextPrevious } from "../lib/NextPrevious";
 import { Video } from "../lib/Video";
 import { LoadingSpinner } from "../lib/LoadingSpinner";
 
@@ -83,21 +82,8 @@ export const WatchSeries = () => {
           <h5>Season: {episode.season} </h5>
           <h5>Episode: {episode.episode}</h5>
 
-          <div className="flex-row">
-            <NextPrevious
-              film={film}
-              episodeIndex={episodeIndex.previous}
-              direction="left"
-            />
-
-            <Video filmTitle={filmTitle} film={episode} />
-
-            <NextPrevious
-              film={film}
-              episodeIndex={episodeIndex.next}
-              direction="right"
-            />
-          </div>
+          <br />
+          <Video filmTitle={filmTitle} film={episode} />
         </>
       ) : (
         <LoadingSpinner />
