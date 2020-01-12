@@ -47,9 +47,7 @@ export const Watch = () => {
           <h1>{titleUpperCase(filmInfo.title)}</h1>
           <h5>{filmInfo.year} </h5>
 
-          <div className="flex-row">
-            <Video filmTitle={"movies"} film={filmInfo} />
-          </div>
+          <Video filmTitle={"movies"} film={filmInfo} />
         </>
       ) : (
         <LoadingSpinner />

@@ -1,4 +1,4 @@
-const data = require("../data/all-titles.json");
+const data = require('../data/all-titles.json');
 
 exports.getAllTitles = (req, res) => {
   try {
@@ -10,7 +10,7 @@ exports.getAllTitles = (req, res) => {
     }
     res.status(200).send(activeTitles);
   } catch (e) {
-    console.log("ERROR -- /getAllTitles --", e);
-    res.status(500).send({ message: "Internal server error" });
+    console.log('ERROR -- /getAllTitles --', e);
+    res.status(500).send({ message: 'Internal server error' });
   }
 };

@@ -98,3 +98,11 @@ flex-row-buttons {
 .textbox {
   width: 80%;
 }
+
+.margin-right {
+  margin-right: 150px;
+}
+
+.error-text {
+  color: red;
+}

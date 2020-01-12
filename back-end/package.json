@@ -6,6 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "prettier": {
+    "singleQuote": true,
+    "tabWidth": 2
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RyanFelt/simple-react-streaming.git"
@@ -20,7 +24,8 @@
     "bluebird": "^3.7.2",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "ryanfelt-identity-service": "0.0.3"
   },
   "devDependencies": {
     "nodemon": "^1.19.0"
