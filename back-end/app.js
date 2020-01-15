@@ -7,22 +7,34 @@ const { getAllTitles } = require('./controllers/getAllTitles');
 const { getAllFilms } = require('./controllers/getAllFilms');
 const { subscribed } = require('./controllers/subscribed');
 
-const { LVS_1, PORT } = process.env;
+const {
+  LVS_1,
+  PORT,
+  USER_TABLE,
+  REFRESH_TABLE,
+  ACCESSS_TOKEN_TIME,
+  REFRESH_TOKEN_TIME,
+  ACCESS_KEY,
+  REFRESH_KEY,
+  CIPHER_ALGORITHM,
+  ENCRYPT_PASSWORD_KEY,
+  ENCRYPT_KEY,
+  INPUT_ENCODING,
+  OUTPUT_ENCODING
+} = process.env;
 
 const { identityService, authenticate } = setUp({
-  DYNAMODB_PORT: 8000,
-  USER_TABLE: 'users',
-  REFRESH_TABLE: 'refresh',
-  REGION: 'us-east-1',
-  ACCESSS_TOKEN_TIME: 60 * 60 * 2,
-  REFRESH_TOKEN_TIME: 60 * 60 * 24 * 365,
-  ACCESS_KEY: 'server_secret',
-  REFRESH_KEY: 'refresh_secret',
-  CIPHER_ALGORITHM: 'aes-256-ctr',
-  ENCRYPT_PASSWORD_KEY: 'b2df428b9929d3ace7c598bbf4e496b2',
-  ENCRYPT_KEY: 'ciphersjdkfituejdnvmgjfhnskcjsme',
-  INPUT_ENCODING: 'utf8',
-  OUTPUT_ENCODING: 'hex'
+  USER_TABLE,
+  REFRESH_TABLE,
+  ACCESSS_TOKEN_TIME,
+  REFRESH_TOKEN_TIME,
+  ACCESS_KEY,
+  REFRESH_KEY,
+  CIPHER_ALGORITHM,
+  ENCRYPT_PASSWORD_KEY,
+  ENCRYPT_KEY,
+  INPUT_ENCODING,
+  OUTPUT_ENCODING
 });
 
 const app = express();

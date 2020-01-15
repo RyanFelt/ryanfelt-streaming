@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "../../css/App.css";
 import axios from "axios";
+import { FilmTile } from "../lib/FilmTile";
 import { InputGroup, FormControl, Button } from "react-bootstrap";
-import { titleUpperCase } from "../../utils/titleUpperCase";
 
 export const Search = () => {
   const [search, setSearch] = useState("");
@@ -13,15 +13,10 @@ export const Search = () => {
     axios
       .get(`${process.env.REACT_APP_BACKEND_URL}/api/getAllTitles`)
       .then(res => {
-        let matchedSearches = [];
-        for (let x = 0; x < res.data.length; x++) {
-          for (let i = 0; i < wordsSearched.length; i++) {
-            if (res.data[x].title.includes(wordsSearched[i].toLowerCase())) {
-              matchedSearches.push(res.data[x]);
-              break;
-            }
-          }
-        }
+        const matchedSearches = res.data.filter(data =>
+          data.title.includes(wordsSearched)
+        );
+
         setResults(matchedSearches);
       })
       .catch(err => {
@@ -72,9 +67,16 @@ export const Search = () => {
       ) : (
         <>
           <h5>Results... {results.length}</h5>
-
           {results.map(film => {
-            return <div key={film.title}>{titleUpperCase(film.title)}</div>;
+            return (
+              <FilmTile
+                path={film.title}
+                image={film.bannerImage}
+                type={film.type}
+                videoFile={film.videoFile}
+                key={film.id}
+              />
+            );
           })}
         </>
       )}
