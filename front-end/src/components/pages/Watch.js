@@ -7,6 +7,8 @@ import { titleUpperCase } from "../../utils/titleUpperCase";
 import { Video } from "../lib/Video";
 import { LoadingSpinner } from "../lib/LoadingSpinner";
 
+const VideoMemo = React.memo(Video);
+
 export const Watch = () => {
   const { search } = useLocation();
   const videoFile = search.split("?")[1];
@@ -47,7 +49,7 @@ export const Watch = () => {
           <h1>{titleUpperCase(filmInfo.title)}</h1>
           <h5>{filmInfo.year} </h5>
 
-          <Video filmTitle={"movies"} film={filmInfo} />
+          <VideoMemo filmTitle={"movies"} film={filmInfo} />
         </>
       ) : (
         <LoadingSpinner />
