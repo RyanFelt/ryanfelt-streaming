@@ -12,14 +12,7 @@ import { SeasonsDropdown } from "../lib/SeasonsDropdown";
 export const Film = () => {
   const { film } = useParams();
   const filmTitle = titleUpperCase(film);
-
   let history = useHistory();
-
-  const [allEpisodes, setAllEpisodes] = useState([]);
-  const [filmInfo, setFilmInfo] = useState({});
-  const [currentSeason, setCurrentSeason] = useState(
-    localStorage.getItem(`${film}_SEASON`) || ""
-  );
 
   useEffect(() => {
     axios
@@ -53,6 +46,12 @@ export const Film = () => {
       });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [film, history]);
+
+  const [allEpisodes, setAllEpisodes] = useState([]);
+  const [filmInfo, setFilmInfo] = useState({});
+  const [currentSeason, setCurrentSeason] = useState(
+    localStorage.getItem(`${film}_SEASON`) || ""
+  );
 
   const seasonEpisodes = season => {
     let currentSeasonEpisodes = [];

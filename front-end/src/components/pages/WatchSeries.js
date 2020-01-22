@@ -19,19 +19,6 @@ export const WatchSeries = () => {
   let history = useHistory();
 
   const [allEpisodes, setAllEpisodes] = useState([]);
-  const [episode, setEpisode] = useState({});
-  const [episodeIndex, setEpisodeIndex] = useState({});
-
-  useEffect(() => {
-    axios
-      .get(`${process.env.REACT_APP_BACKEND_URL}/api/getAllFilms?film=${film}`)
-      .then(res => {
-        setAllEpisodes(res.data);
-      })
-      .catch(err => {
-        console.log("ERROR::", err);
-      });
-  }, [film]);
 
   useEffect(() => {
     for (let x = 0; x < allEpisodes.length; x++) {
@@ -51,6 +38,8 @@ export const WatchSeries = () => {
     setEpisode({});
   }, [allEpisodes, videoFile]);
 
+  const [episode, setEpisode] = useState({});
+
   useEffect(() => {
     if (allEpisodes.length && !episode.videoFile) {
       history.push("/404");
@@ -58,12 +47,25 @@ export const WatchSeries = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [episode, history]);
 
+  const [episodeIndex, setEpisodeIndex] = useState({});
+
+  useEffect(() => {
+    axios
+      .get(`${process.env.REACT_APP_BACKEND_URL}/api/getAllFilms?film=${film}`)
+      .then(res => {
+        setAllEpisodes(res.data);
+      })
+      .catch(err => {
+        console.log("ERROR::", err);
+      });
+  }, [film]);
+
   return (
     <div className="App">
       <br />
       {episode.videoFile ? (
         <>
-          <div className="flex-row-buttons">
+          <div className="flex-row">
             <div className="back-button">
               <Button href={`/film/${film}`} variant="dark">
                 Back
@@ -78,11 +80,14 @@ export const WatchSeries = () => {
           </div>
 
           <br />
+
           <h1>{filmTitle}</h1>
-          <h5>Season: {episode.season} </h5>
-          <h5>Episode: {episode.episode}</h5>
+          <h5>
+            S{episode.season} - E{episode.episode}
+          </h5>
 
           <br />
+
           <Video filmTitle={filmTitle} film={episode} />
         </>
       ) : (

@@ -9,6 +9,7 @@ const { subscribed } = require('./controllers/subscribed');
 
 const {
   LVS_1,
+  LIS_1,
   PORT,
   USER_TABLE,
   REFRESH_TABLE,
@@ -43,6 +44,7 @@ app.use(express.json({ type: '*/*' }));
 app.use(express.urlencoded({ extended: false }));
 app.use(cors());
 app.use('/videos/lvs_1', express.static(__dirname + LVS_1));
+app.use('/images/lis_1', express.static(__dirname + LIS_1));
 app.use('/images', express.static(__dirname + '/images'));
 app.use(express.static(path.join(__dirname, '../front-end/build')));
 app.use('/api/identity-service', identityService);

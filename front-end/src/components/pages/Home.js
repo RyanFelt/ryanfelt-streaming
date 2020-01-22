@@ -10,8 +10,6 @@ export const Home = () => {
   const { search } = useLocation();
   const { filter } = qs.parse(search);
 
-  const [films, setFilms] = useState([]);
-
   useEffect(() => {
     axios
       .get(`${process.env.REACT_APP_BACKEND_URL}/api/getAllTitles`)
@@ -26,6 +24,8 @@ export const Home = () => {
         setFilms(filmsData);
       });
   }, [filter]);
+
+  const [films, setFilms] = useState([]);
 
   return (
     <div className="App">

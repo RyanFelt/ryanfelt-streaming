@@ -7,7 +7,6 @@ import { InputGroup, FormControl, Button } from "react-bootstrap";
 export const Search = () => {
   const [search, setSearch] = useState("");
   const [wordsSearched, setWordsSearched] = useState([]);
-  const [results, setResults] = useState([]);
 
   useEffect(() => {
     axios
@@ -23,6 +22,8 @@ export const Search = () => {
         console.log("ERROR::", err);
       });
   }, [wordsSearched]);
+
+  const [results, setResults] = useState([]);
 
   const handleSearchChange = event => {
     setSearch(event.target.value);
