@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import "../../css/App.css";
 
-export const Video = ({ filmTitle, film }) => {
+export const Video = React.memo(({ film }) => {
   const [src, setSrc] = useState(null);
 
   const vid = useRef(null);
@@ -22,6 +22,7 @@ export const Video = ({ filmTitle, film }) => {
       .catch(err => {
         localStorage.removeItem("authorizationToken");
         localStorage.removeItem("refreshToken");
+        window.location.reload(false);
       });
   };
 
@@ -44,10 +45,8 @@ export const Video = ({ filmTitle, film }) => {
         );
       })
       .catch(err => {
-        console.log("HERE", err.response);
         if (err.response.status === 401) {
           getNewAuthToken(refresh);
-          console.log(401);
           return;
         }
       });
@@ -64,4 +63,4 @@ export const Video = ({ filmTitle, film }) => {
   return (
     <video src={src} align="center" width="75%" ref={vid} controls autoPlay />
   );
-};
+});
