@@ -7,7 +7,7 @@ const { getAllTitles } = require('./controllers/getAllTitles');
 const { getAllFilms } = require('./controllers/getAllFilms');
 const { subscribed } = require('./controllers/subscribed');
 
-const { LVS_1, LIS_1, PORT } = process.env;
+const { LVS_1, LVS_2, LIS_1, PORT } = process.env;
 
 const app = express();
 
