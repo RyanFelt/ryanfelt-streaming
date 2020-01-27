@@ -37,7 +37,7 @@ export const Search = () => {
   return (
     <div className="App">
       <br />
-      <div className="flex-row">
+      <div className="flex-row-center">
         <div className="textbox">
           <InputGroup className="mb-3">
             <FormControl
@@ -55,7 +55,7 @@ export const Search = () => {
       </div>
 
       <h5>Words searched...</h5>
-      <div className="flex-row">
+      <div className="flex-row-center">
         {wordsSearched.map(word => {
           return <div key={word}>{word}...</div>;
         })}

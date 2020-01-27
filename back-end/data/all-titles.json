@@ -308,5 +308,45 @@
     "year": "2010",
     "videoFile": "Ironman2.mp4",
     "videoLocation": "videos/lvs_1"
+  },
+  {
+    "id": "c2a57f1e-0212-4dd2-9640-a42aa89bd19a",
+    "title": "kicking-and-screaming",
+    "type": "MOVIES",
+    "active": true,
+    "bannerImage": "na.png",
+    "year": "2005",
+    "videoFile": "KickingAndScreaming.mp4",
+    "videoLocation": "videos/lvs_1"
+  },
+  {
+    "id": "9388c09b-267f-46ca-a76b-56772fb72e9d",
+    "title": "thor",
+    "type": "MOVIES",
+    "active": true,
+    "bannerImage": "na.png",
+    "year": "2011",
+    "videoFile": "Thor.mp4",
+    "videoLocation": "videos/lvs_1"
+  },
+  {
+    "id": "8492709f-74f3-4acb-9165-cafd2927a486",
+    "title": "captain-america:-the-first-avenger",
+    "type": "MOVIES",
+    "active": true,
+    "bannerImage": "na.png",
+    "year": "2011",
+    "videoFile": "CaptainAmericaTheFirstAvenger.mp4",
+    "videoLocation": "videos/lvs_1"
+  },
+  {
+    "id": "78d2a46b-6945-4d67-b2d3-ac9cc4d0ab11",
+    "title": "the-avengers",
+    "type": "MOVIES",
+    "active": true,
+    "bannerImage": "na.png",
+    "year": "2011",
+    "videoFile": "TheAvengers.mp4",
+    "videoLocation": "videos/lvs_1"
   }
 ]

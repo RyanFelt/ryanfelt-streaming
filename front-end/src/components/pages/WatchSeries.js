@@ -88,7 +88,7 @@ export const WatchSeries = () => {
 
           <br />
 
-          <Video filmTitle={filmTitle} film={episode} />
+          <Video film={episode} />
         </>
       ) : (
         <LoadingSpinner />

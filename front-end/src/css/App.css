@@ -43,6 +43,12 @@ flex-row-buttons {
   width: 100%;
 }
 
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .random-episode {
   text-align: right;
   padding-right: 25px;

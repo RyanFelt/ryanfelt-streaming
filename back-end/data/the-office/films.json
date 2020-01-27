@@ -1,57 +1,63 @@
 [
   {
-    "videoFile": "TheOffice-S01E01.mkv",
+    "videoFile": "TheOffice-S01E01.mp4",
     "active": true,
     "season": "1",
     "episode": "1",
     "description": "When a documentary crew arrives at Mifflin, manager Michael Scott attempts to paint a rosy picture but fails after learning the company will be downsizing.",
     "show": "The Office",
-    "title": "Pilot"
+    "title": "Pilot",
+    "videoLocation": "videos/lvs_2"
   },
   {
-    "videoFile": "TheOffice-S01E02.mkv",
+    "videoFile": "TheOffice-S01E02.mp4",
     "active": true,
     "season": "1",
     "episode": "2",
     "description": "Michael tells everyone it was his idea to hire a special consultant to teach racial tolerance and diversity, when in fact it was his behavior that necessitated the training.",
     "show": "The Office",
-    "title": "Diversity Day"
+    "title": "Diversity Day",
+    "videoLocation": "videos/lvs_2"
   },
   {
-    "videoFile": "TheOffice-S01E03.mkv",
+    "videoFile": "TheOffice-S01E03.mp4",
     "active": true,
     "season": "1",
     "episode": "3",
     "description": "When Dwight gets the authority to choose a health plan for everyone, the power quickly goes to his head, infuriating his co-workers.",
     "show": "The Office",
-    "title": "Health Care"
+    "title": "Health Care",
+    "videoLocation": "videos/lvs_2"
   },
   {
-    "videoFile": "TheOffice-S01E04.mkv",
+    "videoFile": "TheOffice-S01E04.mp4",
     "active": true,
     "season": "1",
     "episode": "4",
     "description": "Michael tries to raise employee morale with a birthday party amid rumors of downsizing.",
     "show": "The Office",
-    "title": "The Alliance"
+    "title": "The Alliance",
+    "videoLocation": "videos/lvs_2"
   },
   {
-    "videoFile": "TheOffice-S01E05.mkv",
+    "videoFile": "TheOffice-S01E05.mp4",
     "active": true,
     "season": "1",
     "episode": "5",
     "description": "Michael is overly confident about his team's chances in a basketball game between the office staff and the warehouse workers.",
     "show": "The Office",
-    "title": "Basketball"
+    "title": "Basketball",
+    "videoLocation": "videos/lvs_2"
   },
   {
-    "videoFile": "TheOffice-S01E06.mkv",
+    "videoFile": "TheOffice-S01E06.mp4",
     "active": true,
     "season": "1",
     "episode": "6",
     "description": "An attractive woman's arrival has the male staff members vying for her attention.",
     "show": "The Office",
-    "title": "Hot Girl"
+    "title": "Hot Girl",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S02E01.mp4",
@@ -60,7 +66,8 @@
     "episode": "1",
     "description": "The Dunder Mifflin employees suffer through the annual office awards ceremony, \"The Dundies.\"",
     "show": "The Office",
-    "title": "The Dundies"
+    "title": "The Dundies",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S02E02.mp4",
@@ -69,7 +76,8 @@
     "episode": "2",
     "description": "When Michael's best friend, sales representative Todd Packer (David Koechner), pays him a visit, Michael starts behaving even more inappropriately.",
     "show": "The Office",
-    "title": "Sexual Harassment"
+    "title": "Sexual Harassment",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S02E03.mp4",
@@ -78,7 +86,8 @@
     "episode": "3",
     "description": "Michael has a panic attack while trying to close the deal on his condo; with Michael and Dwight out of the office, Jim and Pam organize an employee competition.",
     "show": "The Office",
-    "title": "Office Olympics"
+    "title": "Office Olympics",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S02E04.mp4",
@@ -87,7 +96,8 @@
     "episode": "4",
     "description": "A fire in the kitchen causes the employees to evacuate to the parking lot where they learn more about one another than they wanted.",
     "show": "The Office",
-    "title": "The Fire"
+    "title": "The Fire",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S02E05.mp4",
@@ -96,7 +106,8 @@
     "episode": "5",
     "description": "Michael must fire someone, which puts a damper on the Halloween festivities.",
     "show": "The Office",
-    "title": "Halloween"
+    "title": "Halloween",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S02E06.mp4",
@@ -105,7 +116,8 @@
     "episode": "6",
     "description": "After Dwight karate-punches Michael, Jim organizes a lunchtime rematch at Dwight's dojo.",
     "show": "The Office",
-    "title": "The Fight"
+    "title": "The Fight",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S02E07.mp4",
@@ -114,7 +126,8 @@
     "episode": "7",
     "description": "Michael surprises his boss when he and Jan try to attract a new client (Tim Meadows).",
     "show": "The Office",
-    "title": "The Client"
+    "title": "The Client",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S02E08.mp4",
@@ -123,7 +136,8 @@
     "episode": "8",
     "description": "Everyone is on edge during performance review, including Michael, who steals the employee suggestion box to get ideas he can present to his boss.",
     "show": "The Office",
-    "title": "Performance Review"
+    "title": "Performance Review",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S02E09.mp4",
@@ -132,7 +146,8 @@
     "episode": "9",
     "description": "When Michael begins monitoring their e-mails, he manages to upset all of the employees.",
     "show": "The Office",
-    "title": "Email Surveillance"
+    "title": "Email Surveillance",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S02E10.mp4",
@@ -141,7 +156,8 @@
     "episode": "10",
     "description": "After Michael suggests a game of \"Yankee Swap\" with the Secret Santa gifts, everyone fights over Michael's gift to Ryan, bringing morale to an all-time low.",
     "show": "The Office",
-    "title": "Christmas Party"
+    "title": "Christmas Party",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S02E11.mp4",
@@ -150,7 +166,8 @@
     "episode": "11",
     "description": "When Michael takes the Mifflin crew on a motivational harbor cruise, things get out of hand and Michael ends up in the brig.",
     "show": "The Office",
-    "title": "Booze Cruise"
+    "title": "Booze Cruise",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S02E12.mp4",
@@ -159,7 +176,8 @@
     "episode": "12",
     "description": "After he has an accident while using a grill, injured Michael demands attention from the entire Dunder Mifflin office.",
     "show": "The Office",
-    "title": "The Injury"
+    "title": "The Injury",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S02E13.mp4",
@@ -168,7 +186,8 @@
     "episode": "13",
     "description": "Because Jim fears Michael will tell the others he likes Pam, he pretends to be Michael's best friend.",
     "show": "The Office",
-    "title": "The Secret"
+    "title": "The Secret",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S02E14.mp4",
@@ -177,7 +196,8 @@
     "episode": "14",
     "description": "When someone stains the carpet in Michael's office, he begins to question his popularity among his staff.",
     "show": "The Office",
-    "title": "The Carpet"
+    "title": "The Carpet",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S02E15.mp4",
@@ -186,7 +206,8 @@
     "episode": "15",
     "description": "When Jan (Melora Hardin) conducts a seminar for the female employees, Michael takes the guys to the warehouse for some male bonding.",
     "show": "The Office",
-    "title": "Boys and Girls"
+    "title": "Boys and Girls",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S02E16.mp4",
@@ -195,7 +216,8 @@
     "episode": "16",
     "description": "Michael visits corporate headquarters in New York on Valentine's Day.",
     "show": "The Office",
-    "title": "Valentine's Day"
+    "title": "Valentine's Day",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S02E17.mp4",
@@ -204,7 +226,8 @@
     "episode": "17",
     "description": "When Dwight, who has a fear of public speaking, is asked to give a speech at a sales convention, he turns to Michael for help.",
     "show": "The Office",
-    "title": "Dwight's Speech"
+    "title": "Dwight's Speech",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S02E18.mp4",
@@ -213,7 +236,8 @@
     "episode": "18",
     "description": "Michael strikes up a friendship with the 5-year-old daughter of his enemy when children visit the office.",
     "show": "The Office",
-    "title": "Take Your Daughter To Work Day"
+    "title": "Take Your Daughter To Work Day",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S02E19.mp4",
@@ -222,7 +246,8 @@
     "episode": "19",
     "description": "Michael takes the Dunder Mifflin employees ice-skating to celebrate his birthday.",
     "show": "The Office",
-    "title": "Michael's Birthday"
+    "title": "Michael's Birthday",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S02E20.mp4",
@@ -231,7 +256,8 @@
     "episode": "20",
     "description": "Dwight finds half a joint in the parking lot and launches a full investigation; Michael asks an unusual favor.",
     "show": "The Office",
-    "title": "Drug Testing"
+    "title": "Drug Testing",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S02E21.mp4",
@@ -240,7 +266,8 @@
     "episode": "21",
     "description": "Chaos ensues when Michael takes responsibility for conflict resolution from the Human Relations department.",
     "show": "The Office",
-    "title": "Conflict Resolution"
+    "title": "Conflict Resolution",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S02E22.mp4",
@@ -249,7 +276,8 @@
     "episode": "22",
     "description": "Employees take some big gambles when they host a charity casino-night in their warehouse.",
     "show": "The Office",
-    "title": "Casino Night"
+    "title": "Casino Night",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S03E01.mp4",
@@ -258,7 +286,8 @@
     "episode": "1",
     "description": "Michael unintentionally outs a gay employee; the situation with Jim and Pam.",
     "show": "The Office",
-    "title": "Gay Witch Hunt"
+    "title": "Gay Witch Hunt",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S03E02.mp4",
@@ -267,7 +296,8 @@
     "episode": "2",
     "description": "Michael organizes a party in his hotel room when he, Dwight and Jan attend a convention in Philadelphia.",
     "show": "The Office",
-    "title": "The Convention"
+    "title": "The Convention",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S03E03.mp4",
@@ -276,7 +306,8 @@
     "episode": "3",
     "description": "After Jan busts Michael for having a \"movie Monday,\" Angela pushes Dwight to make a play for Michael's job.",
     "show": "The Office",
-    "title": "The Coop"
+    "title": "The Coop",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S03E04.mp4",
@@ -285,7 +316,8 @@
     "episode": "4",
     "description": "Michael tries to help the staff grieve after learning that the former regional manager has died.",
     "show": "The Office",
-    "title": "Grief Counseling"
+    "title": "Grief Counseling",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S03E05.mp4",
@@ -294,7 +326,8 @@
     "episode": "5",
     "description": "Dwight takes Ryan on his first sales call, subjecting him to an outrageous series of tests along the way.",
     "show": "The Office",
-    "title": "Initiation"
+    "title": "Initiation",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S03E06.mp4",
@@ -303,7 +336,8 @@
     "episode": "6",
     "description": "Michael urges the staff to support Kelly and attend a local celebration of the Hindu Festival of Lights.",
     "show": "The Office",
-    "title": "Diwali"
+    "title": "Diwali",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S03E07.mp4",
@@ -312,7 +346,8 @@
     "episode": "7",
     "description": "Michael strives to keep the staff's spirit up after learning of the Scranton branch shutting down; people envision how their lives will change.",
     "show": "The Office",
-    "title": "Branch Closing"
+    "title": "Branch Closing",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S03E08.mp4",
@@ -321,7 +356,8 @@
     "episode": "8",
     "description": "Jim and Pam reunite when the Scranton and Stamford branches of the company merge.",
     "show": "The Office",
-    "title": "The Merger"
+    "title": "The Merger",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S03E09.mp4",
@@ -330,7 +366,8 @@
     "episode": "9",
     "description": "Michael tries to be supportive after learning that a new employee is an ex-convict, then the staff compares the office to a prison.",
     "show": "The Office",
-    "title": "The Convict"
+    "title": "The Convict",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S03E10.mp4",
@@ -339,7 +376,8 @@
     "episode": "10",
     "description": "Strife on the party-planning committee results in two competing Christmas parties; Michael gets dumped for the holidays.",
     "show": "The Office",
-    "title": "A Benihana Christmas Part 1 & 2"
+    "title": "A Benihana Christmas Part 1 & 2",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S03E11.mp4",
@@ -348,7 +386,8 @@
     "episode": "11",
     "description": "Michael returns from his Jamaican vacation; an e-mail of a racy vacation photo makes the rounds of the office.",
     "show": "The Office",
-    "title": "Back from Vacation"
+    "title": "Back from Vacation",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S03E12.mp4",
@@ -357,7 +396,8 @@
     "episode": "12",
     "description": "Andy suggests that Michael team up the staff for sales calls; Dwight tries to cover for Angela when she misses a deadline.",
     "show": "The Office",
-    "title": "Traveling Salesmen"
+    "title": "Traveling Salesmen",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S03E13.mp4",
@@ -366,7 +406,8 @@
     "episode": "13",
     "description": "Oscar returns from his long vacation; Andy takes advantage of events to get closer to Michael; Jim gets Karen and Pam to help stage a prank on a new target.",
     "show": "The Office",
-    "title": "The Return"
+    "title": "The Return",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S03E14.mp4",
@@ -375,7 +416,8 @@
     "episode": "14",
     "description": "Michael brings two adult performers into the office in honor of Phyllis' wedding shower; Karen confronts Pam about her past with Jim.",
     "show": "The Office",
-    "title": "Ben Franklin"
+    "title": "Ben Franklin",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S03E15.mp4",
@@ -384,7 +426,8 @@
     "episode": "15",
     "description": "Michael brings two adult performers into the office in honor of Phyllis' wedding shower; Karen confronts Pam about her past with Jim.",
     "show": "The Office",
-    "title": "Phyllis' Wedding"
+    "title": "Phyllis' Wedding",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S03E16.mp4",
@@ -393,7 +436,8 @@
     "episode": "16",
     "description": "Ryan invites Michael to be a guest speaker at his business school; Dwight battles a bat that is loose in the office; Pam invites co-workers to her first art show.",
     "show": "The Office",
-    "title": "Business School"
+    "title": "Business School",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S03E17.mp4",
@@ -402,7 +446,8 @@
     "episode": "17",
     "description": "Michael and Jan make their relationship public during a party; Jim meets Karen's ex; the staff goes to happy hour for drinks.",
     "show": "The Office",
-    "title": "Cocktails"
+    "title": "Cocktails",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S03E18.mp4",
@@ -411,7 +456,8 @@
     "episode": "18",
     "description": "Darryl meets with Michael to negotiate a pay increase; Jim deals with the consequences of Pam's confession to Roy.",
     "show": "The Office",
-    "title": "The Negotiation"
+    "title": "The Negotiation",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S03E19.mp4",
@@ -420,7 +466,8 @@
     "episode": "19",
     "description": "Andy returns from anger-management classes, planning to make a fresh start with his co-workers; Michael and Dwight try to illustrate the dangers of the workplace.",
     "show": "The Office",
-    "title": "Safety Training"
+    "title": "Safety Training",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S03E20.mp4",
@@ -429,7 +476,8 @@
     "episode": "20",
     "description": "The staff goes into crisis mode after a shipment of paper goes out with an obscene watermark; Michael holds an impromptu press conference; Jim and Andy handle harried clients who used the paper.",
     "show": "The Office",
-    "title": "Product Recall"
+    "title": "Product Recall",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S03E21.mp4",
@@ -438,7 +486,8 @@
     "episode": "21",
     "description": "Outrage breaks out in the office when Phyllis gets an eyeful from a flasher; Dwight and Andy work on catching the perpetrator.",
     "show": "The Office",
-    "title": "Woman's Appreciation"
+    "title": "Woman's Appreciation",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S03E22.mp4",
@@ -447,7 +496,8 @@
     "episode": "22",
     "description": "Michael must recommend his own replacement when the company considers him for a corporate position; Pam must watch Jim and Karen have fun together at a company outing.",
     "show": "The Office",
-    "title": "Beach Games"
+    "title": "Beach Games",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S03E23.mp4",
@@ -456,7 +506,8 @@
     "episode": "23",
     "description": "Michael, Jim and Karen go to New York to interview for a job opening; in Scranton, the new regime institutes sweeping reforms; Jan brings exciting news.",
     "show": "The Office",
-    "title": "The Job"
+    "title": "The Job",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S04E01.mp4",
@@ -465,7 +516,8 @@
     "episode": "1",
     "description": "A freak accident causes Michael to think the office is cursed; Michael decides to hold a charity 5K fun run; further developments in co-workers' romances.",
     "show": "The Office",
-    "title": "Fun Run Part 1 & 2"
+    "title": "Fun Run Part 1 & 2",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S04E02.mp4",
@@ -474,7 +526,8 @@
     "episode": "2",
     "description": "Ryan returns to Dunder-Mifflin's Scranton branch to bring the company into the digital age; Angela remains unhappy about her cat.",
     "show": "The Office",
-    "title": "Dunder-Mifflin Infinity Part 1 & 2"
+    "title": "Dunder-Mifflin Infinity Part 1 & 2",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S04E03.mp4",
@@ -483,7 +536,8 @@
     "episode": "3",
     "description": "Michael anticipates going to New York for the company's Web site launch party; Dwight tries to sell more paper in one day than the Web site does.",
     "show": "The Office",
-    "title": "Launch Party Part 1 & 2"
+    "title": "Launch Party Part 1 & 2",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S04E04.mp4",
@@ -492,7 +546,8 @@
     "episode": "4",
     "description": "Michael tries to combat his growing debt by asking employees for loans; Jim and Pam spend a night at Dwight's family farm.",
     "show": "The Office",
-    "title": "Money Part 1 & 2"
+    "title": "Money Part 1 & 2",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S04E05.mp4",
@@ -501,7 +556,8 @@
     "episode": "5",
     "description": "Michael seizes the opportunity to exhibit his creativity when the Scranton branch must participate in a company ad; Dwight explores an online world.",
     "show": "The Office",
-    "title": "Local Ad"
+    "title": "Local Ad",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S04E06.mp4",
@@ -510,7 +566,8 @@
     "episode": "6",
     "description": "Michael fights back when Karen tries to woo Stanley away from Scranton; a Finer Things Club further disturbs Dunder Mifflin's calm.",
     "show": "The Office",
-    "title": "Branch Wars"
+    "title": "Branch Wars",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S04E07.mp4",
@@ -519,7 +576,8 @@
     "episode": "7",
     "description": "When Ryan excludes him from a wilderness retreat, Michael goes into the woods for his own survival adventure; Jim tries to revolutionize the office birthday party.",
     "show": "The Office",
-    "title": "Survior Man"
+    "title": "Survior Man",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S04E08.mp4",
@@ -528,7 +586,8 @@
     "episode": "8",
     "description": "Jan sues Dunder Mifflin, and Michael is deposed as a witness; Kelly trash-talks Pam after Darryl beats Jim at pingpong.",
     "show": "The Office",
-    "title": "The Deposition"
+    "title": "The Deposition",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S04E09.mp4",
@@ -537,7 +596,8 @@
     "episode": "9",
     "description": "Pam and Jim run out of excuses and must go to Jan and Michael's house for dinner; when Dwight learns that Angela and Andy are also invited, jealousy gets the best of him.",
     "show": "The Office",
-    "title": "Dinner Party"
+    "title": "Dinner Party",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S04E10.mp4",
@@ -546,7 +606,8 @@
     "episode": "10",
     "description": "A model in an office-supply catalog makes Michael feel things; to win back Dunder-Mifflin's parking spaces, Kevin and Andy oppose bosses of five businesses.",
     "show": "The Office",
-    "title": "Chair Model"
+    "title": "Chair Model",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S04E11.mp4",
@@ -555,7 +616,8 @@
     "episode": "11",
     "description": "Michael and Dwight decide to surprise Ryan in New York; Scranton staffers must work on a Saturday for Ryan's Web site project.",
     "show": "The Office",
-    "title": "Night Out"
+    "title": "Night Out",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S04E12.mp4",
@@ -564,7 +626,8 @@
     "episode": "12",
     "description": "Michael tries to give Stanley an attitude adjustment after Stanley snaps at him; Dwight decides to buy Andy's car; after spending the night at Jim's, Pam deals with an unexpected inconvenience.",
     "show": "The Office",
-    "title": "Did I Stutter?"
+    "title": "Did I Stutter?",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S04E13.mp4",
@@ -573,7 +636,8 @@
     "episode": "13",
     "description": "Jim hits the golf course with Andy and Kevin in hope of landing a huge client; Michael sets up a booth at a job fair at Pam's alma mater to hire a summer intern.",
     "show": "The Office",
-    "title": "Job Fair"
+    "title": "Job Fair",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S04E14.mp4",
@@ -582,7 +646,8 @@
     "episode": "14",
     "description": "Michael demands Toby's goodbye party at Dunder Mifflin be a huge celebration; Dwight and Meredith haze Holly (Amy Ryan), the new human resources person.",
     "show": "The Office",
-    "title": "Goodbye, Toby Part 1 & 2"
+    "title": "Goodbye, Toby Part 1 & 2",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S05E01.mp4",
@@ -591,7 +656,8 @@
     "episode": "1",
     "description": "Staffers in the Scranton branch of Dunder Mifflin become obsessed with their weight in the wake of corporate weight-loss initiatives; Michael pursues a friendship with Holly (Amy Ryan); Jim misses Pam, who is away at art school.",
     "show": "The Office",
-    "title": "Weight Loss Part 1 & 2"
+    "title": "Weight Loss Part 1 & 2",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S05E02.mp4",
@@ -600,7 +666,8 @@
     "episode": "2",
     "description": "A business ethics seminar gets out of control when Michael lets everyone talk about their unethical behavior at work; Jim makes Dwight observe the company's \"time theft\" policy.",
     "show": "The Office",
-    "title": "Business Ethics"
+    "title": "Business Ethics",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S05E03.mp4",
@@ -609,7 +676,8 @@
     "episode": "3",
     "description": "Michael has Dwight go over possible birthing scenarios to prepare for the birth of Jan's baby; Michael tells Holly he will pretend not to like her for Jan's benefit.",
     "show": "The Office",
-    "title": "Baby Shower"
+    "title": "Baby Shower",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S05E04.mp4",
@@ -618,7 +686,8 @@
     "episode": "4",
     "description": "Michael helps Pam get a part-time job so she can afford art school; Michael and Holly get an early start on their date night; after the office is robbed, Michael decides to raise money for all of the lost items.",
     "show": "The Office",
-    "title": "Crime Aid"
+    "title": "Crime Aid",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S05E05.mp4",
@@ -627,7 +696,8 @@
     "episode": "5",
     "description": "Pam is embarrassed when no one else at corporate wears a costume on Halloween; Holly and Michael get shocking news from corporate; Dwight tries to get under Andy's skin.",
     "show": "The Office",
-    "title": "Employee Transfer"
+    "title": "Employee Transfer",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S05E06.mp4",
@@ -636,7 +706,8 @@
     "episode": "6",
     "description": "Jim and Dwight are stunned when they get the results of the annual customer survey report; Jim and Pam decide to spend every minute together; Andy and Angela choose an unusual location for their wedding.",
     "show": "The Office",
-    "title": "Customer Survey"
+    "title": "Customer Survey",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S05E07.mp4",
@@ -645,7 +716,8 @@
     "episode": "7",
     "description": "Michael is thrilled when David Wallace sends him on a business trip to Canada; Oscar and Andy become friends when Michael decides to bring them on the trip; Jim counts the days until Pam returns from art school.",
     "show": "The Office",
-    "title": "Business Trip"
+    "title": "Business Trip",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S05E08.mp4",
@@ -654,7 +726,8 @@
     "episode": "8",
     "description": "Someone made a huge mess in the microwave and refuses to clean it up; Michael must come to terms with the personnel changes in his staff.",
     "show": "The Office",
-    "title": "Frame Toby"
+    "title": "Frame Toby",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S05E09.mp4",
@@ -663,7 +736,8 @@
     "episode": "9",
     "description": "Oscar informs Michael that the office must spend a cash surplus or lose it in the next year's budget; Dwight takes Angela and Andy to Schrute Farms to work on their wedding plans.",
     "show": "The Office",
-    "title": "The Surplus"
+    "title": "The Surplus",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S05E10.mp4",
@@ -672,7 +746,8 @@
     "episode": "10",
     "description": "Meredith's hair catches fire at Phyllis' Moroccan-themed Christmas party; Dwight corners the market on the hottest toy of the holiday season.",
     "show": "The Office",
-    "title": "Moroccan Christmas"
+    "title": "Moroccan Christmas",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S05E11.mp4",
@@ -681,7 +756,8 @@
     "episode": "11",
     "description": "Andy remains unaware of Angela's affair with Dwight; Michael is nervous about a corporate meeting with Wallace (Andy Buckley).",
     "show": "The Office",
-    "title": "The Duel"
+    "title": "The Duel",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S05E12.mp4",
@@ -690,7 +766,8 @@
     "episode": "12",
     "description": "Andy remains unaware of Angela's affair with Dwight; Michael is nervous about a corporate meeting with Wallace (Andy Buckley).",
     "show": "The Office",
-    "title": "Prince Family Paper"
+    "title": "Prince Family Paper",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S05E13.mp4",
@@ -699,7 +776,8 @@
     "episode": "13",
     "description": "Dwight must make amends with the office after his fire-safety seminar goes awry; Michael tries to get his employees to relax; Andy becomes convinced that Pam and Jim are film gurus.",
     "show": "The Office",
-    "title": "Stress Relief Part 1 & 2"
+    "title": "Stress Relief Part 1 & 2",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S05E14.mp4",
@@ -708,7 +786,8 @@
     "episode": "14",
     "description": "Michael takes Pam with him on a tour of the other branches to explain Scranton's relative success; Dwight and Jim, the new heads of the party planning committee, forget a birthday.",
     "show": "The Office",
-    "title": "Lecture Circuit Part 1"
+    "title": "Lecture Circuit Part 1",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S05E15.mp4",
@@ -717,7 +796,8 @@
     "episode": "15",
     "description": "Michael and Pam continue their branch tour; Jim and Dwight try to fulfill their party planning duties; Angela's new cat causes a commotion.",
     "show": "The Office",
-    "title": "Lecture Circuit Part 2"
+    "title": "Lecture Circuit Part 2",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S05E16.mp4",
@@ -726,7 +806,8 @@
     "episode": "16",
     "description": "Michael meets a mysterious woman at a blood drive; Dwight and Kevin attend a \"Lonely Hearts Party\"; Jim and Pam have an awkward lunch with Bob and Phyllis.",
     "show": "The Office",
-    "title": "Blood Drive"
+    "title": "Blood Drive",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S05E17.mp4",
@@ -735,7 +816,8 @@
     "episode": "17",
     "description": "Michael comes up with an idea that causes a huge problem in the office; Pam, Jim and Andy each give Kevin different advice on wooing a woman.",
     "show": "The Office",
-    "title": "Golden Ticket"
+    "title": "Golden Ticket",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S05E18.mp4",
@@ -744,7 +826,8 @@
     "episode": "18",
     "description": "Michael makes big plans for his 15th anniversary party at Dunder Mifflin; Jim plays a prank on Dwight that has unexpected results.",
     "show": "The Office",
-    "title": "New Boss"
+    "title": "New Boss",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S05E19.mp4",
@@ -753,7 +836,8 @@
     "episode": "19",
     "description": "Michael's relationship with the new vice president gets increasingly tense; Pam finds the new copier a challenge.",
     "show": "The Office",
-    "title": "Two Weeks"
+    "title": "Two Weeks",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S05E20.mp4",
@@ -762,7 +846,8 @@
     "episode": "20",
     "description": "Jim faces Charles during a soccer game in the Dunder Mifflin parking lot; Michael finds himself afraid to face the workday.",
     "show": "The Office",
-    "title": "Dream Team"
+    "title": "Dream Team",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S05E21.mp4",
@@ -771,7 +856,8 @@
     "episode": "21",
     "description": "Dwight and Andy plan a hunting trip; Charles (Idris Elba) asks Jim for a \"rundown\", and Jim tries to figure out what that is; Michael hosts a Paper & Pancakes luncheon.",
     "show": "The Office",
-    "title": "Michael Scott Paper Company"
+    "title": "Michael Scott Paper Company",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S05E22.mp4",
@@ -780,7 +866,8 @@
     "episode": "22",
     "description": "Dwight's devotion to Michael is tested; Andy tries to fulfill Jim's emotional needs.",
     "show": "The Office",
-    "title": "Heavy Competition"
+    "title": "Heavy Competition",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S05E23.mp4",
@@ -789,7 +876,8 @@
     "episode": "23",
     "description": "Michael's new company has a hard time making early-morning deliveries; the office struggles to get expense reports in on time when Angela enforces the company policy.",
     "show": "The Office",
-    "title": "Broke"
+    "title": "Broke",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S05E24.mp4",
@@ -798,7 +886,8 @@
     "episode": "24",
     "description": "Michael must settle a dispute within the sales team; employees cause trouble when they take the term \"casual\" Friday too loosely.",
     "show": "The Office",
-    "title": "Casual Friday"
+    "title": "Casual Friday",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S05E25.mp4",
@@ -807,7 +896,8 @@
     "episode": "25",
     "description": "Michael brings dancing and coffee to the office; Jim and Pam plan a secret trip.",
     "show": "The Office",
-    "title": "Cafe Disco"
+    "title": "Cafe Disco",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S05E26.mp4",
@@ -816,7 +906,8 @@
     "episode": "26",
     "description": "Michael reunites with Holly (Amy Ryan) at Dunder Mifflin's annual company picnic while the rest of the staff competes in a volleyball tournament.",
     "show": "The Office",
-    "title": "Company Picnic"
+    "title": "Company Picnic",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S06E01.mp4",
@@ -825,7 +916,8 @@
     "episode": "1",
     "description": "Michael feels left out when the rest of the staff gossips about the summer interns, so he hunts for a juicy secret to share.",
     "show": "The Office",
-    "title": "Gossip"
+    "title": "Gossip",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S06E02.mp4",
@@ -834,7 +926,8 @@
     "episode": "2",
     "description": "Jim makes a request that leaves Michael feeling defensive and insecure; Pam works on the guest list for the wedding; Toby and Dwight go under cover to investigate a workers' comp claim.",
     "show": "The Office",
-    "title": "The Meeting"
+    "title": "The Meeting",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S06E03.mp4",
@@ -843,7 +936,8 @@
     "episode": "3",
     "description": "The news breaks that not everyone will be getting a raise; Dwight reaches his breaking point with Jim; Pam wants cash instead of wedding gifts.",
     "show": "The Office",
-    "title": "The Promotion"
+    "title": "The Promotion",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S06E04.mp4",
@@ -852,7 +946,8 @@
     "episode": "4",
     "description": "The office mates travel to Niagara Falls to celebrate Jim and Pam's wedding; Michael, Dwight and Andy want to hook up with wedding guests; Jim lets a secret slip at the rehearsal dinner.",
     "show": "The Office",
-    "title": "Niagara Part 1 & 2"
+    "title": "Niagara Part 1 & 2",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S06E05.mp4",
@@ -861,7 +956,8 @@
     "episode": "5",
     "description": "Dwight and Andy convince Michael that an insurance salesman who visits the office is part of the Mafia.",
     "show": "The Office",
-    "title": "Mafia"
+    "title": "Mafia",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S06E06.mp4",
@@ -870,7 +966,8 @@
     "episode": "6",
     "description": "Michael shocks Pam and Jim when he reveals the identity of his new girlfriend; Dwight offers Jim a strange peace offering.",
     "show": "The Office",
-    "title": "The Lover"
+    "title": "The Lover",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S06E07.mp4",
@@ -879,7 +976,8 @@
     "episode": "7",
     "description": "The office plans a haunted house for children in the community; Michael falls into a koi pond at an important business meeting.",
     "show": "The Office",
-    "title": "Koi Pond"
+    "title": "Koi Pond",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S06E08.mp4",
@@ -888,7 +986,8 @@
     "episode": "8",
     "description": "Having run out of excuses, Jim and Pam are forced to go on an uncomfortable double date with Michael and Helena (Linda Purl); Dwight is doing nice things for everyone in the office.",
     "show": "The Office",
-    "title": "Double Date"
+    "title": "Double Date",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S06E09.mp4",
@@ -897,7 +996,8 @@
     "episode": "9",
     "description": "Troubling rumors about Dunder Mifflin rock Michael's world; strange diversions upset Jim; Andy finds that his awkwardness is his biggest hurdle in courting Erin.",
     "show": "The Office",
-    "title": "Murder"
+    "title": "Murder",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S06E10.mp4",
@@ -906,7 +1006,8 @@
     "episode": "10",
     "description": "When David Wallace invites Michael to the Dunder Mifflin shareholder meeting in New York, Michael brings Oscar, Dwight and Andy along; Jim tries to get Ryan to do work.",
     "show": "The Office",
-    "title": "Shareholder Meeting"
+    "title": "Shareholder Meeting",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S06E11.mp4",
@@ -915,7 +1016,8 @@
     "episode": "11",
     "description": "Michael must tell the truth when he realizes he cannot keep a promise he made to a group of kids 10 years ago; Jim starts an employee-of-the-month program to boost employee morale.",
     "show": "The Office",
-    "title": "Scott's Tots"
+    "title": "Scott's Tots",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S06E12.mp4",
@@ -924,7 +1026,8 @@
     "episode": "12",
     "description": "Michael is outraged when Jim lets Phyllis be Santa at the office Christmas party; Jim and Dwight try to get everyone in the holiday spirit; Oscar has a secret crush.",
     "show": "The Office",
-    "title": "Secret Santa"
+    "title": "Secret Santa",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S06E13.mp4",
@@ -933,7 +1036,8 @@
     "episode": "13",
     "description": "Michael, Dwight, Pam and Andy try to impress a potential buyer who comes to Dunder Mifflin; Michael remembers good times they have had in the office.",
     "show": "The Office",
-    "title": "The Banker"
+    "title": "The Banker",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S06E14.mp4",
@@ -942,7 +1046,8 @@
     "episode": "14",
     "description": "Michael has a difficult time accepting Sabre's new policies; Erin waits for Andy to ask her on a date.",
     "show": "The Office",
-    "title": "Sabre"
+    "title": "Sabre",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S06E15.mp4",
@@ -951,7 +1056,8 @@
     "episode": "15",
     "description": "The Sabre CEO (Kathy Bates) visits the Scranton office and says either Michael or Jim must go back to being a salesman; Andy's Valentine's Day plan backfires.",
     "show": "The Office",
-    "title": "The Manager and the Salesman"
+    "title": "The Manager and the Salesman",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S06E16.mp4",
@@ -960,7 +1066,8 @@
     "episode": "16",
     "description": "When Pam's contractions begin, she and Jim try to wait things out as long as possible so they can have more time at the hospital; Michael anxiously awaits the baby's arrival; Erin makes Andy jealous when she has lunch with Kevin.",
     "show": "The Office",
-    "title": "The Delivery Part 1 & 2"
+    "title": "The Delivery Part 1 & 2",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S06E17.mp4",
@@ -969,7 +1076,8 @@
     "episode": "17",
     "description": "Michael tries to impress Jo; Dwight causes trouble on Jim's first day back from paternity leave; Erin and Andy go on their first date.",
     "show": "The Office",
-    "title": "St. Patrick's Day"
+    "title": "St. Patrick's Day",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S06E18.mp4",
@@ -978,7 +1086,8 @@
     "episode": "18",
     "description": "Members of the sales staff let Sabre's new Sales Is King policy go to their heads.",
     "show": "The Office",
-    "title": "New Leads"
+    "title": "New Leads",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S06E19.mp4",
@@ -987,7 +1096,8 @@
     "episode": "19",
     "description": "Michael tries to impress one of Pam and Jim's friends; Erin and Andy try to keep their relationship a secret; Dwight reconsiders his contract with Angela.",
     "show": "The Office",
-    "title": "Happy Hour"
+    "title": "Happy Hour",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S06E20.mp4",
@@ -996,7 +1106,8 @@
     "episode": "20",
     "description": "Andy tries to make Secretary's Day memorable for Erin; Oscar circulates a viral video comparing Kevin's voice to Cookie Monster's.",
     "show": "The Office",
-    "title": "Secretary's Day"
+    "title": "Secretary's Day",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S06E21.mp4",
@@ -1005,7 +1116,8 @@
     "episode": "21",
     "description": "Pam and Jim work on their first joint sales pitch; Michael misreads body language; Dwight encourages Kelly to try out for the minority training program.",
     "show": "The Office",
-    "title": "Body Language"
+    "title": "Body Language",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S06E22.mp4",
@@ -1014,7 +1126,8 @@
     "episode": "22",
     "description": "Michael thinks his girlfriend is cheating on him and asks Dwight to investigate; Andy becomes frustrated when no one takes his customer's complaint seriously.",
     "show": "The Office",
-    "title": "The Cover-Up"
+    "title": "The Cover-Up",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S06E23.mp4",
@@ -1023,7 +1136,8 @@
     "episode": "23",
     "description": "Michael is surprisingly cheerful after learning bad news about Donna; new parents Pam and Jim have a hard time staying awake at the office; Dwight refuses to honor a contract.",
     "show": "The Office",
-    "title": "The Chump"
+    "title": "The Chump",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S06E24.mp4",
@@ -1032,7 +1146,8 @@
     "episode": "24",
     "description": "When the press learns that Sabre's printers catch on fire, Jo (Kathy Bates) tries to find out who the whistle-blower is.",
     "show": "The Office",
-    "title": "Whistlelower"
+    "title": "Whistlelower",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S07E01.mp4",
@@ -1041,7 +1156,8 @@
     "episode": "1",
     "description": "Michael refuses to fire the new office assistant when people complain about his bad attitude; Pam tries to impress Jim by pulling an office prank.",
     "show": "The Office",
-    "title": "Nepotism"
+    "title": "Nepotism",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S07E02.mp4",
@@ -1050,7 +1166,8 @@
     "episode": "2",
     "description": "Corporate forces Michael into counseling with Toby; Dwight seeks revenge after a shop owner snubs him; Pam tries to change her job title.",
     "show": "The Office",
-    "title": "Counseling"
+    "title": "Counseling",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S07E03.mp4",
@@ -1059,7 +1176,8 @@
     "episode": "3",
     "description": "Andy invites the office to a play he is in, hoping that Erin will attend; Jim and Pam struggle with their incompetent baby sitter.",
     "show": "The Office",
-    "title": "Andy's Play"
+    "title": "Andy's Play",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S07E04.mp4",
@@ -1068,7 +1186,8 @@
     "episode": "4",
     "description": "Thinking he has herpes, Michael contacts all his ex-girlfriends; Andy holds a sex education meeting for the office.",
     "show": "The Office",
-    "title": "Sex Ed"
+    "title": "Sex Ed",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S07E05.mp4",
@@ -1077,7 +1196,8 @@
     "episode": "5",
     "description": "Michael, Dwight and Jim set up a sting after a competing sales associate steals a client; Andy starts a band.",
     "show": "The Office",
-    "title": "The Sting"
+    "title": "The Sting",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S07E06.mp4",
@@ -1086,7 +1206,8 @@
     "episode": "6",
     "description": "Michael freaks out when Darryl goes over his head and takes an idea to corporate; a Halloween costume contest puts the office in a competitive mood.",
     "show": "The Office",
-    "title": "Costume Contest"
+    "title": "Costume Contest",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S07E07.mp4",
@@ -1095,7 +1216,8 @@
     "episode": "7",
     "description": "Michael invites the entire office to celebrate the christening of Pam and Jim's baby.",
     "show": "The Office",
-    "title": "Christening"
+    "title": "Christening",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S07E08.mp4",
@@ -1104,7 +1226,8 @@
     "episode": "8",
     "description": "Erin and Gabe host a \"Glee\" viewing party; Michael is upset when people refer to Gabe as his boss; Andy becomes increasingly jealous.",
     "show": "The Office",
-    "title": "Viewing Party"
+    "title": "Viewing Party",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S07E09.mp4",
@@ -1113,7 +1236,8 @@
     "episode": "9",
     "description": "Michael helps convince people to invest in Ryan's Internet company; trying to capitalize on Thanksgiving, Dwight creates a hay festival in the parking lot; a new policy prevents Jim from earning commission.",
     "show": "The Office",
-    "title": "WUPHF.com"
+    "title": "WUPHF.com",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S07E10.mp4",
@@ -1122,7 +1246,8 @@
     "episode": "10",
     "description": "Michael decides he must stop China before it takes over the United States; Pam threatens to move the company to a new building.",
     "show": "The Office",
-    "title": "China"
+    "title": "China",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S07E11.mp4",
@@ -1131,7 +1256,8 @@
     "episode": "11",
     "description": "Michael is happy when Toby takes a leave of absence and corporate sends Holly Flax to fill in; Pam must plan a second Christmas party when Michael wants the party to be on the day of Holly's return to Scranton.",
     "show": "The Office",
-    "title": "Classy Christmas Part 1 & 2"
+    "title": "Classy Christmas Part 1 & 2",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S07E12.mp4",
@@ -1140,7 +1266,8 @@
     "episode": "12",
     "description": "Michael readies himself for the news about Holly's relationship; Pam puts up a board for everyone to post their New Year's resolutions.",
     "show": "The Office",
-    "title": "Ultimatum"
+    "title": "Ultimatum",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S07E13.mp4",
@@ -1149,7 +1276,8 @@
     "episode": "13",
     "description": "Holly and Michael turn Andy's business seminar into an improv challenge; Erin and Gabe compete in a board game battle.",
     "show": "The Office",
-    "title": "The Seminar"
+    "title": "The Seminar",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S07E14.mp4",
@@ -1158,7 +1286,8 @@
     "episode": "14",
     "description": "Jim is forced to abandon Michael at a gas station after receiving an emergency phone call; Erin, Dwight and Holly (Amy Ryan) search for Michael; Pam's art inspires a captioning contest that appears to offend Gabe.",
     "show": "The Office",
-    "title": "The Search"
+    "title": "The Search",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S07E15.mp4",
@@ -1167,7 +1296,8 @@
     "episode": "15",
     "description": "Public displays of affection between Holly and Michael make everyone uncomfortable; Jim and Pam experience the aftermath of a bottomless champagne lunch; Andy tags along on Erin's romantic treasure hunt.",
     "show": "The Office",
-    "title": "PDA"
+    "title": "PDA",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S07E16.mp4",
@@ -1176,7 +1306,8 @@
     "episode": "16",
     "description": "After 11 years of preparation, Michael is ready to debut his action movie.",
     "show": "The Office",
-    "title": "Threat Level Midnight"
+    "title": "Threat Level Midnight",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S07E17.mp4",
@@ -1185,7 +1316,8 @@
     "episode": "17",
     "description": "Dunder Mifflin traveling salesman Todd Packer comes to the office looking for a desk job; Andy fights Pam for a new computer.",
     "show": "The Office",
-    "title": "Todd Packer"
+    "title": "Todd Packer",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S07E18.mp4",
@@ -1194,7 +1326,8 @@
     "episode": "18",
     "description": "Michael decides to ask Holly to marry him; the office has a garage sale.",
     "show": "The Office",
-    "title": "Garage Sale"
+    "title": "Garage Sale",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S07E19.mp4",
@@ -1203,7 +1336,8 @@
     "episode": "19",
     "description": "Everyone hopes to make good first impressions with the new manager, Deangelo Vickers (Will Ferrell).",
     "show": "The Office",
-    "title": "Training Day"
+    "title": "Training Day",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S07E20.mp4",
@@ -1212,7 +1346,8 @@
     "episode": "20",
     "description": "Michael teaches Deangelo how to host the Dundie Awards; Erin struggles with her feelings for Gabe.",
     "show": "The Office",
-    "title": "Michael's Last Dundies"
+    "title": "Michael's Last Dundies",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S07E21.mp4",
@@ -1221,7 +1356,8 @@
     "episode": "21",
     "description": "Michael wants a drama-free day to say goodbye to his friends; Deangelo and Andy work to keep Michael's most-important clients.",
     "show": "The Office",
-    "title": "Goodbye, Michael"
+    "title": "Goodbye, Michael",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S07E22.mp4",
@@ -1230,7 +1366,8 @@
     "episode": "22",
     "description": "When Deangelo plays favorites, his management style is exposed.",
     "show": "The Office",
-    "title": "The Inner Circle"
+    "title": "The Inner Circle",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S07E23.mp4",
@@ -1239,7 +1376,8 @@
     "episode": "23",
     "description": "Dwight uses his position as acting manager to employ harsh policies in the office; Gabe tries to get Erin back.",
     "show": "The Office",
-    "title": "Dwight K. Schrute, (Acting) Manager"
+    "title": "Dwight K. Schrute, (Acting) Manager",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S07E24.mp4",
@@ -1248,7 +1386,8 @@
     "episode": "24",
     "description": "Jim heads a team that interviews applicants, including several co-workers; Dwight tries to reassert himself as a contender.",
     "show": "The Office",
-    "title": "Search Committee Part 1 & 2"
+    "title": "Search Committee Part 1 & 2",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S08E01.mp4",
@@ -1257,7 +1396,8 @@
     "episode": "1",
     "description": "The staff go into frantic speculation after accidentally discovering a list of their names in a notebook belonging to the mysterious new CEO.",
     "show": "The Office",
-    "title": "The List"
+    "title": "The List",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S08E02.mp4",
@@ -1266,7 +1406,8 @@
     "episode": "2",
     "description": "Robert challenges the office to double their sales; Pam finds an unlikely pregnancy friend.",
     "show": "The Office",
-    "title": "The Incentive"
+    "title": "The Incentive",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S08E03.mp4",
@@ -1275,7 +1416,8 @@
     "episode": "3",
     "description": "After the warehouse employees win the lottery and quit their jobs, everyone in the office fantasizes about winning big; Darryl and Andy look for new warehouse workers.",
     "show": "The Office",
-    "title": "Lotto"
+    "title": "Lotto",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S08E04.mp4",
@@ -1284,7 +1426,8 @@
     "episode": "4",
     "description": "When Andy decides to throw a garden party at Schrute Farms to impress Robert, Dwight researches how to be a good host; Andy's family makes him feel self conscious.",
     "show": "The Office",
-    "title": "Garden Party"
+    "title": "Garden Party",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S08E05.mp4",
@@ -1293,7 +1436,8 @@
     "episode": "5",
     "description": "Erin tries to put on a Halloween party that will please both Andy and Robert California; Jim and Pam fight about the existence of ghosts; Dwight bonds with Robert California's son.",
     "show": "The Office",
-    "title": "Spooked"
+    "title": "Spooked",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S08E06.mp4",
@@ -1302,7 +1446,8 @@
     "episode": "6",
     "description": "Dwight installs a device in the office that will get everyone fired if they make too many errors.",
     "show": "The Office",
-    "title": "Doomsday"
+    "title": "Doomsday",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S08E07.mp4",
@@ -1311,7 +1456,8 @@
     "episode": "7",
     "description": "Pam teams up with Dwight to prove that Jim thinks her temporary replacement is pretty; Robert California asks to join Andy, Darryl and Kevin's band.",
     "show": "The Office",
-    "title": "Pam's Replacement"
+    "title": "Pam's Replacement",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S08E08.mp4",
@@ -1320,7 +1466,8 @@
     "episode": "8",
     "description": "Andy tries to motivate the staff by taking them on a field trip to Gettysburg; Robert asks those who stay behind to come up with the company's next big idea.",
     "show": "The Office",
-    "title": "Gettysburg"
+    "title": "Gettysburg",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S08E09.mp4",
@@ -1329,7 +1476,8 @@
     "episode": "9",
     "description": "Robert California brings his wife (Maura Tierney) into the office to find her a job; Dwight opens a gym in the building.",
     "show": "The Office",
-    "title": "Mrs.California"
+    "title": "Mrs.California",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S08E10.mp4",
@@ -1338,7 +1486,8 @@
     "episode": "10",
     "description": "Andy tries to make holiday wishes come true; Robert decides to drown his sorrows at the office party.",
     "show": "The Office",
-    "title": "Christmas Wishes"
+    "title": "Christmas Wishes",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S08E11.mp4",
@@ -1347,7 +1496,8 @@
     "episode": "11",
     "description": "Andy gets the office involved in a trivia contest; Dwight explores job opportunities at Sabre headquarters.",
     "show": "The Office",
-    "title": "Trivia"
+    "title": "Trivia",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S08E12.mp4",
@@ -1356,7 +1506,8 @@
     "episode": "12",
     "description": "When Robert decides to sell his mansion, Kevin suggests he throw a pool party for the office; Erin flirts with Dwight to get Andy's attention; Robert gives a tour of his home.",
     "show": "The Office",
-    "title": "Pool Party"
+    "title": "Pool Party",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S08E13.mp4",
@@ -1365,7 +1516,8 @@
     "episode": "13",
     "description": "When Jim returns from jury duty Dwight questions him about the case; Angela and the senator welcome their new baby.",
     "show": "The Office",
-    "title": "Jury Duty"
+    "title": "Jury Duty",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S08E14.mp4",
@@ -1374,7 +1526,8 @@
     "episode": "14",
     "description": "When Dwight receives a special assignment in Tallahassee, he and Andy must decide which Scranton employees will go with him; Pam returns from maternity leave.",
     "show": "The Office",
-    "title": "Special Project"
+    "title": "Special Project",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S08E15.mp4",
@@ -1383,7 +1536,8 @@
     "episode": "15",
     "description": "In Tallahassee, Fla., Dwight tries to impress Sabre's special projects president; Andy tries to avoid requests for raises.",
     "show": "The Office",
-    "title": "Tallahassee"
+    "title": "Tallahassee",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S08E16.mp4",
@@ -1392,7 +1546,8 @@
     "episode": "16",
     "description": "Dwight and Packer compete for a job; Jim receives an unwelcome visitor; Andy has everyone stay late to cover for their co-workers in Florida.",
     "show": "The Office",
-    "title": "After Hours"
+    "title": "After Hours",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S08E17.mp4",
@@ -1401,7 +1556,8 @@
     "episode": "17",
     "description": "Dwight tries to impress Nellie with a theatrical presentation at the Sabre store opening; Andy suffers from an embarrassing injury.",
     "show": "The Office",
-    "title": "Test the Store"
+    "title": "Test the Store",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S08E18.mp4",
@@ -1410,7 +1566,8 @@
     "episode": "18",
     "description": "After Robert reveals his contempt for Nellie's (Catherine Tate) business plan, Jim tries to save Dwight's job; Andy discovers that Erin isn't returning to Scranton.",
     "show": "The Office",
-    "title": "Lasy Day in Florida"
+    "title": "Lasy Day in Florida",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S08E19.mp4",
@@ -1419,7 +1576,8 @@
     "episode": "19",
     "description": "Andy drives across the country to get Erin; Nellie shows up and tries to claim the manager position.",
     "show": "The Office",
-    "title": "Get the Girl"
+    "title": "Get the Girl",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S08E20.mp4",
@@ -1428,7 +1586,8 @@
     "episode": "20",
     "description": "Robert forces the office to throw a welcome party for Nellie; Erin helps Andy practice how he will break up with Jessica.",
     "show": "The Office",
-    "title": "Welcome Party"
+    "title": "Welcome Party",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S08E21.mp4",
@@ -1437,7 +1596,8 @@
     "episode": "21",
     "description": "After returning from his romantic quest, Andy battles with Nellie for the manager's chair; Kelly has a difficult time choosing between Ryan and a perfect man (Sendhil Ramamurthy).",
     "show": "The Office",
-    "title": "Angry Andy"
+    "title": "Angry Andy",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S08E22.mp4",
@@ -1446,7 +1606,8 @@
     "episode": "22",
     "description": "Andy crashes a fundraiser and ends up adopting 12 dogs; Dwight learns that an auction winner loses money; Nellie learns how to eat a taco.",
     "show": "The Office",
-    "title": "Fundraiser"
+    "title": "Fundraiser",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S08E23.mp4",
@@ -1455,7 +1616,8 @@
     "episode": "23",
     "description": "Andy tries to jumpstart his comeback; after Robert drunkenly shuts down a local branch, Jim and Dwight join forces in hope of outsmarting a salesman.",
     "show": "The Office",
-    "title": "Turf War"
+    "title": "Turf War",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S08E24.mp4",
@@ -1464,7 +1626,8 @@
     "episode": "24",
     "description": "A former boss helps Andy go under cover and stage a coup; a new opportunity arises for Robert.",
     "show": "The Office",
-    "title": "Free Family Portrait Studio"
+    "title": "Free Family Portrait Studio",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S09E01.mp4",
@@ -1473,7 +1636,8 @@
     "episode": "1",
     "description": "Jim and Dwight are thrown off by the arrival of two young employees that the other dub \"the new Jim\" and \"Dwight Jr.\" Andy returns from training.",
     "show": "The Office",
-    "title": "New Guys"
+    "title": "New Guys",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S09E02.mp4",
@@ -1482,7 +1646,8 @@
     "episode": "2",
     "description": "Pam and Jim go to Roy's wedding, where his toast takes everyone by surprise -- causing Pam and Jim to examine their own relationship.",
     "show": "The Office",
-    "title": "Roy's Wedding"
+    "title": "Roy's Wedding",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S09E03.mp4",
@@ -1491,7 +1656,8 @@
     "episode": "3",
     "description": "Andy learns he is related to Michelle Obama, causing a stir around the office. Jim's elaborate trick has Dwight thinking Jim is an Asian man.",
     "show": "The Office",
-    "title": "Andy's Ancestry"
+    "title": "Andy's Ancestry",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S09E04.mp4",
@@ -1500,7 +1666,8 @@
     "episode": "4",
     "description": "After Jim convinces Dwight that the building is unsafe, Dwight rents a bus and sets up the office inside -- and eventually they hit the road.",
     "show": "The Office",
-    "title": "Work Bus"
+    "title": "Work Bus",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S09E05.mp4",
@@ -1509,7 +1676,8 @@
     "episode": "5",
     "description": "It's Halloween in the office, and Andy invites his college a cappella group to perform, which leads to a comfrontation with his frenemy Broccoli Rob.",
     "show": "The Office",
-    "title": "Here Comes Treble"
+    "title": "Here Comes Treble",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S09E06.mp4",
@@ -1518,7 +1686,8 @@
     "episode": "6",
     "description": "Andy must man up when his dad blows all of the family's money. When Dwight is interviewed on local radio, Jim tortures him with bizarre call-ins.",
     "show": "The Office",
-    "title": "The Boat"
+    "title": "The Boat",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S09E07.mp4",
@@ -1527,7 +1696,8 @@
     "episode": "7",
     "description": "To help Dwight overcome his greatest professional handicap -- selling to woman -- Pam and the ladies teach him how to interact with female clients.",
     "show": "The Office",
-    "title": "The Whale"
+    "title": "The Whale",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S09E08.mp4",
@@ -1536,7 +1706,8 @@
     "episode": "8",
     "description": "Angela discovers her husband's affair and goes to Dwight for help. Jim needs a favor from Stanley and Phyllis, who milk it for all it's worth.",
     "show": "The Office",
-    "title": "The Target"
+    "title": "The Target",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S09E09.mp4",
@@ -1545,7 +1716,8 @@
     "episode": "9",
     "description": "When the party planning committee drops the ball on the Christmas party, Dwight gets everyone to celebrate a traditional Scrute German Christmas.",
     "show": "The Office",
-    "title": "Dwight Christmas"
+    "title": "Dwight Christmas",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S09E10.Mp4",
@@ -1554,7 +1726,8 @@
     "episode": "10",
     "description": "Pam accidentally brings lice into the office and lets Meredith take the fall. Meanwhile, Jim woos a potential business associate in Philadelphia.",
     "show": "The Office",
-    "title": "Lice"
+    "title": "Lice",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S09E11.mp4",
@@ -1563,7 +1736,8 @@
     "episode": "11",
     "description": "Dwight and Clark pose as father and son to make a sale. Meanwhile, Darrly interviews at Jim's company and Pam comes for a surprise visit.",
     "show": "The Office",
-    "title": "Suit Warehouse"
+    "title": "Suit Warehouse",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S09E12.mp4",
@@ -1572,7 +1746,8 @@
     "episode": "12",
     "description": "Dwight tries to prevent Darrl's move to Athlead. Jim is forced to miss Cece's first recital when a big investor exits his new company.",
     "show": "The Office",
-    "title": "Customer Loyalty"
+    "title": "Customer Loyalty",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S09E13.mp4",
@@ -1581,7 +1756,8 @@
     "episode": "13",
     "description": "David Wallace tasks Dwight with finding a new part-time salesman to fill in for Jim. Dwight assembles a super-team of his cronies, starting with Mose.",
     "show": "The Office",
-    "title": "Junior Salesman"
+    "title": "Junior Salesman",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S09E14.mp4",
@@ -1590,7 +1766,8 @@
     "episode": "14",
     "description": "When Pam's warehouse mural is defaced, Dwight and Mellie spring to action. Darryl has difficulty dealing with Jim's habits in their shared apartment.",
     "show": "The Office",
-    "title": "Vandalism"
+    "title": "Vandalism",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S09E15.mp4",
@@ -1599,7 +1776,8 @@
     "episode": "15",
     "description": "The office pairs off into pretend couples to take advantage of a Valentine's Day discount at the mall. Erin assures Pete she will break up with Andy.",
     "show": "The Office",
-    "title": "Couple's Discount"
+    "title": "Couple's Discount",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S09E16.mp4",
@@ -1608,7 +1786,8 @@
     "episode": "16",
     "description": "Pam interviews for a job in Philadelphia with a manager who gives her deja-vu. Dwight brings Angela on a mission to clean his elderly Aunt Shirley.",
     "show": "The Office",
-    "title": "Moving On"
+    "title": "Moving On",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S09E17.mp4",
@@ -1617,7 +1796,8 @@
     "episode": "17",
     "description": "Dwight travels home for a customary Schrute funeral. He and his siblings recieve a surpise inheritance that's not entirely welcome.",
     "show": "The Office",
-    "title": "The Farm"
+    "title": "The Farm",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S09E18.mp4",
@@ -1626,7 +1806,8 @@
     "episode": "18",
     "description": "Everyone is excited when promos start running on TV for the documentary. Dwight makes Angela jealous when he starts dating a Brussels sprout farmer.",
     "show": "The Office",
-    "title": "Promos"
+    "title": "Promos",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S09E19.mp4",
@@ -1635,7 +1816,8 @@
     "episode": "19",
     "description": "\"Stairmageddon\" strikes when the elevator goes out and everyone is forced to take the stairs. Dwight forces Stanely to do an important sales call.",
     "show": "The Office",
-    "title": "Stairmageddon"
+    "title": "Stairmageddon",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S09E20.mp4",
@@ -1644,7 +1826,8 @@
     "episode": "20",
     "description": "Dwight and Angela compete in an office-wide paper airplane contest. A local talent agent helps Andy and his first acting role in an industrial film.",
     "show": "The Office",
-    "title": "Paper Airplane"
+    "title": "Paper Airplane",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S09E21.mp4",
@@ -1653,7 +1836,8 @@
     "episode": "21",
     "description": "Andy tries to work up the nerve to quit his job and pursue his dreams of stardom. Dwight finally recieves his karate black belt from his new sensei.",
     "show": "The Office",
-    "title": "Livin' the Dream"
+    "title": "Livin' the Dream",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S09E22.mp4",
@@ -1662,7 +1846,8 @@
     "episode": "22",
     "description": "While the office readies for the documentary premiere. Jim holds tryouts to hire an assistant to the assistant to the regional manager.",
     "show": "The Office",
-    "title": "A.A.R.M"
+    "title": "A.A.R.M",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-S09E23.mp4",
@@ -1671,87 +1856,97 @@
     "episode": "23",
     "description": "In the series finale, months after the airing of the documentary the workers of Dunder Mifflin, past and present, gather for a wedding.",
     "show": "The Office",
-    "title": "Finale"
+    "title": "Finale",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-SBonusE01.mp4",
-    "active": true,
+    "active": false,
     "season": "bonus",
     "episode": "1",
     "description": " ",
     "show": "The Office",
-    "title": "The Loan"
+    "title": "The Loan",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-SBonusE02.mp4",
-    "active": true,
+    "active": false,
     "season": "bonus",
     "episode": "2",
     "description": " ",
     "show": "The Office",
-    "title": "The Outburst"
+    "title": "The Outburst",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-SBonusE03.mp4",
-    "active": true,
+    "active": false,
     "season": "bonus",
     "episode": "3",
     "description": " ",
     "show": "The Office",
-    "title": "Blackmail"
+    "title": "Blackmail",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-SBonusE04.mp4",
-    "active": true,
+    "active": false,
     "season": "bonus",
     "episode": "4",
     "description": " ",
     "show": "The Office",
-    "title": "Subtle Sexuality"
+    "title": "Subtle Sexuality",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-SBonusE05.mp4",
-    "active": true,
+    "active": false,
     "season": "Bonus",
     "episode": "5",
     "description": " ",
     "show": "The Office",
-    "title": "The Mentor"
+    "title": "The Mentor",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-SBonusE06.mp4",
-    "active": true,
+    "active": false,
     "season": "bonus",
     "episode": "6",
     "description": " ",
     "show": "The Office",
-    "title": "The 3rd Floor"
+    "title": "The 3rd Floor",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-SBonusE07.mp4",
-    "active": true,
+    "active": false,
     "season": "bonus",
     "episode": "7",
     "description": " ",
     "show": "The Office",
-    "title": "The Podcaster"
+    "title": "The Podcaster",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-SBonusE08.mp4",
-    "active": true,
+    "active": false,
     "season": "bonus",
     "episode": "8",
     "description": " ",
     "show": "The Office",
-    "title": "The Podcast"
+    "title": "The Podcast",
+    "videoLocation": "videos/lvs_2"
   },
   {
     "videoFile": "TheOffice-SBonusE09.mp4",
-    "active": true,
+    "active": false,
     "season": "bonus",
     "episode": "9",
     "description": " ",
     "show": "The Office",
-    "title": "The Girl Next Door"
+    "title": "The Girl Next Door",
+    "videoLocation": "videos/lvs_2"
   }
 ]

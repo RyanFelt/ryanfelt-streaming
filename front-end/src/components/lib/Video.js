@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import "../../css/App.css";
 
 export const Video = ({ filmTitle, film }) => {
   const [src, setSrc] = useState(null);
+
+  const vid = useRef(null);
 
   const getNewAuthToken = refresh => {
     axios
@@ -37,14 +39,9 @@ export const Video = ({ filmTitle, film }) => {
         headers: { Authorization: auth }
       })
       .then(res => {
-        const title = filmTitle.replace(/\s/g, "");
-
-        let srcURL = `${process.env.REACT_APP_VIDEO_SRC_URL}/${title}/${film.videoFile}`;
-        if (film.videoLocation) {
-          srcURL = `${process.env.REACT_APP_BACKEND_URL}/${film.videoLocation}/${film.videoFile}`;
-        }
-
-        setSrc(srcURL);
+        setSrc(
+          `${process.env.REACT_APP_BACKEND_URL}/${film.videoLocation}/${film.videoFile}`
+        );
       })
       .catch(err => {
         console.log("HERE", err.response);
@@ -60,5 +57,11 @@ export const Video = ({ filmTitle, film }) => {
     signedInUser();
   }, []);
 
-  return <video src={src} align="center" width="75%" controls autoPlay />;
+  setInterval(() => {
+    console.log(vid.current.currentTime);
+  }, 3000);
+
+  return (
+    <video src={src} align="center" width="75%" ref={vid} controls autoPlay />
+  );
 };
