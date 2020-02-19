@@ -5,6 +5,7 @@
     "type": "SERIES",
     "active": true,
     "bannerImage": "michael.jpg",
+    "bannerImageLocation": "images/lis_1",
     "seasons": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "bonus"]
   },
   {
@@ -13,6 +14,7 @@
     "type": "SERIES",
     "active": true,
     "bannerImage": "leslie.jpg",
+    "bannerImageLocation": "images/lis_1",
     "seasons": ["1", "2", "3", "4", "5", "6"]
   },
   {
@@ -21,6 +23,7 @@
     "type": "SERIES",
     "active": false,
     "bannerImage": "kramer.jpg",
+    "bannerImageLocation": "images/lis_1",
     "seasons": ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
   },
   {
@@ -29,6 +32,7 @@
     "type": "SERIES",
     "active": true,
     "bannerImage": "b99.jpg",
+    "bannerImageLocation": "images/lis_1",
     "seasons": ["1"]
   },
   {
@@ -37,6 +41,7 @@
     "type": "SERIES",
     "active": true,
     "bannerImage": "arrested-development.jpg",
+    "bannerImageLocation": "images/lis_1",
     "seasons": ["1", "2", "3"]
   },
   {
@@ -45,6 +50,7 @@
     "type": "MOVIES",
     "active": true,
     "bannerImage": "na.png",
+    "bannerImageLocation": "images/lis_1",
     "year": "2015",
     "videoFile": "StarWarsTheForceAwakens.mp4",
     "videoLocation": "videos/lvs_1"
@@ -55,6 +61,7 @@
     "type": "MOVIES",
     "active": true,
     "bannerImage": "na.png",
+    "bannerImageLocation": "images/lis_1",
     "year": "2017",
     "videoFile": "TheGreatestShowman.mp4",
     "videoLocation": "videos/lvs_1"
@@ -65,6 +72,7 @@
     "type": "MOVIES",
     "active": true,
     "bannerImage": "na.png",
+    "bannerImageLocation": "images/lis_1",
     "year": "2018",
     "videoFile": "AvengersInfinityWar.mp4",
     "videoLocation": "videos/lvs_1"
@@ -75,6 +83,7 @@
     "type": "MOVIES",
     "active": true,
     "bannerImage": "na.png",
+    "bannerImageLocation": "images/lis_1",
     "year": "2008",
     "videoFile": "BatmanTheDarkKnight.mp4",
     "videoLocation": "videos/lvs_1"
@@ -85,6 +94,7 @@
     "type": "MOVIES",
     "active": true,
     "bannerImage": "na.png",
+    "bannerImageLocation": "images/lis_1",
     "year": "2012",
     "videoFile": "BatmanTheDarkKnightRises.mp4",
     "videoLocation": "videos/lvs_1"
@@ -95,6 +105,7 @@
     "type": "MOVIES",
     "active": true,
     "bannerImage": "na.png",
+    "bannerImageLocation": "images/lis_1",
     "year": "2018",
     "videoFile": "BlackPanther.mp4",
     "videoLocation": "videos/lvs_1"
@@ -105,6 +116,7 @@
     "type": "MOVIES",
     "active": true,
     "bannerImage": "na.png",
+    "bannerImageLocation": "images/lis_1",
     "year": "2011",
     "videoFile": "Limitless.mp4",
     "videoLocation": "videos/lvs_1"
@@ -115,6 +127,7 @@
     "type": "MOVIES",
     "active": true,
     "bannerImage": "na.png",
+    "bannerImageLocation": "images/lis_1",
     "year": "2015",
     "videoFile": "MadMaxFuryRoad.mp4",
     "videoLocation": "videos/lvs_1"
@@ -125,6 +138,7 @@
     "type": "MOVIES",
     "active": true,
     "bannerImage": "na.png",
+    "bannerImageLocation": "images/lis_1",
     "year": "2019",
     "videoFile": "MaleficentMistressOfEvil.mp4",
     "videoLocation": "videos/lvs_1"
@@ -135,6 +149,7 @@
     "type": "MOVIES",
     "active": true,
     "bannerImage": "na.png",
+    "bannerImageLocation": "images/lis_1",
     "year": "2018",
     "videoFile": "ReadyPlayerOne.mp4",
     "videoLocation": "videos/lvs_1"
@@ -145,6 +160,7 @@
     "type": "MOVIES",
     "active": true,
     "bannerImage": "na.png",
+    "bannerImageLocation": "images/lis_1",
     "year": "2015",
     "videoFile": "Spotlight.mp4",
     "videoLocation": "videos/lvs_1"
@@ -155,6 +171,7 @@
     "type": "MOVIES",
     "active": true,
     "bannerImage": "na.png",
+    "bannerImageLocation": "images/lis_1",
     "year": "2016",
     "videoFile": "Sully.mp4",
     "videoLocation": "videos/lvs_1"
@@ -165,6 +182,7 @@
     "type": "MOVIES",
     "active": true,
     "bannerImage": "na.png",
+    "bannerImageLocation": "images/lis_1",
     "year": "2013",
     "videoFile": "XMenFirstClass.mp4",
     "videoLocation": "videos/lvs_1"
@@ -175,6 +193,7 @@
     "type": "MOVIES",
     "active": true,
     "bannerImage": "na.png",
+    "bannerImageLocation": "images/lis_1",
     "year": "2016",
     "videoFile": "snowden.mp4",
     "videoLocation": "videos/lvs_1"
@@ -185,6 +204,7 @@
     "type": "MOVIES",
     "active": true,
     "bannerImage": "na.png",
+    "bannerImageLocation": "images/lis_1",
     "year": "2016",
     "videoFile": "3HoursTheSecretSoldiersOfBenghazi.mp4",
     "videoLocation": "videos/lvs_1"
@@ -195,6 +215,7 @@
     "type": "MOVIES",
     "active": true,
     "bannerImage": "na.png",
+    "bannerImageLocation": "images/lis_1",
     "year": "2007",
     "videoFile": "310ToYuma.mp4",
     "videoLocation": "videos/lvs_1"
@@ -205,6 +226,7 @@
     "type": "MOVIES",
     "active": true,
     "bannerImage": "na.png",
+    "bannerImageLocation": "images/lis_1",
     "year": "2016",
     "videoFile": "HacksawRidge.mp4",
     "videoLocation": "videos/lvs_1"
@@ -215,6 +237,7 @@
     "type": "MOVIES",
     "active": true,
     "bannerImage": "na.png",
+    "bannerImageLocation": "images/lis_1",
     "year": "2015",
     "videoFile": "JurassicWorld.mp4",
     "videoLocation": "videos/lvs_1"
@@ -225,6 +248,7 @@
     "type": "MOVIES",
     "active": true,
     "bannerImage": "na.png",
+    "bannerImageLocation": "images/lis_1",
     "year": "2001",
     "videoFile": "Ocean's11.mp4",
     "videoLocation": "videos/lvs_1"
@@ -235,6 +259,7 @@
     "type": "MOVIES",
     "active": true,
     "bannerImage": "na.png",
+    "bannerImageLocation": "images/lis_1",
     "year": "2016",
     "videoFile": "SuicideSquad.mp4",
     "videoLocation": "videos/lvs_1"
@@ -245,6 +270,7 @@
     "type": "MOVIES",
     "active": true,
     "bannerImage": "na.png",
+    "bannerImageLocation": "images/lis_1",
     "year": "2016",
     "videoFile": "TheMagnificentSeven.mp4",
     "videoLocation": "videos/lvs_1"
@@ -255,6 +281,7 @@
     "type": "MOVIES",
     "active": true,
     "bannerImage": "na.png",
+    "bannerImageLocation": "images/lis_1",
     "year": "2016",
     "videoFile": "Zootopia.mp4",
     "videoLocation": "videos/lvs_1"
@@ -265,6 +292,7 @@
     "type": "MOVIES",
     "active": true,
     "bannerImage": "na.png",
+    "bannerImageLocation": "images/lis_1",
     "year": "2008",
     "videoFile": "TheIncredibleHulk.mp4",
     "videoLocation": "videos/lvs_1"
@@ -275,6 +303,7 @@
     "type": "MOVIES",
     "active": true,
     "bannerImage": "na.png",
+    "bannerImageLocation": "images/lis_1",
     "year": "2014",
     "videoFile": "Divergent.mp4",
     "videoLocation": "videos/lvs_1"
@@ -285,6 +314,7 @@
     "type": "MOVIES",
     "active": true,
     "bannerImage": "na.png",
+    "bannerImageLocation": "images/lis_1",
     "year": "2015",
     "videoFile": "Insurgent.mp4",
     "videoLocation": "videos/lvs_1"
@@ -295,6 +325,7 @@
     "type": "MOVIES",
     "active": true,
     "bannerImage": "na.png",
+    "bannerImageLocation": "images/lis_1",
     "year": "2016",
     "videoFile": "Allegiant.mp4",
     "videoLocation": "videos/lvs_1"
@@ -305,6 +336,7 @@
     "type": "MOVIES",
     "active": true,
     "bannerImage": "na.png",
+    "bannerImageLocation": "images/lis_1",
     "year": "2010",
     "videoFile": "Ironman2.mp4",
     "videoLocation": "videos/lvs_1"
@@ -315,6 +347,7 @@
     "type": "MOVIES",
     "active": true,
     "bannerImage": "na.png",
+    "bannerImageLocation": "images/lis_1",
     "year": "2005",
     "videoFile": "KickingAndScreaming.mp4",
     "videoLocation": "videos/lvs_1"
@@ -325,6 +358,7 @@
     "type": "MOVIES",
     "active": true,
     "bannerImage": "na.png",
+    "bannerImageLocation": "images/lis_1",
     "year": "2011",
     "videoFile": "Thor.mp4",
     "videoLocation": "videos/lvs_1"
@@ -335,6 +369,7 @@
     "type": "MOVIES",
     "active": true,
     "bannerImage": "na.png",
+    "bannerImageLocation": "images/lis_1",
     "year": "2011",
     "videoFile": "CaptainAmericaTheFirstAvenger.mp4",
     "videoLocation": "videos/lvs_1"
@@ -345,6 +380,7 @@
     "type": "MOVIES",
     "active": true,
     "bannerImage": "na.png",
+    "bannerImageLocation": "images/lis_1",
     "year": "2011",
     "videoFile": "TheAvengers.mp4",
     "videoLocation": "videos/lvs_1"

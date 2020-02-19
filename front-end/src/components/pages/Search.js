@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
-import "../../css/App.css";
-import axios from "axios";
-import { FilmTile } from "../lib/FilmTile";
-import { InputGroup, FormControl, Button } from "react-bootstrap";
+import React, { useState, useEffect } from 'react';
+import '../../css/App.css';
+import axios from 'axios';
+import { FilmTile } from '../lib/FilmTile';
+import { InputGroup, FormControl, Button } from 'react-bootstrap';
 
 export const Search = () => {
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState('');
   const [wordsSearched, setWordsSearched] = useState([]);
 
   useEffect(() => {
@@ -19,7 +19,7 @@ export const Search = () => {
         setResults(matchedSearches);
       })
       .catch(err => {
-        console.log("ERROR::", err);
+        console.log('ERROR::', err);
       });
   }, [wordsSearched]);
 
@@ -30,8 +30,8 @@ export const Search = () => {
   };
 
   const onSearchSubmit = () => {
-    const words = search.split(" ");
-    setWordsSearched(words.filter(word => word !== ""));
+    const words = search.split(' ');
+    setWordsSearched(words.filter(word => word !== ''));
   };
 
   return (
@@ -73,6 +73,7 @@ export const Search = () => {
               <FilmTile
                 path={film.title}
                 image={film.bannerImage}
+                imageLocation={film.bannerImageLocation}
                 type={film.type}
                 videoFile={film.videoFile}
                 key={film.id}

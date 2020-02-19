@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
-import "../../css/App.css";
-import { useLocation } from "react-router";
-import axios from "axios";
-import qs from "query-string";
-import { LoadingSpinner } from "../lib/LoadingSpinner";
-import { FilmTile } from "../lib/FilmTile";
+import React, { useState, useEffect } from 'react';
+import '../../css/App.css';
+import { useLocation } from 'react-router';
+import axios from 'axios';
+import qs from 'query-string';
+import { LoadingSpinner } from '../lib/LoadingSpinner';
+import { FilmTile } from '../lib/FilmTile';
 
 export const Home = () => {
   const { search } = useLocation();
@@ -36,6 +36,7 @@ export const Home = () => {
               <FilmTile
                 path={item.title}
                 image={item.bannerImage}
+                imageLocation={item.bannerImageLocation}
                 type={item.type}
                 videoFile={item.videoFile}
                 key={item.id}

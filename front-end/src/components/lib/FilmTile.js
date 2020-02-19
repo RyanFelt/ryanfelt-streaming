@@ -1,9 +1,9 @@
-import React from "react";
-import { titleUpperCase } from "../../utils/titleUpperCase";
+import React from 'react';
+import { titleUpperCase } from '../../utils/titleUpperCase';
 
-export const FilmTile = ({ path, image, type, videoFile }) => {
+export const FilmTile = ({ path, image, imageLocation, type, videoFile }) => {
   let href = `/watch?${videoFile}`;
-  if (type === "SERIES") {
+  if (type === 'SERIES') {
     href = `/film/${path}`;
   }
 
@@ -12,7 +12,7 @@ export const FilmTile = ({ path, image, type, videoFile }) => {
       <a href={href}>
         <img
           width="100%"
-          src={`${process.env.REACT_APP_BACKEND_URL}/images/${image}`}
+          src={`${process.env.REACT_APP_BACKEND_URL}/${imageLocation}/${image}`}
           alt={path}
         />
         <div className="image-text">
