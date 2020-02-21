@@ -1,18 +1,19 @@
-import React, { useState, useEffect } from "react";
-import { Navbar, Nav } from "react-bootstrap";
-import { LoginModal } from "./LoginModal";
-import "../../css/App.css";
+import React, { useState, useEffect } from 'react';
+import { Navbar, Nav } from 'react-bootstrap';
+import { LoginModal } from './LoginModal';
+import { LogOut } from './LogOut';
+import '../../css/App.css';
 
 export const Header = () => {
-  const [show, setShow] = useState(false);
+  const [showLoginModal, setShowLoginModal] = useState(false);
   const [signedIn, setSignedIn] = useState(true);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleCloseLoginModal = () => setShowLoginModal(false);
+  const handleShowLoginModal = () => setShowLoginModal(true);
 
   useEffect(() => {
-    const auth = localStorage.getItem("authorizationToken");
-    const refresh = localStorage.getItem("refreshToken");
+    const auth = localStorage.getItem('authorizationToken');
+    const refresh = localStorage.getItem('refreshToken');
 
     if (auth && refresh) {
       setSignedIn(true);
@@ -23,7 +24,7 @@ export const Header = () => {
 
   return (
     <>
-      {show ? <LoginModal close={handleClose} /> : ""}
+      {showLoginModal ? <LoginModal close={handleCloseLoginModal} /> : ''}
 
       <Navbar bg="light" expand="lg">
         <Navbar.Brand href="/">Ryan Felt</Navbar.Brand>
@@ -34,15 +35,18 @@ export const Header = () => {
             <Nav.Link href="/?filter=movies">Movies</Nav.Link>
             <Nav.Link href="/search">Search</Nav.Link>
           </Nav>
-          {signedIn ? (
-            ""
-          ) : (
-            <Nav className="mr-right">
-              <Nav.Link className="margin-right" onClick={handleShow}>
+
+          <Nav className="mr-right">
+            {signedIn ? (
+              <Nav.Link className="margin-right" onClick={LogOut}>
+                Logout
+              </Nav.Link>
+            ) : (
+              <Nav.Link className="margin-right" onClick={handleShowLoginModal}>
                 Login
               </Nav.Link>
-            </Nav>
-          )}
+            )}
+          </Nav>
         </Navbar.Collapse>
       </Navbar>
     </>

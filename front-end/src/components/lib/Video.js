@@ -1,6 +1,7 @@
-import React, { useState, useEffect, useRef } from "react";
-import axios from "axios";
-import "../../css/App.css";
+import React, { useState, useEffect, useRef } from 'react';
+import axios from 'axios';
+import { LogOut } from './LogOut';
+import '../../css/App.css';
 
 export const Video = React.memo(({ film }) => {
   const [src, setSrc] = useState(null);
@@ -16,22 +17,20 @@ export const Video = React.memo(({ film }) => {
         }
       )
       .then(res => {
-        localStorage.setItem("authorizationToken", res.data.authorization);
+        localStorage.setItem('authorizationToken', res.data.authorization);
         signedInUser();
       })
       .catch(err => {
-        localStorage.removeItem("authorizationToken");
-        localStorage.removeItem("refreshToken");
-        window.location.reload(false);
+        LogOut();
       });
   };
 
   const signedInUser = () => {
-    const auth = localStorage.getItem("authorizationToken");
-    const refresh = localStorage.getItem("refreshToken");
+    const auth = localStorage.getItem('authorizationToken');
+    const refresh = localStorage.getItem('refreshToken');
 
     if (!auth || !refresh) {
-      alert("Sign in to stream content");
+      alert('Sign in to stream content');
       return;
     }
 
