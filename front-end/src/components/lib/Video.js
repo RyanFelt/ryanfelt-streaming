@@ -3,7 +3,7 @@ import axios from 'axios';
 import { LogOut } from './LogOut';
 import '../../css/App.css';
 
-export const Video = React.memo(({ film }) => {
+export const Video = React.memo(({ title }) => {
   const [src, setSrc] = useState(null);
 
   const vid = useRef(null);
@@ -40,7 +40,7 @@ export const Video = React.memo(({ film }) => {
       })
       .then(res => {
         setSrc(
-          `${process.env.REACT_APP_BACKEND_URL}/${film.videoLocation}/${film.videoFile}`
+          `${process.env.REACT_APP_BACKEND_URL}/${title.videoLocation}/${title.videoFile}`
         );
       })
       .catch(err => {

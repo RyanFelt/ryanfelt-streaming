@@ -1,1541 +1,1541 @@
 [
-    {
-        "videoFile": "Seinfeld-S01E01.mkv",
-        "active": true,
-        "season": "1",
-        "episode": "1",
-        "description": "A woman's impending visit excites Jerry, until he learns she's getting married.",
-        "show": "Seinfeld",
-        "title": "The Seinfeld Chronicles"
-    },
-    {
-        "videoFile": "Seinfeld-S01E02.mkv",
-        "active": true,
-        "season": "1",
-        "episode": "2",
-        "description": "Jerry goes to great lengths to find and woo a woman he met at a party.",
-        "show": "Seinfeld",
-        "title": "The Stake Out"
-    },
-    {
-        "videoFile": "Seinfeld-S01E03.mkv",
-        "active": true,
-        "season": "1",
-        "episode": "3",
-        "description": "Jerry's plans to move to a new apartment are complicated by George and Elaine.",
-        "show": "Seinfeld",
-        "title": "The Robbery"
-    },
-    {
-        "videoFile": "Seinfeld-S01E04.mkv",
-        "active": true,
-        "season": "1",
-        "episode": "4",
-        "description": "Jerry breaks off an unusual friendship with a fellow (Kevin Dunn) he has disliked for years.",
-        "show": "Seinfeld",
-        "title": "Male-Unbonding"
-    },
-    {
-        "videoFile": "Seinfeld-S01E05.mkv",
-        "active": true,
-        "season": "1",
-        "episode": "5",
-        "description": "George and Jerry invest in falling stock after a bad tip from a stock-market shyster.",
-        "show": "Seinfeld",
-        "title": "The Stock Tip"
-    },
-    {
-        "videoFile": "Seinfeld-S02E01.mkv",
-        "active": true,
-        "season": "2",
-        "episode": "1",
-        "description": "Jerry gives George advice on breaking up and then finds himself in the same boat.",
-        "show": "Seinfeld",
-        "title": "The Ex-Girlfriend"
-    },
-    {
-        "videoFile": "Seinfeld-S02E02.mkv",
-        "active": true,
-        "season": "2",
-        "episode": "2",
-        "description": "Jerry feels responsible for the death of an elderly woman (Rozsika Halmos) he upset the day before.",
-        "show": "Seinfeld",
-        "title": "The Pony Remark"
-    },
-    {
-        "videoFile": "Seinfeld-S02E03.mkv",
-        "active": true,
-        "season": "2",
-        "episode": "3",
-        "description": "Jerry buys a very expensive suede jacket but learns that clothes don't always make the man.",
-        "show": "Seinfeld",
-        "title": "The Jacket"
-    },
-    {
-        "videoFile": "Seinfeld-S02E04.mkv",
-        "active": true,
-        "season": "2",
-        "episode": "4",
-        "description": "George enlists Jerry's help in removing a message that he left on a date's (Tory Polone) answering machine.",
-        "show": "Seinfeld",
-        "title": "The Phone Message"
-    },
-    {
-        "videoFile": "Seinfeld-S02E05.mkv",
-        "active": true,
-        "season": "2",
-        "episode": "5",
-        "description": "Jerry encourages Elaine to move into the vacant apartment in his building.",
-        "show": "Seinfeld",
-        "title": "The Apartment"
-    },
-    {
-        "videoFile": "Seinfeld-S02E06.mkv",
-        "active": true,
-        "season": "2",
-        "episode": "6",
-        "description": "Jerry suspects his new cleaning person (Michael D. Conway) of stealing a statue he had promised to George.",
-        "show": "Seinfeld",
-        "title": "The Statue"
-    },
-    {
-        "videoFile": "Seinfeld-S02E07.mkv",
-        "active": true,
-        "season": "2",
-        "episode": "7",
-        "description": "George plots revenge on his former boss (Fred Applegate); Jerry seeks to get even with a laundromat owner (John Capodice).",
-        "show": "Seinfeld",
-        "title": "The Revenge"
-    },
-    {
-        "videoFile": "Seinfeld-S02E08.mkv",
-        "active": true,
-        "season": "2",
-        "episode": "8",
-        "description": "Hypochondriac George gets advice from a \"holistic\" healer (Stephen Tabolowsky) for his claimed heart attack.",
-        "show": "Seinfeld",
-        "title": "The Heart Attack"
-    },
-    {
-        "videoFile": "Seinfeld-S02E09.mkv",
-        "active": true,
-        "season": "2",
-        "episode": "9",
-        "description": "Jerry and Elaine come up with one stipulation when they discuss getting back together as a couple.",
-        "show": "Seinfeld",
-        "title": "The Deal"
-    },
-    {
-        "videoFile": "Seinfeld-S02E10.mkv",
-        "active": true,
-        "season": "2",
-        "episode": "10",
-        "description": "Jerry's cable TV installer (Vic Polizos) shows up on the day Elaine is using his apartment for a baby shower.",
-        "show": "Seinfeld",
-        "title": "The Baby Shower"
-    },
-    {
-        "videoFile": "Seinfeld-S02E11.mkv",
-        "active": true,
-        "season": "2",
-        "episode": "11",
-        "description": "Jerry and his friends have difficulty getting a table at a crowded Chinese restaurant.",
-        "show": "Seinfeld",
-        "title": "The Chinese Restaurant"
-    },
-    {
-        "videoFile": "Seinfeld-S02E12.mkv",
-        "active": true,
-        "season": "2",
-        "episode": "12",
-        "description": "George feels responsible for getting a busboy fired and tries to make it up to him.",
-        "show": "Seinfeld",
-        "title": "The Busboy"
-    },
-    {
-        "videoFile": "Seinfeld-S03E01.mkv",
-        "active": true,
-        "season": "3",
-        "episode": "1",
-        "description": "Jerry persuades a dentist friend (Ralph Bruneau) to prescribe an expensive massage for medical reasons.",
-        "show": "Seinfeld",
-        "title": "The Note"
-    },
-    {
-        "videoFile": "Seinfeld-S03E02.mkv",
-        "active": true,
-        "season": "3",
-        "episode": "2",
-        "description": "George tries honesty when he explains to his new girlfriend (Valerie Mahaffey) why they must break up.",
-        "show": "Seinfeld",
-        "title": "The Truth"
-    },
-    {
-        "videoFile": "Seinfeld-S03E03.mkv",
-        "active": true,
-        "season": "3",
-        "episode": "3",
-        "description": "Jerry and Elaine go to Florida when a condo association honors his father.",
-        "show": "Seinfeld",
-        "title": "The Pen"
-    },
-    {
-        "videoFile": "Seinfeld-S03E04.mkv",
-        "active": true,
-        "season": "3",
-        "episode": "4",
-        "description": "Jerry is in charge of a troublesome dog and is stuck in his apartment, which leaves George and Elaine stranded together with very little in common.",
-        "show": "Seinfeld",
-        "title": "The Dog"
-    },
-    {
-        "videoFile": "Seinfeld-S03E05.mkv",
-        "active": true,
-        "season": "3",
-        "episode": "5",
-        "description": "The library has no record of Jerry returning a book he took out in 1971.",
-        "show": "Seinfeld",
-        "title": "The Library"
-    },
-    {
-        "videoFile": "Seinfeld-S03E06.mkv",
-        "active": true,
-        "season": "3",
-        "episode": "6",
-        "description": "Jerry and his friends lose their car in the multilevel parking garage at a huge mall.",
-        "show": "Seinfeld",
-        "title": "The Parking Garage"
-    },
-    {
-        "videoFile": "Seinfeld-S03E07.mkv",
-        "active": true,
-        "season": "3",
-        "episode": "7",
-        "description": "Jerry's attempt to increase business at a small cafe backfires; George regrets agreeing to an IQ test.",
-        "show": "Seinfeld",
-        "title": "The Cafe"
-    },
-    {
-        "videoFile": "Seinfeld-S03E08.mkv",
-        "active": true,
-        "season": "3",
-        "episode": "8",
-        "description": "Jerry is shocked to hear the naughty suggestions on his tape recorder; George sees Elaine in a new light.",
-        "show": "Seinfeld",
-        "title": "The Tape"
-    },
-    {
-        "videoFile": "Seinfeld-S03E09.mkv",
-        "active": true,
-        "season": "3",
-        "episode": "9",
-        "description": "Jerry straddles the fence regarding his latest flame (Tawny Kitaen); George's attention is focused on his date's (Susan Diol) nose.",
-        "show": "Seinfeld",
-        "title": "The Nose Job"
-    },
-    {
-        "videoFile": "Seinfeld-S03E10.mkv",
-        "active": true,
-        "season": "3",
-        "episode": "10",
-        "description": "After a party, and much to the host's chagrin, Jerry and Elaine wait for Kramer to pick them up.",
-        "show": "Seinfeld",
-        "title": "The Stranded"
-    },
-    {
-        "videoFile": "Seinfeld-S03E11.mkv",
-        "active": true,
-        "season": "3",
-        "episode": "11",
-        "description": "Elaine breaks up with her 66-year-old beau (Edward Penn), who suffers a stroke in front of Jerry's apartment.",
-        "show": "Seinfeld",
-        "title": "The Alternate Side"
-    },
-    {
-        "videoFile": "Seinfeld-S03E12.mkv",
-        "active": true,
-        "season": "3",
-        "episode": "12",
-        "description": "Jerry is unintentionally responsible for Elaine's romantic woes; George gives Elaine a cashmere sweater.",
-        "show": "Seinfeld",
-        "title": "The Red Dot"
-    },
-    {
-        "videoFile": "Seinfeld-S03E13.mkv",
-        "active": true,
-        "season": "3",
-        "episode": "13",
-        "description": "Jerry, Elaine, George and Kramer have unique experiences on their subway rides.",
-        "show": "Seinfeld",
-        "title": "The Subway"
-    },
-    {
-        "videoFile": "Seinfeld-S03E14.mkv",
-        "active": true,
-        "season": "3",
-        "episode": "14",
-        "description": "George worries over gaining the upper hand in his current romance.",
-        "show": "Seinfeld",
-        "title": "The Pez Dispenser"
-    },
-    {
-        "videoFile": "Seinfeld-S03E15.mkv",
-        "active": true,
-        "season": "3",
-        "episode": "15",
-        "description": "Jerry worries that his comatose neighbor will recover and seek revenge; George fears a plane crash.",
-        "show": "Seinfeld",
-        "title": "The Suicide"
-    },
-    {
-        "videoFile": "Seinfeld-S03E16.mkv",
-        "active": true,
-        "season": "3",
-        "episode": "16",
-        "description": "Elaine and Jerry arrange a date for George with one of her unattached friends (Maggie Jakobson).",
-        "show": "Seinfeld",
-        "title": "The Fix-Up"
-    },
-    {
-        "videoFile": "Seinfeld-S03E17E18.mkv",
-        "active": true,
-        "season": "3",
-        "episode": "17 & 18",
-        "description": "Jerry's baseball hero, Keith Hernandez, falls for Elaine; George schemes to extend his unemployment benefits.",
-        "show": "Seinfeld",
-        "title": "The Boyfriend Part 1 & 2"
-    },
-    {
-        "videoFile": "Seinfeld-S03E19.mkv",
-        "active": true,
-        "season": "3",
-        "episode": "19",
-        "description": "Jerry and George commandeer a limousine headed for a neo-Nazi rally.",
-        "show": "Seinfeld",
-        "title": "The Limo"
-    },
-    {
-        "videoFile": "Seinfeld-S03E20.mkv",
-        "active": true,
-        "season": "3",
-        "episode": "20",
-        "description": "Jerry tracks down a hit-and-run driver (Melinda McGraw); George skips town to escape an irate husband.",
-        "show": "Seinfeld",
-        "title": "The Good Samaritan"
-    },
-    {
-        "videoFile": "Seinfeld-S03E21.mkv",
-        "active": true,
-        "season": "3",
-        "episode": "21",
-        "description": "After Jerry breaks up with his new girlfriend (Catherine Keener), she resorts to someone else's words to woo him back.",
-        "show": "Seinfeld",
-        "title": "The Letter"
-    },
-    {
-        "videoFile": "Seinfeld-S03E22.mkv",
-        "active": true,
-        "season": "3",
-        "episode": "22",
-        "description": "George and Elaine have some explaining to do when they take Jerry's car for a ride.",
-        "show": "Seinfeld",
-        "title": "The Parking Space"
-    },
-    {
-        "videoFile": "Seinfeld-S03E23.mkv",
-        "active": true,
-        "season": "3",
-        "episode": "23",
-        "description": "Becoming annoyed at Kramer's invasions of privacy, Jerry takes away his spare key. Kramer, shaken, decides to leave for California to pursue an acting career.",
-        "show": "Seinfeld",
-        "title": "The Keys"
-    },
-    {
-        "videoFile": "Seinfeld-S04E01.mkv",
-        "active": true,
-        "season": "4",
-        "episode": "1",
-        "description": "When Jerry is booked to appear on \"The Tonight Show,\" he takes George with him to Los Angeles to search for Kramer, who vanished in a huff months earlier.",
-        "show": "Seinfeld",
-        "title": "The Trip (1)"
-    },
-    {
-        "videoFile": "Seinfeld-S04E02.mkv",
-        "active": true,
-        "season": "4",
-        "episode": "2",
-        "description": "While in Los Angeles, Jerry and George are picked up by the police; Kramer is a suspect in a series of serial murders.",
-        "show": "Seinfeld",
-        "title": "The Trip (2)"
-    },
-    {
-        "videoFile": "Seinfeld-S04E03E04.mkv",
-        "active": true,
-        "season": "4",
-        "episode": "3 & 4",
-        "description": "Jerry is approached by network executives and asked to to create a new television show. Jerry tries to evade a vengeful writer; Kramer agrees to be a witness at a friend's trial; George woos an executive.",
-        "show": "Seinfeld",
-        "title": "The Pitch & The Ticket"
-    },
-    {
-        "videoFile": "Seinfeld-S04E05.mkv",
-        "active": true,
-        "season": "4",
-        "episode": "5",
-        "description": "Jerry tries to explain to his visiting parents (Liz Sheridan, Barney Martin) the whereabouts of a gift they once gave him.",
-        "show": "Seinfeld",
-        "title": "The Wallet"
-    },
-    {
-        "videoFile": "Seinfeld-S04E06.mkv",
-        "active": true,
-        "season": "4",
-        "episode": "6",
-        "description": "Jerry tries to buy back the watch his parents gave him; George attempts to renegotiate his network deal.",
-        "show": "Seinfeld",
-        "title": "The Watch"
-    },
-    {
-        "videoFile": "Seinfeld-S04E07.mkv",
-        "active": true,
-        "season": "4",
-        "episode": "7",
-        "description": "Jerry gets lost en route to visiting a sick fan who must live in a protective plastic bubble.",
-        "show": "Seinfeld",
-        "title": "The Bubble Boy"
-    },
-    {
-        "videoFile": "Seinfeld-S04E08.mkv",
-        "active": true,
-        "season": "4",
-        "episode": "8",
-        "description": "Jerry and George try to write the pilot for their series; Kramer solicits cigars from the Cuban consulate.",
-        "show": "Seinfeld",
-        "title": "The Cheever Letters"
-    },
-    {
-        "videoFile": "Seinfeld-S04E09.mkv",
-        "active": true,
-        "season": "4",
-        "episode": "9",
-        "description": "A night at the opera turns into a nightmare when Jerry meets Elaine's new boyfriend (Peter Crombie).",
-        "show": "Seinfeld",
-        "title": "The Opera"
-    },
-    {
-        "videoFile": "Seinfeld-S04E10.mkv",
-        "active": true,
-        "season": "4",
-        "episode": "10",
-        "description": "Jerry and George must think of an idea for a TV series before meeting with network bigwigs.",
-        "show": "Seinfeld",
-        "title": "The Virgin"
-    },
-    {
-        "videoFile": "Seinfeld-S04E11.mkv",
-        "active": true,
-        "season": "4",
-        "episode": "11",
-        "description": "Jerry challenges George, Kramer and Elaine to a contest of self-denial; Elaine looks forward to a special date.",
-        "show": "Seinfeld",
-        "title": "The Contest"
-    },
-    {
-        "videoFile": "Seinfeld-S04E12.mkv",
-        "active": true,
-        "season": "4",
-        "episode": "12",
-        "description": "Jerry parties it up in first class while Elaine suffers in cramped coach; Kramer is chased by the police.",
-        "show": "Seinfeld",
-        "title": "The Airport"
-    },
-    {
-        "videoFile": "Seinfeld-S04E13.mkv",
-        "active": true,
-        "season": "4",
-        "episode": "13",
-        "description": "Elaine accidentally reveals too much cleavage on her Christmas card; Kramer is asked to pose for a risque underwear ad.",
-        "show": "Seinfeld",
-        "title": "The Pick"
-    },
-    {
-        "videoFile": "Seinfeld-S04E14.mkv",
-        "active": true,
-        "season": "4",
-        "episode": "14",
-        "description": "Jerry is shadowed by a pesky comic (Barry Diamond); the gang's decision to meet for a movie begins in disaster.",
-        "show": "Seinfeld",
-        "title": "The Movie"
-    },
-    {
-        "videoFile": "Seinfeld-S04E15.mkv",
-        "active": true,
-        "season": "4",
-        "episode": "15",
-        "description": "Jerry takes pity on a foreigner (Brian George) when the man's immigration papers are left in Jerry's mailbox.",
-        "show": "Seinfeld",
-        "title": "The Visa"
-    },
-    {
-        "videoFile": "Seinfeld-S04E16.mkv",
-        "active": true,
-        "season": "4",
-        "episode": "16",
-        "description": "Jerry and George meet with a skeptical TV executive about their show; Kramer dates Jerry's ex-girlfriend.",
-        "show": "Seinfeld",
-        "title": "The Shoes"
-    },
-    {
-        "videoFile": "Seinfeld-S04E17.mkv",
-        "active": true,
-        "season": "4",
-        "episode": "17",
-        "description": "An eavesdropping college reporter prints the mistaken story that Jerry and George are longtime intimate companions.",
-        "show": "Seinfeld",
-        "title": "The Outing"
-    },
-    {
-        "videoFile": "Seinfeld-S04E18.mkv",
-        "active": true,
-        "season": "4",
-        "episode": "18",
-        "description": "When Jerry, George and Elaine volunteer to comfort senior citizens in their homes, it leads to disaster for all.",
-        "show": "Seinfeld",
-        "title": "The Old Man"
-    },
-    {
-        "videoFile": "Seinfeld-S04E19.mkv",
-        "active": true,
-        "season": "4",
-        "episode": "19",
-        "description": "Jerry dumps his girlfriend when he finds out she may have breast implants; Kramer claims to have seen Salman Rushdie at a health club.",
-        "show": "Seinfeld",
-        "title": "The Implant"
-    },
-    {
-        "videoFile": "Seinfeld-S04E20.mkv",
-        "active": true,
-        "season": "4",
-        "episode": "20",
-        "description": "When Jerry and Kramer observe an operation, they accidentally drop a candy into the surgical cavity.",
-        "show": "Seinfeld",
-        "title": "The Junior Mint"
-    },
-    {
-        "videoFile": "Seinfeld-S04E21.mkv",
-        "active": true,
-        "season": "4",
-        "episode": "21",
-        "description": "A car valet with killer body odor leaves Jerry and Elaine gasping for breath; George sees an ex-girlfriend holding hands with someone else.",
-        "show": "Seinfeld",
-        "title": "The Smelly Car"
-    },
-    {
-        "videoFile": "Seinfeld-S04E22.mkv",
-        "active": true,
-        "season": "4",
-        "episode": "22",
-        "description": "George's father (Jerry Stiller) is arrested when Jerry and George park his car in a handicapped spot.",
-        "show": "Seinfeld",
-        "title": "The Handicap Spot"
-    },
-    {
-        "videoFile": "Seinfeld-S04E23E24.mkv",
-        "active": true,
-        "season": "4",
-        "episode": "23 & 24",
-        "description": "Jerry and George produce their pilot, but George doesn't like the actor playing him; Kramer has a personal problem.",
-        "show": "Seinfeld",
-        "title": "The Pilot Part 1 & 2"
-    },
-    {
-        "videoFile": "Seinfeld-S05E01.mkv",
-        "active": true,
-        "season": "5",
-        "episode": "1",
-        "description": "Jerry begs Elaine for another chance when she reveals her true feelings about their relationship; Kramer is banned from his favorite fruit shop.",
-        "show": "Seinfeld",
-        "title": "The Mango"
-    },
-    {
-        "videoFile": "Seinfeld-S05E02.mkv",
-        "active": true,
-        "season": "5",
-        "episode": "2",
-        "description": "Jerry appears on \"Today\" with Bryant Gumbel, but must wear a silly shirt as the result of a misunderstanding with Kramer's \"low talker\" girlfriend; George moves in with his parents.",
-        "show": "Seinfeld",
-        "title": "The Puffy Shirt"
-    },
-    {
-        "videoFile": "Seinfeld-S05E03.mkv",
-        "active": true,
-        "season": "5",
-        "episode": "3",
-        "description": "George and Elaine go to an optician after George loses his glasses at his health club; Elaine fears she has rabies after being bitten by a dog.",
-        "show": "Seinfeld",
-        "title": "The Glasses"
-    },
-    {
-        "videoFile": "Seinfeld-S05E04.mkv",
-        "active": true,
-        "season": "5",
-        "episode": "4",
-        "description": "Jerry, Kramer and Newman (Wayne Knight) investigate their accountant's unexplained sniffles; Elaine's new boyfriend has an annoying habit.",
-        "show": "Seinfeld",
-        "title": "The Sniffing Accountant"
-    },
-    {
-        "videoFile": "Seinfeld-S05E05.mkv",
-        "active": true,
-        "season": "5",
-        "episode": "5",
-        "description": "Jerry and Elaine are apprehensive about being the godparents to their friends' newborn son; George is thrilled with his new parking spot.",
-        "show": "Seinfeld",
-        "title": "The Bris"
-    },
-    {
-        "videoFile": "Seinfeld-S05E06.mkv",
-        "active": true,
-        "season": "5",
-        "episode": "6",
-        "description": "George asks Jerry's date (Marlee Matlin) to read the lips of his ex-girlfriend at a party; Elaine has trouble communicating with a limo driver.",
-        "show": "Seinfeld",
-        "title": "The Lip Reader"
-    },
-    {
-        "videoFile": "Seinfeld-S05E07.mkv",
-        "active": true,
-        "season": "5",
-        "episode": "7",
-        "description": "Jerry and Elaine begin gaining weight and suspect a nonfat-yogurt shop may be making false claims; Jerry's use of a bad word influences Maryedith's son.",
-        "show": "Seinfeld",
-        "title": "The Non-Fat Yogurt"
-    },
-    {
-        "videoFile": "Seinfeld-S05E08.mkv",
-        "active": true,
-        "season": "5",
-        "episode": "8",
-        "description": "Jerry decides to change barbers because his has a history of giving bad haircuts; George poses as an employee after a job interview.",
-        "show": "Seinfeld",
-        "title": "The Barber"
-    },
-    {
-        "videoFile": "Seinfeld-S05E09.mkv",
-        "active": true,
-        "season": "5",
-        "episode": "9",
-        "description": "Jerry becomes tense when he can't get his masseuse girlfriend (Jennifer Coolidge) to give him a massage.",
-        "show": "Seinfeld",
-        "title": "The Masseuse"
-    },
-    {
-        "videoFile": "Seinfeld-S05E10.mkv",
-        "active": true,
-        "season": "5",
-        "episode": "10",
-        "description": "Elaine's American Indian friend thinks Jerry is a racist after he gives Elaine a cigar-store Indian statue as a present.",
-        "show": "Seinfeld",
-        "title": "The Cigar Store Indian"
-    },
-    {
-        "videoFile": "Seinfeld-S05E11.mkv",
-        "active": true,
-        "season": "5",
-        "episode": "11",
-        "description": "Jerry thinks his girlfriend (Kimberly Campbell) has a fungus; George converts to the Latvian Orthodox religion.",
-        "show": "Seinfeld",
-        "title": "The Conversion"
-    },
-    {
-        "videoFile": "Seinfeld-S05E12.mkv",
-        "active": true,
-        "season": "5",
-        "episode": "12",
-        "description": "Elaine's toilet stall has no tissue and the woman in the next stall refuses to give her some; George acts giddy around Elaine's boyfriend (Dan Cortese).",
-        "show": "Seinfeld",
-        "title": "The Stall"
-    },
-    {
-        "videoFile": "Seinfeld-S05E13.mkv",
-        "active": true,
-        "season": "5",
-        "episode": "13",
-        "description": "Jerry, Elaine, George and Kramer search for something to take to a dinner party; Jerry and Elaine forget to take a number at the bakery; Kramer and George have trouble buying wine.",
-        "show": "Seinfeld",
-        "title": "The Dinner Party"
-    },
-    {
-        "videoFile": "Seinfeld-S05E14.mkv",
-        "active": true,
-        "season": "5",
-        "episode": "14",
-        "description": "George poses as a marine biologist while on a date with a former college classmate (Rosalind Allen); Elaine loses her electronic organizer.",
-        "show": "Seinfeld",
-        "title": "The Marine Biologist"
-    },
-    {
-        "videoFile": "Seinfeld-S05E15.mkv",
-        "active": true,
-        "season": "5",
-        "episode": "15",
-        "description": "Jerry becomes obsessed when his date refuses to sample his pie; a clothing store mannequin resembles Elaine.",
-        "show": "Seinfeld",
-        "title": "The Pie"
-    },
-    {
-        "videoFile": "Seinfeld-S05E16.mkv",
-        "active": true,
-        "season": "5",
-        "episode": "16",
-        "description": "Kramer befriends a little person when he is hired as a stand-in for a soap opera; George wants to break up with a girlfriend.",
-        "show": "Seinfeld",
-        "title": "The Stand-In"
-    },
-    {
-        "videoFile": "Seinfeld-S05E17.mkv",
-        "active": true,
-        "season": "5",
-        "episode": "17",
-        "description": "Jerry lets his girlfriend (Courteney Cox) pose as his wife so she can receive a discount at the dry cleaner.",
-        "show": "Seinfeld",
-        "title": "The Wife"
-    },
-    {
-        "videoFile": "Seinfeld-S05E18.mkv",
-        "active": true,
-        "season": "5",
-        "episode": "18",
-        "description": "Kramer has a scheme to sell vintage raincoats; Jerry and his girlfriend can't get any alone time; George sells his father's cabana clothes.",
-        "show": "Seinfeld",
-        "title": "The Raincoats Part 1 & 2"
-    },
-    {
-        "videoFile": "Seinfeld-S05E20.mkv",
-        "active": true,
-        "season": "5",
-        "episode": "19",
-        "description": "George dates a woman who has a son. She invites him to her son's birthday party. While at the party, a fire breaks out in the kitchen.",
-        "show": "Seinfeld",
-        "title": "The Fire"
-    },
-    {
-        "videoFile": "Seinfeld-S05E21.mkv",
-        "active": true,
-        "season": "5",
-        "episode": "20",
-        "description": "George fears Jerry's girlfriend will give his girlfriend an inaccurate description after she sees him naked.",
-        "show": "Seinfeld",
-        "title": "The Hamptons"
-    },
-    {
-        "videoFile": "Seinfeld-S05E22.mkv",
-        "active": true,
-        "season": "5",
-        "episode": "21",
-        "description": "George learns success lies in doing the opposite of what he would normally do; Kramer appears on \"Live -- Regis &amp; Kathie Lee.\"",
-        "show": "Seinfeld",
-        "title": "The Opposite"
-    },
-    {
-        "videoFile": "Seinfeld-S06E01.mkv",
-        "active": true,
-        "season": "6",
-        "episode": "1",
-        "description": "Kramer acts as chaperone when Jerry goes on a date with Miss Rhode Island (Marguerite MacIntyre).",
-        "show": "Seinfeld",
-        "title": "The Chaperone"
-    },
-    {
-        "videoFile": "Seinfeld-S06E02.mkv",
-        "active": true,
-        "season": "6",
-        "episode": "2",
-        "description": "George's date gets credit for a salad purchase; Newman once dumped Jerry's date; Kramer clashes with a former athlete.",
-        "show": "Seinfeld",
-        "title": "The Big Salad"
-    },
-    {
-        "videoFile": "Seinfeld-S06E03.mkv",
-        "active": true,
-        "season": "6",
-        "episode": "3",
-        "description": "Jerry convinces George to ask baseball player Danny Tartabull to appear on a public television pledge drive.",
-        "show": "Seinfeld",
-        "title": "The Pledge Drive"
-    },
-    {
-        "videoFile": "Seinfeld-S06E04.mkv",
-        "active": true,
-        "season": "6",
-        "episode": "4",
-        "description": "A series of mishaps occur when George's phone lines get crossed and a woman answers when anyone calls.",
-        "show": "Seinfeld",
-        "title": "The Chinese Woman"
-    },
-    {
-        "videoFile": "Seinfeld-S06E05.mkv",
-        "active": true,
-        "season": "6",
-        "episode": "5",
-        "description": "Jerry's purchase of a new sofa helps Elaine land a new romantic interest when she begins dating the man who delivered it (David James Elliott).",
-        "show": "Seinfeld",
-        "title": "The Couch"
-    },
-    {
-        "videoFile": "Seinfeld-S06E06.mkv",
-        "active": true,
-        "season": "6",
-        "episode": "6",
-        "description": "Elaine must substitute for her boss in a merger deal; a girlfriend's mom sees George eating out of the trash.",
-        "show": "Seinfeld",
-        "title": "The Gymnast"
-    },
-    {
-        "videoFile": "Seinfeld-S06E07.mkv",
-        "active": true,
-        "season": "6",
-        "episode": "7",
-        "description": "Jerry is forced to treat an obnoxious comic (Stephen Hytner) to dinner after accepting a designer suit.",
-        "show": "Seinfeld",
-        "title": "The Soup"
-    },
-    {
-        "videoFile": "Seinfeld-S06E08.mkv",
-        "active": true,
-        "season": "6",
-        "episode": "8",
-        "description": "Elaine wins her boss (Ian Abercrombie) a chance to walk in the Macy's Thanksgiving Day Parade. George buys the car of a celebrity.",
-        "show": "Seinfeld",
-        "title": "The Mom &amp; Pop Store"
-    },
-    {
-        "videoFile": "Seinfeld-S06E09.mkv",
-        "active": true,
-        "season": "6",
-        "episode": "9",
-        "description": "George hires a dowdy assistant (Vicki Lewis) whose competence and productivity prove to be a turn-on.",
-        "show": "Seinfeld",
-        "title": "The Secretary"
-    },
-    {
-        "videoFile": "Seinfeld-S06E10.mkv",
-        "active": true,
-        "season": "6",
-        "episode": "10",
-        "description": "Jerry is challenged to a race by a former high-school classmate; Kramer fights for his rights as a store Santa.",
-        "show": "Seinfeld",
-        "title": "The Race"
-    },
-    {
-        "videoFile": "Seinfeld-S06E11.mkv",
-        "active": true,
-        "season": "6",
-        "episode": "11",
-        "description": "George discovers Kramer's first name while trying to determine whether his girlfriend has an eating disorder.",
-        "show": "Seinfeld",
-        "title": "The Switch"
-    },
-    {
-        "videoFile": "Seinfeld-S06E12.mkv",
-        "active": true,
-        "season": "6",
-        "episode": "12",
-        "description": "Given a familiar label maker, Jerry becomes suspicious of the friend (Bryan Cranston) who gave it to him.",
-        "show": "Seinfeld",
-        "title": "The Label Maker"
-    },
-    {
-        "videoFile": "Seinfeld-S06E13.mkv",
-        "active": true,
-        "season": "6",
-        "episode": "13",
-        "description": "A friend (Jon Lovitz) fakes illness to get Jerry's sympathy; Kramer obstructs justice.",
-        "show": "Seinfeld",
-        "title": "The Scofflaw"
-    },
-    {
-        "videoFile": "Seinfeld-S06E14E15.mkv",
-        "active": true,
-        "season": "6",
-        "episode": "14 & 15",
-        "description": "Highlights of the funniest moments from the first 100 episodes, including the characters' botched relationships and catchphrases.",
-        "show": "Seinfeld",
-        "title": "The Highlights of 100 Part 1 & 2"
-    },
-    {
-        "videoFile": "Seinfeld-S06E16.mkv",
-        "active": true,
-        "season": "6",
-        "episode": "16",
-        "description": "Elaine tries to convert a gay acquaintance (Robert Mailhouse) to heterosexuality; George and his date have secrets.",
-        "show": "Seinfeld",
-        "title": "The Beard"
-    },
-    {
-        "videoFile": "Seinfeld-S06E17.mkv",
-        "active": true,
-        "season": "6",
-        "episode": "17",
-        "description": "Jerry runs into trouble with Elaine's friend Wendy (Wendie Malick) after he decides to stop kissing acquaintances.",
-        "show": "Seinfeld",
-        "title": "The Kiss Hello"
-    },
-    {
-        "videoFile": "Seinfeld-S06E18.mkv",
-        "active": true,
-        "season": "6",
-        "episode": "18",
-        "description": "Jerry covers for a hostile doorman (Larry Miller) at Elaine's boss's (Ian Abercrombie) apartment; George's father is living with him.",
-        "show": "Seinfeld",
-        "title": "The Doorman"
-    },
-    {
-        "videoFile": "Seinfeld-S06E19.mkv",
-        "active": true,
-        "season": "6",
-        "episode": "19",
-        "description": "Kramer's numbing experience at the dentist wins him a spot in a charity concert; George is accused of stealing.",
-        "show": "Seinfeld",
-        "title": "The Jimmy"
-    },
-    {
-        "videoFile": "Seinfeld-S06E20.mkv",
-        "active": true,
-        "season": "6",
-        "episode": "20",
-        "description": "Jerry is forced to flee his apartment when it must be bug-bombed for fleas, which prevents Elaine from getting a manuscript she needs.",
-        "show": "Seinfeld",
-        "title": "The Doodle"
-    },
-    {
-        "videoFile": "Seinfeld-S06E21.mkv",
-        "active": true,
-        "season": "6",
-        "episode": "21",
-        "description": "Jerry feels betrayed when his method of pleasing a woman is used on Elaine by a friend (Patrick Warburton).",
-        "show": "Seinfeld",
-        "title": "The Fusilli Jerry"
-    },
-    {
-        "videoFile": "Seinfeld-S06E22.mkv",
-        "active": true,
-        "season": "6",
-        "episode": "22",
-        "description": "Jerry plans to meet a supermodel at an airport lounge; Mr. Pitt tells Elaine he has mentioned her in his will; George tries to prove he isn't racist; Kramer gambles with a Texan.",
-        "show": "Seinfeld",
-        "title": "The Diplomat's Club"
-    },
-    {
-        "videoFile": "Seinfeld-S06E23.mkv",
-        "active": true,
-        "season": "6",
-        "episode": "23",
-        "description": "Elaine's boyfriend shows his support for a hockey team by painting his face and taunting opposing fans.",
-        "show": "Seinfeld",
-        "title": "The Face Painter"
-    },
-    {
-        "videoFile": "Seinfeld-S06E24.mkv",
-        "active": true,
-        "season": "6",
-        "episode": "24",
-        "description": "George and Jerry are suspected of roughing up Bette Midler in a softball game, giving Jerry's girlfriend, Bette's understudy, a chance to take the stage.",
-        "show": "Seinfeld",
-        "title": "The Understudy"
-    },
-    {
-        "videoFile": "Seinfeld-S07E01.mkv",
-        "active": true,
-        "season": "7",
-        "episode": "1",
-        "description": "A pact with Jerry prompts George to offer former girlfriend Susan (Heidi Swedberg) a proposal; Elaine's sleep is interrupted by a barking dog.",
-        "show": "Seinfeld",
-        "title": "The Engagement"
-    },
-    {
-        "videoFile": "Seinfeld-S07E02.mkv",
-        "active": true,
-        "season": "7",
-        "episode": "2",
-        "description": "George tries to find a way to persuade Susan (Heidi Swedberg) to postpone their wedding; Elaine's dog problem is solved by a rabbi with a cable show.",
-        "show": "Seinfeld",
-        "title": "The Postponement"
-    },
-    {
-        "videoFile": "Seinfeld-S07E03.mkv",
-        "active": true,
-        "season": "7",
-        "episode": "3",
-        "description": "Jerry is challenged when Elaine's boyfriend insists it is impossible to rent a villa in the Tuscany region of Italy.",
-        "show": "Seinfeld",
-        "title": "The Maestro"
-    },
-    {
-        "videoFile": "Seinfeld-S07E04.mkv",
-        "active": true,
-        "season": "7",
-        "episode": "4",
-        "description": "An uncontrollable wink creates problems for George and Kramer.",
-        "show": "Seinfeld",
-        "title": "The Wink"
-    },
-    {
-        "videoFile": "Seinfeld-S07E05.mkv",
-        "active": true,
-        "season": "7",
-        "episode": "5",
-        "description": "Jerry tries to ensure that Elaine's houseguest (Jeremiah Birkett) doesn't sleep through the New York Marathon.",
-        "show": "Seinfeld",
-        "title": "The Hot Tub"
-    },
-    {
-        "videoFile": "Seinfeld-S07E06.mkv",
-        "active": true,
-        "season": "7",
-        "episode": "6",
-        "description": "Jerry must choose between his girlfriend (Alexandra Wentworth) and a bowl of soup when a vendor (Larry Thomas) refuses to serve her.",
-        "show": "Seinfeld",
-        "title": "The Soup Nazi"
-    },
-    {
-        "videoFile": "Seinfeld-S07E07.mkv",
-        "active": true,
-        "season": "7",
-        "episode": "7",
-        "description": "George tries to conceal his ATM code from his fiancee, Susan (Heidi Swedberg); Elaine is intrigued by a man she met at a party.",
-        "show": "Seinfeld",
-        "title": "The Secret Code"
-    },
-    {
-        "videoFile": "Seinfeld-S07E08.mkv",
-        "active": true,
-        "season": "7",
-        "episode": "8",
-        "description": "The swimming pool maintenance man (Carlos Jacott) at Jerry's health club is convinced he is Jerry's best friend.",
-        "show": "Seinfeld",
-        "title": "The Pool Guy"
-    },
-    {
-        "videoFile": "Seinfeld-S07E09.mkv",
-        "active": true,
-        "season": "7",
-        "episode": "9",
-        "description": "Elaine realizes that the manufacturer of her birth control device has gone out of business and its product is in limited supply.",
-        "show": "Seinfeld",
-        "title": "The Sponge"
-    },
-    {
-        "videoFile": "Seinfeld-S07E10.mkv",
-        "active": true,
-        "season": "7",
-        "episode": "10",
-        "description": "Lloyd Braun (Matt McCoy) gets Jerry packs of a special brand of Chinese gum; George runs into a former neighbor.",
-        "show": "Seinfeld",
-        "title": "The Gum"
-    },
-    {
-        "videoFile": "Seinfeld-S07E11.mkv",
-        "active": true,
-        "season": "7",
-        "episode": "11",
-        "description": "A loaf of rye bread becomes a point of contention when George's and Susan's parents have dinner together.",
-        "show": "Seinfeld",
-        "title": "The Rye"
-    },
-    {
-        "videoFile": "Seinfeld-S07E12.mkv",
-        "active": true,
-        "season": "7",
-        "episode": "12",
-        "description": "A caddie (Armin Shimerman) helps Kramer improve his golf game; George is considered for a promotion at work.",
-        "show": "Seinfeld",
-        "title": "The Caddy"
-    },
-    {
-        "videoFile": "Seinfeld-S07E13.mkv",
-        "active": true,
-        "season": "7",
-        "episode": "13",
-        "description": "A girlfriend (Lisa Deanne) piques Jerry's interest by always wearing the same dress; Kramer expects Elaine to honor an offer made in jest.",
-        "show": "Seinfeld",
-        "title": "The Seven"
-    },
-    {
-        "videoFile": "Seinfeld-S07E14E15.mkv",
-        "active": true,
-        "season": "7",
-        "episode": "14 & 15",
-        "description": "Jerry buys his parents (Barney Martin, Liz Sheridan) a Cadillac, which only complicates their lives; George rethinks his engagement.",
-        "show": "Seinfeld",
-        "title": "The Cadillac Part 1 & 2"
-    },
-    {
-        "videoFile": "Seinfeld-S07E16.mkv",
-        "active": true,
-        "season": "7",
-        "episode": "16",
-        "description": "Jerry pays a price for mocking his uncle (Len Lesser) on \"The Tonight Show\"; tenants hate new shower heads.",
-        "show": "Seinfeld",
-        "title": "The Shower Head"
-    },
-    {
-        "videoFile": "Seinfeld-S07E17.mkv",
-        "active": true,
-        "season": "7",
-        "episode": "17",
-        "description": "George is dismayed because one of the dolls in Susan's collection bears an uncanny resemblance to his mother.",
-        "show": "Seinfeld",
-        "title": "The Doll"
-    },
-    {
-        "videoFile": "Seinfeld-S07E18.mkv",
-        "active": true,
-        "season": "7",
-        "episode": "18",
-        "description": "Jerry's new membership in the Friars Club is jeopardized when a jacket he borrowed from the club gets lost.",
-        "show": "Seinfeld",
-        "title": "The Friars Club"
-    },
-    {
-        "videoFile": "Seinfeld-S07E19.mkv",
-        "active": true,
-        "season": "7",
-        "episode": "19",
-        "description": "George introduces Kramer to the person in charge of the wigs for \"Joseph and the Amazing Technicolor Dreamcoat.\".",
-        "show": "Seinfeld",
-        "title": "The Wig Master"
-    },
-    {
-        "videoFile": "Seinfeld-S07E20.mkv",
-        "active": true,
-        "season": "7",
-        "episode": "20",
-        "description": "George ingratiates himself with his boss (Lee Bear) by sharing a delectable eggplant calzone with him.",
-        "show": "Seinfeld",
-        "title": "The Calzone"
-    },
-    {
-        "videoFile": "Seinfeld-S07E21E22.mkv",
-        "active": true,
-        "season": "7",
-        "episode": "21 & 22",
-        "description": "Jerry's mechanic (Brad Garrett) steals his car; Kramer and Newman plan to return used bottles to Michigan. Kramer spots Jerry's stolen car in Ohio; Elaine gives Peterman JFK's golf clubs; George is institutionalized.",
-        "show": "Seinfeld",
-        "title": "The Bottle Deposit Part 1 & 2"
-    },
-    {
-        "videoFile": "Seinfeld-S07E23.mkv",
-        "active": true,
-        "season": "7",
-        "episode": "23",
-        "description": "Jerry and Elaine get a chance for romance after George's comment to a couple (Debra Messing, Cary Elwes) leads to a breakup.",
-        "show": "Seinfeld",
-        "title": "The Wait Out"
-    },
-    {
-        "videoFile": "Seinfeld-S07E24.mkv",
-        "active": true,
-        "season": "7",
-        "episode": "24",
-        "description": "George searches for a way to stop his impending nuptials even as he and Susan are selecting their wedding invitations.",
-        "show": "Seinfeld",
-        "title": "The Invitations"
-    },
-    {
-        "videoFile": "Seinfeld-S08E01.mkv",
-        "active": true,
-        "season": "8",
-        "episode": "1",
-        "description": "George is ready to move on after mourning the death of his fiancee, while Jerry breaks off his engagement.",
-        "show": "Seinfeld",
-        "title": "The Foundation"
-    },
-    {
-        "videoFile": "Seinfeld-S08E02.mkv",
-        "active": true,
-        "season": "8",
-        "episode": "2",
-        "description": "George suspects the attorney for the Susan Ross Foundation believes he murdered Susan; Jerry likes his date.",
-        "show": "Seinfeld",
-        "title": "The Soul Mate"
-    },
-    {
-        "videoFile": "Seinfeld-S08E03.mkv",
-        "active": true,
-        "season": "8",
-        "episode": "3",
-        "description": "Elaine's ex introduces her to two of his friends who look like George and Kramer but act like their exact opposites.",
-        "show": "Seinfeld",
-        "title": "The Bizarro Jerry"
-    },
-    {
-        "videoFile": "Seinfeld-S08E04.mkv",
-        "active": true,
-        "season": "8",
-        "episode": "4",
-        "description": "Jerry discovers a hidden talent when Kramer gets him to perform an illegal activity; George acts like a rebel.",
-        "show": "Seinfeld",
-        "title": "The Little Kicks"
-    },
-    {
-        "videoFile": "Seinfeld-S08E05.mkv",
-        "active": true,
-        "season": "8",
-        "episode": "5",
-        "description": "Kramer tries to scam the post office; Elaine has a rash but has trouble finding a doctor who will treat her.",
-        "show": "Seinfeld",
-        "title": "The Package"
-    },
-    {
-        "videoFile": "Seinfeld-S08E06.mkv",
-        "active": true,
-        "season": "8",
-        "episode": "6",
-        "description": "The mentor of Jerry's latest girlfriend (A.J. Langer) is dating a rival (Steve Hytner); Elaine must fire a troubled employee.",
-        "show": "Seinfeld",
-        "title": "The Fatigues"
-    },
-    {
-        "videoFile": "Seinfeld-S08E07.mkv",
-        "active": true,
-        "season": "8",
-        "episode": "7",
-        "description": "Jerry is unhappy about receiving bundles of small residual checks from a Japanese TV show; Kramer makes friends with a group of Japanese tourists.",
-        "show": "Seinfeld",
-        "title": "The Checks"
-    },
-    {
-        "videoFile": "Seinfeld-S08E08.mkv",
-        "active": true,
-        "season": "8",
-        "episode": "8",
-        "description": "Jerry and Kramer are affected when a celebrity opens a new restaurant in the neighborhood and the eatery's sign shines its neon light directly into Kramer's apartment.",
-        "show": "Seinfeld",
-        "title": "The Chicken Roaster"
-    },
-    {
-        "videoFile": "Seinfeld-S08E09.mkv",
-        "active": true,
-        "season": "8",
-        "episode": "9",
-        "description": "George's intellect benefits when his girlfriend's illness requires their abstinence; Elaine experiences the opposite effect; Jerry returns to his junior high school for career day.",
-        "show": "Seinfeld",
-        "title": "The Abstinence"
-    },
-    {
-        "videoFile": "Seinfeld-S08E10.mkv",
-        "active": true,
-        "season": "8",
-        "episode": "10",
-        "description": "George competes for a better apartment against a survivor of the Andrea Doria; Kramer visits a vet for his cough.",
-        "show": "Seinfeld",
-        "title": "The Andrea Doria"
-    },
-    {
-        "videoFile": "Seinfeld-S08E11.mkv",
-        "active": true,
-        "season": "8",
-        "episode": "11",
-        "description": "George finds his perfect woman (Andrea Bendewald); Kramer names his new pet after Jerry; Elaine dates a bald man.",
-        "show": "Seinfeld",
-        "title": "The Little Jerry"
-    },
-    {
-        "videoFile": "Seinfeld-S08E12.mkv",
-        "active": true,
-        "season": "8",
-        "episode": "12",
-        "description": "Jerry's parents (Barney Martin, Liz Sheridan) think he is low on money; J. Peterman (John O'Hurley) resumes his position as Elaine's boss.",
-        "show": "Seinfeld",
-        "title": "The Money"
-    },
-    {
-        "videoFile": "Seinfeld-S08E13.mkv",
-        "active": true,
-        "season": "8",
-        "episode": "13",
-        "description": "Jerry joins a tennis club where the pro is a lousy player; George is too late in concocting a witty comeback to an insult.",
-        "show": "Seinfeld",
-        "title": "The Comeback"
-    },
-    {
-        "videoFile": "Seinfeld-S08E14.mkv",
-        "active": true,
-        "season": "8",
-        "episode": "14",
-        "description": "George interviews students for the scholarship memorializing his late fiancee; Elaine is hired to ghostwrite J. Peterman's autobiography.",
-        "show": "Seinfeld",
-        "title": "The Van Buren Boys"
-    },
-    {
-        "videoFile": "Seinfeld-S08E15.mkv",
-        "active": true,
-        "season": "8",
-        "episode": "15",
-        "description": "A co-worker's mistake forces Elaine to create an alternate personality; Jerry unintentionally becomes a mobster.",
-        "show": "Seinfeld",
-        "title": "The Susie"
-    },
-    {
-        "videoFile": "Seinfeld-S08E16.mkv",
-        "active": true,
-        "season": "8",
-        "episode": "16",
-        "description": "George pulls out all the stops to find a commemorative key ring he lost; Jerry drops his girlfriend's toothbrush in the toilet; Kramer adopts a highway.",
-        "show": "Seinfeld",
-        "title": "The Pothole"
-    },
-    {
-        "videoFile": "Seinfeld-S08E17.mkv",
-        "active": true,
-        "season": "8",
-        "episode": "17",
-        "description": "Jerry ends up in a weightlifting contest with an older man (Lloyd Bridges); a beautiful woman (Chelsea Noble) mistakes George for her ex-boyfriend.",
-        "show": "Seinfeld",
-        "title": "The English Patient"
-    },
-    {
-        "videoFile": "Seinfeld-S08E18.mkv",
-        "active": true,
-        "season": "8",
-        "episode": "18",
-        "description": "George finds the ideal napping spot at work; Jerry has his kitchen rebuilt; Elaine meets a new beau (Vince Grant).",
-        "show": "Seinfeld",
-        "title": "The Nap"
-    },
-    {
-        "videoFile": "Seinfeld-S08E19.mkv",
-        "active": true,
-        "season": "8",
-        "episode": "19",
-        "description": "George begins to wonder what his new girlfriend (Suzanne Cryer) isn't telling him when she says, \"Yada, yada, yada.\"",
-        "show": "Seinfeld",
-        "title": "The Yada Yada"
-    },
-    {
-        "videoFile": "Seinfeld-S08E20.mkv",
-        "active": true,
-        "season": "8",
-        "episode": "20",
-        "description": "Newman nixes Kramer's millennium-party plans; Jerry obsesses about his position on his girlfriend's speed dial.",
-        "show": "Seinfeld",
-        "title": "The Millennium"
-    },
-    {
-        "videoFile": "Seinfeld-S08E21.mkv",
-        "active": true,
-        "season": "8",
-        "episode": "21",
-        "description": "Elaine's new business, selling only the upper part of muffins, is challenged to dispose of the unused bottoms.",
-        "show": "Seinfeld",
-        "title": "The Muffin Tops"
-    },
-    {
-        "videoFile": "Seinfeld-S08E22.mkv",
-        "active": true,
-        "season": "8",
-        "episode": "22",
-        "description": "George's plans for a summer getaway are foiled; Elaine's well-meaning criticism of a co-worker is not well-received.",
-        "show": "Seinfeld",
-        "title": "The Summer of George"
-    },
-    {
-        "videoFile": "Seinfeld-S09E01.mkv",
-        "active": true,
-        "season": "9",
-        "episode": "1",
-        "description": "Competing comic Bania warms to Jerry's crowds; Elaine and David unite for a European trip; Kramer reconsiders butter.",
-        "show": "Seinfeld",
-        "title": "The Butter Shave"
-    },
-    {
-        "videoFile": "Seinfeld-S09E02.mkv",
-        "active": true,
-        "season": "9",
-        "episode": "2",
-        "description": "Jerry finds part of his new date's anatomy of interest; George's job is threatened; Elaine's relationship sputters.",
-        "show": "Seinfeld",
-        "title": "The Voice"
-    },
-    {
-        "videoFile": "Seinfeld-S09E03.mkv",
-        "active": true,
-        "season": "9",
-        "episode": "3",
-        "description": "Jerry tries to reveal more of his feelings on the advice of his new girlfriend (Lori Loughlin). With Jason Alexander.",
-        "show": "Seinfeld",
-        "title": "The Serenity Now"
-    },
-    {
-        "videoFile": "Seinfeld-S09E04.mkv",
-        "active": true,
-        "season": "9",
-        "episode": "4",
-        "description": "At his parents' insistence, Jerry is coached by personal trainer Izzy Mandelbaum (Lloyd Bridges) to lose weight.",
-        "show": "Seinfeld",
-        "title": "The Blood"
-    },
-    {
-        "videoFile": "Seinfeld-S09E05.mkv",
-        "active": true,
-        "season": "9",
-        "episode": "5",
-        "description": "Jerry, promised a vehicle as payment for a performance, winds up getting a van instead of a car; Elaine meets a new man; Kramer has no need for mail.",
-        "show": "Seinfeld",
-        "title": "The Junk Mail"
-    },
-    {
-        "videoFile": "Seinfeld-S09E06.mkv",
-        "active": true,
-        "season": "9",
-        "episode": "6",
-        "description": "Jerry has designs on his new date's collection of toys; Kramer discovers furniture with a noteworthy past.",
-        "show": "Seinfeld",
-        "title": "The Merv Griffin Show"
-    },
-    {
-        "videoFile": "Seinfeld-S09E07.mkv",
-        "active": true,
-        "season": "9",
-        "episode": "7",
-        "description": "Kramer gets into meat slicing; Jerry dates a doctor (Marcia Cross) who isn't impressed with his job; George's new boss is a former adversary.",
-        "show": "Seinfeld",
-        "title": "The Slicer"
-    },
-    {
-        "videoFile": "Seinfeld-S09E08.mkv",
-        "active": true,
-        "season": "9",
-        "episode": "8",
-        "description": "Elaine, Jerry and George go to India for the wedding of Elaine's friend (Brenda Strong); Kramer's death threat.",
-        "show": "Seinfeld",
-        "title": "The Betrayal"
-    },
-    {
-        "videoFile": "Seinfeld-S09E09.mkv",
-        "active": true,
-        "season": "9",
-        "episode": "9",
-        "description": "Jerry dates a woman with few inhibitions about her body; George awaits an apology; Kramer researches short showers.",
-        "show": "Seinfeld",
-        "title": "The Apology"
-    },
-    {
-        "videoFile": "Seinfeld-S09E10.mkv",
-        "active": true,
-        "season": "9",
-        "episode": "10",
-        "description": "George and his father celebrate an alternative holiday; Kramer goes back to work after a long bagel strike.",
-        "show": "Seinfeld",
-        "title": "The Strike"
-    },
-    {
-        "videoFile": "Seinfeld-S09E11.mkv",
-        "active": true,
-        "season": "9",
-        "episode": "11",
-        "description": "Jerry is finally ready to buy a new car, but things don't go very smoothly when he visits Elaine's boyfriend to make the deal.",
-        "show": "Seinfeld",
-        "title": "The Dealership"
-    },
-    {
-        "videoFile": "Seinfeld-S09E12.mkv",
-        "active": true,
-        "season": "9",
-        "episode": "12",
-        "description": "Elaine's boyfriend, Puddy, wears a fur coat; Jerry starts living without a wallet; Newman may be evicted.",
-        "show": "Seinfeld",
-        "title": "The Reverse Peephole"
-    },
-    {
-        "videoFile": "Seinfeld-S09E13.mkv",
-        "active": true,
-        "season": "9",
-        "episode": "13",
-        "description": "Jerry is aggravated when a woman uses him as a subject for her show; Elaine doesn't understand a cartoon.",
-        "show": "Seinfeld",
-        "title": "The Cartoon"
-    },
-    {
-        "videoFile": "Seinfeld-S09E14.mkv",
-        "active": true,
-        "season": "9",
-        "episode": "14",
-        "description": "Jerry keeps finding Kramer's hidden strongbox key; Elaine dates a mysterious man; George plans a breakup.",
-        "show": "Seinfeld",
-        "title": "The Strongbox"
-    },
-    {
-        "videoFile": "Seinfeld-S09E15.mkv",
-        "active": true,
-        "season": "9",
-        "episode": "15",
-        "description": "Jerry buys his father (Barney Martin) an organizer but can't make him use it; Kramer retires next to the Seinfelds.",
-        "show": "Seinfeld",
-        "title": "The Wizard"
-    },
-    {
-        "videoFile": "Seinfeld-S09E16.mkv",
-        "active": true,
-        "season": "9",
-        "episode": "16",
-        "description": "George learns to leave at the right moment; Jerry has a new girl (Cindy Ambuehl) with a past; Puddy (Patrick Warburton) is religious.",
-        "show": "Seinfeld",
-        "title": "The Burning"
-    },
-    {
-        "videoFile": "Seinfeld-S09E17.mkv",
-        "active": true,
-        "season": "9",
-        "episode": "17",
-        "description": "Jerry decides to teach Uncle Leo a lesson after he catches him shoplifting at a bookstore; Elaine humiliates herself at a party.",
-        "show": "Seinfeld",
-        "title": "The Bookstore"
-    },
-    {
-        "videoFile": "Seinfeld-S09E18.mkv",
-        "active": true,
-        "season": "9",
-        "episode": "18",
-        "description": "Elaine wolfs down Peterman's (John O'Hurley) pricey cheesecake; Kramer calls in \"the guys\" for George.",
-        "show": "Seinfeld",
-        "title": "The Frogger"
-    },
-    {
-        "videoFile": "Seinfeld-S09E19.mkv",
-        "active": true,
-        "season": "9",
-        "episode": "19",
-        "description": "Jerry (Jerry Seinfeld) begins dating his new maid (Angela Featherstone); George ponders a nickname; Elaine has to get the new area code.",
-        "show": "Seinfeld",
-        "title": "The Maid"
-    },
-    {
-        "videoFile": "Seinfeld-S09E20.mkv",
-        "active": true,
-        "season": "9",
-        "episode": "20",
-        "description": "Getting stuck in a Puerto Rican Day traffic jam brings about different responses from Jerry, Elaine, George and Kramer.",
-        "show": "Seinfeld",
-        "title": "The Puerto Rican Day"
-    },
-    {
-        "videoFile": "Seinfeld-S09E21E22.mkv",
-        "active": true,
-        "season": "9",
-        "episode": "21 & 22",
-        "description": "Some of the best scenes from nine seasons of \"Seinfeld\" are brought together in a celebration of the series.",
-        "show": "Seinfeld",
-        "title": "The Clip Show (a.k.a. The Chronicle) Part 1 & 2"
-    },
-    {
-        "videoFile": "Seinfeld-S09E23E24.mkv",
-        "active": true,
-        "season": "9",
-        "episode": "23 & 24",
-        "description": "After NBC picks up Jerry and George's sitcom, the four pals are arrested for breaking the good Samaritan law.",
-        "show": "Seinfeld",
-        "title": "The Finale Part 1 & 2"
-    }
+  {
+    "videoFile": "Seinfeld-S01E01.mkv",
+    "active": true,
+    "season": "1",
+    "episode": "1",
+    "description": "A woman's impending visit excites Jerry, until he learns she's getting married.",
+    "title": "seinfeld",
+    "episodeTitle": "The Seinfeld Chronicles"
+  },
+  {
+    "videoFile": "Seinfeld-S01E02.mkv",
+    "active": true,
+    "season": "1",
+    "episode": "2",
+    "description": "Jerry goes to great lengths to find and woo a woman he met at a party.",
+    "title": "seinfeld",
+    "episodeTitle": "The Stake Out"
+  },
+  {
+    "videoFile": "Seinfeld-S01E03.mkv",
+    "active": true,
+    "season": "1",
+    "episode": "3",
+    "description": "Jerry's plans to move to a new apartment are complicated by George and Elaine.",
+    "title": "seinfeld",
+    "episodeTitle": "The Robbery"
+  },
+  {
+    "videoFile": "Seinfeld-S01E04.mkv",
+    "active": true,
+    "season": "1",
+    "episode": "4",
+    "description": "Jerry breaks off an unusual friendship with a fellow (Kevin Dunn) he has disliked for years.",
+    "title": "seinfeld",
+    "episodeTitle": "Male-Unbonding"
+  },
+  {
+    "videoFile": "Seinfeld-S01E05.mkv",
+    "active": true,
+    "season": "1",
+    "episode": "5",
+    "description": "George and Jerry invest in falling stock after a bad tip from a stock-market shyster.",
+    "title": "seinfeld",
+    "episodeTitle": "The Stock Tip"
+  },
+  {
+    "videoFile": "Seinfeld-S02E01.mkv",
+    "active": true,
+    "season": "2",
+    "episode": "1",
+    "description": "Jerry gives George advice on breaking up and then finds himself in the same boat.",
+    "title": "seinfeld",
+    "episodeTitle": "The Ex-Girlfriend"
+  },
+  {
+    "videoFile": "Seinfeld-S02E02.mkv",
+    "active": true,
+    "season": "2",
+    "episode": "2",
+    "description": "Jerry feels responsible for the death of an elderly woman (Rozsika Halmos) he upset the day before.",
+    "title": "seinfeld",
+    "episodeTitle": "The Pony Remark"
+  },
+  {
+    "videoFile": "Seinfeld-S02E03.mkv",
+    "active": true,
+    "season": "2",
+    "episode": "3",
+    "description": "Jerry buys a very expensive suede jacket but learns that clothes don't always make the man.",
+    "title": "seinfeld",
+    "episodeTitle": "The Jacket"
+  },
+  {
+    "videoFile": "Seinfeld-S02E04.mkv",
+    "active": true,
+    "season": "2",
+    "episode": "4",
+    "description": "George enlists Jerry's help in removing a message that he left on a date's (Tory Polone) answering machine.",
+    "title": "seinfeld",
+    "episodeTitle": "The Phone Message"
+  },
+  {
+    "videoFile": "Seinfeld-S02E05.mkv",
+    "active": true,
+    "season": "2",
+    "episode": "5",
+    "description": "Jerry encourages Elaine to move into the vacant apartment in his building.",
+    "title": "seinfeld",
+    "episodeTitle": "The Apartment"
+  },
+  {
+    "videoFile": "Seinfeld-S02E06.mkv",
+    "active": true,
+    "season": "2",
+    "episode": "6",
+    "description": "Jerry suspects his new cleaning person (Michael D. Conway) of stealing a statue he had promised to George.",
+    "title": "seinfeld",
+    "episodeTitle": "The Statue"
+  },
+  {
+    "videoFile": "Seinfeld-S02E07.mkv",
+    "active": true,
+    "season": "2",
+    "episode": "7",
+    "description": "George plots revenge on his former boss (Fred Applegate); Jerry seeks to get even with a laundromat owner (John Capodice).",
+    "title": "seinfeld",
+    "episodeTitle": "The Revenge"
+  },
+  {
+    "videoFile": "Seinfeld-S02E08.mkv",
+    "active": true,
+    "season": "2",
+    "episode": "8",
+    "description": "Hypochondriac George gets advice from a \"holistic\" healer (Stephen Tabolowsky) for his claimed heart attack.",
+    "title": "seinfeld",
+    "episodeTitle": "The Heart Attack"
+  },
+  {
+    "videoFile": "Seinfeld-S02E09.mkv",
+    "active": true,
+    "season": "2",
+    "episode": "9",
+    "description": "Jerry and Elaine come up with one stipulation when they discuss getting back together as a couple.",
+    "title": "seinfeld",
+    "episodeTitle": "The Deal"
+  },
+  {
+    "videoFile": "Seinfeld-S02E10.mkv",
+    "active": true,
+    "season": "2",
+    "episode": "10",
+    "description": "Jerry's cable TV installer (Vic Polizos) shows up on the day Elaine is using his apartment for a baby shower.",
+    "title": "seinfeld",
+    "episodeTitle": "The Baby Shower"
+  },
+  {
+    "videoFile": "Seinfeld-S02E11.mkv",
+    "active": true,
+    "season": "2",
+    "episode": "11",
+    "description": "Jerry and his friends have difficulty getting a table at a crowded Chinese restaurant.",
+    "title": "seinfeld",
+    "episodeTitle": "The Chinese Restaurant"
+  },
+  {
+    "videoFile": "Seinfeld-S02E12.mkv",
+    "active": true,
+    "season": "2",
+    "episode": "12",
+    "description": "George feels responsible for getting a busboy fired and tries to make it up to him.",
+    "title": "seinfeld",
+    "episodeTitle": "The Busboy"
+  },
+  {
+    "videoFile": "Seinfeld-S03E01.mkv",
+    "active": true,
+    "season": "3",
+    "episode": "1",
+    "description": "Jerry persuades a dentist friend (Ralph Bruneau) to prescribe an expensive massage for medical reasons.",
+    "title": "seinfeld",
+    "episodeTitle": "The Note"
+  },
+  {
+    "videoFile": "Seinfeld-S03E02.mkv",
+    "active": true,
+    "season": "3",
+    "episode": "2",
+    "description": "George tries honesty when he explains to his new girlfriend (Valerie Mahaffey) why they must break up.",
+    "title": "seinfeld",
+    "episodeTitle": "The Truth"
+  },
+  {
+    "videoFile": "Seinfeld-S03E03.mkv",
+    "active": true,
+    "season": "3",
+    "episode": "3",
+    "description": "Jerry and Elaine go to Florida when a condo association honors his father.",
+    "title": "seinfeld",
+    "episodeTitle": "The Pen"
+  },
+  {
+    "videoFile": "Seinfeld-S03E04.mkv",
+    "active": true,
+    "season": "3",
+    "episode": "4",
+    "description": "Jerry is in charge of a troublesome dog and is stuck in his apartment, which leaves George and Elaine stranded together with very little in common.",
+    "title": "seinfeld",
+    "episodeTitle": "The Dog"
+  },
+  {
+    "videoFile": "Seinfeld-S03E05.mkv",
+    "active": true,
+    "season": "3",
+    "episode": "5",
+    "description": "The library has no record of Jerry returning a book he took out in 1971.",
+    "title": "seinfeld",
+    "episodeTitle": "The Library"
+  },
+  {
+    "videoFile": "Seinfeld-S03E06.mkv",
+    "active": true,
+    "season": "3",
+    "episode": "6",
+    "description": "Jerry and his friends lose their car in the multilevel parking garage at a huge mall.",
+    "title": "seinfeld",
+    "episodeTitle": "The Parking Garage"
+  },
+  {
+    "videoFile": "Seinfeld-S03E07.mkv",
+    "active": true,
+    "season": "3",
+    "episode": "7",
+    "description": "Jerry's attempt to increase business at a small cafe backfires; George regrets agreeing to an IQ test.",
+    "title": "seinfeld",
+    "episodeTitle": "The Cafe"
+  },
+  {
+    "videoFile": "Seinfeld-S03E08.mkv",
+    "active": true,
+    "season": "3",
+    "episode": "8",
+    "description": "Jerry is shocked to hear the naughty suggestions on his tape recorder; George sees Elaine in a new light.",
+    "title": "seinfeld",
+    "episodeTitle": "The Tape"
+  },
+  {
+    "videoFile": "Seinfeld-S03E09.mkv",
+    "active": true,
+    "season": "3",
+    "episode": "9",
+    "description": "Jerry straddles the fence regarding his latest flame (Tawny Kitaen); George's attention is focused on his date's (Susan Diol) nose.",
+    "title": "seinfeld",
+    "episodeTitle": "The Nose Job"
+  },
+  {
+    "videoFile": "Seinfeld-S03E10.mkv",
+    "active": true,
+    "season": "3",
+    "episode": "10",
+    "description": "After a party, and much to the host's chagrin, Jerry and Elaine wait for Kramer to pick them up.",
+    "title": "seinfeld",
+    "episodeTitle": "The Stranded"
+  },
+  {
+    "videoFile": "Seinfeld-S03E11.mkv",
+    "active": true,
+    "season": "3",
+    "episode": "11",
+    "description": "Elaine breaks up with her 66-year-old beau (Edward Penn), who suffers a stroke in front of Jerry's apartment.",
+    "title": "seinfeld",
+    "episodeTitle": "The Alternate Side"
+  },
+  {
+    "videoFile": "Seinfeld-S03E12.mkv",
+    "active": true,
+    "season": "3",
+    "episode": "12",
+    "description": "Jerry is unintentionally responsible for Elaine's romantic woes; George gives Elaine a cashmere sweater.",
+    "title": "seinfeld",
+    "episodeTitle": "The Red Dot"
+  },
+  {
+    "videoFile": "Seinfeld-S03E13.mkv",
+    "active": true,
+    "season": "3",
+    "episode": "13",
+    "description": "Jerry, Elaine, George and Kramer have unique experiences on their subway rides.",
+    "title": "seinfeld",
+    "episodeTitle": "The Subway"
+  },
+  {
+    "videoFile": "Seinfeld-S03E14.mkv",
+    "active": true,
+    "season": "3",
+    "episode": "14",
+    "description": "George worries over gaining the upper hand in his current romance.",
+    "title": "seinfeld",
+    "episodeTitle": "The Pez Dispenser"
+  },
+  {
+    "videoFile": "Seinfeld-S03E15.mkv",
+    "active": true,
+    "season": "3",
+    "episode": "15",
+    "description": "Jerry worries that his comatose neighbor will recover and seek revenge; George fears a plane crash.",
+    "title": "seinfeld",
+    "episodeTitle": "The Suicide"
+  },
+  {
+    "videoFile": "Seinfeld-S03E16.mkv",
+    "active": true,
+    "season": "3",
+    "episode": "16",
+    "description": "Elaine and Jerry arrange a date for George with one of her unattached friends (Maggie Jakobson).",
+    "title": "seinfeld",
+    "episodeTitle": "The Fix-Up"
+  },
+  {
+    "videoFile": "Seinfeld-S03E17E18.mkv",
+    "active": true,
+    "season": "3",
+    "episode": "17 & 18",
+    "description": "Jerry's baseball hero, Keith Hernandez, falls for Elaine; George schemes to extend his unemployment benefits.",
+    "title": "seinfeld",
+    "episodeTitle": "The Boyfriend Part 1 & 2"
+  },
+  {
+    "videoFile": "Seinfeld-S03E19.mkv",
+    "active": true,
+    "season": "3",
+    "episode": "19",
+    "description": "Jerry and George commandeer a limousine headed for a neo-Nazi rally.",
+    "title": "seinfeld",
+    "episodeTitle": "The Limo"
+  },
+  {
+    "videoFile": "Seinfeld-S03E20.mkv",
+    "active": true,
+    "season": "3",
+    "episode": "20",
+    "description": "Jerry tracks down a hit-and-run driver (Melinda McGraw); George skips town to escape an irate husband.",
+    "title": "seinfeld",
+    "episodeTitle": "The Good Samaritan"
+  },
+  {
+    "videoFile": "Seinfeld-S03E21.mkv",
+    "active": true,
+    "season": "3",
+    "episode": "21",
+    "description": "After Jerry breaks up with his new girlfriend (Catherine Keener), she resorts to someone else's words to woo him back.",
+    "title": "seinfeld",
+    "episodeTitle": "The Letter"
+  },
+  {
+    "videoFile": "Seinfeld-S03E22.mkv",
+    "active": true,
+    "season": "3",
+    "episode": "22",
+    "description": "George and Elaine have some explaining to do when they take Jerry's car for a ride.",
+    "title": "seinfeld",
+    "episodeTitle": "The Parking Space"
+  },
+  {
+    "videoFile": "Seinfeld-S03E23.mkv",
+    "active": true,
+    "season": "3",
+    "episode": "23",
+    "description": "Becoming annoyed at Kramer's invasions of privacy, Jerry takes away his spare key. Kramer, shaken, decides to leave for California to pursue an acting career.",
+    "title": "seinfeld",
+    "episodeTitle": "The Keys"
+  },
+  {
+    "videoFile": "Seinfeld-S04E01.mkv",
+    "active": true,
+    "season": "4",
+    "episode": "1",
+    "description": "When Jerry is booked to appear on \"The Tonight Show,\" he takes George with him to Los Angeles to search for Kramer, who vanished in a huff months earlier.",
+    "title": "seinfeld",
+    "episodeTitle": "The Trip (1)"
+  },
+  {
+    "videoFile": "Seinfeld-S04E02.mkv",
+    "active": true,
+    "season": "4",
+    "episode": "2",
+    "description": "While in Los Angeles, Jerry and George are picked up by the police; Kramer is a suspect in a series of serial murders.",
+    "title": "seinfeld",
+    "episodeTitle": "The Trip (2)"
+  },
+  {
+    "videoFile": "Seinfeld-S04E03E04.mkv",
+    "active": true,
+    "season": "4",
+    "episode": "3 & 4",
+    "description": "Jerry is approached by network executives and asked to to create a new television show. Jerry tries to evade a vengeful writer; Kramer agrees to be a witness at a friend's trial; George woos an executive.",
+    "title": "seinfeld",
+    "episodeTitle": "The Pitch & The Ticket"
+  },
+  {
+    "videoFile": "Seinfeld-S04E05.mkv",
+    "active": true,
+    "season": "4",
+    "episode": "5",
+    "description": "Jerry tries to explain to his visiting parents (Liz Sheridan, Barney Martin) the whereabouts of a gift they once gave him.",
+    "title": "seinfeld",
+    "episodeTitle": "The Wallet"
+  },
+  {
+    "videoFile": "Seinfeld-S04E06.mkv",
+    "active": true,
+    "season": "4",
+    "episode": "6",
+    "description": "Jerry tries to buy back the watch his parents gave him; George attempts to renegotiate his network deal.",
+    "title": "seinfeld",
+    "episodeTitle": "The Watch"
+  },
+  {
+    "videoFile": "Seinfeld-S04E07.mkv",
+    "active": true,
+    "season": "4",
+    "episode": "7",
+    "description": "Jerry gets lost en route to visiting a sick fan who must live in a protective plastic bubble.",
+    "title": "seinfeld",
+    "episodeTitle": "The Bubble Boy"
+  },
+  {
+    "videoFile": "Seinfeld-S04E08.mkv",
+    "active": true,
+    "season": "4",
+    "episode": "8",
+    "description": "Jerry and George try to write the pilot for their series; Kramer solicits cigars from the Cuban consulate.",
+    "title": "seinfeld",
+    "episodeTitle": "The Cheever Letters"
+  },
+  {
+    "videoFile": "Seinfeld-S04E09.mkv",
+    "active": true,
+    "season": "4",
+    "episode": "9",
+    "description": "A night at the opera turns into a nightmare when Jerry meets Elaine's new boyfriend (Peter Crombie).",
+    "title": "seinfeld",
+    "episodeTitle": "The Opera"
+  },
+  {
+    "videoFile": "Seinfeld-S04E10.mkv",
+    "active": true,
+    "season": "4",
+    "episode": "10",
+    "description": "Jerry and George must think of an idea for a TV series before meeting with network bigwigs.",
+    "title": "seinfeld",
+    "episodeTitle": "The Virgin"
+  },
+  {
+    "videoFile": "Seinfeld-S04E11.mkv",
+    "active": true,
+    "season": "4",
+    "episode": "11",
+    "description": "Jerry challenges George, Kramer and Elaine to a contest of self-denial; Elaine looks forward to a special date.",
+    "title": "seinfeld",
+    "episodeTitle": "The Contest"
+  },
+  {
+    "videoFile": "Seinfeld-S04E12.mkv",
+    "active": true,
+    "season": "4",
+    "episode": "12",
+    "description": "Jerry parties it up in first class while Elaine suffers in cramped coach; Kramer is chased by the police.",
+    "title": "seinfeld",
+    "episodeTitle": "The Airport"
+  },
+  {
+    "videoFile": "Seinfeld-S04E13.mkv",
+    "active": true,
+    "season": "4",
+    "episode": "13",
+    "description": "Elaine accidentally reveals too much cleavage on her Christmas card; Kramer is asked to pose for a risque underwear ad.",
+    "title": "seinfeld",
+    "episodeTitle": "The Pick"
+  },
+  {
+    "videoFile": "Seinfeld-S04E14.mkv",
+    "active": true,
+    "season": "4",
+    "episode": "14",
+    "description": "Jerry is shadowed by a pesky comic (Barry Diamond); the gang's decision to meet for a movie begins in disaster.",
+    "title": "seinfeld",
+    "episodeTitle": "The Movie"
+  },
+  {
+    "videoFile": "Seinfeld-S04E15.mkv",
+    "active": true,
+    "season": "4",
+    "episode": "15",
+    "description": "Jerry takes pity on a foreigner (Brian George) when the man's immigration papers are left in Jerry's mailbox.",
+    "title": "seinfeld",
+    "episodeTitle": "The Visa"
+  },
+  {
+    "videoFile": "Seinfeld-S04E16.mkv",
+    "active": true,
+    "season": "4",
+    "episode": "16",
+    "description": "Jerry and George meet with a skeptical TV executive about their show; Kramer dates Jerry's ex-girlfriend.",
+    "title": "seinfeld",
+    "episodeTitle": "The Shoes"
+  },
+  {
+    "videoFile": "Seinfeld-S04E17.mkv",
+    "active": true,
+    "season": "4",
+    "episode": "17",
+    "description": "An eavesdropping college reporter prints the mistaken story that Jerry and George are longtime intimate companions.",
+    "title": "seinfeld",
+    "episodeTitle": "The Outing"
+  },
+  {
+    "videoFile": "Seinfeld-S04E18.mkv",
+    "active": true,
+    "season": "4",
+    "episode": "18",
+    "description": "When Jerry, George and Elaine volunteer to comfort senior citizens in their homes, it leads to disaster for all.",
+    "title": "seinfeld",
+    "episodeTitle": "The Old Man"
+  },
+  {
+    "videoFile": "Seinfeld-S04E19.mkv",
+    "active": true,
+    "season": "4",
+    "episode": "19",
+    "description": "Jerry dumps his girlfriend when he finds out she may have breast implants; Kramer claims to have seen Salman Rushdie at a health club.",
+    "title": "seinfeld",
+    "episodeTitle": "The Implant"
+  },
+  {
+    "videoFile": "Seinfeld-S04E20.mkv",
+    "active": true,
+    "season": "4",
+    "episode": "20",
+    "description": "When Jerry and Kramer observe an operation, they accidentally drop a candy into the surgical cavity.",
+    "title": "seinfeld",
+    "episodeTitle": "The Junior Mint"
+  },
+  {
+    "videoFile": "Seinfeld-S04E21.mkv",
+    "active": true,
+    "season": "4",
+    "episode": "21",
+    "description": "A car valet with killer body odor leaves Jerry and Elaine gasping for breath; George sees an ex-girlfriend holding hands with someone else.",
+    "title": "seinfeld",
+    "episodeTitle": "The Smelly Car"
+  },
+  {
+    "videoFile": "Seinfeld-S04E22.mkv",
+    "active": true,
+    "season": "4",
+    "episode": "22",
+    "description": "George's father (Jerry Stiller) is arrested when Jerry and George park his car in a handicapped spot.",
+    "title": "seinfeld",
+    "episodeTitle": "The Handicap Spot"
+  },
+  {
+    "videoFile": "Seinfeld-S04E23E24.mkv",
+    "active": true,
+    "season": "4",
+    "episode": "23 & 24",
+    "description": "Jerry and George produce their pilot, but George doesn't like the actor playing him; Kramer has a personal problem.",
+    "title": "seinfeld",
+    "episodeTitle": "The Pilot Part 1 & 2"
+  },
+  {
+    "videoFile": "Seinfeld-S05E01.mkv",
+    "active": true,
+    "season": "5",
+    "episode": "1",
+    "description": "Jerry begs Elaine for another chance when she reveals her true feelings about their relationship; Kramer is banned from his favorite fruit shop.",
+    "title": "seinfeld",
+    "episodeTitle": "The Mango"
+  },
+  {
+    "videoFile": "Seinfeld-S05E02.mkv",
+    "active": true,
+    "season": "5",
+    "episode": "2",
+    "description": "Jerry appears on \"Today\" with Bryant Gumbel, but must wear a silly shirt as the result of a misunderstanding with Kramer's \"low talker\" girlfriend; George moves in with his parents.",
+    "title": "seinfeld",
+    "episodeTitle": "The Puffy Shirt"
+  },
+  {
+    "videoFile": "Seinfeld-S05E03.mkv",
+    "active": true,
+    "season": "5",
+    "episode": "3",
+    "description": "George and Elaine go to an optician after George loses his glasses at his health club; Elaine fears she has rabies after being bitten by a dog.",
+    "title": "seinfeld",
+    "episodeTitle": "The Glasses"
+  },
+  {
+    "videoFile": "Seinfeld-S05E04.mkv",
+    "active": true,
+    "season": "5",
+    "episode": "4",
+    "description": "Jerry, Kramer and Newman (Wayne Knight) investigate their accountant's unexplained sniffles; Elaine's new boyfriend has an annoying habit.",
+    "title": "seinfeld",
+    "episodeTitle": "The Sniffing Accountant"
+  },
+  {
+    "videoFile": "Seinfeld-S05E05.mkv",
+    "active": true,
+    "season": "5",
+    "episode": "5",
+    "description": "Jerry and Elaine are apprehensive about being the godparents to their friends' newborn son; George is thrilled with his new parking spot.",
+    "title": "seinfeld",
+    "episodeTitle": "The Bris"
+  },
+  {
+    "videoFile": "Seinfeld-S05E06.mkv",
+    "active": true,
+    "season": "5",
+    "episode": "6",
+    "description": "George asks Jerry's date (Marlee Matlin) to read the lips of his ex-girlfriend at a party; Elaine has trouble communicating with a limo driver.",
+    "title": "seinfeld",
+    "episodeTitle": "The Lip Reader"
+  },
+  {
+    "videoFile": "Seinfeld-S05E07.mkv",
+    "active": true,
+    "season": "5",
+    "episode": "7",
+    "description": "Jerry and Elaine begin gaining weight and suspect a nonfat-yogurt shop may be making false claims; Jerry's use of a bad word influences Maryedith's son.",
+    "title": "seinfeld",
+    "episodeTitle": "The Non-Fat Yogurt"
+  },
+  {
+    "videoFile": "Seinfeld-S05E08.mkv",
+    "active": true,
+    "season": "5",
+    "episode": "8",
+    "description": "Jerry decides to change barbers because his has a history of giving bad haircuts; George poses as an employee after a job interview.",
+    "title": "seinfeld",
+    "episodeTitle": "The Barber"
+  },
+  {
+    "videoFile": "Seinfeld-S05E09.mkv",
+    "active": true,
+    "season": "5",
+    "episode": "9",
+    "description": "Jerry becomes tense when he can't get his masseuse girlfriend (Jennifer Coolidge) to give him a massage.",
+    "title": "seinfeld",
+    "episodeTitle": "The Masseuse"
+  },
+  {
+    "videoFile": "Seinfeld-S05E10.mkv",
+    "active": true,
+    "season": "5",
+    "episode": "10",
+    "description": "Elaine's American Indian friend thinks Jerry is a racist after he gives Elaine a cigar-store Indian statue as a present.",
+    "title": "seinfeld",
+    "episodeTitle": "The Cigar Store Indian"
+  },
+  {
+    "videoFile": "Seinfeld-S05E11.mkv",
+    "active": true,
+    "season": "5",
+    "episode": "11",
+    "description": "Jerry thinks his girlfriend (Kimberly Campbell) has a fungus; George converts to the Latvian Orthodox religion.",
+    "title": "seinfeld",
+    "episodeTitle": "The Conversion"
+  },
+  {
+    "videoFile": "Seinfeld-S05E12.mkv",
+    "active": true,
+    "season": "5",
+    "episode": "12",
+    "description": "Elaine's toilet stall has no tissue and the woman in the next stall refuses to give her some; George acts giddy around Elaine's boyfriend (Dan Cortese).",
+    "title": "seinfeld",
+    "episodeTitle": "The Stall"
+  },
+  {
+    "videoFile": "Seinfeld-S05E13.mkv",
+    "active": true,
+    "season": "5",
+    "episode": "13",
+    "description": "Jerry, Elaine, George and Kramer search for something to take to a dinner party; Jerry and Elaine forget to take a number at the bakery; Kramer and George have trouble buying wine.",
+    "title": "seinfeld",
+    "episodeTitle": "The Dinner Party"
+  },
+  {
+    "videoFile": "Seinfeld-S05E14.mkv",
+    "active": true,
+    "season": "5",
+    "episode": "14",
+    "description": "George poses as a marine biologist while on a date with a former college classmate (Rosalind Allen); Elaine loses her electronic organizer.",
+    "title": "seinfeld",
+    "episodeTitle": "The Marine Biologist"
+  },
+  {
+    "videoFile": "Seinfeld-S05E15.mkv",
+    "active": true,
+    "season": "5",
+    "episode": "15",
+    "description": "Jerry becomes obsessed when his date refuses to sample his pie; a clothing store mannequin resembles Elaine.",
+    "title": "seinfeld",
+    "episodeTitle": "The Pie"
+  },
+  {
+    "videoFile": "Seinfeld-S05E16.mkv",
+    "active": true,
+    "season": "5",
+    "episode": "16",
+    "description": "Kramer befriends a little person when he is hired as a stand-in for a soap opera; George wants to break up with a girlfriend.",
+    "title": "seinfeld",
+    "episodeTitle": "The Stand-In"
+  },
+  {
+    "videoFile": "Seinfeld-S05E17.mkv",
+    "active": true,
+    "season": "5",
+    "episode": "17",
+    "description": "Jerry lets his girlfriend (Courteney Cox) pose as his wife so she can receive a discount at the dry cleaner.",
+    "title": "seinfeld",
+    "episodeTitle": "The Wife"
+  },
+  {
+    "videoFile": "Seinfeld-S05E18.mkv",
+    "active": true,
+    "season": "5",
+    "episode": "18",
+    "description": "Kramer has a scheme to sell vintage raincoats; Jerry and his girlfriend can't get any alone time; George sells his father's cabana clothes.",
+    "title": "seinfeld",
+    "episodeTitle": "The Raincoats Part 1 & 2"
+  },
+  {
+    "videoFile": "Seinfeld-S05E20.mkv",
+    "active": true,
+    "season": "5",
+    "episode": "19",
+    "description": "George dates a woman who has a son. She invites him to her son's birthday party. While at the party, a fire breaks out in the kitchen.",
+    "title": "seinfeld",
+    "episodeTitle": "The Fire"
+  },
+  {
+    "videoFile": "Seinfeld-S05E21.mkv",
+    "active": true,
+    "season": "5",
+    "episode": "20",
+    "description": "George fears Jerry's girlfriend will give his girlfriend an inaccurate description after she sees him naked.",
+    "title": "seinfeld",
+    "episodeTitle": "The Hamptons"
+  },
+  {
+    "videoFile": "Seinfeld-S05E22.mkv",
+    "active": true,
+    "season": "5",
+    "episode": "21",
+    "description": "George learns success lies in doing the opposite of what he would normally do; Kramer appears on \"Live -- Regis &amp; Kathie Lee.\"",
+    "title": "seinfeld",
+    "episodeTitle": "The Opposite"
+  },
+  {
+    "videoFile": "Seinfeld-S06E01.mkv",
+    "active": true,
+    "season": "6",
+    "episode": "1",
+    "description": "Kramer acts as chaperone when Jerry goes on a date with Miss Rhode Island (Marguerite MacIntyre).",
+    "title": "seinfeld",
+    "episodeTitle": "The Chaperone"
+  },
+  {
+    "videoFile": "Seinfeld-S06E02.mkv",
+    "active": true,
+    "season": "6",
+    "episode": "2",
+    "description": "George's date gets credit for a salad purchase; Newman once dumped Jerry's date; Kramer clashes with a former athlete.",
+    "title": "seinfeld",
+    "episodeTitle": "The Big Salad"
+  },
+  {
+    "videoFile": "Seinfeld-S06E03.mkv",
+    "active": true,
+    "season": "6",
+    "episode": "3",
+    "description": "Jerry convinces George to ask baseball player Danny Tartabull to appear on a public television pledge drive.",
+    "title": "seinfeld",
+    "episodeTitle": "The Pledge Drive"
+  },
+  {
+    "videoFile": "Seinfeld-S06E04.mkv",
+    "active": true,
+    "season": "6",
+    "episode": "4",
+    "description": "A series of mishaps occur when George's phone lines get crossed and a woman answers when anyone calls.",
+    "title": "seinfeld",
+    "episodeTitle": "The Chinese Woman"
+  },
+  {
+    "videoFile": "Seinfeld-S06E05.mkv",
+    "active": true,
+    "season": "6",
+    "episode": "5",
+    "description": "Jerry's purchase of a new sofa helps Elaine land a new romantic interest when she begins dating the man who delivered it (David James Elliott).",
+    "title": "seinfeld",
+    "episodeTitle": "The Couch"
+  },
+  {
+    "videoFile": "Seinfeld-S06E06.mkv",
+    "active": true,
+    "season": "6",
+    "episode": "6",
+    "description": "Elaine must substitute for her boss in a merger deal; a girlfriend's mom sees George eating out of the trash.",
+    "title": "seinfeld",
+    "episodeTitle": "The Gymnast"
+  },
+  {
+    "videoFile": "Seinfeld-S06E07.mkv",
+    "active": true,
+    "season": "6",
+    "episode": "7",
+    "description": "Jerry is forced to treat an obnoxious comic (Stephen Hytner) to dinner after accepting a designer suit.",
+    "title": "seinfeld",
+    "episodeTitle": "The Soup"
+  },
+  {
+    "videoFile": "Seinfeld-S06E08.mkv",
+    "active": true,
+    "season": "6",
+    "episode": "8",
+    "description": "Elaine wins her boss (Ian Abercrombie) a chance to walk in the Macy's Thanksgiving Day Parade. George buys the car of a celebrity.",
+    "title": "seinfeld",
+    "episodeTitle": "The Mom &amp; Pop Store"
+  },
+  {
+    "videoFile": "Seinfeld-S06E09.mkv",
+    "active": true,
+    "season": "6",
+    "episode": "9",
+    "description": "George hires a dowdy assistant (Vicki Lewis) whose competence and productivity prove to be a turn-on.",
+    "title": "seinfeld",
+    "episodeTitle": "The Secretary"
+  },
+  {
+    "videoFile": "Seinfeld-S06E10.mkv",
+    "active": true,
+    "season": "6",
+    "episode": "10",
+    "description": "Jerry is challenged to a race by a former high-school classmate; Kramer fights for his rights as a store Santa.",
+    "title": "seinfeld",
+    "episodeTitle": "The Race"
+  },
+  {
+    "videoFile": "Seinfeld-S06E11.mkv",
+    "active": true,
+    "season": "6",
+    "episode": "11",
+    "description": "George discovers Kramer's first name while trying to determine whether his girlfriend has an eating disorder.",
+    "title": "seinfeld",
+    "episodeTitle": "The Switch"
+  },
+  {
+    "videoFile": "Seinfeld-S06E12.mkv",
+    "active": true,
+    "season": "6",
+    "episode": "12",
+    "description": "Given a familiar label maker, Jerry becomes suspicious of the friend (Bryan Cranston) who gave it to him.",
+    "title": "seinfeld",
+    "episodeTitle": "The Label Maker"
+  },
+  {
+    "videoFile": "Seinfeld-S06E13.mkv",
+    "active": true,
+    "season": "6",
+    "episode": "13",
+    "description": "A friend (Jon Lovitz) fakes illness to get Jerry's sympathy; Kramer obstructs justice.",
+    "title": "seinfeld",
+    "episodeTitle": "The Scofflaw"
+  },
+  {
+    "videoFile": "Seinfeld-S06E14E15.mkv",
+    "active": true,
+    "season": "6",
+    "episode": "14 & 15",
+    "description": "Highlights of the funniest moments from the first 100 episodes, including the characters' botched relationships and catchphrases.",
+    "title": "seinfeld",
+    "episodeTitle": "The Highlights of 100 Part 1 & 2"
+  },
+  {
+    "videoFile": "Seinfeld-S06E16.mkv",
+    "active": true,
+    "season": "6",
+    "episode": "16",
+    "description": "Elaine tries to convert a gay acquaintance (Robert Mailhouse) to heterosexuality; George and his date have secrets.",
+    "title": "seinfeld",
+    "episodeTitle": "The Beard"
+  },
+  {
+    "videoFile": "Seinfeld-S06E17.mkv",
+    "active": true,
+    "season": "6",
+    "episode": "17",
+    "description": "Jerry runs into trouble with Elaine's friend Wendy (Wendie Malick) after he decides to stop kissing acquaintances.",
+    "title": "seinfeld",
+    "episodeTitle": "The Kiss Hello"
+  },
+  {
+    "videoFile": "Seinfeld-S06E18.mkv",
+    "active": true,
+    "season": "6",
+    "episode": "18",
+    "description": "Jerry covers for a hostile doorman (Larry Miller) at Elaine's boss's (Ian Abercrombie) apartment; George's father is living with him.",
+    "title": "seinfeld",
+    "episodeTitle": "The Doorman"
+  },
+  {
+    "videoFile": "Seinfeld-S06E19.mkv",
+    "active": true,
+    "season": "6",
+    "episode": "19",
+    "description": "Kramer's numbing experience at the dentist wins him a spot in a charity concert; George is accused of stealing.",
+    "title": "seinfeld",
+    "episodeTitle": "The Jimmy"
+  },
+  {
+    "videoFile": "Seinfeld-S06E20.mkv",
+    "active": true,
+    "season": "6",
+    "episode": "20",
+    "description": "Jerry is forced to flee his apartment when it must be bug-bombed for fleas, which prevents Elaine from getting a manuscript she needs.",
+    "title": "seinfeld",
+    "episodeTitle": "The Doodle"
+  },
+  {
+    "videoFile": "Seinfeld-S06E21.mkv",
+    "active": true,
+    "season": "6",
+    "episode": "21",
+    "description": "Jerry feels betrayed when his method of pleasing a woman is used on Elaine by a friend (Patrick Warburton).",
+    "title": "seinfeld",
+    "episodeTitle": "The Fusilli Jerry"
+  },
+  {
+    "videoFile": "Seinfeld-S06E22.mkv",
+    "active": true,
+    "season": "6",
+    "episode": "22",
+    "description": "Jerry plans to meet a supermodel at an airport lounge; Mr. Pitt tells Elaine he has mentioned her in his will; George tries to prove he isn't racist; Kramer gambles with a Texan.",
+    "title": "seinfeld",
+    "episodeTitle": "The Diplomat's Club"
+  },
+  {
+    "videoFile": "Seinfeld-S06E23.mkv",
+    "active": true,
+    "season": "6",
+    "episode": "23",
+    "description": "Elaine's boyfriend shows his support for a hockey team by painting his face and taunting opposing fans.",
+    "title": "seinfeld",
+    "episodeTitle": "The Face Painter"
+  },
+  {
+    "videoFile": "Seinfeld-S06E24.mkv",
+    "active": true,
+    "season": "6",
+    "episode": "24",
+    "description": "George and Jerry are suspected of roughing up Bette Midler in a softball game, giving Jerry's girlfriend, Bette's understudy, a chance to take the stage.",
+    "title": "seinfeld",
+    "episodeTitle": "The Understudy"
+  },
+  {
+    "videoFile": "Seinfeld-S07E01.mkv",
+    "active": true,
+    "season": "7",
+    "episode": "1",
+    "description": "A pact with Jerry prompts George to offer former girlfriend Susan (Heidi Swedberg) a proposal; Elaine's sleep is interrupted by a barking dog.",
+    "title": "seinfeld",
+    "episodeTitle": "The Engagement"
+  },
+  {
+    "videoFile": "Seinfeld-S07E02.mkv",
+    "active": true,
+    "season": "7",
+    "episode": "2",
+    "description": "George tries to find a way to persuade Susan (Heidi Swedberg) to postpone their wedding; Elaine's dog problem is solved by a rabbi with a cable show.",
+    "title": "seinfeld",
+    "episodeTitle": "The Postponement"
+  },
+  {
+    "videoFile": "Seinfeld-S07E03.mkv",
+    "active": true,
+    "season": "7",
+    "episode": "3",
+    "description": "Jerry is challenged when Elaine's boyfriend insists it is impossible to rent a villa in the Tuscany region of Italy.",
+    "title": "seinfeld",
+    "episodeTitle": "The Maestro"
+  },
+  {
+    "videoFile": "Seinfeld-S07E04.mkv",
+    "active": true,
+    "season": "7",
+    "episode": "4",
+    "description": "An uncontrollable wink creates problems for George and Kramer.",
+    "title": "seinfeld",
+    "episodeTitle": "The Wink"
+  },
+  {
+    "videoFile": "Seinfeld-S07E05.mkv",
+    "active": true,
+    "season": "7",
+    "episode": "5",
+    "description": "Jerry tries to ensure that Elaine's houseguest (Jeremiah Birkett) doesn't sleep through the New York Marathon.",
+    "title": "seinfeld",
+    "episodeTitle": "The Hot Tub"
+  },
+  {
+    "videoFile": "Seinfeld-S07E06.mkv",
+    "active": true,
+    "season": "7",
+    "episode": "6",
+    "description": "Jerry must choose between his girlfriend (Alexandra Wentworth) and a bowl of soup when a vendor (Larry Thomas) refuses to serve her.",
+    "title": "seinfeld",
+    "episodeTitle": "The Soup Nazi"
+  },
+  {
+    "videoFile": "Seinfeld-S07E07.mkv",
+    "active": true,
+    "season": "7",
+    "episode": "7",
+    "description": "George tries to conceal his ATM code from his fiancee, Susan (Heidi Swedberg); Elaine is intrigued by a man she met at a party.",
+    "title": "seinfeld",
+    "episodeTitle": "The Secret Code"
+  },
+  {
+    "videoFile": "Seinfeld-S07E08.mkv",
+    "active": true,
+    "season": "7",
+    "episode": "8",
+    "description": "The swimming pool maintenance man (Carlos Jacott) at Jerry's health club is convinced he is Jerry's best friend.",
+    "title": "seinfeld",
+    "episodeTitle": "The Pool Guy"
+  },
+  {
+    "videoFile": "Seinfeld-S07E09.mkv",
+    "active": true,
+    "season": "7",
+    "episode": "9",
+    "description": "Elaine realizes that the manufacturer of her birth control device has gone out of business and its product is in limited supply.",
+    "title": "seinfeld",
+    "episodeTitle": "The Sponge"
+  },
+  {
+    "videoFile": "Seinfeld-S07E10.mkv",
+    "active": true,
+    "season": "7",
+    "episode": "10",
+    "description": "Lloyd Braun (Matt McCoy) gets Jerry packs of a special brand of Chinese gum; George runs into a former neighbor.",
+    "title": "seinfeld",
+    "episodeTitle": "The Gum"
+  },
+  {
+    "videoFile": "Seinfeld-S07E11.mkv",
+    "active": true,
+    "season": "7",
+    "episode": "11",
+    "description": "A loaf of rye bread becomes a point of contention when George's and Susan's parents have dinner together.",
+    "title": "seinfeld",
+    "episodeTitle": "The Rye"
+  },
+  {
+    "videoFile": "Seinfeld-S07E12.mkv",
+    "active": true,
+    "season": "7",
+    "episode": "12",
+    "description": "A caddie (Armin Shimerman) helps Kramer improve his golf game; George is considered for a promotion at work.",
+    "title": "seinfeld",
+    "episodeTitle": "The Caddy"
+  },
+  {
+    "videoFile": "Seinfeld-S07E13.mkv",
+    "active": true,
+    "season": "7",
+    "episode": "13",
+    "description": "A girlfriend (Lisa Deanne) piques Jerry's interest by always wearing the same dress; Kramer expects Elaine to honor an offer made in jest.",
+    "title": "seinfeld",
+    "episodeTitle": "The Seven"
+  },
+  {
+    "videoFile": "Seinfeld-S07E14E15.mkv",
+    "active": true,
+    "season": "7",
+    "episode": "14 & 15",
+    "description": "Jerry buys his parents (Barney Martin, Liz Sheridan) a Cadillac, which only complicates their lives; George rethinks his engagement.",
+    "title": "seinfeld",
+    "episodeTitle": "The Cadillac Part 1 & 2"
+  },
+  {
+    "videoFile": "Seinfeld-S07E16.mkv",
+    "active": true,
+    "season": "7",
+    "episode": "16",
+    "description": "Jerry pays a price for mocking his uncle (Len Lesser) on \"The Tonight Show\"; tenants hate new shower heads.",
+    "title": "seinfeld",
+    "episodeTitle": "The Shower Head"
+  },
+  {
+    "videoFile": "Seinfeld-S07E17.mkv",
+    "active": true,
+    "season": "7",
+    "episode": "17",
+    "description": "George is dismayed because one of the dolls in Susan's collection bears an uncanny resemblance to his mother.",
+    "title": "seinfeld",
+    "episodeTitle": "The Doll"
+  },
+  {
+    "videoFile": "Seinfeld-S07E18.mkv",
+    "active": true,
+    "season": "7",
+    "episode": "18",
+    "description": "Jerry's new membership in the Friars Club is jeopardized when a jacket he borrowed from the club gets lost.",
+    "title": "seinfeld",
+    "episodeTitle": "The Friars Club"
+  },
+  {
+    "videoFile": "Seinfeld-S07E19.mkv",
+    "active": true,
+    "season": "7",
+    "episode": "19",
+    "description": "George introduces Kramer to the person in charge of the wigs for \"Joseph and the Amazing Technicolor Dreamcoat.\".",
+    "title": "seinfeld",
+    "episodeTitle": "The Wig Master"
+  },
+  {
+    "videoFile": "Seinfeld-S07E20.mkv",
+    "active": true,
+    "season": "7",
+    "episode": "20",
+    "description": "George ingratiates himself with his boss (Lee Bear) by sharing a delectable eggplant calzone with him.",
+    "title": "seinfeld",
+    "episodeTitle": "The Calzone"
+  },
+  {
+    "videoFile": "Seinfeld-S07E21E22.mkv",
+    "active": true,
+    "season": "7",
+    "episode": "21 & 22",
+    "description": "Jerry's mechanic (Brad Garrett) steals his car; Kramer and Newman plan to return used bottles to Michigan. Kramer spots Jerry's stolen car in Ohio; Elaine gives Peterman JFK's golf clubs; George is institutionalized.",
+    "title": "seinfeld",
+    "episodeTitle": "The Bottle Deposit Part 1 & 2"
+  },
+  {
+    "videoFile": "Seinfeld-S07E23.mkv",
+    "active": true,
+    "season": "7",
+    "episode": "23",
+    "description": "Jerry and Elaine get a chance for romance after George's comment to a couple (Debra Messing, Cary Elwes) leads to a breakup.",
+    "title": "seinfeld",
+    "episodeTitle": "The Wait Out"
+  },
+  {
+    "videoFile": "Seinfeld-S07E24.mkv",
+    "active": true,
+    "season": "7",
+    "episode": "24",
+    "description": "George searches for a way to stop his impending nuptials even as he and Susan are selecting their wedding invitations.",
+    "title": "seinfeld",
+    "episodeTitle": "The Invitations"
+  },
+  {
+    "videoFile": "Seinfeld-S08E01.mkv",
+    "active": true,
+    "season": "8",
+    "episode": "1",
+    "description": "George is ready to move on after mourning the death of his fiancee, while Jerry breaks off his engagement.",
+    "title": "seinfeld",
+    "episodeTitle": "The Foundation"
+  },
+  {
+    "videoFile": "Seinfeld-S08E02.mkv",
+    "active": true,
+    "season": "8",
+    "episode": "2",
+    "description": "George suspects the attorney for the Susan Ross Foundation believes he murdered Susan; Jerry likes his date.",
+    "title": "seinfeld",
+    "episodeTitle": "The Soul Mate"
+  },
+  {
+    "videoFile": "Seinfeld-S08E03.mkv",
+    "active": true,
+    "season": "8",
+    "episode": "3",
+    "description": "Elaine's ex introduces her to two of his friends who look like George and Kramer but act like their exact opposites.",
+    "title": "seinfeld",
+    "episodeTitle": "The Bizarro Jerry"
+  },
+  {
+    "videoFile": "Seinfeld-S08E04.mkv",
+    "active": true,
+    "season": "8",
+    "episode": "4",
+    "description": "Jerry discovers a hidden talent when Kramer gets him to perform an illegal activity; George acts like a rebel.",
+    "title": "seinfeld",
+    "episodeTitle": "The Little Kicks"
+  },
+  {
+    "videoFile": "Seinfeld-S08E05.mkv",
+    "active": true,
+    "season": "8",
+    "episode": "5",
+    "description": "Kramer tries to scam the post office; Elaine has a rash but has trouble finding a doctor who will treat her.",
+    "title": "seinfeld",
+    "episodeTitle": "The Package"
+  },
+  {
+    "videoFile": "Seinfeld-S08E06.mkv",
+    "active": true,
+    "season": "8",
+    "episode": "6",
+    "description": "The mentor of Jerry's latest girlfriend (A.J. Langer) is dating a rival (Steve Hytner); Elaine must fire a troubled employee.",
+    "title": "seinfeld",
+    "episodeTitle": "The Fatigues"
+  },
+  {
+    "videoFile": "Seinfeld-S08E07.mkv",
+    "active": true,
+    "season": "8",
+    "episode": "7",
+    "description": "Jerry is unhappy about receiving bundles of small residual checks from a Japanese TV show; Kramer makes friends with a group of Japanese tourists.",
+    "title": "seinfeld",
+    "episodeTitle": "The Checks"
+  },
+  {
+    "videoFile": "Seinfeld-S08E08.mkv",
+    "active": true,
+    "season": "8",
+    "episode": "8",
+    "description": "Jerry and Kramer are affected when a celebrity opens a new restaurant in the neighborhood and the eatery's sign shines its neon light directly into Kramer's apartment.",
+    "title": "seinfeld",
+    "episodeTitle": "The Chicken Roaster"
+  },
+  {
+    "videoFile": "Seinfeld-S08E09.mkv",
+    "active": true,
+    "season": "8",
+    "episode": "9",
+    "description": "George's intellect benefits when his girlfriend's illness requires their abstinence; Elaine experiences the opposite effect; Jerry returns to his junior high school for career day.",
+    "title": "seinfeld",
+    "episodeTitle": "The Abstinence"
+  },
+  {
+    "videoFile": "Seinfeld-S08E10.mkv",
+    "active": true,
+    "season": "8",
+    "episode": "10",
+    "description": "George competes for a better apartment against a survivor of the Andrea Doria; Kramer visits a vet for his cough.",
+    "title": "seinfeld",
+    "episodeTitle": "The Andrea Doria"
+  },
+  {
+    "videoFile": "Seinfeld-S08E11.mkv",
+    "active": true,
+    "season": "8",
+    "episode": "11",
+    "description": "George finds his perfect woman (Andrea Bendewald); Kramer names his new pet after Jerry; Elaine dates a bald man.",
+    "title": "seinfeld",
+    "episodeTitle": "The Little Jerry"
+  },
+  {
+    "videoFile": "Seinfeld-S08E12.mkv",
+    "active": true,
+    "season": "8",
+    "episode": "12",
+    "description": "Jerry's parents (Barney Martin, Liz Sheridan) think he is low on money; J. Peterman (John O'Hurley) resumes his position as Elaine's boss.",
+    "title": "seinfeld",
+    "episodeTitle": "The Money"
+  },
+  {
+    "videoFile": "Seinfeld-S08E13.mkv",
+    "active": true,
+    "season": "8",
+    "episode": "13",
+    "description": "Jerry joins a tennis club where the pro is a lousy player; George is too late in concocting a witty comeback to an insult.",
+    "title": "seinfeld",
+    "episodeTitle": "The Comeback"
+  },
+  {
+    "videoFile": "Seinfeld-S08E14.mkv",
+    "active": true,
+    "season": "8",
+    "episode": "14",
+    "description": "George interviews students for the scholarship memorializing his late fiancee; Elaine is hired to ghostwrite J. Peterman's autobiography.",
+    "title": "seinfeld",
+    "episodeTitle": "The Van Buren Boys"
+  },
+  {
+    "videoFile": "Seinfeld-S08E15.mkv",
+    "active": true,
+    "season": "8",
+    "episode": "15",
+    "description": "A co-worker's mistake forces Elaine to create an alternate personality; Jerry unintentionally becomes a mobster.",
+    "title": "seinfeld",
+    "episodeTitle": "The Susie"
+  },
+  {
+    "videoFile": "Seinfeld-S08E16.mkv",
+    "active": true,
+    "season": "8",
+    "episode": "16",
+    "description": "George pulls out all the stops to find a commemorative key ring he lost; Jerry drops his girlfriend's toothbrush in the toilet; Kramer adopts a highway.",
+    "title": "seinfeld",
+    "episodeTitle": "The Pothole"
+  },
+  {
+    "videoFile": "Seinfeld-S08E17.mkv",
+    "active": true,
+    "season": "8",
+    "episode": "17",
+    "description": "Jerry ends up in a weightlifting contest with an older man (Lloyd Bridges); a beautiful woman (Chelsea Noble) mistakes George for her ex-boyfriend.",
+    "title": "seinfeld",
+    "episodeTitle": "The English Patient"
+  },
+  {
+    "videoFile": "Seinfeld-S08E18.mkv",
+    "active": true,
+    "season": "8",
+    "episode": "18",
+    "description": "George finds the ideal napping spot at work; Jerry has his kitchen rebuilt; Elaine meets a new beau (Vince Grant).",
+    "title": "seinfeld",
+    "episodeTitle": "The Nap"
+  },
+  {
+    "videoFile": "Seinfeld-S08E19.mkv",
+    "active": true,
+    "season": "8",
+    "episode": "19",
+    "description": "George begins to wonder what his new girlfriend (Suzanne Cryer) isn't telling him when she says, \"Yada, yada, yada.\"",
+    "title": "seinfeld",
+    "episodeTitle": "The Yada Yada"
+  },
+  {
+    "videoFile": "Seinfeld-S08E20.mkv",
+    "active": true,
+    "season": "8",
+    "episode": "20",
+    "description": "Newman nixes Kramer's millennium-party plans; Jerry obsesses about his position on his girlfriend's speed dial.",
+    "title": "seinfeld",
+    "episodeTitle": "The Millennium"
+  },
+  {
+    "videoFile": "Seinfeld-S08E21.mkv",
+    "active": true,
+    "season": "8",
+    "episode": "21",
+    "description": "Elaine's new business, selling only the upper part of muffins, is challenged to dispose of the unused bottoms.",
+    "title": "seinfeld",
+    "episodeTitle": "The Muffin Tops"
+  },
+  {
+    "videoFile": "Seinfeld-S08E22.mkv",
+    "active": true,
+    "season": "8",
+    "episode": "22",
+    "description": "George's plans for a summer getaway are foiled; Elaine's well-meaning criticism of a co-worker is not well-received.",
+    "title": "seinfeld",
+    "episodeTitle": "The Summer of George"
+  },
+  {
+    "videoFile": "Seinfeld-S09E01.mkv",
+    "active": true,
+    "season": "9",
+    "episode": "1",
+    "description": "Competing comic Bania warms to Jerry's crowds; Elaine and David unite for a European trip; Kramer reconsiders butter.",
+    "title": "seinfeld",
+    "episodeTitle": "The Butter Shave"
+  },
+  {
+    "videoFile": "Seinfeld-S09E02.mkv",
+    "active": true,
+    "season": "9",
+    "episode": "2",
+    "description": "Jerry finds part of his new date's anatomy of interest; George's job is threatened; Elaine's relationship sputters.",
+    "title": "seinfeld",
+    "episodeTitle": "The Voice"
+  },
+  {
+    "videoFile": "Seinfeld-S09E03.mkv",
+    "active": true,
+    "season": "9",
+    "episode": "3",
+    "description": "Jerry tries to reveal more of his feelings on the advice of his new girlfriend (Lori Loughlin). With Jason Alexander.",
+    "title": "seinfeld",
+    "episodeTitle": "The Serenity Now"
+  },
+  {
+    "videoFile": "Seinfeld-S09E04.mkv",
+    "active": true,
+    "season": "9",
+    "episode": "4",
+    "description": "At his parents' insistence, Jerry is coached by personal trainer Izzy Mandelbaum (Lloyd Bridges) to lose weight.",
+    "title": "seinfeld",
+    "episodeTitle": "The Blood"
+  },
+  {
+    "videoFile": "Seinfeld-S09E05.mkv",
+    "active": true,
+    "season": "9",
+    "episode": "5",
+    "description": "Jerry, promised a vehicle as payment for a performance, winds up getting a van instead of a car; Elaine meets a new man; Kramer has no need for mail.",
+    "title": "seinfeld",
+    "episodeTitle": "The Junk Mail"
+  },
+  {
+    "videoFile": "Seinfeld-S09E06.mkv",
+    "active": true,
+    "season": "9",
+    "episode": "6",
+    "description": "Jerry has designs on his new date's collection of toys; Kramer discovers furniture with a noteworthy past.",
+    "title": "seinfeld",
+    "episodeTitle": "The Merv Griffin Show"
+  },
+  {
+    "videoFile": "Seinfeld-S09E07.mkv",
+    "active": true,
+    "season": "9",
+    "episode": "7",
+    "description": "Kramer gets into meat slicing; Jerry dates a doctor (Marcia Cross) who isn't impressed with his job; George's new boss is a former adversary.",
+    "title": "seinfeld",
+    "episodeTitle": "The Slicer"
+  },
+  {
+    "videoFile": "Seinfeld-S09E08.mkv",
+    "active": true,
+    "season": "9",
+    "episode": "8",
+    "description": "Elaine, Jerry and George go to India for the wedding of Elaine's friend (Brenda Strong); Kramer's death threat.",
+    "title": "seinfeld",
+    "episodeTitle": "The Betrayal"
+  },
+  {
+    "videoFile": "Seinfeld-S09E09.mkv",
+    "active": true,
+    "season": "9",
+    "episode": "9",
+    "description": "Jerry dates a woman with few inhibitions about her body; George awaits an apology; Kramer researches short showers.",
+    "title": "seinfeld",
+    "episodeTitle": "The Apology"
+  },
+  {
+    "videoFile": "Seinfeld-S09E10.mkv",
+    "active": true,
+    "season": "9",
+    "episode": "10",
+    "description": "George and his father celebrate an alternative holiday; Kramer goes back to work after a long bagel strike.",
+    "title": "seinfeld",
+    "episodeTitle": "The Strike"
+  },
+  {
+    "videoFile": "Seinfeld-S09E11.mkv",
+    "active": true,
+    "season": "9",
+    "episode": "11",
+    "description": "Jerry is finally ready to buy a new car, but things don't go very smoothly when he visits Elaine's boyfriend to make the deal.",
+    "title": "seinfeld",
+    "episodeTitle": "The Dealership"
+  },
+  {
+    "videoFile": "Seinfeld-S09E12.mkv",
+    "active": true,
+    "season": "9",
+    "episode": "12",
+    "description": "Elaine's boyfriend, Puddy, wears a fur coat; Jerry starts living without a wallet; Newman may be evicted.",
+    "title": "seinfeld",
+    "episodeTitle": "The Reverse Peephole"
+  },
+  {
+    "videoFile": "Seinfeld-S09E13.mkv",
+    "active": true,
+    "season": "9",
+    "episode": "13",
+    "description": "Jerry is aggravated when a woman uses him as a subject for her show; Elaine doesn't understand a cartoon.",
+    "title": "seinfeld",
+    "episodeTitle": "The Cartoon"
+  },
+  {
+    "videoFile": "Seinfeld-S09E14.mkv",
+    "active": true,
+    "season": "9",
+    "episode": "14",
+    "description": "Jerry keeps finding Kramer's hidden strongbox key; Elaine dates a mysterious man; George plans a breakup.",
+    "title": "seinfeld",
+    "episodeTitle": "The Strongbox"
+  },
+  {
+    "videoFile": "Seinfeld-S09E15.mkv",
+    "active": true,
+    "season": "9",
+    "episode": "15",
+    "description": "Jerry buys his father (Barney Martin) an organizer but can't make him use it; Kramer retires next to the Seinfelds.",
+    "title": "seinfeld",
+    "episodeTitle": "The Wizard"
+  },
+  {
+    "videoFile": "Seinfeld-S09E16.mkv",
+    "active": true,
+    "season": "9",
+    "episode": "16",
+    "description": "George learns to leave at the right moment; Jerry has a new girl (Cindy Ambuehl) with a past; Puddy (Patrick Warburton) is religious.",
+    "title": "seinfeld",
+    "episodeTitle": "The Burning"
+  },
+  {
+    "videoFile": "Seinfeld-S09E17.mkv",
+    "active": true,
+    "season": "9",
+    "episode": "17",
+    "description": "Jerry decides to teach Uncle Leo a lesson after he catches him shoplifting at a bookstore; Elaine humiliates herself at a party.",
+    "title": "seinfeld",
+    "episodeTitle": "The Bookstore"
+  },
+  {
+    "videoFile": "Seinfeld-S09E18.mkv",
+    "active": true,
+    "season": "9",
+    "episode": "18",
+    "description": "Elaine wolfs down Peterman's (John O'Hurley) pricey cheesecake; Kramer calls in \"the guys\" for George.",
+    "title": "seinfeld",
+    "episodeTitle": "The Frogger"
+  },
+  {
+    "videoFile": "Seinfeld-S09E19.mkv",
+    "active": true,
+    "season": "9",
+    "episode": "19",
+    "description": "Jerry (Jerry Seinfeld) begins dating his new maid (Angela Featherstone); George ponders a nickname; Elaine has to get the new area code.",
+    "title": "seinfeld",
+    "episodeTitle": "The Maid"
+  },
+  {
+    "videoFile": "Seinfeld-S09E20.mkv",
+    "active": true,
+    "season": "9",
+    "episode": "20",
+    "description": "Getting stuck in a Puerto Rican Day traffic jam brings about different responses from Jerry, Elaine, George and Kramer.",
+    "title": "seinfeld",
+    "episodeTitle": "The Puerto Rican Day"
+  },
+  {
+    "videoFile": "Seinfeld-S09E21E22.mkv",
+    "active": true,
+    "season": "9",
+    "episode": "21 & 22",
+    "description": "Some of the best scenes from nine seasons of \"Seinfeld\" are brought together in a celebration of the series.",
+    "title": "seinfeld",
+    "episodeTitle": "The Clip Show (a.k.a. The Chronicle) Part 1 & 2"
+  },
+  {
+    "videoFile": "Seinfeld-S09E23E24.mkv",
+    "active": true,
+    "season": "9",
+    "episode": "23 & 24",
+    "description": "After NBC picks up Jerry and George's sitcom, the four pals are arrested for breaking the good Samaritan law.",
+    "title": "seinfeld",
+    "episodeTitle": "The Finale Part 1 & 2"
+  }
 ]

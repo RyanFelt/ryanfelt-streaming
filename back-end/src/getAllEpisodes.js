@@ -1,16 +1,16 @@
 const fs = require('fs');
 
-exports.getAllFilms = (req, res) => {
+exports.getAllEpisodes = (req, res) => {
   try {
-    const film = req.query.film;
+    const title = req.query.title;
     const data = fs.readFileSync(
-      `${process.cwd()}/data/${film}/films.json`,
+      `${process.cwd()}/data/${title}/films.json`,
       'UTF-8'
     );
 
     return res.status(200).send(data);
   } catch (e) {
-    console.log('ERROR -- /getAllFilms --', e);
+    console.log('ERROR -- /getAllEpisodes --', e);
     if (e.code === 'ENOENT') {
       return res.status(404).send({ message: 'Title not found.' });
     }

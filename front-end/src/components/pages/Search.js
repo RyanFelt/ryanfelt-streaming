@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../../css/App.css';
 import axios from 'axios';
-import { FilmTile } from '../lib/FilmTile';
+import { TitleTile } from '../lib/TitleTile';
 import { InputGroup, FormControl, Button } from 'react-bootstrap';
 
 export const Search = () => {
@@ -68,15 +68,15 @@ export const Search = () => {
       ) : (
         <>
           <h5>Results... {results.length}</h5>
-          {results.map(film => {
+          {results.map(title => {
             return (
-              <FilmTile
-                path={film.title}
-                image={film.bannerImage}
-                imageLocation={film.bannerImageLocation}
-                type={film.type}
-                videoFile={film.videoFile}
-                key={film.id}
+              <TitleTile
+                path={title.title}
+                image={title.bannerImage}
+                imageLocation={title.bannerImageLocation}
+                type={title.type}
+                videoFile={title.videoFile}
+                key={title.id}
               />
             );
           })}
