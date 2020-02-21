@@ -1,11 +1,13 @@
-const data = require('../data/all-titles.json');
+const { scanAllTitles } = require('./utils/database');
 
-exports.getAllTitles = (req, res) => {
+exports.getAllTitles = async (req, res) => {
   try {
+    const allTitles = await scanAllTitles();
+
     let activeTitles = [];
-    for (let x = 0; x < data.length; x++) {
-      if (data[x].active) {
-        activeTitles.push(data[x]);
+    for (let x = 0; x < allTitles.length; x++) {
+      if (allTitles[x].active) {
+        activeTitles.push(allTitles[x]);
       }
     }
     res.status(200).send(activeTitles);

@@ -1,19 +1,20 @@
-const fs = require('fs');
+const { queryAllEpisodes } = require('./utils/database');
 
-exports.getAllEpisodes = (req, res) => {
+exports.getAllEpisodes = async (req, res) => {
   try {
     const title = req.query.title;
-    const data = fs.readFileSync(
-      `${process.cwd()}/data/${title}/films.json`,
-      'UTF-8'
-    );
 
-    return res.status(200).send(data);
-  } catch (e) {
-    console.log('ERROR -- /getAllEpisodes --', e);
-    if (e.code === 'ENOENT') {
+    const episodes = await queryAllEpisodes(title);
+
+    if (!episodes) {
       return res.status(404).send({ message: 'Title not found.' });
     }
+
+    const result = episodes.filter(episode => episode.active);
+
+    return res.status(200).send(result);
+  } catch (e) {
+    console.log('ERROR -- /getAllEpisodes --', e);
     return res.status(500).send({ message: 'Internal server error' });
   }
 };

@@ -5,11 +5,11 @@ const docClient = new AWS.DynamoDB.DocumentClient({
 });
 const uuidv4 = require('uuid/v4');
 
-// const data = require('../../data/all-titles.json');
-// const data = require('../../data/arrested-development/films.json');
-// const data = require('../../data/brooklyn-nine-nine/films.json');
-// const data = require('../../data/parks-and-recreation/films.json');
-// const data = require('../../data/seinfeld/films.json');
+// const data = require('../data/arrested-development/films.json');
+// const data = require('../data/brooklyn-nine-nine/films.json');
+// const data = require('../data/parks-and-recreation/films.json');
+// const data = require('../data/seinfeld/films.json');
+// const data = require('../data/all-titles.json');
 const data = require('../../data/the-office/films.json');
 
 const { TITLES_TABLE } = process.env;
