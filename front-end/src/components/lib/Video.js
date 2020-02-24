@@ -34,6 +34,27 @@ export const Video = React.memo(({ title }) => {
       return;
     }
 
+    vid.current.currentTime = localStorage.getItem(title.videoFile);
+
+    setInterval(() => {
+      const percentageWatched = Math.floor(
+        (vid.current.currentTime / vid.current.duration) * 100
+      );
+
+      console.log(
+        vid.current.currentTime,
+        vid.current.duration,
+        percentageWatched
+      );
+
+      let watchedTime = vid.current.currentTime;
+      if (percentageWatched > 95) {
+        watchedTime = 0;
+      }
+
+      localStorage.setItem(title.videoFile, watchedTime);
+    }, 1000);
+
     axios
       .get(`${process.env.REACT_APP_BACKEND_URL}/api/subscribed`, {
         headers: { Authorization: auth }
@@ -54,10 +75,6 @@ export const Video = React.memo(({ title }) => {
   useEffect(() => {
     signedInUser();
   }, []);
-
-  setInterval(() => {
-    console.log(vid.current.currentTime);
-  }, 3000);
 
   return (
     <video src={src} align="center" width="75%" ref={vid} controls autoPlay />

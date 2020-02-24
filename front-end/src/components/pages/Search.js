@@ -13,7 +13,7 @@ export const Search = () => {
       .get(`${process.env.REACT_APP_BACKEND_URL}/api/getAllTitles`)
       .then(res => {
         const matchedSearches = res.data.filter(data =>
-          data.title.includes(wordsSearched)
+          data.title.includes(wordsSearched.map(word => word.toLowerCase()))
         );
 
         setResults(matchedSearches);
