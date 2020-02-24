@@ -3,7 +3,7 @@ import axios from 'axios';
 import { LogOut } from './LogOut';
 import '../../css/App.css';
 
-export const Video = React.memo(({ film }) => {
+export const Video = React.memo(({ title }) => {
   const [src, setSrc] = useState(null);
 
   const vid = useRef(null);
@@ -34,13 +34,34 @@ export const Video = React.memo(({ film }) => {
       return;
     }
 
+    vid.current.currentTime = localStorage.getItem(title.videoFile);
+
+    setInterval(() => {
+      const percentageWatched = Math.floor(
+        (vid.current.currentTime / vid.current.duration) * 100
+      );
+
+      console.log(
+        vid.current.currentTime,
+        vid.current.duration,
+        percentageWatched
+      );
+
+      let watchedTime = vid.current.currentTime;
+      if (percentageWatched > 95) {
+        watchedTime = 0;
+      }
+
+      localStorage.setItem(title.videoFile, watchedTime);
+    }, 1000);
+
     axios
       .get(`${process.env.REACT_APP_BACKEND_URL}/api/subscribed`, {
         headers: { Authorization: auth }
       })
       .then(res => {
         setSrc(
-          `${process.env.REACT_APP_BACKEND_URL}/${film.videoLocation}/${film.videoFile}`
+          `${process.env.REACT_APP_BACKEND_URL}/${title.videoLocation}/${title.videoFile}`
         );
       })
       .catch(err => {
@@ -54,10 +75,6 @@ export const Video = React.memo(({ film }) => {
   useEffect(() => {
     signedInUser();
   }, []);
-
-  setInterval(() => {
-    console.log(vid.current.currentTime);
-  }, 3000);
 
   return (
     <video src={src} align="center" width="75%" ref={vid} controls autoPlay />

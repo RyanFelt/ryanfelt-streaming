@@ -1,10 +1,10 @@
 import React from 'react';
 import { titleUpperCase } from '../../utils/titleUpperCase';
 
-export const FilmTile = ({ path, image, imageLocation, type, videoFile }) => {
+export const TitleTile = ({ path, image, imageLocation, type, videoFile }) => {
   let href = `/watch?${videoFile}`;
   if (type === 'SERIES') {
-    href = `/film/${path}`;
+    href = `/series/${path}`;
   }
 
   return (

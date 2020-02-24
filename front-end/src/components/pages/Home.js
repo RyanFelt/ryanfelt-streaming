@@ -4,7 +4,7 @@ import { useLocation } from 'react-router';
 import axios from 'axios';
 import qs from 'query-string';
 import { LoadingSpinner } from '../lib/LoadingSpinner';
-import { FilmTile } from '../lib/FilmTile';
+import { TitleTile } from '../lib/TitleTile';
 
 export const Home = () => {
   const { search } = useLocation();
@@ -14,32 +14,32 @@ export const Home = () => {
     axios
       .get(`${process.env.REACT_APP_BACKEND_URL}/api/getAllTitles`)
       .then(res => {
-        let filmsData = JSON.parse(JSON.stringify(res.data));
+        let titlesData = JSON.parse(JSON.stringify(res.data));
 
         if (filter) {
-          filmsData = res.data.filter(item => {
+          titlesData = res.data.filter(item => {
             return filter === item.type.toLowerCase();
           });
         }
-        setFilms(filmsData);
+        setTitles(titlesData);
       });
   }, [filter]);
 
-  const [films, setFilms] = useState([]);
+  const [titles, setTitles] = useState([]);
 
   return (
     <div className="App">
-      {films.length ? (
+      {titles.length ? (
         <div className="flex-column">
-          {films.map(item => {
+          {titles.map(title => {
             return (
-              <FilmTile
-                path={item.title}
-                image={item.bannerImage}
-                imageLocation={item.bannerImageLocation}
-                type={item.type}
-                videoFile={item.videoFile}
-                key={item.id}
+              <TitleTile
+                path={title.title}
+                image={title.bannerImage}
+                imageLocation={title.bannerImageLocation}
+                type={title.type}
+                videoFile={title.videoFile}
+                key={title.id}
               />
             );
           })}

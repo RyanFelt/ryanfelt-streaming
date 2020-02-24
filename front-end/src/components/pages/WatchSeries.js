@@ -1,20 +1,20 @@
-import React, { useState, useEffect } from "react";
-import { useParams, useLocation } from "react-router";
-import { useHistory } from "react-router-dom";
-import axios from "axios";
-import { Button } from "react-bootstrap";
-import "../../css/App.css";
-import { titleUpperCase } from "../../utils/titleUpperCase";
-import { RandomEpisode } from "../lib/RandomEpisode";
-import { Video } from "../lib/Video";
-import { LoadingSpinner } from "../lib/LoadingSpinner";
+import React, { useState, useEffect } from 'react';
+import { useParams, useLocation } from 'react-router';
+import { useHistory } from 'react-router-dom';
+import axios from 'axios';
+import { Button } from 'react-bootstrap';
+import '../../css/App.css';
+import { titleUpperCase } from '../../utils/titleUpperCase';
+import { RandomEpisode } from '../lib/RandomEpisode';
+import { Video } from '../lib/Video';
+import { LoadingSpinner } from '../lib/LoadingSpinner';
 
 export const WatchSeries = () => {
-  const { film } = useParams();
-  const filmTitle = titleUpperCase(film);
+  const { series } = useParams();
+  const seriesTitle = titleUpperCase(series);
 
   const { search } = useLocation();
-  const videoFile = search.split("?")[1];
+  const videoFile = search.split('?')[1];
 
   let history = useHistory();
 
@@ -42,7 +42,7 @@ export const WatchSeries = () => {
 
   useEffect(() => {
     if (allEpisodes.length && !episode.videoFile) {
-      history.push("/404");
+      history.push('/404');
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [episode, history]);
@@ -51,14 +51,16 @@ export const WatchSeries = () => {
 
   useEffect(() => {
     axios
-      .get(`${process.env.REACT_APP_BACKEND_URL}/api/getAllFilms?film=${film}`)
+      .get(
+        `${process.env.REACT_APP_BACKEND_URL}/api/getAllEpisodes?title=${series}`
+      )
       .then(res => {
         setAllEpisodes(res.data);
       })
       .catch(err => {
-        console.log("ERROR::", err);
+        console.log('ERROR::', err);
       });
-  }, [film]);
+  }, [series]);
 
   return (
     <div className="App">
@@ -67,13 +69,13 @@ export const WatchSeries = () => {
         <>
           <div className="flex-row">
             <div className="back-button">
-              <Button href={`/film/${film}`} variant="dark">
+              <Button href={`/series/${series}`} variant="dark">
                 Back
               </Button>
             </div>
 
             {allEpisodes.length ? (
-              <RandomEpisode film={film} allEpisodes={allEpisodes} />
+              <RandomEpisode series={series} allEpisodes={allEpisodes} />
             ) : (
               <div />
             )}
@@ -81,14 +83,14 @@ export const WatchSeries = () => {
 
           <br />
 
-          <h1>{filmTitle}</h1>
+          <h1>{seriesTitle}</h1>
           <h5>
             S{episode.season} - E{episode.episode}
           </h5>
 
           <br />
 
-          <Video film={episode} />
+          <Video title={episode} />
         </>
       ) : (
         <LoadingSpinner />

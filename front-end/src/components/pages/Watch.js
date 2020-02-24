@@ -1,17 +1,17 @@
-import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router";
-import axios from "axios";
-import { Button } from "react-bootstrap";
-import "../../css/App.css";
-import { titleUpperCase } from "../../utils/titleUpperCase";
-import { Video } from "../lib/Video";
-import { LoadingSpinner } from "../lib/LoadingSpinner";
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router';
+import axios from 'axios';
+import { Button } from 'react-bootstrap';
+import '../../css/App.css';
+import { titleUpperCase } from '../../utils/titleUpperCase';
+import { Video } from '../lib/Video';
+import { LoadingSpinner } from '../lib/LoadingSpinner';
 
 export const Watch = () => {
   const { search } = useLocation();
-  const videoFile = search.split("?")[1];
+  const videoFile = search.split('?')[1];
 
-  const [filmInfo, setFilmInfo] = useState({});
+  const [titleInfo, setTitleInfo] = useState({});
 
   useEffect(() => {
     axios
@@ -19,19 +19,19 @@ export const Watch = () => {
       .then(res => {
         for (let x = 0; x < res.data.length; x++) {
           if (res.data[x].videoFile === videoFile) {
-            setFilmInfo(res.data[x]);
+            setTitleInfo(res.data[x]);
             break;
           }
         }
       })
       .catch(err => {
-        console.log("ERROR::", err);
+        console.log('ERROR::', err);
       });
   }, [videoFile]);
 
   return (
     <div className="App">
-      {filmInfo.videoFile ? (
+      {titleInfo.videoFile ? (
         <>
           <br />
           <div className="flex-row-buttons">
@@ -44,10 +44,10 @@ export const Watch = () => {
           </div>
 
           <br />
-          <h1>{titleUpperCase(filmInfo.title)}</h1>
-          <h5>{filmInfo.year} </h5>
+          <h1>{titleUpperCase(titleInfo.title)}</h1>
+          <h5>{titleInfo.year} </h5>
 
-          <Video filmTitle={"movies"} film={filmInfo} />
+          <Video title={titleInfo} />
         </>
       ) : (
         <LoadingSpinner />

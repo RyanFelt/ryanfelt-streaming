@@ -3,9 +3,9 @@ const express = require('express');
 const cors = require('cors');
 const path = require('path');
 const { identityService, authenticate } = require('ryanfelt-identity-service');
-const { getAllTitles } = require('./controllers/getAllTitles');
-const { getAllFilms } = require('./controllers/getAllFilms');
-const { subscribed } = require('./controllers/subscribed');
+const { getAllTitles } = require('./src/getAllTitles');
+const { getAllEpisodes } = require('./src/getAllEpisodes');
+const { subscribed } = require('./src/subscribed');
 
 const { LVS_1, LVS_2, LIS_1, PORT } = process.env;
 
@@ -22,7 +22,7 @@ app.use(express.static(path.join(__dirname, '../front-end/build')));
 app.use('/api/identity-service', identityService);
 
 app.get('/api/getAllTitles', getAllTitles);
-app.get('/api/getAllFilms', getAllFilms);
+app.get('/api/getAllEpisodes', getAllEpisodes);
 app.get('/api/subscribed', authenticate('ADMIN'), subscribed);
 
 app.get('/*', (req, res) => {
