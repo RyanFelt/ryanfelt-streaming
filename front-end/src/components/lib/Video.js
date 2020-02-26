@@ -41,19 +41,13 @@ export const Video = React.memo(({ title }) => {
         (vid.current.currentTime / vid.current.duration) * 100
       );
 
-      console.log(
-        vid.current.currentTime,
-        vid.current.duration,
-        percentageWatched
-      );
-
       let watchedTime = vid.current.currentTime;
       if (percentageWatched > 95) {
         watchedTime = 0;
       }
 
       localStorage.setItem(title.videoFile, watchedTime);
-    }, 1000);
+    }, 30000);
 
     axios
       .get(`${process.env.REACT_APP_BACKEND_URL}/api/subscribed`, {
