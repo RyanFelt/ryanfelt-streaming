@@ -1,26 +1,9 @@
 {
-  "name": "simple-react-streaming-backend",
+  "name": "ryanfelt-streaming-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start-dev": "nodemon app.js"
   },
-  "prettier": {
-    "singleQuote": true,
-    "tabWidth": 2
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/RyanFelt/simple-react-streaming.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/RyanFelt/simple-react-streaming/issues"
-  },
-  "homepage": "https://github.com/RyanFelt/simple-react-streaming#readme",
   "dependencies": {
     "aws-sdk": "^2.623.0",
     "cors": "^2.8.5",
@@ -29,5 +12,9 @@
     "ryanfelt-identity-service": "0.0.5",
     "uuid": "^3.4.0"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "prettier": {
+    "singleQuote": true,
+    "tabWidth": 2
+  }
 }

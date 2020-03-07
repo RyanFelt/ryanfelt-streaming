@@ -112,3 +112,7 @@ flex-row-buttons {
 .error-text {
   color: red;
 }
+
+.video {
+  outline: none;
+}

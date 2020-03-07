@@ -71,6 +71,14 @@ export const Video = React.memo(({ title }) => {
   }, []);
 
   return (
-    <video src={src} align="center" width="75%" ref={vid} controls autoPlay />
+    <video
+      className="video"
+      src={src}
+      align="center"
+      width="75%"
+      ref={vid}
+      controls
+      autoPlay
+    />
   );
 });
