@@ -3,7 +3,7 @@ import { useLocation } from 'react-router';
 import axios from 'axios';
 import { Button } from 'react-bootstrap';
 import '../../css/App.css';
-import { titleUpperCase } from '../../utils/titleUpperCase';
+import { titleUpperCase } from '../../utils/common';
 import { Video } from '../lib/Video';
 import { LoadingSpinner } from '../lib/LoadingSpinner';
 

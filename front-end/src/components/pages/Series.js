@@ -4,7 +4,7 @@ import { useHistory } from 'react-router-dom';
 import axios from 'axios';
 import '../../css/App.css';
 import { EpisodeLayout } from '../lib/EpisodeLayout';
-import { titleUpperCase } from '../../utils/titleUpperCase';
+import { titleUpperCase } from '../../utils/common';
 import { RandomEpisode } from '../lib/RandomEpisode';
 import { LoadingSpinner } from '../lib/LoadingSpinner';
 import { SeasonsDropdown } from '../lib/SeasonsDropdown';

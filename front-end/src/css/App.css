@@ -88,6 +88,8 @@ flex-row-buttons {
 .image-container {
   position: relative;
   font-family: Arial;
+  width: 1400px;
+  height: 900px;
 }
 
 .image-text {

@@ -10,9 +10,13 @@ exports.getAllEpisodes = async (req, res) => {
       return res.status(404).send({ message: 'Title not found.' });
     }
 
-    const result = episodes.filter(episode => episode.active);
+    const filteredEpisodes = episodes.filter(episode => episode.active);
 
-    return res.status(200).send(result);
+    const orderedEpisodes = filteredEpisodes.sort((a, b) =>
+      a.episode > b.episode ? 1 : -1
+    );
+
+    return res.status(200).send(orderedEpisodes);
   } catch (e) {
     console.log('ERROR -- /getAllEpisodes --', e);
     return res.status(500).send({ message: 'Internal server error' });

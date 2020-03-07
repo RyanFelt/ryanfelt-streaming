@@ -1,5 +1,5 @@
 import React from 'react';
-import { titleUpperCase } from '../../utils/titleUpperCase';
+import { titleUpperCase } from '../../utils/common';
 
 export const TitleTile = ({ path, image, imageLocation, type, videoFile }) => {
   let href = `/watch?${videoFile}`;
