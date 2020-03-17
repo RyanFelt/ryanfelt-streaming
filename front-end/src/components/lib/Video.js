@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
-import { LogOut } from './LogOut';
+import { getAuthTokens, newAuthToken } from '../../utils/auth';
 import '../../css/App.css';
 
 export const Video = React.memo(({ title }) => {
@@ -8,29 +8,11 @@ export const Video = React.memo(({ title }) => {
 
   const vid = useRef(null);
 
-  const getNewAuthToken = refresh => {
-    axios
-      .get(
-        `${process.env.REACT_APP_BACKEND_URL}/api/identity-service/refresh`,
-        {
-          headers: { Authorization: refresh }
-        }
-      )
-      .then(res => {
-        localStorage.setItem('authorizationToken', res.data.authorization);
-        signedInUser();
-      })
-      .catch(err => {
-        LogOut();
-      });
-  };
-
   const signedInUser = () => {
-    const auth = localStorage.getItem('authorizationToken');
-    const refresh = localStorage.getItem('refreshToken');
+    const { auth, refresh } = getAuthTokens();
 
     if (!auth || !refresh) {
-      alert('Sign in to stream content');
+      alert('Log in to view content');
       return;
     }
 
@@ -60,8 +42,13 @@ export const Video = React.memo(({ title }) => {
       })
       .catch(err => {
         if (err.response.status === 401) {
-          getNewAuthToken(refresh);
-          return;
+          newAuthToken(refresh)
+            .then(res => {
+              signedInUser();
+            })
+            .catch(err => {
+              console.log(err);
+            });
         }
       });
   };

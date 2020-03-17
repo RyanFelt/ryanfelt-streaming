@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const LogOut = () => {
+export const logOut = () => {
   const refresh = localStorage.getItem('refreshToken');
 
   axios

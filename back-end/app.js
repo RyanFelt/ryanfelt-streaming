@@ -5,7 +5,8 @@ const path = require('path');
 const { identityService, authenticate } = require('ryanfelt-identity-service');
 const { getAllTitles } = require('./src/getAllTitles');
 const { getAllEpisodes } = require('./src/getAllEpisodes');
-const { subscribed } = require('./src/subscribed');
+const { isSubscribed } = require('./src/isSubscribed');
+const { createWatchHistory } = require('./src/createWatchHistory');
 
 const { LVS_1, LVS_2, LIS_1, PORT } = process.env;
 
@@ -23,7 +24,8 @@ app.use('/api/identity-service', identityService);
 
 app.get('/api/getAllTitles', getAllTitles);
 app.get('/api/getAllEpisodes', getAllEpisodes);
-app.get('/api/subscribed', authenticate('ADMIN'), subscribed);
+app.get('/api/subscribed', authenticate('ADMIN'), isSubscribed);
+app.post('/api/watchHistory', authenticate('ADMIN'), createWatchHistory);
 
 app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname + '/../front-end/build/index.html'));

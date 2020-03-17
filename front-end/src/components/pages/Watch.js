@@ -1,17 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router';
 import axios from 'axios';
-import { Button } from 'react-bootstrap';
-import '../../css/App.css';
 import { titleUpperCase } from '../../utils/common';
+import { createWatchHistory } from '../../utils/watchHistory';
 import { Video } from '../lib/Video';
 import { LoadingSpinner } from '../lib/LoadingSpinner';
+import '../../css/App.css';
 
 export const Watch = () => {
   const { search } = useLocation();
   const videoFile = search.split('?')[1];
 
   const [titleInfo, setTitleInfo] = useState({});
+
+  useEffect(() => {
+    if (titleInfo.id) createWatchHistory(titleInfo);
+  }, [titleInfo]);
 
   useEffect(() => {
     axios
@@ -33,16 +37,6 @@ export const Watch = () => {
     <div className="App">
       {titleInfo.videoFile ? (
         <>
-          <br />
-          <div className="flex-row-buttons">
-            <div className="back-button">
-              <Button href={`/`} variant="dark">
-                Back
-              </Button>
-            </div>
-            <div className="random-episode"></div>
-          </div>
-
           <br />
           <h1>{titleUpperCase(titleInfo.title)}</h1>
           <h5>{titleInfo.year} </h5>

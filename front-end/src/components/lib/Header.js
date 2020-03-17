@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { LoginModal } from './LoginModal';
-import { LogOut } from './LogOut';
+import { logOut } from '../../utils/logOut';
 import '../../css/App.css';
 
 export const Header = () => {
@@ -38,7 +38,7 @@ export const Header = () => {
 
           <Nav className="mr-right">
             {signedIn ? (
-              <Nav.Link className="margin-right" onClick={LogOut}>
+              <Nav.Link className="margin-right" onClick={logOut}>
                 Logout
               </Nav.Link>
             ) : (

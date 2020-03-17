@@ -1,7 +1,7 @@
 const { docClient } = require('./dynamoSetup');
 const { ServiceUnavailableError } = require('./errors');
 
-const { TITLES_TABLE, EPISODES_TABLE } = process.env;
+const { TITLES_TABLE, EPISODES_TABLE, WATCH_LATEST_TABLE } = process.env;
 
 exports.scanAllTitles = async () => {
   try {
@@ -44,6 +44,19 @@ exports.queryAllEpisodes = async title => {
     return false;
   } catch (e) {
     console.log(`ERROR :: queryAllEpisodes: title - ${title} :: ${e}`);
+    throw new ServiceUnavailableError('db unavailable');
+  }
+};
+
+exports.createWatchHistoryRecord = async Item => {
+  try {
+    const params = {
+      TableName: WATCH_LATEST_TABLE,
+      Item
+    };
+    return docClient.put(params).promise();
+  } catch (e) {
+    console.log(`ERROR :: createWatchHistoryRecord: Item - ${Item} :: ${e}`);
     throw new ServiceUnavailableError('db unavailable');
   }
 };

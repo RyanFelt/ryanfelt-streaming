@@ -78,7 +78,7 @@ export const Series = () => {
           <br />
           <div className="container">
             <div className="back-button">
-              {seriesInfo.seasons ? (
+              {seriesInfo.seasons && seriesInfo.seasons[0] !== 'N/A' ? (
                 <SeasonsDropdown
                   currentSeason={currentSeason}
                   seasons={seriesInfo.seasons}
@@ -98,7 +98,12 @@ export const Series = () => {
           <br />
 
           <h1>{seriesTitle}</h1>
-          <h5>Season: {currentSeason}</h5>
+          {seriesInfo.seasons && seriesInfo.seasons[0] !== 'N/A' ? (
+            <h5> Season: {currentSeason}</h5>
+          ) : (
+            <></>
+          )}
+
           <hr />
 
           <EpisodeLayout
