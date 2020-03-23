@@ -1,7 +1,7 @@
 const { docClient } = require('./dynamoSetup');
 const { ServiceUnavailableError } = require('./errors');
 
-const { TITLES_TABLE, EPISODES_TABLE, WATCH_LATEST_TABLE } = process.env;
+const { TITLES_TABLE, EPISODES_TABLE, WATCHED_LAST_TABLE } = process.env;
 
 exports.scanAllTitles = async () => {
   try {
@@ -41,22 +41,48 @@ exports.queryAllEpisodes = async title => {
     if (episodes.Items[0]) {
       return episodes.Items;
     }
-    return false;
+    return [];
   } catch (e) {
     console.log(`ERROR :: queryAllEpisodes: title - ${title} :: ${e}`);
     throw new ServiceUnavailableError('db unavailable');
   }
 };
 
-exports.createWatchHistoryRecord = async Item => {
+exports.createWatchedLast = async Item => {
   try {
     const params = {
-      TableName: WATCH_LATEST_TABLE,
+      TableName: WATCHED_LAST_TABLE,
       Item
     };
     return docClient.put(params).promise();
   } catch (e) {
     console.log(`ERROR :: createWatchHistoryRecord: Item - ${Item} :: ${e}`);
+    throw new ServiceUnavailableError('db unavailable');
+  }
+};
+
+exports.queryAllWatchedLast = async userId => {
+  try {
+    const params = {
+      TableName: WATCHED_LAST_TABLE,
+      KeyConditionExpression: '#userId = :userId',
+      ExpressionAttributeNames: {
+        '#userId': 'userId'
+      },
+      ExpressionAttributeValues: {
+        ':userId': userId
+      },
+      ReturnConsumedCapacity: 'TOTAL'
+    };
+
+    const records = await docClient.query(params).promise();
+
+    if (records.Items[0]) {
+      return records.Items;
+    }
+    return [];
+  } catch (e) {
+    console.log(`ERROR :: queryAllWatchedLast: userId - ${userId} :: ${e}`);
     throw new ServiceUnavailableError('db unavailable');
   }
 };

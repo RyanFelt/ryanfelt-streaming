@@ -1,31 +1,28 @@
 import React, { useState, useEffect } from 'react';
 import '../../css/App.css';
 import { useLocation } from 'react-router';
-import axios from 'axios';
 import qs from 'query-string';
 import { LoadingSpinner } from '../lib/LoadingSpinner';
 import { TitleTile } from '../lib/TitleTile';
+import { getAllTitles } from '../../utils/services';
 
 export const Home = () => {
   const { search } = useLocation();
   const { filter } = qs.parse(search);
+  const [titles, setTitles] = useState([]);
 
   useEffect(() => {
-    axios
-      .get(`${process.env.REACT_APP_BACKEND_URL}/api/getAllTitles`)
-      .then(res => {
-        let titlesData = JSON.parse(JSON.stringify(res.data));
+    getAllTitles().then(res => {
+      let titlesData = res;
 
-        if (filter) {
-          titlesData = res.data.filter(item => {
-            return filter === item.type.toLowerCase();
-          });
-        }
-        setTitles(titlesData);
-      });
+      if (filter) {
+        titlesData = res.filter(item => {
+          return filter === item.type.toLowerCase();
+        });
+      }
+      setTitles(titlesData);
+    });
   }, [filter]);
-
-  const [titles, setTitles] = useState([]);
 
   return (
     <div className="App">

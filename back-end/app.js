@@ -22,10 +22,10 @@ app.use('/images', express.static(__dirname + '/images'));
 app.use(express.static(path.join(__dirname, '../front-end/build')));
 app.use('/api/identity-service', identityService);
 
-app.get('/api/getAllTitles', getAllTitles);
-app.get('/api/getAllEpisodes', getAllEpisodes);
-app.get('/api/subscribed', authenticate('ADMIN'), isSubscribed);
-app.post('/api/watchHistory', authenticate('ADMIN'), createWatchHistory);
+app.get('/api/allTitles', authenticate('1'), getAllTitles);
+app.get('/api/allEpisodes', getAllEpisodes);
+app.get('/api/subscribed', authenticate('2'), isSubscribed);
+app.post('/api/watchHistory', authenticate('2'), createWatchHistory);
 
 app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname + '/../front-end/build/index.html'));

@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { getAuthTokens, newAuthToken } from './auth';
 
-export const createWatchHistory = async videoInfo => {
+export const createWatchHistory = async titleInfo => {
   const { auth, refresh } = getAuthTokens();
 
   try {
@@ -12,7 +12,7 @@ export const createWatchHistory = async videoInfo => {
     await axios.post(
       `${process.env.REACT_APP_BACKEND_URL}/api/watchHistory`,
       {
-        videoId: videoInfo.id
+        titleId: titleInfo.id
       },
       { headers: { Authorization: auth } }
     );
@@ -20,7 +20,7 @@ export const createWatchHistory = async videoInfo => {
     if (err.response && err.response.status === 401) {
       try {
         await newAuthToken(refresh);
-        createWatchHistory(videoInfo);
+        createWatchHistory(titleInfo);
       } catch (err) {
         console.log('ERROR::', err);
       }

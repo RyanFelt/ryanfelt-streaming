@@ -6,7 +6,7 @@ exports.getAllEpisodes = async (req, res) => {
 
     const episodes = await queryAllEpisodes(title);
 
-    if (!episodes) {
+    if (!episodes.length) {
       return res.status(404).send({ message: 'Title not found.' });
     }
 

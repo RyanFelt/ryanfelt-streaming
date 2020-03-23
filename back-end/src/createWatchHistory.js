@@ -1,16 +1,17 @@
-const { createWatchHistoryRecord } = require('./utils/database');
+const { createWatchedLast } = require('./utils/database');
 
 exports.createWatchHistory = async (req, res) => {
   try {
-    if (!req.body.videoId)
-      return res.status(400).send({ message: 'MISSING videoId' });
+    if (!req.user.userId)
+      return res.status(400).send({ message: 'MISSING AUTH TOKEN' });
+    else if (!req.body.titleId)
+      return res.status(400).send({ message: 'MISSING titleId' });
 
-    // await createWatchHistoryRecord({
-    //   userIdVideoId: `${req.user.userId}#${req.body.videoId}`,
-    //   timeWatched: Date.now().toString(),
-    //   userId: req.user.userId,
-    //   videoId: req.body.videoId
-    // });
+    await createWatchedLast({
+      userId: req.user.userId,
+      titleId: req.body.titleId,
+      time: Date.now().toString()
+    });
 
     return res.status(200).send('Record created!');
   } catch (e) {

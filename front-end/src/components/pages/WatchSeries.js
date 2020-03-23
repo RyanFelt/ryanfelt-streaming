@@ -8,6 +8,7 @@ import { titleUpperCase } from '../../utils/common';
 import { RandomEpisode } from '../lib/RandomEpisode';
 import { Video } from '../lib/Video';
 import { LoadingSpinner } from '../lib/LoadingSpinner';
+import { getAllEpisodes } from '../../utils/services';
 
 export const WatchSeries = () => {
   const { series } = useParams();
@@ -50,16 +51,11 @@ export const WatchSeries = () => {
   const [episodeIndex, setEpisodeIndex] = useState({});
 
   useEffect(() => {
-    axios
-      .get(
-        `${process.env.REACT_APP_BACKEND_URL}/api/getAllEpisodes?title=${series}`
-      )
+    getAllEpisodes(series)
       .then(res => {
         setAllEpisodes(res.data);
       })
-      .catch(err => {
-        console.log('ERROR::', err);
-      });
+      .catch(err => {});
   }, [series]);
 
   return (
@@ -84,9 +80,13 @@ export const WatchSeries = () => {
           <br />
 
           <h1>{seriesTitle}</h1>
-          <h5>
-            S{episode.season} - E{episode.episode}
-          </h5>
+          {episode.season !== 'N/A' ? (
+            <h5>
+              S{episode.season} - E{episode.episode}
+            </h5>
+          ) : (
+            <h5>E{episode.episode}</h5>
+          )}
 
           <br />
 

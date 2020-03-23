@@ -1,26 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import '../../css/App.css';
-import axios from 'axios';
 import { TitleTile } from '../lib/TitleTile';
 import { InputGroup, FormControl, Button } from 'react-bootstrap';
+import { getAllTitles } from '../../utils/services';
 
 export const Search = () => {
   const [search, setSearch] = useState('');
   const [wordsSearched, setWordsSearched] = useState([]);
 
   useEffect(() => {
-    axios
-      .get(`${process.env.REACT_APP_BACKEND_URL}/api/getAllTitles`)
-      .then(res => {
-        const matchedSearches = res.data.filter(data =>
-          data.title.includes(wordsSearched.map(word => word.toLowerCase()))
-        );
+    getAllTitles().then(res => {
+      const matchedSearches = res.filter(data =>
+        data.title.includes(wordsSearched.map(word => word.toLowerCase()))
+      );
 
-        setResults(matchedSearches);
-      })
-      .catch(err => {
-        console.log('ERROR::', err);
-      });
+      setResults(matchedSearches);
+    });
   }, [wordsSearched]);
 
   const [results, setResults] = useState([]);

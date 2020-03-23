@@ -8,6 +8,7 @@ import { titleUpperCase } from '../../utils/common';
 import { RandomEpisode } from '../lib/RandomEpisode';
 import { LoadingSpinner } from '../lib/LoadingSpinner';
 import { SeasonsDropdown } from '../lib/SeasonsDropdown';
+import { getAllTitles, getAllEpisodes } from '../../utils/services';
 
 export const Series = () => {
   const { series } = useParams();
@@ -15,10 +16,7 @@ export const Series = () => {
   let history = useHistory();
 
   useEffect(() => {
-    axios
-      .get(
-        `${process.env.REACT_APP_BACKEND_URL}/api/getAllEpisodes?title=${series}`
-      )
+    getAllEpisodes(series)
       .then(res => {
         setAllEpisodes(res.data);
       })
@@ -29,23 +27,18 @@ export const Series = () => {
         }
       });
 
-    axios
-      .get(`${process.env.REACT_APP_BACKEND_URL}/api/getAllTitles`)
-      .then(res => {
-        for (let x = 0; x < res.data.length; x++) {
-          if (res.data[x].title === series) {
-            setSeriesInfo(res.data[x]);
-            if (!currentSeason) {
-              setCurrentSeason(res.data[x].seasons[0]);
-              localStorage.setItem(`${series}_SEASON`, res.data[x].seasons[0]);
-            }
-            break;
+    getAllTitles().then(res => {
+      for (let x = 0; x < res.length; x++) {
+        if (res[x].title === series) {
+          setSeriesInfo(res[x]);
+          if (!currentSeason) {
+            setCurrentSeason(res[x].seasons[0]);
+            localStorage.setItem(`${series}_SEASON`, res[x].seasons[0]);
           }
+          break;
         }
-      })
-      .catch(err => {
-        console.log('ERROR::', err);
-      });
+      }
+    });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [series, history]);
 
