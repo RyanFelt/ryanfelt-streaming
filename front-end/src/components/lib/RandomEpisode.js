@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
-import '../../css/App.css';
+import '../../App.css';
 
 export const RandomEpisode = ({ series, allEpisodes }) => {
   const random = Math.floor(Math.random() * allEpisodes.length);

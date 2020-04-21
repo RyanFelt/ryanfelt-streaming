@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useLocation } from 'react-router';
 import { useHistory } from 'react-router-dom';
-import axios from 'axios';
 import { Button } from 'react-bootstrap';
-import '../../css/App.css';
+import '../../App.css';
 import { titleUpperCase } from '../../utils/common';
 import { RandomEpisode } from '../lib/RandomEpisode';
 import { Video } from '../lib/Video';

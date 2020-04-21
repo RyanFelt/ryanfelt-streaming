@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import { getAuthTokens, newAuthToken } from '../../utils/auth';
-import '../../css/App.css';
+import '../../App.css';
 
 export const Video = React.memo(({ title }) => {
   const [src, setSrc] = useState(null);

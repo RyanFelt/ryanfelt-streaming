@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import { Modal, Button, FormControl } from "react-bootstrap";
-import axios from "axios";
-import "../../css/App.css";
+import React, { useState } from 'react';
+import { Modal, Button, FormControl } from 'react-bootstrap';
+import axios from 'axios';
+import '../../App.css';
 
 export const LoginModal = ({ close }) => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
 
   const handleEmailChange = event => {
     setEmail(event.target.value);
@@ -26,8 +26,8 @@ export const LoginModal = ({ close }) => {
         }
       )
       .then(res => {
-        localStorage.setItem("authorizationToken", res.data.authorization);
-        localStorage.setItem("refreshToken", res.data.refresh);
+        localStorage.setItem('authorizationToken', res.data.authorization);
+        localStorage.setItem('refreshToken', res.data.refresh);
         window.location.reload(false);
       })
       .catch(err => {

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { LoginModal } from './LoginModal';
 import { logOut } from '../../utils/logOut';
-import '../../css/App.css';
+import '../../App.css';
 
 export const Header = () => {
   const [showLoginModal, setShowLoginModal] = useState(false);

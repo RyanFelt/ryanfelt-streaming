@@ -1,6 +1,6 @@
-import React from "react";
-import "../../css/App.css";
-import { Spinner } from "react-bootstrap";
+import React from 'react';
+import '../../App.css';
+import { Spinner } from 'react-bootstrap';
 
 export const LoadingSpinner = () => {
   return (

@@ -1,4 +1,4 @@
-const { createWatchedLast } = require('./utils/database');
+const { createWatchedLast } = require('../../utils/database');
 
 exports.createWatchHistory = async (req, res) => {
   try {
@@ -10,7 +10,7 @@ exports.createWatchHistory = async (req, res) => {
     await createWatchedLast({
       userId: req.user.userId,
       titleId: req.body.titleId,
-      time: Date.now().toString()
+      time: Date.now().toString(),
     });
 
     return res.status(200).send('Record created!');

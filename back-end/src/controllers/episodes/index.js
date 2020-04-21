@@ -1,4 +1,4 @@
-const { queryAllEpisodes } = require('./utils/database');
+const { queryAllEpisodes } = require('../../utils/database');
 
 exports.getAllEpisodes = async (req, res) => {
   try {
@@ -10,7 +10,7 @@ exports.getAllEpisodes = async (req, res) => {
       return res.status(404).send({ message: 'Title not found.' });
     }
 
-    const filteredEpisodes = episodes.filter(episode => episode.active);
+    const filteredEpisodes = episodes.filter((episode) => episode.active);
 
     const orderedEpisodes = filteredEpisodes.sort((a, b) =>
       a.episode > b.episode ? 1 : -1

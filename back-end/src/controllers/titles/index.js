@@ -1,10 +1,10 @@
-const { scanAllTitles, queryAllWatchedLast } = require('./utils/database');
+const { scanAllTitles, queryAllWatchedLast } = require('../../utils/database');
 
 exports.getAllTitles = async (req, res) => {
   try {
     const allTitles = await scanAllTitles();
 
-    const activeTitles = allTitles.filter(title => title.active);
+    const activeTitles = allTitles.filter((title) => title.active);
 
     let watchedLast = [];
 

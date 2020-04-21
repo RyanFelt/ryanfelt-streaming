@@ -8,17 +8,18 @@ export const newAuthToken = refresh => {
     })
     .then(res => {
       localStorage.setItem('authorizationToken', res.data.authorization);
+
       return true;
     })
     .catch(err => {
       logOut();
-      throw new Error('user logged');
+      throw new Error('user logged out');
     });
 };
 
 export const getAuthTokens = () => {
-  const auth = localStorage.getItem('authorizationToken');
-  const refresh = localStorage.getItem('refreshToken');
+  const auth = localStorage.getItem('authorizationToken') || '';
+  const refresh = localStorage.getItem('refreshToken') || '';
 
   return {
     auth,

@@ -9,10 +9,12 @@
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.16.4",
-    "ryanfelt-identity-service": "0.0.7",
+    "ryanfelt-identity-service": "0.0.8",
     "uuid": "^3.4.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
   "prettier": {
     "singleQuote": true,
     "tabWidth": 2

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router';
-import '../../css/App.css';
+import '../../App.css';
 import { titleUpperCase } from '../../utils/common';
 import { createWatchHistory } from '../../utils/watchHistory';
 import { Video } from '../lib/Video';

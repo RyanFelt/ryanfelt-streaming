@@ -1,81 +1,91 @@
 import React, { useState, useEffect } from 'react';
-import '../../css/App.css';
-import { TitleTile } from '../lib/TitleTile';
 import { InputGroup, FormControl, Button } from 'react-bootstrap';
+import '../../App.css';
+import { TitleTile } from '../lib/TitleTile';
+import { LoadingSpinner } from '../lib/LoadingSpinner';
 import { getAllTitles } from '../../utils/services';
 
 export const Search = () => {
+  const [allTitles, setAllTitles] = useState([]);
   const [search, setSearch] = useState('');
+  const [results, setResults] = useState([]);
   const [wordsSearched, setWordsSearched] = useState([]);
-
   useEffect(() => {
-    getAllTitles().then(res => {
-      const matchedSearches = res.filter(data =>
-        data.title.includes(wordsSearched.map(word => word.toLowerCase()))
-      );
+    const matchedSearches = allTitles.filter((data) =>
+      data.title.includes(wordsSearched.map((word) => word.toLowerCase()))
+    );
 
-      setResults(matchedSearches);
-    });
+    setResults(matchedSearches);
   }, [wordsSearched]);
 
-  const [results, setResults] = useState([]);
+  useEffect(() => {
+    getAllTitles().then((res) => {
+      setAllTitles(res);
+    });
+  }, []);
 
-  const handleSearchChange = event => {
+  const handleSearchChange = (event) => {
     setSearch(event.target.value);
   };
 
   const onSearchSubmit = () => {
     const words = search.split(' ');
-    setWordsSearched(words.filter(word => word !== ''));
+    setWordsSearched(words.filter((word) => word !== ''));
   };
 
   return (
     <div className="App">
-      <br />
-      <div className="flex-row-center">
-        <div className="textbox">
-          <InputGroup className="mb-3">
-            <FormControl
-              type="text"
-              placeholder="Search"
-              className="mr-sm-2"
-              onChange={handleSearchChange}
-            />
-            <Button variant="dark" onClick={onSearchSubmit}>
-              Search
-            </Button>
-          </InputGroup>
-          <sup>Currently you can only search by show or movie title.</sup>
-        </div>
-      </div>
-
-      <h5>Words searched...</h5>
-      <div className="flex-row-center">
-        {wordsSearched.map(word => {
-          return <div key={word}>{word}...</div>;
-        })}
-      </div>
-
-      <br />
-
-      {!wordsSearched.length ? (
-        <div />
-      ) : (
+      {allTitles.length ? (
         <>
-          <h5>Results... {results.length}</h5>
-          {results.map(title => {
-            return (
-              <TitleTile
-                path={title.title}
-                image={title.bannerImage}
-                imageLocation={title.bannerImageLocation}
-                type={title.type}
-                videoFile={title.videoFile}
-                key={title.id}
-              />
-            );
-          })}
+          <br />
+          <div className="flex-row-center">
+            <div className="textbox">
+              <InputGroup className="mb-3">
+                <FormControl
+                  type="text"
+                  placeholder="Search"
+                  className="mr-sm-2"
+                  onChange={handleSearchChange}
+                />
+                <Button variant="dark" onClick={onSearchSubmit}>
+                  Search
+                </Button>
+              </InputGroup>
+              <sup>Currently you can only search by show or movie title.</sup>
+            </div>
+          </div>
+
+          <h5>Words searched...</h5>
+          <div className="flex-row-center">
+            {wordsSearched.map((word) => {
+              return <div key={word}>{word}...</div>;
+            })}
+          </div>
+
+          <br />
+
+          {!wordsSearched.length ? (
+            <div />
+          ) : (
+            <>
+              <h5>Results... {results.length}</h5>
+              {results.map((title) => {
+                return (
+                  <TitleTile
+                    path={title.title}
+                    image={title.bannerImage}
+                    imageLocation={title.bannerImageLocation}
+                    type={title.type}
+                    videoFile={title.videoFile}
+                    key={title.id}
+                  />
+                );
+              })}
+            </>
+          )}
         </>
+      ) : (
+        <LoadingSpinner />
       )}
     </div>
   );

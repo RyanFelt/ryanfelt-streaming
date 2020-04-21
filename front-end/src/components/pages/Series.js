@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router';
 import { useHistory } from 'react-router-dom';
-import axios from 'axios';
-import '../../css/App.css';
+import '../../App.css';
 import { EpisodeLayout } from '../lib/EpisodeLayout';
 import { titleUpperCase } from '../../utils/common';
 import { RandomEpisode } from '../lib/RandomEpisode';
 import { LoadingSpinner } from '../lib/LoadingSpinner';
 import { SeasonsDropdown } from '../lib/SeasonsDropdown';
 import { getAllTitles, getAllEpisodes } from '../../utils/services';
+import { createWatchHistory } from '../../utils/watchHistory';
 
 export const Series = () => {
   const { series } = useParams();
@@ -35,6 +35,9 @@ export const Series = () => {
             setCurrentSeason(res[x].seasons[0]);
             localStorage.setItem(`${series}_SEASON`, res[x].seasons[0]);
           }
+
+          createWatchHistory(res[x]);
+
           break;
         }
       }
