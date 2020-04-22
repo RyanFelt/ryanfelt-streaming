@@ -5,20 +5,20 @@ const docClient = new AWS.DynamoDB.DocumentClient({
 });
 const uuidv4 = require('uuid/v4');
 
-const sherlockData = {};
-
 const titles = [
   {
     active: true,
-    bannerImage: 'dolittle.jpg',
+    bannerImage: 'captain-america-civil-war.jpg',
     bannerImageLocation: 'images/lis_1',
-    title: 'dolittle',
+    title: 'captain-america:-civil-war',
     type: 'MOVIES',
-    videoFile: 'Dolittle.mp4',
-    videoLocation: 'videos/lvs_2',
-    year: '2020',
+    videoFile: 'CaptainAmericaCivilWar.mp4',
+    videoLocation: 'videos/lvs_1',
+    year: '2016',
   },
 ];
+
+const episodeTitleData = {};
 
 const episodes = [
   {
@@ -49,9 +49,21 @@ const putItem = async (Item, table) => {
 console.log('Titles', titles.length);
 console.log('Episodes', episodes.length);
 
-const main = async () => {
+const createTitles = async () => {
   let time = 0;
-  const episodes = sherlockData._embedded.episodes;
+
+  for (let x = 0; x < titles.length; x++) {
+    setTimeout(() => {
+      putItem({ id: uuidv4(), ...titles[x] }, 'titles');
+      console.log(titles[x]);
+    }, time);
+    time += 200;
+  }
+};
+
+const createEpisodes = async () => {
+  let time = 0;
+  const episodes = episodeTitleData._embedded.episodes;
 
   for (let x = 0; x < episodes.length; x++) {
     let episodeDesc = episodes[x].summary;
@@ -72,11 +84,10 @@ const main = async () => {
     };
     setTimeout(() => {
       // putItem({ id: uuidv4(), ...episode }, 'episodes');
-      // putItem({ id: uuidv4(), ...titles[x] }, 'titles');
       console.log(episode);
     }, time);
     time += 200;
   }
 };
 
-main();
+createTitles();

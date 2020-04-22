@@ -27,7 +27,7 @@ export const Header = () => {
       {showLoginModal ? <LoginModal close={handleCloseLoginModal} /> : ''}
 
       <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="/">Ryan Felt</Navbar.Brand>
+        <Navbar.Brand href="/">RyanFelt</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
