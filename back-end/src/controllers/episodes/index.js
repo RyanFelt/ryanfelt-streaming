@@ -13,7 +13,7 @@ exports.getAllEpisodes = async (req, res) => {
   const filteredEpisodes = episodes.filter((episode) => episode.active);
 
   const orderedEpisodes = filteredEpisodes.sort((a, b) =>
-    a.episode > b.episode ? 1 : -1
+    parseInt(a.episode) > parseInt(b.episode) ? 1 : -1
   );
 
   return orderedEpisodes;
