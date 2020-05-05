@@ -8,7 +8,7 @@ export const RandomEpisode = ({ series, allEpisodes }) => {
   return (
     <div className="random-episode">
       <Button
-        href={`/series/${series}/watch?${allEpisodes[random].videoFile}`}
+        href={`/series/${series}/watch?${allEpisodes[random].video_file}`}
         variant="dark"
       >
         Random

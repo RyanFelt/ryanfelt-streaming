@@ -1,7 +1,10 @@
 const { scanAllTitles, queryAllWatchedLast } = require('../../utils/database');
+const { initMysql } = require('../../utils/mysql');
 
 exports.getAllTitles = async (req) => {
-  const allTitles = await scanAllTitles();
+  const mysql = initMysql();
+
+  const allTitles = await mysql.getAllTitles();
 
   const activeTitles = allTitles.filter((title) => title.active);
 

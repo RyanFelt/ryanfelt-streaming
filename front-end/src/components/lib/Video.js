@@ -16,7 +16,7 @@ export const Video = React.memo(({ title }) => {
       return;
     }
 
-    vid.current.currentTime = localStorage.getItem(title.videoFile);
+    vid.current.currentTime = localStorage.getItem(title.video_file);
 
     setInterval(() => {
       const percentageWatched = Math.floor(
@@ -28,25 +28,25 @@ export const Video = React.memo(({ title }) => {
         watchedTime = 0;
       }
 
-      localStorage.setItem(title.videoFile, watchedTime);
+      localStorage.setItem(title.video_file, watchedTime);
     }, 30000);
 
     axios
       .get(`${process.env.REACT_APP_BACKEND_URL}/api/subscribed`, {
-        headers: { Authorization: auth }
+        headers: { Authorization: auth },
       })
-      .then(res => {
+      .then((res) => {
         setSrc(
-          `${process.env.REACT_APP_BACKEND_URL}/${title.videoLocation}/${title.videoFile}`
+          `${process.env.REACT_APP_BACKEND_URL}/videos/lvs_1/${title.video_file}`
         );
       })
-      .catch(err => {
+      .catch((err) => {
         if (err.response.status === 401) {
           newAuthToken(refresh)
-            .then(res => {
+            .then((res) => {
               signedInUser();
             })
-            .catch(err => {
+            .catch((err) => {
               console.log(err);
             });
         }

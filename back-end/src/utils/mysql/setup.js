@@ -1,10 +1,43 @@
-const { pool } = require('./index');
+const mysql = require('mysql');
 
-const TITLES_TABLE = 'titles';
-const SEASONS_TABLE = 'seasons';
+const {
+  MYSQL_HOST,
+  MYSQL_USER,
+  MYSQL_PASSWORD,
+  MYSQL_DATABASE,
+  TITLES_TABLE,
+  SEASONS_TABLE,
+} = process.env;
+
+exports.pool = mysql.createPool({
+  connectionLimit: 10,
+  host: MYSQL_HOST,
+  user: MYSQL_USER,
+  password: MYSQL_PASSWORD,
+  database: MYSQL_DATABASE,
+});
+
+const query = (sqlQuery) => {
+  const sql = mysql.createConnection({
+    host: MYSQL_HOST,
+    user: MYSQL_USER,
+    password: MYSQL_PASSWORD,
+    database: MYSQL_DATABASE,
+  });
+  sql.connect();
+  return new Promise((resolve, reject) => {
+    sql.query(sqlQuery, function (error, results, fields) {
+      sql.end();
+      if (error) reject(error);
+      resolve(results);
+    });
+  });
+};
+
+exports.query = query;
 
 exports.createTables = async () => {
-  await pool.query(`
+  await query(`
     CREATE TABLE IF NOT EXISTS ${TITLES_TABLE} (
       id VARCHAR(100),
       title VARCHAR(500),
@@ -13,17 +46,19 @@ exports.createTables = async () => {
       active BOOLEAN,
       video_file VARCHAR(200),
       year VARCHAR(50),
-      season VARCHAR(25),
-      episode VARCHAR(25),
+      season VARCHAR(10),
+      episode VARCHAR(10),
       description VARCHAR(2000),
       parent_id VARCHAR(100),
       PRIMARY KEY (id),
       FOREIGN KEY (parent_id) REFERENCES ${TITLES_TABLE} (id)
     );
+  `);
 
-    CREATE TABLE IF NOT EXISTS ${SEASONS_TABLE} (
+  await query(`
+      CREATE TABLE IF NOT EXISTS ${SEASONS_TABLE} (
       title_id VARCHAR(100),
-      season VARCHAR(25),
+      season VARCHAR(10),
       PRIMARY KEY (title_id, season),
       FOREIGN KEY (title_id) REFERENCES ${TITLES_TABLE} (id)
     );
@@ -31,9 +66,7 @@ exports.createTables = async () => {
 };
 
 exports.dropTables = async () => {
-  await pool.query(
-    `DROP TABLE IF EXISTS ${TITLES_TABLE}, ${SEASONS_TABLE} CASCADE`
-  );
+  await query(`DROP TABLE IF EXISTS ${TITLES_TABLE}, ${SEASONS_TABLE} CASCADE`);
 };
 
 // CREATE TABLE IF NOT EXISTS episodes (

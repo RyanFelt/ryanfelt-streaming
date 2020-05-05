@@ -1,10 +1,12 @@
-const { queryAllEpisodes } = require('../../utils/database');
+const { initMysql } = require('../../utils/mysql');
 const { ResourceNotFoundError } = require('../../utils/errors');
 
 exports.getAllEpisodes = async (req, res) => {
   const title = req.query.title;
 
-  const episodes = await queryAllEpisodes(title);
+  const mysql = initMysql();
+
+  const episodes = await mysql.getAllEpisodes(title);
 
   if (!episodes.length) {
     throw new ResourceNotFoundError('Title not found.');

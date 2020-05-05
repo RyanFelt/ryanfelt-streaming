@@ -18,9 +18,9 @@ export const Watch = () => {
   }, [titleInfo]);
 
   useEffect(() => {
-    getAllTitles().then(res => {
+    getAllTitles().then((res) => {
       for (let x = 0; x < res.length; x++) {
-        if (res[x].videoFile === videoFile) {
+        if (res[x].video_file === videoFile) {
           setTitleInfo(res[x]);
           break;
         }
@@ -30,7 +30,7 @@ export const Watch = () => {
 
   return (
     <div className="App">
-      {titleInfo.videoFile ? (
+      {titleInfo.video_file ? (
         <>
           <br />
           <h1>{titleUpperCase(titleInfo.title)}</h1>

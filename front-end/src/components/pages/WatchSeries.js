@@ -22,14 +22,18 @@ export const WatchSeries = () => {
 
   useEffect(() => {
     for (let x = 0; x < allEpisodes.length; x++) {
-      if (allEpisodes[x].videoFile === videoFile) {
+      if (allEpisodes[x].video_file === videoFile) {
         setEpisode(allEpisodes[x]);
 
         const maxEp = allEpisodes.length - 1;
         const prevEp =
-          x === 0 ? allEpisodes[maxEp].videoFile : allEpisodes[x - 1].videoFile;
+          x === 0
+            ? allEpisodes[maxEp].video_file
+            : allEpisodes[x - 1].video_file;
         const nextEp =
-          x === maxEp ? allEpisodes[0].videoFile : allEpisodes[x + 1].videoFile;
+          x === maxEp
+            ? allEpisodes[0].video_file
+            : allEpisodes[x + 1].video_file;
 
         setEpisodeIndex({ previous: prevEp, next: nextEp });
         return;
@@ -41,7 +45,7 @@ export const WatchSeries = () => {
   const [episode, setEpisode] = useState({});
 
   useEffect(() => {
-    if (allEpisodes.length && !episode.videoFile) {
+    if (allEpisodes.length && !episode.video_file) {
       history.push('/404');
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -51,16 +55,16 @@ export const WatchSeries = () => {
 
   useEffect(() => {
     getAllEpisodes(series)
-      .then(res => {
+      .then((res) => {
         setAllEpisodes(res.data);
       })
-      .catch(err => {});
+      .catch((err) => {});
   }, [series]);
 
   return (
     <div className="App">
       <br />
-      {episode.videoFile ? (
+      {episode.video_file ? (
         <>
           <div className="flex-row">
             <div className="back-button">

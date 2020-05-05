@@ -13,9 +13,12 @@ export const EpisodeLayout = ({ episodes, series }) => {
 
 const cell = (episode, series) => {
   return (
-    <div key={episode.videoFile}>
-      <a className="cell" href={`/series/${series}/watch?${episode.videoFile}`}>
-        <h2>{episode.episodeTitle}</h2>
+    <div key={episode.video_file}>
+      <a
+        className="cell"
+        href={`/series/${series}/watch?${episode.video_file}`}
+      >
+        <h2>{episode.title}</h2>
         Episode: {episode.episode} <br />
         {episode.description}
       </a>
