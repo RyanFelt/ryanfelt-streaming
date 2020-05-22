@@ -99,21 +99,21 @@ exports.queryAllWatchedLast = async (userId) => {
 //   }
 // };
 
-exports.scanAllEpisodes = async () => {
-  try {
-    const params = {
-      TableName: EPISODES_TABLE,
-      ReturnConsumedCapacity: 'TOTAL',
-    };
+// exports.scanAllEpisodes = async () => {
+//   try {
+//     const params = {
+//       TableName: 'episodes',
+//       ReturnConsumedCapacity: 'TOTAL',
+//     };
 
-    const episodes = await docClient.scan(params).promise();
+//     const episodes = await docClient.scan(params).promise();
 
-    if (episodes.Items[0]) {
-      return episodes.Items;
-    }
-    return false;
-  } catch (e) {
-    console.log(`ERROR :: scanAllEpisodes :: ${e}`);
-    throw new ServiceUnavailableError('db unavailable');
-  }
-};
+//     if (episodes.Items[0]) {
+//       return episodes.Items;
+//     }
+//     return false;
+//   } catch (e) {
+//     console.log(`ERROR :: scanAllEpisodes :: ${e}`);
+//     throw new ServiceUnavailableError('db unavailable');
+//   }
+// };

@@ -5,6 +5,11 @@ const {
   insertTitle,
   insertEpisode,
 } = require('./titles');
+const {
+  getWatchHistory,
+  insertWatchHistory,
+  getWatchedLatest,
+} = require('./watchHistory');
 
 exports.initMysql = () => {
   return {
@@ -15,5 +20,9 @@ exports.initMysql = () => {
     getAllEpisodes,
     insertTitle,
     insertEpisode,
+
+    getWatchHistory,
+    insertWatchHistory,
+    getWatchedLatest,
   };
 };

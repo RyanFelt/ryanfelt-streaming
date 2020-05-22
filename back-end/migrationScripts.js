@@ -2,58 +2,62 @@ require('dotenv').config();
 
 const uuidv4 = require('uuid/v4');
 const { dynamodb } = require('./src/utils/dynamoSetup');
-const { scanAllTitles, scanAllEpisodes } = require('./src/utils/database');
+const { scanAllTitles, scanAllEpisodes } = require('./src/utils/dynamodb');
 const { initMysql } = require('./src/utils/mysql');
 const { query } = require('./src/utils/mysql/setup');
 
 const main = async () => {
-  const mysql = initMysql();
+  try {
+    const mysql = initMysql();
 
-  await mysql.dropTables();
-  await mysql.createTables();
+    await mysql.dropTables();
+    await mysql.createTables();
 
-  const allTitles = await scanAllTitles();
+    const allTitles = await scanAllTitles();
 
-  console.log('TITLES', allTitles.length);
+    console.log('TITLES', allTitles.length);
 
-  for (let x = 0; x < allTitles.length; x++) {
-    console.log(allTitles[x]);
+    for (let x = 0; x < allTitles.length; x++) {
+      console.log(allTitles[x]);
 
-    const newTitle = {
-      id: allTitles[x].id,
-      title: allTitles[x].title,
-      type: allTitles[x].type,
-      banner_image: allTitles[x].bannerImage,
-      active: allTitles[x].active,
-      video_file: allTitles[x].videoFile,
-      year: allTitles[x].year,
-    };
+      const newTitle = {
+        id: allTitles[x].id,
+        title: allTitles[x].title,
+        type: allTitles[x].type,
+        banner_image: allTitles[x].bannerImage,
+        active: allTitles[x].active,
+        video_file: allTitles[x].videoFile,
+        year: allTitles[x].year,
+      };
 
-    await mysql.insertTitle(newTitle);
-  }
+      await mysql.insertTitle(newTitle);
+    }
 
-  const allEpisodes = await scanAllEpisodes();
+    const allEpisodes = await scanAllEpisodes();
 
-  console.log('EPISODES', allEpisodes.length);
+    console.log('EPISODES', allEpisodes.length);
 
-  for (let x = 0; x < allEpisodes.length; x++) {
-    const parentTitle = await query(
-      `SELECT * FROM titles WHERE title = "${allEpisodes[x].title}"`
-    );
+    for (let x = 0; x < allEpisodes.length; x++) {
+      const parentTitle = await query(
+        `SELECT * FROM titles WHERE title = "${allEpisodes[x].title}"`
+      );
 
-    const newTitle = {
-      id: allEpisodes[x].id,
-      title: allEpisodes[x].episodeTitle,
-      active: allEpisodes[x].active,
-      video_file: allEpisodes[x].videoFile,
-      parent_id: parentTitle[0].id,
-      season: allEpisodes[x].season,
-      episode: allEpisodes[x].episode,
-      description: allEpisodes[x].description.replace(/"/g, '\\"'),
-    };
+      const newTitle = {
+        id: allEpisodes[x].id,
+        title: allEpisodes[x].episodeTitle,
+        active: allEpisodes[x].active,
+        video_file: allEpisodes[x].videoFile,
+        parent_id: parentTitle[0].id,
+        season: allEpisodes[x].season,
+        episode: allEpisodes[x].episode,
+        description: allEpisodes[x].description.replace(/"/g, '\\"'),
+      };
 
-    console.log(newTitle);
-    await mysql.insertEpisode(newTitle);
+      console.log(newTitle);
+      await mysql.insertEpisode(newTitle);
+    }
+  } catch (e) {
+    console.log('ERRROR', e);
   }
 };
 

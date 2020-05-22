@@ -7,6 +7,7 @@ const {
   MYSQL_DATABASE,
   TITLES_TABLE,
   SEASONS_TABLE,
+  WATCH_HISTORY_TABLE,
 } = process.env;
 
 exports.pool = mysql.createPool({
@@ -56,28 +57,28 @@ exports.createTables = async () => {
   `);
 
   await query(`
-      CREATE TABLE IF NOT EXISTS ${SEASONS_TABLE} (
+    CREATE TABLE IF NOT EXISTS ${SEASONS_TABLE} (
       title_id VARCHAR(100),
       season VARCHAR(10),
       PRIMARY KEY (title_id, season),
       FOREIGN KEY (title_id) REFERENCES ${TITLES_TABLE} (id)
     );
   `);
+
+  await query(`
+    CREATE TABLE IF NOT EXISTS ${WATCH_HISTORY_TABLE} (
+      user_id VARCHAR(100),
+      title_id VARCHAR(100),
+      video_time VARCHAR(100),
+      date_updated TIMESTAMP,
+      PRIMARY KEY (user_id, title_id),
+      FOREIGN KEY (title_id) REFERENCES ${TITLES_TABLE} (id)
+    );
+  `);
 };
 
 exports.dropTables = async () => {
-  await query(`DROP TABLE IF EXISTS ${TITLES_TABLE}, ${SEASONS_TABLE} CASCADE`);
+  await query(
+    `DROP TABLE IF EXISTS ${TITLES_TABLE}, ${SEASONS_TABLE}, ${WATCH_HISTORY_TABLE} CASCADE`
+  );
 };
-
-// CREATE TABLE IF NOT EXISTS episodes (
-//   id VARCHAR(100)
-//   title VARCHAR(500),
-//   season VARCHAR(25),
-//   episode VARCHAR(25),
-//   episode_title VARCHAR(500),
-//   description VARCHAR(2000),
-//   video_file VARCHAR(200),
-//   active BOOLEAN,
-//   PRIMARY KEY (id),
-//   FOREIGN KEY (title) REFERENCES ${TITLES_TABLE} (title)
-// );
