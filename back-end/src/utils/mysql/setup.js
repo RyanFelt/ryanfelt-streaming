@@ -69,7 +69,7 @@ exports.createTables = async () => {
     CREATE TABLE IF NOT EXISTS ${WATCH_HISTORY_TABLE} (
       user_id VARCHAR(100),
       title_id VARCHAR(100),
-      video_time VARCHAR(100),
+      watched_time VARCHAR(100),
       date_updated TIMESTAMP,
       PRIMARY KEY (user_id, title_id),
       FOREIGN KEY (title_id) REFERENCES ${TITLES_TABLE} (id)

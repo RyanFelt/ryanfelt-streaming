@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import { getAuthTokens, newAuthToken } from '../../utils/auth';
+import { createWatchHistory, getWatchedTime } from '../../utils/services';
 import '../../App.css';
 
 export const Video = React.memo(({ title }) => {
@@ -8,7 +9,7 @@ export const Video = React.memo(({ title }) => {
 
   const vid = useRef(null);
 
-  const signedInUser = () => {
+  const signedInUser = async () => {
     const { auth, refresh } = getAuthTokens();
 
     if (!auth || !refresh) {
@@ -16,7 +17,8 @@ export const Video = React.memo(({ title }) => {
       return;
     }
 
-    vid.current.currentTime = localStorage.getItem(title.video_file);
+    //Get watch history from db else check localstorage
+    vid.current.currentTime = await getWatchedTime(title.id);
 
     setInterval(() => {
       const percentageWatched = Math.floor(
@@ -28,8 +30,8 @@ export const Video = React.memo(({ title }) => {
         watchedTime = 0;
       }
 
-      localStorage.setItem(title.video_file, watchedTime);
-    }, 30000);
+      createWatchHistory(title, watchedTime);
+    }, 15000);
 
     axios
       .get(`${process.env.REACT_APP_BACKEND_URL}/api/subscribed`, {

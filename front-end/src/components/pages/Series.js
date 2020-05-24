@@ -7,8 +7,11 @@ import { titleUpperCase } from '../../utils/common';
 import { RandomEpisode } from '../lib/RandomEpisode';
 import { LoadingSpinner } from '../lib/LoadingSpinner';
 import { SeasonsDropdown } from '../lib/SeasonsDropdown';
-import { getAllTitles, getAllEpisodes } from '../../utils/services';
-import { createWatchHistory } from '../../utils/watchHistory';
+import {
+  getAllTitles,
+  getAllEpisodes,
+  createWatchHistory,
+} from '../../utils/services';
 
 export const Series = () => {
   const { series } = useParams();
@@ -17,17 +20,17 @@ export const Series = () => {
 
   useEffect(() => {
     getAllEpisodes(series)
-      .then(res => {
+      .then((res) => {
         setAllEpisodes(res.data);
       })
-      .catch(err => {
+      .catch((err) => {
         console.log('ERROR::', err);
         if (err.message === 'Request failed with status code 404') {
           history.push('/404');
         }
       });
 
-    getAllTitles().then(res => {
+    getAllTitles().then((res) => {
       for (let x = 0; x < res.length; x++) {
         if (res[x].title === series) {
           setSeriesInfo(res[x]);
@@ -51,7 +54,7 @@ export const Series = () => {
     localStorage.getItem(`${series}_SEASON`) || ''
   );
 
-  const seasonEpisodes = season => {
+  const seasonEpisodes = (season) => {
     let currentSeasonEpisodes = [];
     for (let x = 0; x < allEpisodes.length; x++) {
       if (allEpisodes[x].season === season) {
@@ -62,7 +65,7 @@ export const Series = () => {
     return currentSeasonEpisodes;
   };
 
-  const setSeason = season => {
+  const setSeason = (season) => {
     setCurrentSeason(season);
     localStorage.setItem(`${series}_SEASON`, season);
   };

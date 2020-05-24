@@ -2,10 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router';
 import '../../App.css';
 import { titleUpperCase } from '../../utils/common';
-import { createWatchHistory } from '../../utils/watchHistory';
 import { Video } from '../lib/Video';
 import { LoadingSpinner } from '../lib/LoadingSpinner';
-import { getAllTitles } from '../../utils/services';
+import { createWatchHistory, getAllTitles } from '../../utils/services';
 
 export const Watch = () => {
   const { search } = useLocation();

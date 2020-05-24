@@ -1,7 +1,7 @@
 const { initMysql } = require('../../utils/mysql');
 const { ValidationError } = require('../../utils/errors');
 
-exports.createWatchHistory = async (req, res) => {
+exports.postWatchHistory = async (req) => {
   const mysql = initMysql();
 
   if (!req.user.userId)
@@ -9,7 +9,40 @@ exports.createWatchHistory = async (req, res) => {
   else if (!req.body.titleId)
     throw new ValidationError({ message: 'MISSING titleId' });
 
-  await mysql.insertWatchHistory(req.user.userId, req.body.titleId, '0');
+  const historyRecords = await mysql.getWatchHistory(
+    req.user.userId,
+    req.body.titleId
+  );
 
-  return 'Record created!';
+  if (!historyRecords[0].user_id) {
+    await mysql.insertWatchHistory(
+      req.user.userId,
+      req.body.titleId,
+      req.body.watchedTime
+    );
+  } else {
+    await mysql.updateWatchHistory(
+      req.user.userId,
+      req.body.titleId,
+      req.body.watchedTime
+    );
+  }
+
+  return;
+};
+
+exports.getWatchHistory = async (req) => {
+  const mysql = initMysql();
+
+  if (!req.user.userId)
+    throw new ValidationError({ message: 'MISSING AUTH TOKEN' });
+  else if (!req.query.titleId)
+    throw new ValidationError({ message: 'MISSING titleId' });
+
+  const historyRecords = await mysql.getWatchHistory(
+    req.user.userId,
+    req.query.titleId
+  );
+
+  return historyRecords[0];
 };

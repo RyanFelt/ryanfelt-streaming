@@ -14,14 +14,30 @@ exports.getWatchHistory = async (user_id, title_id) => {
   }
 };
 
-exports.insertWatchHistory = async (user_id, title_id, video_time) => {
+exports.insertWatchHistory = async (user_id, title_id, watched_time = 0) => {
   try {
     const date = moment().utc().format('YYYY-MM-DD HH:mm:ss');
 
     return await query(
-      `INSERT INTO ${WATCH_HISTORY_TABLE} (user_id, title_id, video_time, date_updated) 
-      VALUES ('${user_id}', '${title_id}', '${video_time}', '${date}');`
+      `INSERT INTO ${WATCH_HISTORY_TABLE} (user_id, title_id, watched_time, date_updated) 
+      VALUES ('${user_id}', '${title_id}', '${watched_time}', '${date}');`
     );
+  } catch (err) {
+    throw new ValidationError(`MYSQL - insertWatchHistory - ERROR :: ${err}`);
+  }
+};
+
+exports.updateWatchHistory = async (user_id, title_id, watched_time) => {
+  try {
+    const date = moment().utc().format('YYYY-MM-DD HH:mm:ss');
+
+    let sql = `UPDATE ${WATCH_HISTORY_TABLE} SET watched_time='${watched_time}', date_updated='${date}' WHERE user_id='${user_id}' AND title_id='${title_id}';`;
+
+    if (!watched_time) {
+      sql = `UPDATE ${WATCH_HISTORY_TABLE} SET date_updated='${date}' WHERE user_id='${user_id}' AND title_id='${title_id}';`;
+    }
+
+    return await query(sql);
   } catch (err) {
     throw new ValidationError(`MYSQL - insertWatchHistory - ERROR :: ${err}`);
   }

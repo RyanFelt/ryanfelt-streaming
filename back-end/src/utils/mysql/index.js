@@ -8,6 +8,7 @@ const {
 const {
   getWatchHistory,
   insertWatchHistory,
+  updateWatchHistory,
   getWatchedLatest,
 } = require('./watchHistory');
 
@@ -23,6 +24,7 @@ exports.initMysql = () => {
 
     getWatchHistory,
     insertWatchHistory,
+    updateWatchHistory,
     getWatchedLatest,
   };
 };
