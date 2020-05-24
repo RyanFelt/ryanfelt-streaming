@@ -7,7 +7,7 @@ exports.scanAllTitles = async () => {
   try {
     const params = {
       TableName: TITLES_TABLE,
-      ReturnConsumedCapacity: 'TOTAL'
+      ReturnConsumedCapacity: 'TOTAL',
     };
 
     const titles = await docClient.scan(params).promise();
@@ -22,18 +22,18 @@ exports.scanAllTitles = async () => {
   }
 };
 
-exports.queryAllEpisodes = async title => {
+exports.queryAllEpisodes = async (title) => {
   try {
     const params = {
       TableName: EPISODES_TABLE,
       KeyConditionExpression: '#title = :title',
       ExpressionAttributeNames: {
-        '#title': 'title'
+        '#title': 'title',
       },
       ExpressionAttributeValues: {
-        ':title': title
+        ':title': title,
       },
-      ReturnConsumedCapacity: 'TOTAL'
+      ReturnConsumedCapacity: 'TOTAL',
     };
 
     const episodes = await docClient.query(params).promise();
@@ -48,11 +48,11 @@ exports.queryAllEpisodes = async title => {
   }
 };
 
-exports.createWatchedLast = async Item => {
+exports.createWatchedLast = async (Item) => {
   try {
     const params = {
       TableName: WATCHED_LAST_TABLE,
-      Item
+      Item,
     };
     return docClient.put(params).promise();
   } catch (e) {
@@ -61,18 +61,18 @@ exports.createWatchedLast = async Item => {
   }
 };
 
-exports.queryAllWatchedLast = async userId => {
+exports.queryAllWatchedLast = async (userId) => {
   try {
     const params = {
       TableName: WATCHED_LAST_TABLE,
       KeyConditionExpression: '#userId = :userId',
       ExpressionAttributeNames: {
-        '#userId': 'userId'
+        '#userId': 'userId',
       },
       ExpressionAttributeValues: {
-        ':userId': userId
+        ':userId': userId,
       },
-      ReturnConsumedCapacity: 'TOTAL'
+      ReturnConsumedCapacity: 'TOTAL',
     };
 
     const records = await docClient.query(params).promise();
@@ -86,3 +86,34 @@ exports.queryAllWatchedLast = async userId => {
     throw new ServiceUnavailableError('db unavailable');
   }
 };
+
+// const putItem = async (Item, table) => {
+//   try {
+//     const params = {
+//       TableName: table,
+//       Item,
+//     };
+//     return docClient.put(params).promise();
+//   } catch (e) {
+//     console.log(`ERROR :: putItem: Table = ${table} Item=${Item} :: ${e}`);
+//   }
+// };
+
+// exports.scanAllEpisodes = async () => {
+//   try {
+//     const params = {
+//       TableName: 'episodes',
+//       ReturnConsumedCapacity: 'TOTAL',
+//     };
+
+//     const episodes = await docClient.scan(params).promise();
+
+//     if (episodes.Items[0]) {
+//       return episodes.Items;
+//     }
+//     return false;
+//   } catch (e) {
+//     console.log(`ERROR :: scanAllEpisodes :: ${e}`);
+//     throw new ServiceUnavailableError('db unavailable');
+//   }
+// };

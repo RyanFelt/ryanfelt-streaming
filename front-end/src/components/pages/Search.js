@@ -73,10 +73,10 @@ export const Search = () => {
                 return (
                   <TitleTile
                     path={title.title}
-                    image={title.bannerImage}
-                    imageLocation={title.bannerImageLocation}
+                    image={title.banner_image}
+                    imageLocation={'images/lis_1'}
                     type={title.type}
-                    videoFile={title.videoFile}
+                    videoFile={title.video_file}
                     key={title.id}
                   />
                 );

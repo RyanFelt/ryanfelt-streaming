@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import { getAuthTokens, newAuthToken } from '../../utils/auth';
+import { createWatchHistory, getWatchedTime } from '../../utils/services';
 import '../../App.css';
 
 export const Video = React.memo(({ title }) => {
@@ -8,7 +9,7 @@ export const Video = React.memo(({ title }) => {
 
   const vid = useRef(null);
 
-  const signedInUser = () => {
+  const signedInUser = async () => {
     const { auth, refresh } = getAuthTokens();
 
     if (!auth || !refresh) {
@@ -16,7 +17,8 @@ export const Video = React.memo(({ title }) => {
       return;
     }
 
-    vid.current.currentTime = localStorage.getItem(title.videoFile);
+    //Get watch history from db else check localstorage
+    vid.current.currentTime = await getWatchedTime(title.id);
 
     setInterval(() => {
       const percentageWatched = Math.floor(
@@ -28,25 +30,25 @@ export const Video = React.memo(({ title }) => {
         watchedTime = 0;
       }
 
-      localStorage.setItem(title.videoFile, watchedTime);
-    }, 30000);
+      createWatchHistory(title, watchedTime);
+    }, 15000);
 
     axios
       .get(`${process.env.REACT_APP_BACKEND_URL}/api/subscribed`, {
-        headers: { Authorization: auth }
+        headers: { Authorization: auth },
       })
-      .then(res => {
+      .then((res) => {
         setSrc(
-          `${process.env.REACT_APP_BACKEND_URL}/${title.videoLocation}/${title.videoFile}`
+          `${process.env.REACT_APP_BACKEND_URL}/videos/lvs_1/${title.video_file}`
         );
       })
-      .catch(err => {
+      .catch((err) => {
         if (err.response.status === 401) {
           newAuthToken(refresh)
-            .then(res => {
+            .then((res) => {
               signedInUser();
             })
-            .catch(err => {
+            .catch((err) => {
               console.log(err);
             });
         }
