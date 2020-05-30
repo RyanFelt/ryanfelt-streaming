@@ -9,7 +9,8 @@ const subscribedRequest = async (requestData, retry = 0) => {
 
     const res = await axios(requestData);
 
-    return JSON.parse(JSON.stringify(res.data));
+    // return JSON.parse(JSON.stringify(res.data));
+    return res.data;
   } catch (err) {
     if (err.response && err.response.status === 401) {
       try {
@@ -38,9 +39,12 @@ export const getAllTitles = async () => {
 
 export const getAllEpisodes = async (series) => {
   try {
-    return await axios.get(
-      `${process.env.REACT_APP_BACKEND_URL}/api/episodes?title=${series}`
-    );
+    const res = await subscribedRequest({
+      method: 'get',
+      url: `${process.env.REACT_APP_BACKEND_URL}/api/episodes?title=${series}`,
+    });
+
+    return res ? res : [];
   } catch (e) {
     console.log('ERROR:: getAllEpisodes', e);
     throw e;

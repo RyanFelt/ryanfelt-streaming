@@ -14,7 +14,7 @@ exports.postWatchHistory = async (req) => {
     req.body.titleId
   );
 
-  if (!historyRecords[0].user_id) {
+  if (historyRecords && !historyRecords[0]) {
     await mysql.insertWatchHistory(
       req.user.userId,
       req.body.titleId,

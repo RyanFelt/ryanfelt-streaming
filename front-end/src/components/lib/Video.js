@@ -17,7 +17,6 @@ export const Video = React.memo(({ title }) => {
       return;
     }
 
-    //Get watch history from db else check localstorage
     vid.current.currentTime = await getWatchedTime(title.id);
 
     setInterval(() => {

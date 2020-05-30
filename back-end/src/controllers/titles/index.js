@@ -1,3 +1,4 @@
+const uuidv4 = require('uuid/v4');
 const { initMysql } = require('../../utils/mysql');
 
 exports.getAllTitles = async (req) => {
@@ -25,4 +26,35 @@ exports.getAllTitles = async (req) => {
   }
 
   return activeTitles;
+};
+
+exports.postTitle = async (req) => {
+  const mysql = initMysql();
+
+  if (!req.user.userId)
+    throw new ValidationError({ message: 'MISSING AUTH TOKEN' });
+  else if (!req.body.title)
+    throw new ValidationError({ message: 'MISSING title' });
+  else if (!req.body.type)
+    throw new ValidationError({ message: 'MISSING type' });
+  else if (!req.body.bannerImage)
+    throw new ValidationError({ message: 'MISSING bannerImage' });
+  else if (!req.body.videoFile)
+    throw new ValidationError({ message: 'MISSING videoFile' });
+  else if (!req.body.year)
+    throw new ValidationError({ message: 'MISSING year' });
+
+  const newTitle = {
+    id: uuidv4(),
+    title: req.body.title,
+    type: req.body.type,
+    banner_image: req.body.bannerImage,
+    active: true,
+    video_file: req.body.videoFile,
+    year: req.body.year,
+  };
+
+  await mysql.insertTitle(newTitle);
+
+  return;
 };

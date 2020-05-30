@@ -21,7 +21,7 @@ export const Series = () => {
   useEffect(() => {
     getAllEpisodes(series)
       .then((res) => {
-        setAllEpisodes(res.data);
+        setAllEpisodes(res);
       })
       .catch((err) => {
         console.log('ERROR::', err);
@@ -87,12 +87,7 @@ export const Series = () => {
                 <div />
               )}
             </div>
-
-            {allEpisodes.length ? (
-              <RandomEpisode series={series} allEpisodes={allEpisodes} />
-            ) : (
-              <div />
-            )}
+            <RandomEpisode series={series} allEpisodes={allEpisodes} />
           </div>
           <br />
 

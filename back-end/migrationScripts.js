@@ -10,8 +10,8 @@ const main = async () => {
   try {
     const mysql = initMysql();
 
-    await mysql.dropTables();
-    await mysql.createTables();
+    // await mysql.dropTables();
+    // await mysql.createTables();
 
     const allTitles = await scanAllTitles();
 
