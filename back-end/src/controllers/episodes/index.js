@@ -20,3 +20,37 @@ exports.getAllEpisodes = async (req, res) => {
 
   return orderedEpisodes;
 };
+
+exports.postEpisode = async (req) => {
+  const mysql = initMysql();
+
+  if (!req.user.userId)
+    throw new ValidationError({ message: 'MISSING AUTH TOKEN' });
+  else if (!req.body.title)
+    throw new ValidationError({ message: 'MISSING title' });
+  else if (!req.body.videoFile)
+    throw new ValidationError({ message: 'MISSING videoFile' });
+  else if (!req.body.season)
+    throw new ValidationError({ message: 'MISSING season' });
+  else if (!req.body.episode)
+    throw new ValidationError({ message: 'MISSING episode' });
+  else if (!req.body.description)
+    throw new ValidationError({ message: 'MISSING description' });
+  else if (!req.body.parentId)
+    throw new ValidationError({ message: 'MISSING parentId' });
+
+  const newEpisode = {
+    id: uuidv4(),
+    title: req.body.title,
+    active: true,
+    video_file: req.body.videoFile,
+    season: req.body.season,
+    episode: req.body.episode,
+    description: req.body.description,
+    parent_id: req.body.parentId,
+  };
+
+  await mysql.insertEpisode(newEpisode);
+
+  return;
+};

@@ -6,7 +6,13 @@ exports.getAllTitles = async (req) => {
 
   const allTitles = await mysql.getAllTitles();
 
-  const activeTitles = allTitles.filter((title) => title.active);
+  const activeTitles = allTitles.filter((title) => {
+    if (title.seasons) {
+      title.seasons = title.seasons.split(',');
+    }
+
+    if (title.active) return title;
+  });
 
   let watchedLast = [];
 

@@ -1,11 +1,23 @@
 const { query } = require('./setup');
 const { ValidationError } = require('../errors');
 
-const { TITLES_TABLE } = process.env;
+const { TITLES_TABLE, SEASONS_TABLE } = process.env;
 
 exports.getAllTitles = async () => {
   try {
-    return await query(`SELECT * FROM ${TITLES_TABLE} WHERE parent_id IS NULL`);
+    return await query(`
+      SELECT  ${TITLES_TABLE}.*, s.seasons 
+      FROM  ${TITLES_TABLE}
+      LEFT JOIN (
+        SELECT title_id, GROUP_CONCAT(${SEASONS_TABLE}.season) AS seasons 
+        FROM ${SEASONS_TABLE} 
+        JOIN ${TITLES_TABLE} ON ${SEASONS_TABLE}.title_id = ${TITLES_TABLE}.id
+        GROUP BY title_id
+      )s 
+      ON ${TITLES_TABLE}.id = s.title_id 
+      WHERE parent_id IS NULL;`);
+
+    // return await query(`SELECT * FROM ${TITLES_TABLE} WHERE parent_id IS NULL`);
   } catch (err) {
     throw new ValidationError(`MYSQL - getAllTitles - ERROR :: ${err}`);
   }

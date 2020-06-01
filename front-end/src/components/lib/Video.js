@@ -38,7 +38,7 @@ export const Video = React.memo(({ title }) => {
       })
       .then((res) => {
         setSrc(
-          `${process.env.REACT_APP_BACKEND_URL}/videos/lvs_1/${title.video_file}`
+          `${process.env.REACT_APP_BACKEND_URL}/videos/${title.video_file}`
         );
       })
       .catch((err) => {

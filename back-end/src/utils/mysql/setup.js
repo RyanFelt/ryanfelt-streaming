@@ -60,6 +60,7 @@ exports.createTables = async () => {
     CREATE TABLE IF NOT EXISTS ${SEASONS_TABLE} (
       title_id VARCHAR(100),
       season VARCHAR(10),
+      active BOOLEAN,
       PRIMARY KEY (title_id, season),
       FOREIGN KEY (title_id) REFERENCES ${TITLES_TABLE} (id)
     );
