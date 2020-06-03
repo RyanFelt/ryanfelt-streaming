@@ -56,7 +56,7 @@ export const WatchSeries = () => {
   useEffect(() => {
     getAllEpisodes(series)
       .then((res) => {
-        setAllEpisodes(res.data);
+        setAllEpisodes(res);
       })
       .catch((err) => {});
   }, [series]);

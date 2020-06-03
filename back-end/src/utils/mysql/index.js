@@ -11,6 +11,7 @@ const {
   updateWatchHistory,
   getWatchedLatest,
 } = require('./watchHistory');
+const { insertSeason } = require('./seasons');
 
 exports.initMysql = () => {
   return {
@@ -26,5 +27,7 @@ exports.initMysql = () => {
     insertWatchHistory,
     updateWatchHistory,
     getWatchedLatest,
+
+    insertSeason,
   };
 };

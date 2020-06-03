@@ -1,5 +1,9 @@
+const uuidv4 = require('uuid/v4');
 const { initMysql } = require('../../utils/mysql');
-const { ResourceNotFoundError } = require('../../utils/errors');
+const {
+  ResourceNotFoundError,
+  ValidationError,
+} = require('../../utils/errors');
 
 exports.getAllEpisodes = async (req, res) => {
   const title = req.query.title;
@@ -9,7 +13,7 @@ exports.getAllEpisodes = async (req, res) => {
   const episodes = await mysql.getAllEpisodes(title);
 
   if (!episodes.length) {
-    throw new ResourceNotFoundError('Title not found.');
+    throw new ResourceNotFoundError('No episodes found.');
   }
 
   const filteredEpisodes = episodes.filter((episode) => episode.active);
@@ -24,20 +28,14 @@ exports.getAllEpisodes = async (req, res) => {
 exports.postEpisode = async (req) => {
   const mysql = initMysql();
 
-  if (!req.user.userId)
-    throw new ValidationError({ message: 'MISSING AUTH TOKEN' });
-  else if (!req.body.title)
-    throw new ValidationError({ message: 'MISSING title' });
-  else if (!req.body.videoFile)
-    throw new ValidationError({ message: 'MISSING videoFile' });
-  else if (!req.body.season)
-    throw new ValidationError({ message: 'MISSING season' });
-  else if (!req.body.episode)
-    throw new ValidationError({ message: 'MISSING episode' });
+  if (!req.user.userId) throw new ValidationError('MISSING AUTH TOKEN');
+  else if (!req.body.title) throw new ValidationError('MISSING title');
+  else if (!req.body.videoFile) throw new ValidationError('MISSING videoFile');
+  else if (!req.body.season) throw new ValidationError('MISSING season');
+  else if (!req.body.episode) throw new ValidationError('MISSING episode');
   else if (!req.body.description)
-    throw new ValidationError({ message: 'MISSING description' });
-  else if (!req.body.parentId)
-    throw new ValidationError({ message: 'MISSING parentId' });
+    throw new ValidationError('MISSING description');
+  else if (!req.body.parentId) throw new ValidationError('MISSING parentId');
 
   const newEpisode = {
     id: uuidv4(),

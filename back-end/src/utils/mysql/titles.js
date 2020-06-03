@@ -9,7 +9,7 @@ exports.getAllTitles = async () => {
       SELECT  ${TITLES_TABLE}.*, s.seasons 
       FROM  ${TITLES_TABLE}
       LEFT JOIN (
-        SELECT title_id, GROUP_CONCAT(${SEASONS_TABLE}.season) AS seasons 
+        SELECT title_id, GROUP_CONCAT(${SEASONS_TABLE}.season ORDER BY CAST(${SEASONS_TABLE}.season AS signed)) AS seasons 
         FROM ${SEASONS_TABLE} 
         JOIN ${TITLES_TABLE} ON ${SEASONS_TABLE}.title_id = ${TITLES_TABLE}.id
         GROUP BY title_id

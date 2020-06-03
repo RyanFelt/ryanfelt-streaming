@@ -18,10 +18,14 @@ export const Series = () => {
   const seriesTitle = titleUpperCase(series);
   let history = useHistory();
 
+  // TODO :: rethink this loading page state
+  const [loadingPage, setLoadingPage] = useState(true);
+
   useEffect(() => {
     getAllEpisodes(series)
       .then((res) => {
         setAllEpisodes(res);
+        setLoadingPage(false);
       })
       .catch((err) => {
         console.log('ERROR::', err);
@@ -72,7 +76,9 @@ export const Series = () => {
 
   return (
     <div className="App">
-      {allEpisodes.length ? (
+      {loadingPage ? (
+        <LoadingSpinner />
+      ) : (
         <>
           <br />
           <div className="container">
@@ -105,8 +111,6 @@ export const Series = () => {
             series={series}
           />
         </>
-      ) : (
-        <LoadingSpinner />
       )}
     </div>
   );

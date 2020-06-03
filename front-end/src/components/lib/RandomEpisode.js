@@ -3,6 +3,8 @@ import { Button } from 'react-bootstrap';
 import '../../App.css';
 
 export const RandomEpisode = ({ series, allEpisodes }) => {
+  if (!allEpisodes.length) return <></>;
+
   const random = Math.floor(Math.random() * allEpisodes.length);
 
   return (

@@ -2,13 +2,11 @@ import React from 'react';
 import '../../App.css';
 
 export const EpisodeLayout = ({ episodes, series }) => {
-  let responseTable = [];
-
-  for (let x = 0; x < episodes.length; x++) {
-    responseTable.push(cell(episodes[x], series));
-  }
-
-  return <div className="flex-column">{responseTable}</div>;
+  return (
+    <div className="flex-column">
+      {episodes.map((episode) => cell(episode, series))}
+    </div>
+  );
 };
 
 const cell = (episode, series) => {
