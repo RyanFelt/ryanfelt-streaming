@@ -4,7 +4,7 @@ const { initMysql } = require('../../utils/mysql');
 exports.getAllTitles = async (req) => {
   const mysql = initMysql();
 
-  const allTitles = await mysql.getAllTitles();
+  const allTitles = await mysql.getAllTitles(req.user.userId);
 
   const activeTitles = allTitles.filter((title) => {
     if (title.seasons) {

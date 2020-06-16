@@ -1,12 +1,12 @@
 const { query } = require('./setup');
 const { ValidationError } = require('../errors');
 
-const { TITLES_TABLE, SEASONS_TABLE } = process.env;
+const { TITLES_TABLE, SEASONS_TABLE, WATCH_HISTORY_TABLE } = process.env;
 
-exports.getAllTitles = async () => {
+exports.getAllTitles = async (userId) => {
   try {
     return await query(`
-      SELECT  ${TITLES_TABLE}.*, s.seasons 
+      SELECT  ${TITLES_TABLE}.*, s.seasons, ${WATCH_HISTORY_TABLE}.watched_percentage
       FROM  ${TITLES_TABLE}
       LEFT JOIN (
         SELECT title_id, GROUP_CONCAT(${SEASONS_TABLE}.season ORDER BY CAST(${SEASONS_TABLE}.season AS signed)) AS seasons 
@@ -15,9 +15,10 @@ exports.getAllTitles = async () => {
         GROUP BY title_id
       )s 
       ON ${TITLES_TABLE}.id = s.title_id 
-      WHERE parent_id IS NULL;`);
-
-    // return await query(`SELECT * FROM ${TITLES_TABLE} WHERE parent_id IS NULL`);
+      LEFT JOIN ${WATCH_HISTORY_TABLE}
+      ON ${TITLES_TABLE}.id = ${WATCH_HISTORY_TABLE}.title_id AND "${userId}" = ${WATCH_HISTORY_TABLE}.user_id
+      WHERE parent_id IS NULL;
+    `);
   } catch (err) {
     throw new ValidationError(`MYSQL - getAllTitles - ERROR :: ${err}`);
   }
@@ -25,9 +26,9 @@ exports.getAllTitles = async () => {
 
 exports.getAllEpisodes = async (series) => {
   try {
-    return await query(
-      `SELECT * FROM ${TITLES_TABLE} WHERE parent_id = (SELECT id FROM ${TITLES_TABLE} WHERE title = "${series}")`
-    );
+    return await query(`
+      SELECT * FROM ${TITLES_TABLE} WHERE parent_id = (SELECT id FROM ${TITLES_TABLE} WHERE title = "${series}");
+    `);
   } catch (err) {
     throw new ValidationError(`MYSQL - getAllEpisodes - ERROR :: ${err}`);
   }
@@ -43,10 +44,10 @@ exports.insertTitle = async ({
   year = null,
 }) => {
   try {
-    return await query(
-      `INSERT INTO ${TITLES_TABLE}(id, title, type, banner_image, active, video_file, year) 
-      VALUES ("${id}", "${title}", "${type}", "${banner_image}", ${active}, "${video_file}", "${year}");`
-    );
+    return await query(`
+      INSERT INTO ${TITLES_TABLE}(id, title, type, banner_image, active, video_file, year) 
+      VALUES ("${id}", "${title}", "${type}", "${banner_image}", ${active}, "${video_file}", "${year}");
+    `);
   } catch (err) {
     throw new ValidationError(`MYSQL - insertTitle - ERROR :: ${err}`);
   }
@@ -63,10 +64,10 @@ exports.insertEpisode = async ({
   description,
 }) => {
   try {
-    return await query(
-      `INSERT INTO ${TITLES_TABLE}(id, title, active, parent_id, video_file, season, episode, description ) 
-      VALUES ("${id}", "${title}", ${active}, "${parent_id}", "${video_file}", "${season}", "${episode}", "${description}");`
-    );
+    return await query(`
+      INSERT INTO ${TITLES_TABLE}(id, title, active, parent_id, video_file, season, episode, description ) 
+      VALUES ("${id}", "${title}", ${active}, "${parent_id}", "${video_file}", "${season}", "${episode}", "${description}");
+    `);
   } catch (err) {
     throw new ValidationError(`MYSQL - insertEpisode - ERROR :: ${err}`);
   }

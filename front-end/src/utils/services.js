@@ -51,7 +51,11 @@ export const getAllEpisodes = async (series) => {
   }
 };
 
-export const createWatchHistory = async (titleInfo, watchedTime) => {
+export const createWatchHistory = async (
+  titleInfo,
+  watchedTime,
+  watchedPercentage
+) => {
   const { auth, refresh } = getAuthTokens();
 
   if (!auth || !refresh) {
@@ -64,6 +68,7 @@ export const createWatchHistory = async (titleInfo, watchedTime) => {
     data: {
       titleId: titleInfo.id,
       watchedTime,
+      watchedPercentage,
     },
     headers: { Authorization: auth },
   });

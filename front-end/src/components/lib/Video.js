@@ -20,16 +20,16 @@ export const Video = React.memo(({ title }) => {
     vid.current.currentTime = await getWatchedTime(title.id);
 
     setInterval(() => {
-      const percentageWatched = Math.floor(
+      const watchedPercentage = Math.floor(
         (vid.current.currentTime / vid.current.duration) * 100
       );
 
       let watchedTime = vid.current.currentTime;
-      if (percentageWatched > 95) {
+      if (watchedPercentage > 95) {
         watchedTime = 0;
       }
 
-      createWatchHistory(title, watchedTime);
+      createWatchHistory(title, watchedTime, watchedPercentage);
     }, 15000);
 
     axios

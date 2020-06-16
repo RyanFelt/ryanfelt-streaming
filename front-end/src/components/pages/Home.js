@@ -72,9 +72,9 @@ export const Home = () => {
                 <TitleTile
                   path={title.title}
                   image={title.banner_image}
-                  imageLocation={'images'}
                   type={title.type}
                   videoFile={title.video_file}
+                  watchedPercentage={title.watched_percentage}
                   key={title.id}
                 />
               );

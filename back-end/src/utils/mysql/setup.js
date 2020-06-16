@@ -71,6 +71,7 @@ exports.createTables = async () => {
       user_id VARCHAR(100),
       title_id VARCHAR(100),
       watched_time VARCHAR(100),
+      watched_percentage INTEGER,
       date_updated TIMESTAMP,
       PRIMARY KEY (user_id, title_id),
       FOREIGN KEY (title_id) REFERENCES ${TITLES_TABLE} (id)
