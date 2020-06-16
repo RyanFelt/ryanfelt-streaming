@@ -14,11 +14,7 @@ exports.getAllTitles = async (req) => {
     if (title.active) return title;
   });
 
-  let watchedLast = [];
-
-  if (req.user && req.user.userId) {
-    watchedLast = await mysql.getWatchedLatest(req.user.userId);
-  }
+  const watchedLast = await mysql.getWatchedLatest(req.user.userId);
 
   for (let x = 0; x < watchedLast.length; x++) {
     for (let i = 0; i < activeTitles.length; i++) {

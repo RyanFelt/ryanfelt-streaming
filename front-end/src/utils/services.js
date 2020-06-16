@@ -74,16 +74,16 @@ export const createWatchHistory = async (
   });
 };
 
-export const getWatchedTime = async (titleId) => {
+export const getWatchHistoryRecord = async (titleId) => {
   try {
-    const res = await subscribedRequest({
+    const historyRecord = await subscribedRequest({
       method: 'get',
       url: `${process.env.REACT_APP_BACKEND_URL}/api/watchHistory?titleId=${titleId}`,
     });
 
-    return res.watched_time ? res.watched_time : '0';
+    return historyRecord;
   } catch (e) {
     console.log('ERROR:: getWatchedTime', e);
-    return '0';
+    return { watched_time: '0' };
   }
 };
