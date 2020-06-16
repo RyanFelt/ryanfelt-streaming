@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 import { Modal, Button, FormControl } from 'react-bootstrap';
 import axios from 'axios';
-import '../../App.css';
+import './index.css';
 
 export const LoginModal = ({ close }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-  const handleEmailChange = event => {
+  const handleEmailChange = (event) => {
     setEmail(event.target.value);
   };
 
-  const handlePasswordChange = event => {
+  const handlePasswordChange = (event) => {
     setPassword(event.target.value);
   };
 
@@ -22,15 +22,15 @@ export const LoginModal = ({ close }) => {
         `${process.env.REACT_APP_BACKEND_URL}/api/identity-service/signIn`,
         {
           email,
-          password
+          password,
         }
       )
-      .then(res => {
+      .then((res) => {
         localStorage.setItem('authorizationToken', res.data.authorization);
         localStorage.setItem('refreshToken', res.data.refresh);
         window.location.reload(false);
       })
-      .catch(err => {
+      .catch((err) => {
         setError(err.response.data.message);
       });
   };

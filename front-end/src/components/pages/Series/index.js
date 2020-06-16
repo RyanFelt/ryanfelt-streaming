@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router';
 import { useHistory } from 'react-router-dom';
-import '../../App.css';
-import { EpisodeLayout } from '../lib/EpisodeLayout';
-import { titleUpperCase } from '../../utils/common';
-import { RandomEpisode } from '../lib/RandomEpisode';
-import { LoadingSpinner } from '../lib/LoadingSpinner';
-import { SeasonsDropdown } from '../lib/SeasonsDropdown';
+import 'App.css';
+import { EpisodeLayout } from 'components/lib/EpisodeLayout';
+import { titleUpperCase } from 'utils/common';
+import { RandomEpisode } from 'components/lib/RandomEpisode';
+import { LoadingSpinner } from 'components/lib/LoadingSpinner';
+import { SeasonsDropdown } from 'components/lib/SeasonsDropdown';
 import {
   getAllTitles,
   getAllEpisodes,
   createWatchHistory,
-} from '../../utils/services';
+} from 'utils/services';
 
 export const Series = () => {
   const { series } = useParams();

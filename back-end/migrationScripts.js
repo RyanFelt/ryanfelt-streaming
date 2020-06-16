@@ -1,7 +1,7 @@
 require('dotenv').config();
 
 const uuidv4 = require('uuid/v4');
-const { dynamodb } = require('./src/utils/dynamoSetup');
+const { dynamodb } = require('./src/utils/dynamodb/config');
 const { scanAllTitles, scanAllEpisodes } = require('./src/utils/dynamodb');
 const { initMysql } = require('./src/utils/mysql');
 const { query } = require('./src/utils/mysql/setup');

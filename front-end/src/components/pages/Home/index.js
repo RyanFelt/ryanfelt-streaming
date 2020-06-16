@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import '../../App.css';
+import 'App.css';
 import { useLocation } from 'react-router';
 import InfiniteScroll from 'react-infinite-scroller';
 import { Spinner } from 'react-bootstrap';
 import qs from 'query-string';
-import { LoadingSpinner } from '../lib/LoadingSpinner';
-import { TitleTile } from '../lib/TitleTile';
-import { getAllTitles } from '../../utils/services';
+import { LoadingSpinner } from 'components/lib/LoadingSpinner';
+import { TitleTile } from 'components/lib/TitleTile';
+import { getAllTitles } from 'utils/services';
 
 export const Home = () => {
   const { search } = useLocation();

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
-import { LoginModal } from './LoginModal';
-import { logOut } from '../../utils/logOut';
-import '../../App.css';
+import { LoginModal } from 'components/lib/LoginModal';
+import { logOut } from 'utils/logOut';
+import './index.css';
 
 export const Header = () => {
   const [showLoginModal, setShowLoginModal] = useState(false);
