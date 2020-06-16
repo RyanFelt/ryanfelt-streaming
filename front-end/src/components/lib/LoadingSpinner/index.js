@@ -1,6 +1,7 @@
 import React from 'react';
-import '../../App.css';
+import 'App.css';
 import { Spinner } from 'react-bootstrap';
+import './index.css';
 
 export const LoadingSpinner = () => {
   return (

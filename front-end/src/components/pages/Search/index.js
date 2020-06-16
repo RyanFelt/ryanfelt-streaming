@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { InputGroup, FormControl, Button } from 'react-bootstrap';
-import '../../App.css';
-import { TitleTile } from '../lib/TitleTile';
-import { LoadingSpinner } from '../lib/LoadingSpinner';
-import { getAllTitles } from '../../utils/services';
+import 'App.css';
+import { TitleTile } from 'components/lib/TitleTile';
+import { LoadingSpinner } from 'components/lib/LoadingSpinner';
+import { getAllTitles } from 'utils/services';
+import './index.css';
 
 export const Search = () => {
   const [allTitles, setAllTitles] = useState([]);
@@ -11,9 +12,11 @@ export const Search = () => {
   const [results, setResults] = useState([]);
   const [wordsSearched, setWordsSearched] = useState([]);
   useEffect(() => {
-    const matchedSearches = allTitles.filter((data) =>
-      data.title.includes(wordsSearched.map((word) => word.toLowerCase()))
-    );
+    const matchedSearches = allTitles.filter((data) => {
+      for (let x = 0; x < wordsSearched.length; x++) {
+        if (data.title.includes(wordsSearched[x])) return data;
+      }
+    });
 
     setResults(matchedSearches);
   }, [wordsSearched]);
@@ -30,7 +33,9 @@ export const Search = () => {
 
   const onSearchSubmit = () => {
     const words = search.split(' ');
-    setWordsSearched(words.filter((word) => word !== ''));
+    setWordsSearched(
+      words.filter((word) => word !== '').map((word) => word.toLowerCase())
+    );
   };
 
   return (

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import { getAuthTokens, newAuthToken } from 'utils/auth';
 import { createWatchHistory, getWatchHistoryRecord } from 'utils/services';
-import 'App.css';
+import './index.css';
 
 export const Video = React.memo(({ title }) => {
   const [src, setSrc] = useState(null);
@@ -19,9 +19,9 @@ export const Video = React.memo(({ title }) => {
 
     const historyRecord = await getWatchHistoryRecord(title.id);
 
-    historyRecord.watched_percentage > 95
-      ? (vid.current.currentTime = 0)
-      : (vid.current.currentTime = historyRecord.watched_time);
+    historyRecord && historyRecord.watched_percentage < 95
+      ? (vid.current.currentTime = historyRecord.watched_time)
+      : (vid.current.currentTime = '0');
 
     setInterval(() => {
       const watchedPercentage = Math.floor(

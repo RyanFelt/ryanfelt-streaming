@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
-import '../../App.css';
+import './index.css';
 
 export const RandomEpisode = ({ series, allEpisodes }) => {
   if (!allEpisodes.length) return <></>;

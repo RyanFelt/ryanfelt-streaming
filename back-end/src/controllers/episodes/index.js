@@ -10,7 +10,7 @@ exports.getAllEpisodes = async (req, res) => {
 
   const mysql = initMysql();
 
-  const episodes = await mysql.getAllEpisodes(title);
+  const episodes = await mysql.getAllEpisodes(title, req.user.userId);
 
   if (!episodes.length) {
     throw new ResourceNotFoundError('No episodes found.');

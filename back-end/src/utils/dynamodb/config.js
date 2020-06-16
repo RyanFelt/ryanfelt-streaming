@@ -3,7 +3,7 @@ const AWS = require('aws-sdk');
 const { REGION, NODE_ENV, DYNAMODB_PORT } = process.env;
 
 let config = {
-  region: REGION || 'us-east-1'
+  region: REGION || 'us-east-1',
 };
 
 // if (IS_NODE_ENV === 'TEST' || IS_NODE_ENV === 'LOCAL') {
@@ -24,5 +24,5 @@ const dynamodb = new AWS.DynamoDB();
 module.exports = {
   AWS,
   docClient,
-  dynamodb
+  dynamodb,
 };

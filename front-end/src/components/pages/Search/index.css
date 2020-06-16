@@ -1,0 +1,9 @@
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.textbox {
+  width: 80%;
+}

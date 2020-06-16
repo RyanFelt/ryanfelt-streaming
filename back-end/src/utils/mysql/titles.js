@@ -24,10 +24,14 @@ exports.getAllTitles = async (userId) => {
   }
 };
 
-exports.getAllEpisodes = async (series) => {
+exports.getAllEpisodes = async (series, userId) => {
   try {
     return await query(`
-      SELECT * FROM ${TITLES_TABLE} WHERE parent_id = (SELECT id FROM ${TITLES_TABLE} WHERE title = "${series}");
+      SELECT *
+      FROM ${TITLES_TABLE}
+      LEFT JOIN ${WATCH_HISTORY_TABLE}
+      ON ${TITLES_TABLE}.id = ${WATCH_HISTORY_TABLE}.title_id AND "${userId}" = ${WATCH_HISTORY_TABLE}.user_id
+      WHERE parent_id = (SELECT id FROM ${TITLES_TABLE} WHERE title = "${series}");
     `);
   } catch (err) {
     throw new ValidationError(`MYSQL - getAllEpisodes - ERROR :: ${err}`);

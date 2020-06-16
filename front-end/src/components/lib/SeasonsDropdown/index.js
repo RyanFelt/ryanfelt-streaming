@@ -1,5 +1,5 @@
-import React from "react";
-import { Dropdown } from "react-bootstrap";
+import React from 'react';
+import { Dropdown } from 'react-bootstrap';
 
 export const SeasonsDropdown = ({ currentSeason, seasons, setSeason }) => {
   return (
@@ -8,7 +8,7 @@ export const SeasonsDropdown = ({ currentSeason, seasons, setSeason }) => {
         {currentSeason}
       </Dropdown.Toggle>
       <Dropdown.Menu>
-        {seasons.map(season => {
+        {seasons.map((season) => {
           return (
             <Dropdown.Item key={season} onClick={() => setSeason(season)}>
               {season}

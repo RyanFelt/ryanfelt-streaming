@@ -1,19 +1,19 @@
 import React from 'react';
-import '../../App.css';
+import './index.css';
 
 export const EpisodeLayout = ({ episodes, series }) => {
   return (
     <div className="flex-column">
-      {episodes.map((episode) => cell(episode, series))}
+      {episodes.map((episode) => Episode(episode, series))}
     </div>
   );
 };
 
-const cell = (episode, series) => {
+const Episode = (episode, series) => {
   return (
     <div key={episode.video_file}>
       <a
-        className="cell"
+        className="episode-layout"
         href={`/series/${series}/watch?${episode.video_file}`}
       >
         <h2>{episode.title}</h2>

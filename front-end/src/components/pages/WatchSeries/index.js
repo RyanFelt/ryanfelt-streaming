@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useLocation } from 'react-router';
 import { useHistory } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
-import '../../App.css';
-import { titleUpperCase } from '../../utils/common';
-import { RandomEpisode } from '../lib/RandomEpisode';
-import { Video } from '../lib/Video';
-import { LoadingSpinner } from '../lib/LoadingSpinner';
-import { getAllEpisodes } from '../../utils/services';
+import 'App.css';
+import { titleUpperCase } from 'utils/common';
+import { RandomEpisode } from 'components/lib/RandomEpisode';
+import { Video } from 'components/lib/Video';
+import { LoadingSpinner } from 'components/lib/LoadingSpinner';
+import { getAllEpisodes } from 'utils/services';
 
 export const WatchSeries = () => {
   const { series } = useParams();
