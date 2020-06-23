@@ -9,7 +9,6 @@ const subscribedRequest = async (requestData, retry = 0) => {
 
     const res = await axios(requestData);
 
-    // return JSON.parse(JSON.stringify(res.data));
     return res.data;
   } catch (err) {
     if (err.response && err.response.status === 401) {
@@ -20,6 +19,7 @@ const subscribedRequest = async (requestData, retry = 0) => {
         console.log('ERROR:: subscribedRequest', err);
       }
     }
+    throw err;
   }
 };
 
@@ -35,6 +35,14 @@ export const getAllTitles = async () => {
     console.log('ERROR:: getAllTitles', e);
     return [];
   }
+};
+
+export const createNewTitle = async (data) => {
+  return await subscribedRequest({
+    method: 'post',
+    url: `${process.env.REACT_APP_BACKEND_URL}/api/titles`,
+    data,
+  });
 };
 
 export const getAllEpisodes = async (series) => {
@@ -56,12 +64,6 @@ export const createWatchHistory = async (
   watchedTime,
   watchedPercentage
 ) => {
-  const { auth, refresh } = getAuthTokens();
-
-  if (!auth || !refresh) {
-    return;
-  }
-
   await subscribedRequest({
     method: 'post',
     url: `${process.env.REACT_APP_BACKEND_URL}/api/watchHistory`,
@@ -70,7 +72,6 @@ export const createWatchHistory = async (
       watchedTime,
       watchedPercentage,
     },
-    headers: { Authorization: auth },
   });
 };
 

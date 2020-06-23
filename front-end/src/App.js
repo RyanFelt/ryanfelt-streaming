@@ -2,13 +2,15 @@ import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Header } from './components/lib/Header';
-import { Home } from './components/pages/Home';
-import { FourOFour } from './components/pages/FourOFour';
-import { Series } from './components/pages/Series';
-import { WatchSeries } from './components/pages/WatchSeries';
-import { Watch } from './components/pages/Watch';
-import { Search } from './components/pages/Search';
+import { PrivateRoute } from 'components/lib/PrivateRoute';
+import { Header } from 'components/lib/Header';
+import { Home } from 'components/pages/Home';
+import { FourOFour } from 'components/pages/FourOFour';
+import { Series } from 'components/pages/Series';
+import { WatchSeries } from 'components/pages/WatchSeries';
+import { Watch } from 'components/pages/Watch';
+import { Search } from 'components/pages/Search';
+import { AddTitle } from 'components/pages/AddTitle';
 
 export function App() {
   return (
@@ -21,6 +23,8 @@ export function App() {
         <Route exact path="/series/:series/watch" component={WatchSeries} />
         <Route exact path="/watch" component={Watch} />
         <Route exact path="/search" component={Search} />
+        <PrivateRoute exact path="/admin" component={AddTitle} />
+        <PrivateRoute exact path="/admin/new-title" component={AddTitle} />
         <Route component={FourOFour} />
       </Switch>
     </Router>

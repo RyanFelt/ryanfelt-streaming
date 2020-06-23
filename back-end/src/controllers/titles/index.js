@@ -1,5 +1,6 @@
 const uuidv4 = require('uuid/v4');
 const { initMysql } = require('../../utils/mysql');
+const { ValidationError } = require('../../utils/errors');
 
 exports.getAllTitles = async (req) => {
   const mysql = initMysql();
@@ -53,7 +54,7 @@ exports.postTitle = async (req) => {
 
   await mysql.insertTitle(newTitle);
 
-  if (req.body.seasons) {
+  if (req.body.seasons && Array.isArray(req.body.seasons)) {
     const seasons = req.body.seasons;
 
     for (let x = 0; x < seasons.length; x++) {
