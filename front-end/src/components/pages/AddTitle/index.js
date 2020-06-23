@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import 'App.css';
 import './index.css';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from 'react-toastify';
 import { FormControl, Button, Spinner } from 'react-bootstrap';
 import { titleDashLowerCase, titleUpperCase } from 'utils/common';
 import { createNewTitle } from 'utils/services';
@@ -14,12 +16,17 @@ export const AddTitle = () => {
   const [year, setYear] = useState('');
   const [seasons, setSeasons] = useState('');
   const [submitButtonSpinner, setSubmitButtonSpinner] = useState(false);
-  const [errorMessage, setErrorMessage] = useState('');
 
   const addExtension = (str, extension) => {
     return str.includes(extension) || str.includes('.')
       ? str
       : `${str}${extension}`;
+  };
+
+  const setErrorMessage = (message) => {
+    toast.error(message, {
+      position: 'top-center',
+    });
   };
 
   const handleUserInputChange = (event) => {
@@ -81,7 +88,6 @@ export const AddTitle = () => {
   };
 
   const submitForm = async () => {
-    setErrorMessage('');
     setSubmitButtonSpinner(true);
 
     const moviesValidation = !title || !bannerImage || !videoFile || !year;
@@ -106,13 +112,17 @@ export const AddTitle = () => {
         seasons: seasons.split(','),
       });
     } catch (e) {
-      setErrorMessage(e.response.data.message);
+      setErrorMessage(
+        `ERROR - ${e.response.status} - ${e.response.data.message}`
+      );
     }
     setSubmitButtonSpinner(false);
   };
 
   return (
     <div className="form-flex-container">
+      <ToastContainer />
+
       <h1>Add New Title</h1>
       <br />
 
@@ -208,8 +218,6 @@ export const AddTitle = () => {
       )}
 
       <br />
-
-      <div className="error-text">{errorMessage}</div>
 
       <Button variant="dark" onClick={submitForm}>
         {submitButtonSpinner ? (
