@@ -20,10 +20,11 @@
   color: #61dafb;
 }
 
-.container {
+.form-flex-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  padding: 5px;
+  align-items: center;
 }
 
 .flex-column {

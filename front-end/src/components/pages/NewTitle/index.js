@@ -7,7 +7,7 @@ import { FormControl, Button, Spinner } from 'react-bootstrap';
 import { titleDashLowerCase, titleUpperCase } from 'utils/common';
 import { createNewTitle } from 'utils/services';
 
-export const AddTitle = () => {
+export const NewTitle = () => {
   const [userInput, setUserInput] = useState('');
   const [type, setType] = useState('MOVIES');
   const [title, setTitle] = useState('');
@@ -119,6 +119,17 @@ export const AddTitle = () => {
     setSubmitButtonSpinner(false);
   };
 
+  const getBannerImage = () => {
+    window.open(
+      encodeURI(`https://wall.alphacoders.com/search.php?search=${userInput}`),
+      '_blank'
+    );
+  };
+
+  const getVideoFile = () => {
+    window.open(encodeURI(`https://katcr.to/usearch/${userInput}`), '_blank');
+  };
+
   return (
     <div className="form-flex-container">
       <ToastContainer />
@@ -167,28 +178,40 @@ export const AddTitle = () => {
 
       <div className="form-item">
         <h3 className="h6">Banner Image</h3>
-        <FormControl
-          type="text"
-          value={bannerImage}
-          placeholder="Banner Image..."
-          maxLength="70"
-          className="mr-sm-2"
-          onChange={handleBannerImageChange}
-        />
+
+        <div className="d-flex">
+          <FormControl
+            type="text"
+            value={bannerImage}
+            placeholder="Banner Image..."
+            maxLength="70"
+            className="mr-sm-2"
+            onChange={handleBannerImageChange}
+          />
+          <Button variant="dark" onClick={getBannerImage}>
+            Get
+          </Button>
+        </div>
       </div>
 
       {type === 'MOVIES' ? (
         <>
           <div className="form-item">
             <h3 className="h6">Video File</h3>
-            <FormControl
-              type="text"
-              value={videoFile}
-              placeholder="Video File..."
-              maxLength="70"
-              className="mr-sm-2"
-              onChange={handleVideoFileChange}
-            />
+
+            <div className="d-flex">
+              <FormControl
+                type="text"
+                value={videoFile}
+                placeholder="Video File..."
+                maxLength="70"
+                className="mr-sm-2"
+                onChange={handleVideoFileChange}
+              />
+              <Button variant="dark" onClick={getVideoFile}>
+                Get
+              </Button>
+            </div>
           </div>
 
           <div className="form-item-small">

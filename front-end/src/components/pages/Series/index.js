@@ -81,7 +81,7 @@ export const Series = () => {
       ) : (
         <>
           <br />
-          <div className="container">
+          <div className="flex-row">
             <div className="back-button">
               {seriesInfo.seasons && seriesInfo.seasons[0] !== 'N/A' ? (
                 <SeasonsDropdown
