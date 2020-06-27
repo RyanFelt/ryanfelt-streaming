@@ -19,14 +19,14 @@ exports.postWatchHistory = async (req) => {
       req.user.userId,
       req.body.titleId,
       req.body.watchedTime,
-      parseInt(req.body.watchedPercentage)
+      parseInt(req.body.watchedPercentage) || 0
     );
   } else {
     await mysql.updateWatchHistory(
       req.user.userId,
       req.body.titleId,
       req.body.watchedTime,
-      req.body.watchedPercentage
+      parseInt(req.body.watchedPercentage) || 0
     );
   }
 
