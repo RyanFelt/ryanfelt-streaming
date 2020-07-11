@@ -8,6 +8,7 @@ const {
   TITLES_TABLE,
   SEASONS_TABLE,
   WATCH_HISTORY_TABLE,
+  WATCH_LIST_TABLE,
 } = process.env;
 
 exports.pool = mysql.createPool({
@@ -77,10 +78,20 @@ exports.createTables = async () => {
       FOREIGN KEY (title_id) REFERENCES ${TITLES_TABLE} (id)
     );
   `);
+
+  await query(`
+    CREATE TABLE IF NOT EXISTS ${WATCH_LIST_TABLE} (
+      user_id VARCHAR(100),
+      title_id VARCHAR(100),
+      date_added TIMESTAMP,
+      PRIMARY KEY (user_id, title_id),
+      FOREIGN KEY (title_id) REFERENCES ${TITLES_TABLE} (id)
+    );
+  `);
 };
 
 exports.dropTables = async () => {
   await query(
-    `DROP TABLE IF EXISTS ${TITLES_TABLE}, ${SEASONS_TABLE}, ${WATCH_HISTORY_TABLE} CASCADE`
+    `DROP TABLE IF EXISTS ${TITLES_TABLE}, ${SEASONS_TABLE}, ${WATCH_HISTORY_TABLE}, ${WATCH_LIST_TABLE} CASCADE`
   );
 };
