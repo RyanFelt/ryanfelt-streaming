@@ -33,6 +33,7 @@ export const Header = () => {
           <Nav className="mr-auto">
             <Nav.Link href="/?filter=series">Series</Nav.Link>
             <Nav.Link href="/?filter=movies">Movies</Nav.Link>
+            <Nav.Link href="/?filter=watch-list">WatchList</Nav.Link>
             <Nav.Link href="/search">Search</Nav.Link>
           </Nav>
 

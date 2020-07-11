@@ -88,3 +88,37 @@ export const getWatchHistoryRecord = async (titleId) => {
     return { watched_time: '0' };
   }
 };
+
+export const createWatchList = async (titleId) => {
+  await subscribedRequest({
+    method: 'post',
+    url: `${process.env.REACT_APP_BACKEND_URL}/api/watchList`,
+    data: {
+      titleId,
+    },
+  });
+};
+
+export const getWatchList = async () => {
+  try {
+    const watchList = await subscribedRequest({
+      method: 'get',
+      url: `${process.env.REACT_APP_BACKEND_URL}/api/watchList`,
+    });
+
+    return watchList;
+  } catch (e) {
+    console.log('ERROR:: getWatchList', e);
+    throw e;
+  }
+};
+
+export const deleteWatchList = async (titleId) => {
+  await subscribedRequest({
+    method: 'delete',
+    url: `${process.env.REACT_APP_BACKEND_URL}/api/watchList`,
+    data: {
+      titleId,
+    },
+  });
+};

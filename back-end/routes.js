@@ -8,6 +8,11 @@ const {
   postWatchHistory,
   getWatchHistory,
 } = require('./src/controllers/watchHistory');
+const {
+  postWatchList,
+  getWatchList,
+  deleteWatchList,
+} = require('./src/controllers/watchList');
 
 const router = express.Router();
 
@@ -20,5 +25,8 @@ router.post('/episodes', authenticate('3'), buildRoute(postEpisode));
 router.get('/subscribed', authenticate('2'), buildRoute(isSubscribed));
 router.post('/watchHistory', authenticate('2'), buildRoute(postWatchHistory));
 router.get('/watchHistory', authenticate('2'), buildRoute(getWatchHistory));
+router.post('/watchList', authenticate('2'), buildRoute(postWatchList));
+router.get('/watchList', authenticate('1'), buildRoute(getWatchList));
+router.delete('/watchList', authenticate('2'), buildRoute(deleteWatchList));
 
 module.exports = router;
