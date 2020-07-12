@@ -3,3 +3,13 @@
   color: black;
   text-decoration: none;
 }
+
+.series-episode-container {
+  width: 90%;
+}
+
+.watched-bar-episode {
+  padding-bottom: 10px;
+  background-color: red;
+  position: absolute;
+}

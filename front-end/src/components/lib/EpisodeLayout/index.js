@@ -11,7 +11,7 @@ export const EpisodeLayout = ({ episodes, series }) => {
 
 const Episode = (episode, series) => {
   return (
-    <div key={episode.video_file}>
+    <div className="series-episode-container" key={episode.video_file}>
       <a
         className="episode-layout"
         href={`/series/${series}/watch?${episode.video_file}`}
@@ -20,6 +20,13 @@ const Episode = (episode, series) => {
         Episode: {episode.episode} <br />
         {episode.description}
       </a>
+
+      <div
+        className="watched-bar-episode"
+        style={{
+          width: `${episode.watched_percentage || 0}%`,
+        }}
+      />
     </div>
   );
 };
