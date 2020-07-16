@@ -2,6 +2,7 @@ const { createTables, dropTables } = require('./setup');
 const {
   getAllTitles,
   getAllEpisodes,
+  getEpisodeByVideoFile,
   insertTitle,
   insertEpisode,
 } = require('./titles');
@@ -25,6 +26,7 @@ exports.initMysql = () => {
 
     getAllTitles,
     getAllEpisodes,
+    getEpisodeByVideoFile,
     insertTitle,
     insertEpisode,
 

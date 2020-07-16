@@ -38,6 +38,20 @@ exports.getAllEpisodes = async (series, userId) => {
   }
 };
 
+exports.getEpisodeByVideoFile = async (videoFile) => {
+  try {
+    return await query(`
+      SELECT *
+      FROM ${TITLES_TABLE}
+      WHERE video_file = "${videoFile}";
+    `);
+  } catch (err) {
+    throw new ValidationError(
+      `MYSQL - getEpisodeByVideoFile - ERROR :: ${err}`
+    );
+  }
+};
+
 exports.insertTitle = async ({
   id,
   title,

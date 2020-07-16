@@ -12,7 +12,7 @@ import { Watch } from 'components/pages/Watch';
 import { Search } from 'components/pages/Search';
 import { Admin } from 'components/pages/Admin';
 import { NewTitle } from 'components/pages/NewTitle';
-import { NewEpisode } from 'components/pages/NewEpisode';
+import { NewEpisodes } from 'components/pages/NewEpisodes';
 
 export function App() {
   return (
@@ -27,7 +27,11 @@ export function App() {
         <Route exact path="/search" component={Search} />
         <PrivateRoute exact path="/admin" component={Admin} />
         <PrivateRoute exact path="/admin/new-title" component={NewTitle} />
-        <PrivateRoute exact path="/admin/new-episode" component={NewEpisode} />
+        <PrivateRoute
+          exact
+          path="/admin/new-episodes"
+          component={NewEpisodes}
+        />
 
         <Route component={FourOFour} />
       </Switch>

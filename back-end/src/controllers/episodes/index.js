@@ -3,6 +3,7 @@ const { initMysql } = require('../../utils/mysql');
 const {
   ResourceNotFoundError,
   ValidationError,
+  ResourceExistsError,
 } = require('../../utils/errors');
 
 exports.getAllEpisodes = async (req, res) => {
@@ -36,6 +37,12 @@ exports.postEpisode = async (req) => {
   else if (!req.body.description)
     throw new ValidationError('MISSING description');
   else if (!req.body.parentId) throw new ValidationError('MISSING parentId');
+
+  const exists = await mysql.getEpisodeByVideoFile(req.body.videoFile);
+
+  if (exists.length) {
+    throw new ResourceExistsError('episode already exists');
+  }
 
   const newEpisode = {
     id: uuidv4(),

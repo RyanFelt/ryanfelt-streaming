@@ -1,3 +1,5 @@
+import { toast } from 'react-toastify';
+
 //Makes the first letter of each word uppercase, takes - out
 export const titleUpperCase = (title) => {
   let splitTitle = title.split('-');
@@ -11,4 +13,12 @@ export const titleUpperCase = (title) => {
 //Makes all letters lowercase and trades spaces for "-"
 export const titleDashLowerCase = (title) => {
   return title.toLowerCase().replace(/ /g, '-');
+};
+
+export const setErrorMessage = (message) => {
+  console.log(message);
+
+  toast.error(message, {
+    position: 'top-center',
+  });
 };

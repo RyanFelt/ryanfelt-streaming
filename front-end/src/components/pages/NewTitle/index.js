@@ -4,7 +4,11 @@ import './index.css';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
 import { FormControl, Button, Spinner } from 'react-bootstrap';
-import { titleDashLowerCase, titleUpperCase } from 'utils/common';
+import {
+  titleDashLowerCase,
+  titleUpperCase,
+  setErrorMessage,
+} from 'utils/common';
 import { createNewTitle } from 'utils/services';
 
 export const NewTitle = () => {
@@ -21,12 +25,6 @@ export const NewTitle = () => {
     return str.includes(extension) || str.includes('.')
       ? str
       : `${str}${extension}`;
-  };
-
-  const setErrorMessage = (message) => {
-    toast.error(message, {
-      position: 'top-center',
-    });
   };
 
   const handleUserInputChange = (event) => {
