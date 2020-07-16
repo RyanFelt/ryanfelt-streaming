@@ -38,7 +38,7 @@ exports.getAllEpisodes = async (series, userId) => {
   }
 };
 
-exports.getEpisodeByVideoFile = async (videoFile) => {
+exports.getTitleByVideoFile = async (videoFile) => {
   try {
     return await query(`
       SELECT *

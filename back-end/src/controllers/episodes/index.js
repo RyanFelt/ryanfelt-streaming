@@ -38,7 +38,7 @@ exports.postEpisode = async (req) => {
     throw new ValidationError('MISSING description');
   else if (!req.body.parentId) throw new ValidationError('MISSING parentId');
 
-  const exists = await mysql.getEpisodeByVideoFile(req.body.videoFile);
+  const exists = await mysql.getTitleByVideoFile(req.body.videoFile);
 
   if (exists.length) {
     throw new ResourceExistsError('episode already exists');
