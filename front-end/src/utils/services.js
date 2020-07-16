@@ -1,6 +1,8 @@
 import axios from 'axios';
 import { getAuthTokens, newAuthToken } from './auth';
 
+const { REACT_APP_RAPID_API_KEY } = process.env;
+
 const subscribedRequest = async (requestData, retry = 0) => {
   const { auth, refresh } = getAuthTokens();
 
@@ -59,19 +61,11 @@ export const getAllEpisodes = async (series) => {
   }
 };
 
-export const createWatchHistory = async (
-  titleInfo,
-  watchedTime,
-  watchedPercentage
-) => {
-  await subscribedRequest({
+export const createNewEpisode = async (data) => {
+  return await subscribedRequest({
     method: 'post',
-    url: `${process.env.REACT_APP_BACKEND_URL}/api/watchHistory`,
-    data: {
-      titleId: titleInfo.id,
-      watchedTime,
-      watchedPercentage,
-    },
+    url: `${process.env.REACT_APP_BACKEND_URL}/api/episodes`,
+    data,
   });
 };
 
@@ -89,12 +83,18 @@ export const getWatchHistoryRecord = async (titleId) => {
   }
 };
 
-export const createWatchList = async (titleId) => {
+export const createWatchHistory = async (
+  titleInfo,
+  watchedTime,
+  watchedPercentage
+) => {
   await subscribedRequest({
     method: 'post',
-    url: `${process.env.REACT_APP_BACKEND_URL}/api/watchList`,
+    url: `${process.env.REACT_APP_BACKEND_URL}/api/watchHistory`,
     data: {
-      titleId,
+      titleId: titleInfo.id,
+      watchedTime,
+      watchedPercentage,
     },
   });
 };
@@ -113,6 +113,16 @@ export const getWatchList = async () => {
   }
 };
 
+export const createWatchList = async (titleId) => {
+  await subscribedRequest({
+    method: 'post',
+    url: `${process.env.REACT_APP_BACKEND_URL}/api/watchList`,
+    data: {
+      titleId,
+    },
+  });
+};
+
 export const deleteWatchList = async (titleId) => {
   await subscribedRequest({
     method: 'delete',
@@ -121,4 +131,22 @@ export const deleteWatchList = async (titleId) => {
       titleId,
     },
   });
+};
+
+export const getImdb = async (title, season, episode) => {
+  try {
+    const requestData = {
+      method: 'get',
+      url: `https://movie-database-imdb-alternative.p.rapidapi.com/?page=1&r=json&t=${title}&season=${season}`,
+      headers: { 'x-rapidapi-key': REACT_APP_RAPID_API_KEY },
+    };
+
+    if (episode) requestData.url += `&episode=${episode}`;
+
+    const res = await axios(requestData);
+
+    return res.data;
+  } catch (err) {
+    console.log('ERROR:: getImdb', err);
+  }
 };
