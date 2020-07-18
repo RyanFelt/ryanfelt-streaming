@@ -7,28 +7,27 @@ exports.getAllTitles = async (req) => {
 
   const allTitles = await mysql.getAllTitles(req.user.userId);
 
-  const activeTitles = allTitles.filter((title) => {
+  const massagedTitles = allTitles.filter((title) => {
     if (title.seasons) {
       title.seasons = title.seasons.split(',');
     }
-
-    if (title.active) return title;
+    return title;
   });
 
   const watchedLast = await mysql.getWatchedLatest(req.user.userId);
 
   for (let x = 0; x < watchedLast.length; x++) {
-    for (let i = 0; i < activeTitles.length; i++) {
-      if (activeTitles[i].id === watchedLast[x].title_id) {
-        const temp = activeTitles[i];
-        activeTitles.splice(i, 1);
-        activeTitles.unshift(temp);
+    for (let i = 0; i < massagedTitles.length; i++) {
+      if (massagedTitles[i].id === watchedLast[x].title_id) {
+        const temp = massagedTitles[i];
+        massagedTitles.splice(i, 1);
+        massagedTitles.unshift(temp);
         break;
       }
     }
   }
 
-  return activeTitles;
+  return massagedTitles;
 };
 
 exports.postTitle = async (req) => {
