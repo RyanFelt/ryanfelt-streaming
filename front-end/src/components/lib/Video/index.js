@@ -4,7 +4,7 @@ import { getAuthTokens, newAuthToken } from 'utils/auth';
 import { createWatchHistory, getWatchHistoryRecord } from 'utils/services';
 import './index.css';
 
-export const Video = React.memo(({ title }) => {
+export const Video = React.memo(({ title, playNextEpisode }) => {
   const [src, setSrc] = useState(null);
 
   const vid = useRef(null);
@@ -29,6 +29,8 @@ export const Video = React.memo(({ title }) => {
       );
 
       createWatchHistory(title, vid.current.currentTime, watchedPercentage);
+
+      if (playNextEpisode && watchedPercentage > 95) playNextEpisode();
     }, 15000);
 
     axios

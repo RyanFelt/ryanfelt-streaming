@@ -17,7 +17,7 @@ exports.getAllTitles = async (userId) => {
       ON ${TITLES_TABLE}.id = s.title_id 
       LEFT JOIN ${WATCH_HISTORY_TABLE}
       ON ${TITLES_TABLE}.id = ${WATCH_HISTORY_TABLE}.title_id AND "${userId}" = ${WATCH_HISTORY_TABLE}.user_id
-      WHERE parent_id IS NULL;
+      WHERE parent_id IS NULL AND active = 1;
     `);
   } catch (err) {
     throw new ValidationError(`MYSQL - getAllTitles - ERROR :: ${err}`);
@@ -31,7 +31,8 @@ exports.getAllEpisodes = async (series, userId) => {
       FROM ${TITLES_TABLE}
       LEFT JOIN ${WATCH_HISTORY_TABLE}
       ON ${TITLES_TABLE}.id = ${WATCH_HISTORY_TABLE}.title_id AND "${userId}" = ${WATCH_HISTORY_TABLE}.user_id
-      WHERE parent_id = (SELECT id FROM ${TITLES_TABLE} WHERE title = "${series}");
+      WHERE parent_id = (SELECT id FROM ${TITLES_TABLE} WHERE title = "${series}") AND active = 1
+      ORDER BY ${TITLES_TABLE}.season, CAST(${TITLES_TABLE}.episode AS UNSIGNED);
     `);
   } catch (err) {
     throw new ValidationError(`MYSQL - getAllEpisodes - ERROR :: ${err}`);

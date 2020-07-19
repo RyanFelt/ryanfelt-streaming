@@ -17,13 +17,7 @@ exports.getAllEpisodes = async (req, res) => {
     throw new ResourceNotFoundError('No episodes found.');
   }
 
-  const filteredEpisodes = episodes.filter((episode) => episode.active);
-
-  const orderedEpisodes = filteredEpisodes.sort((a, b) =>
-    parseInt(a.episode) > parseInt(b.episode) ? 1 : -1
-  );
-
-  return orderedEpisodes;
+  return episodes;
 };
 
 exports.postEpisode = async (req) => {

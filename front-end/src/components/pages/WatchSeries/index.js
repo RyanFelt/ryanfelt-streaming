@@ -18,6 +18,7 @@ export const WatchSeries = () => {
 
   let history = useHistory();
 
+  const [episodeIndex, setEpisodeIndex] = useState({});
   const [allEpisodes, setAllEpisodes] = useState([]);
 
   useEffect(() => {
@@ -51,8 +52,6 @@ export const WatchSeries = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [episode, history]);
 
-  const [episodeIndex, setEpisodeIndex] = useState({});
-
   useEffect(() => {
     getAllEpisodes(series)
       .then((res) => {
@@ -60,6 +59,11 @@ export const WatchSeries = () => {
       })
       .catch((err) => {});
   }, [series]);
+
+  const playNextEpisode = () => {
+    history.push(`${window.location.pathname}?${episodeIndex.next}`);
+    window.location.reload(false);
+  };
 
   return (
     <div className="App">
@@ -93,7 +97,7 @@ export const WatchSeries = () => {
 
           <br />
 
-          <Video title={episode} />
+          <Video title={episode} playNextEpisode={playNextEpisode} />
         </>
       ) : (
         <LoadingSpinner />
