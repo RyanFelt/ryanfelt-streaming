@@ -30,7 +30,7 @@ export const Video = React.memo(({ title, playNextEpisode }) => {
 
       createWatchHistory(title, vid.current.currentTime, watchedPercentage);
 
-      if (watchedPercentage === 100) playNextEpisode();
+      if (playNextEpisode && watchedPercentage > 95) playNextEpisode();
     }, 15000);
 
     axios
