@@ -82,6 +82,12 @@ export const Home = () => {
           <>
             <br />
             <br />
+            <div className="how-to-watchlist-text">
+              Use the "<strong>+</strong>" button to add content you want to
+              keep track of.
+            </div>
+            <br />
+            <hr />
             <div>Your watch list is empty...</div>
           </>
         ) : (
