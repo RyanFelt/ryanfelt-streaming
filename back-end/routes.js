@@ -13,6 +13,7 @@ const {
   getWatchList,
   deleteWatchList,
 } = require('./src/controllers/watchList');
+const { getImdbData } = require('./src/controllers/imdb');
 
 const router = express.Router();
 
@@ -28,5 +29,6 @@ router.get('/watchHistory', authenticate('2'), buildRoute(getWatchHistory));
 router.post('/watchList', authenticate('2'), buildRoute(postWatchList));
 router.get('/watchList', authenticate('1'), buildRoute(getWatchList));
 router.delete('/watchList', authenticate('2'), buildRoute(deleteWatchList));
+router.get('/imdb_data', authenticate('3'), buildRoute(getImdbData));
 
 module.exports = router;

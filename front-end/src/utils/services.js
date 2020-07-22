@@ -137,15 +137,13 @@ export const getImdb = async (title, season, episode) => {
   try {
     const requestData = {
       method: 'get',
-      url: `https://movie-database-imdb-alternative.p.rapidapi.com/?page=1&r=json&t=${title}&season=${season}`,
-      headers: { 'x-rapidapi-key': REACT_APP_RAPID_API_KEY },
+      url: `${process.env.REACT_APP_BACKEND_URL}/api/imdb_data?title=${title}`,
     };
 
+    if (season) requestData.url += `&season=${season}`;
     if (episode) requestData.url += `&episode=${episode}`;
 
-    const res = await axios(requestData);
-
-    return res.data;
+    return await subscribedRequest(requestData);
   } catch (err) {
     console.log('ERROR:: getImdb', err);
   }
