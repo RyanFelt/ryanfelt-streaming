@@ -9,6 +9,7 @@ const {
   SEASONS_TABLE,
   WATCH_HISTORY_TABLE,
   WATCH_LIST_TABLE,
+  GENRES_TABLE,
 } = process.env;
 
 exports.pool = mysql.createPool({
@@ -52,6 +53,7 @@ exports.createTables = async () => {
       episode VARCHAR(10),
       description VARCHAR(2000),
       parent_id VARCHAR(100),
+      imdb_data JSON,
       PRIMARY KEY (id),
       FOREIGN KEY (parent_id) REFERENCES ${TITLES_TABLE} (id)
     );
@@ -85,6 +87,15 @@ exports.createTables = async () => {
       title_id VARCHAR(100),
       date_added TIMESTAMP,
       PRIMARY KEY (user_id, title_id),
+      FOREIGN KEY (title_id) REFERENCES ${TITLES_TABLE} (id)
+    );
+  `);
+
+  await query(`
+    CREATE TABLE IF NOT EXISTS ${GENRES_TABLE} (
+      title_id VARCHAR(100),
+      genre VARCHAR(100),
+      PRIMARY KEY (title_id, genre),
       FOREIGN KEY (title_id) REFERENCES ${TITLES_TABLE} (id)
     );
   `);

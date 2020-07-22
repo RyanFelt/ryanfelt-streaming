@@ -8,9 +8,9 @@ exports.getAllTitles = async (req) => {
   const allTitles = await mysql.getAllTitles(req.user.userId);
 
   const massagedTitles = allTitles.filter((title) => {
-    if (title.seasons) {
-      title.seasons = title.seasons.split(',');
-    }
+    if (title.seasons) title.seasons = title.seasons.split(',');
+    if (title.genres) title.genres = title.genres.split(',');
+
     return title;
   });
 
@@ -58,6 +58,14 @@ exports.postTitle = async (req) => {
 
     for (let x = 0; x < seasons.length; x++) {
       await mysql.insertSeason(id, seasons[x]);
+    }
+  }
+
+  if (req.body.genres && Array.isArray(req.body.genres)) {
+    const genres = req.body.genres;
+
+    for (let x = 0; x < genres.length; x++) {
+      await mysql.insertGenre(id, genres[x]);
     }
   }
 

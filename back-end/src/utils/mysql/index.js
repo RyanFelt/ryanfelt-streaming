@@ -18,6 +18,7 @@ const {
   insertWatchList,
   deleteWatchList,
 } = require('./watchList');
+const { insertGenre, deleteGenre } = require('./genres');
 
 exports.initMysql = () => {
   return {
@@ -40,5 +41,8 @@ exports.initMysql = () => {
     getWatchList,
     insertWatchList,
     deleteWatchList,
+
+    insertGenre,
+    deleteGenre,
   };
 };

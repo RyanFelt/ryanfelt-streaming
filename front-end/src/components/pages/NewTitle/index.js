@@ -9,7 +9,7 @@ import {
   titleUpperCase,
   setErrorMessage,
 } from 'utils/common';
-import { createNewTitle } from 'utils/services';
+import { createNewTitle, getImdb } from 'utils/services';
 
 export const NewTitle = () => {
   const [userInput, setUserInput] = useState('');
@@ -19,6 +19,7 @@ export const NewTitle = () => {
   const [videoFile, setVideoFile] = useState('');
   const [year, setYear] = useState('');
   const [seasons, setSeasons] = useState('');
+  const [genres, setGenres] = useState('');
   const [submitButtonSpinner, setSubmitButtonSpinner] = useState(false);
 
   const addExtension = (str, extension) => {
@@ -85,6 +86,20 @@ export const NewTitle = () => {
     setSeasons(seasons);
   };
 
+  const handleGenresChange = (event) => {
+    let genres = event.target.value;
+
+    if (genres.slice(-1) !== ',') {
+      genres = genres
+        .split(',')
+        .filter(Boolean)
+        .map((u) => u.trim())
+        .toString();
+    }
+
+    setGenres(genres);
+  };
+
   const submitForm = async () => {
     setSubmitButtonSpinner(true);
 
@@ -108,6 +123,7 @@ export const NewTitle = () => {
         videoFile,
         year,
         seasons: seasons.split(','),
+        genres: genres.split(','),
       });
     } catch (e) {
       setErrorMessage(
@@ -126,6 +142,11 @@ export const NewTitle = () => {
 
   const getVideoFile = () => {
     window.open(encodeURI(`https://katcr.to/usearch/${userInput}`), '_blank');
+  };
+
+  const getGenres = async () => {
+    const data = await getImdb(userInput);
+    setGenres(data.Genre);
   };
 
   return (
@@ -237,6 +258,24 @@ export const NewTitle = () => {
           />
         </div>
       )}
+
+      <div className="form-item">
+        <h3 className="h6">Genres (Comma seperated)</h3>
+        <div className="d-flex">
+          <FormControl
+            type="text"
+            value={genres}
+            placeholder="Seasons..."
+            maxLength="70"
+            className="mr-sm-2"
+            onChange={handleGenresChange}
+          />
+
+          <Button variant="dark" onClick={getGenres}>
+            Get
+          </Button>
+        </div>
+      </div>
 
       <br />
 

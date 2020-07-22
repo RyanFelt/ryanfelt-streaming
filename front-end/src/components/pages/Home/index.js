@@ -37,6 +37,10 @@ export const Home = () => {
       titlesData = titlesData.filter((item) => {
         return filter === item.type.toLowerCase();
       });
+    } else if (filter) {
+      titlesData = titlesData.filter((item) =>
+        item.genres.map((x) => x.toLowerCase()).includes(filter)
+      );
     }
 
     const latestNumVisibleTitles =

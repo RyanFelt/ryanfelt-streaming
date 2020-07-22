@@ -1,10 +1,11 @@
 require('dotenv').config();
 
-const uuidv4 = require('uuid/v4');
-const { dynamodb } = require('./src/utils/dynamodb/config');
-const { scanAllTitles, scanAllEpisodes } = require('./src/utils/dynamodb');
+// const uuidv4 = require('uuid/v4');
+// const { dynamodb } = require('./src/utils/dynamodb/config');
+// const { scanAllTitles, scanAllEpisodes } = require('./src/utils/dynamodb');
 const { initMysql } = require('./src/utils/mysql');
 const { query } = require('./src/utils/mysql/setup');
+const axios = require('axios');
 
 const main = async () => {
   try {
@@ -12,54 +13,44 @@ const main = async () => {
 
     // await mysql.dropTables();
     // await mysql.createTables();
+    const titles = await mysql.getAllTitles();
+    console.log('titles: ', titles.length);
 
-    const allTitles = await scanAllTitles();
-
-    console.log('TITLES', allTitles.length);
-
-    for (let x = 0; x < allTitles.length; x++) {
-      console.log(allTitles[x]);
-
-      const newTitle = {
-        id: allTitles[x].id,
-        title: allTitles[x].title,
-        type: allTitles[x].type,
-        banner_image: allTitles[x].bannerImage,
-        active: allTitles[x].active,
-        video_file: allTitles[x].videoFile,
-        year: allTitles[x].year,
+    for (let x = 0; x < titles.length; x++) {
+      const requestData = {
+        method: 'get',
+        url: `https://movie-database-imdb-alternative.p.rapidapi.com/?page=1&r=json&t=${titles[x].title}`,
+        headers: {
+          'x-rapidapi-key':
+            '7f4b0dcfdemshd2235ce2de620dfp1d0789jsna956277eb329',
+        },
       };
 
-      await mysql.insertTitle(newTitle);
-    }
-
-    const allEpisodes = await scanAllEpisodes();
-
-    console.log('EPISODES', allEpisodes.length);
-
-    for (let x = 0; x < allEpisodes.length; x++) {
-      const parentTitle = await query(
-        `SELECT * FROM titles WHERE title = "${allEpisodes[x].title}"`
-      );
-
-      const newTitle = {
-        id: allEpisodes[x].id,
-        title: allEpisodes[x].episodeTitle,
-        active: allEpisodes[x].active,
-        video_file: allEpisodes[x].videoFile,
-        parent_id: parentTitle[0].id,
-        season: allEpisodes[x].season,
-        episode: allEpisodes[x].episode,
-        description: allEpisodes[x].description.replace(/"/g, '\\"'),
-      };
-
-      console.log(newTitle);
-      await mysql.insertEpisode(newTitle);
+      const res = await axios(requestData);
+      console.log(res.data);
+      // if (
+      //   !res.data ||
+      //   !res.data.Genre ||
+      //   res.data.Genre.includes('N/A') ||
+      //   res.data.Genre.includes('News') ||
+      //   res.data.Genre.includes('Short')
+      // ) {
+      //   console.log('NONE FOR', titles[x].title);
+      // } else {
+      //   // console.log(titles[x].title, res.data.Genre.split(','));
+      //   const genres = res.data.Genre.split(',');
+      //   for (let i = 0; i < genres.length; i++) {
+      //     await mysql.deleteGenre(titles[x].id, genres[i]);
+      //     await mysql.insertGenre(titles[x].id, genres[i].trim());
+      //   }
+      // }
     }
   } catch (e) {
     console.log('ERRROR', e);
   }
 };
+
+//The hunt
 
 main();
 
