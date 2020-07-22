@@ -5,6 +5,7 @@ import { useLocation } from 'react-router';
 import InfiniteScroll from 'react-infinite-scroller';
 import { Spinner } from 'react-bootstrap';
 import qs from 'query-string';
+import { ToastContainer } from 'react-toastify';
 import { LoadingSpinner } from 'components/lib/LoadingSpinner';
 import { TitleTile } from 'components/lib/TitleTile';
 import { getAllTitles, getWatchList } from 'utils/services';
@@ -74,6 +75,8 @@ export const Home = () => {
 
   return (
     <div className="App">
+      <ToastContainer />
+
       {visibleTitles.length || emptyWatchList ? (
         emptyWatchList ? (
           <>
@@ -103,7 +106,7 @@ export const Home = () => {
                 return (
                   <TitleTile
                     titleId={title.id}
-                    path={title.title}
+                    title={title.title}
                     image={title.banner_image}
                     type={title.type}
                     videoFile={title.video_file}

@@ -1,21 +1,22 @@
 import React from 'react';
-import { titleUpperCase } from 'utils/common';
+import { titleUpperCase, setNotificationMessage } from 'utils/common';
 import './index.css';
 import { createWatchList, deleteWatchList } from 'utils/services';
 
 export const TitleTile = ({
   titleId,
-  path,
+  title,
   image,
   type,
   videoFile,
   watchedPercentage,
   watchList,
 }) => {
-  const href = type === 'SERIES' ? `/series/${path}` : `/watch?${videoFile}`;
+  const href = type === 'SERIES' ? `/series/${title}` : `/watch?${videoFile}`;
 
   const onClickPostWatchList = () => {
     createWatchList(titleId);
+    setNotificationMessage(`${titleUpperCase(title)} added to watchlist!`);
   };
 
   const onClickDeleteWatchList = () => {
@@ -37,11 +38,11 @@ export const TitleTile = ({
         <img
           width="100%"
           src={`${process.env.REACT_APP_BACKEND_URL}/images/${image}`}
-          alt={path}
+          alt={title}
         />
 
         <div className="image-text">
-          <b className="tile-font">{titleUpperCase(path)}</b>
+          <b className="tile-font">{titleUpperCase(title)}</b>
         </div>
 
         <div

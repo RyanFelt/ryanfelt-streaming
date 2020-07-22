@@ -20,5 +20,16 @@ export const setErrorMessage = (message) => {
 
   toast.error(message, {
     position: 'top-center',
+    toastId: message,
+  });
+};
+
+export const setNotificationMessage = (message) => {
+  console.log(message);
+
+  toast.info(message, {
+    position: 'top-center',
+    toastId: message,
+    autoClose: 1500,
   });
 };
