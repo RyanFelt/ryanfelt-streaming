@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import 'App.css';
+import './index.css';
 import { useLocation } from 'react-router';
 import InfiniteScroll from 'react-infinite-scroller';
 import { Spinner } from 'react-bootstrap';
@@ -19,7 +20,7 @@ export const Home = () => {
 
   useEffect(() => {
     if (!visibleTitles.length) {
-      if (filter === 'watch-list') {
+      if (filter === 'watchlist') {
         getWatchList().then((res) => {
           if (!res.length) setEmptyWatchList(true);
           setTitleData(res);
@@ -37,7 +38,7 @@ export const Home = () => {
       titlesData = titlesData.filter((item) => {
         return filter === item.type.toLowerCase();
       });
-    } else if (filter) {
+    } else if (filter && filter !== 'watchlist') {
       titlesData = titlesData.filter((item) =>
         item.genres.map((x) => x.toLowerCase()).includes(filter)
       );
@@ -88,6 +89,16 @@ export const Home = () => {
             threshold={50}
           >
             <div className="flex-column">
+              {filter ? (
+                <div className="flex-row-filter-title">
+                  <div className="filter-title-text">
+                    {filter.charAt(0).toUpperCase() + filter.slice(1)}
+                  </div>
+                </div>
+              ) : (
+                <></>
+              )}
+
               {visibleTitles.map((title) => {
                 return (
                   <TitleTile
@@ -97,7 +108,7 @@ export const Home = () => {
                     type={title.type}
                     videoFile={title.video_file}
                     watchedPercentage={title.watched_percentage}
-                    watchList={filter === 'watch-list'}
+                    watchList={filter === 'watchlist'}
                     key={title.id}
                   />
                 );

@@ -57,7 +57,7 @@ export const Header = () => {
               </NavDropdown.Item>
               <NavDropdown.Item href="/?filter=war">War</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/?filter=watch-list">WatchList</Nav.Link>
+            <Nav.Link href="/?filter=watchlist">WatchList</Nav.Link>
             <Nav.Link href="/search">Search</Nav.Link>
           </Nav>
 
