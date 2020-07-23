@@ -59,6 +59,8 @@ exports.postTitle = async (req) => {
     for (let x = 0; x < seasons.length; x++) {
       await mysql.insertSeason(id, seasons[x]);
     }
+  } else if (req.body.type === 'SERIES' && !req.body.seasons) {
+    await mysql.insertSeason(id, 'N/A');
   }
 
   if (req.body.genres && Array.isArray(req.body.genres)) {
