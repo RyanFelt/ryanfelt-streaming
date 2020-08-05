@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import 'App.css';
 import '../NewTitle/index.css';
-import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
 import { Dropdown, Button, Spinner } from 'react-bootstrap';
 import { titleUpperCase, setErrorMessage } from 'utils/common';

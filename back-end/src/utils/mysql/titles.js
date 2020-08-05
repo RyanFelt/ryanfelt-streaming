@@ -73,11 +73,12 @@ exports.insertTitle = async ({
   active,
   video_file = null,
   year = null,
+  imdb_data,
 }) => {
   try {
     return await query(`
-      INSERT INTO ${TITLES_TABLE}(id, title, type, banner_image, active, video_file, year) 
-      VALUES ("${id}", "${title}", "${type}", "${banner_image}", ${active}, "${video_file}", "${year}");
+      INSERT INTO ${TITLES_TABLE}(id, title, type, banner_image, active, video_file, year, imdb_data) 
+      VALUES ("${id}", "${title}", "${type}", "${banner_image}", ${active}, "${video_file}", "${year}", '${imdb_data}');
     `);
   } catch (err) {
     throw new ValidationError(`MYSQL - insertTitle - ERROR :: ${err}`);

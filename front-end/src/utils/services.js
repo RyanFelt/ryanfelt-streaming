@@ -146,5 +146,6 @@ export const getImdb = async (title, season, episode) => {
     return await subscribedRequest(requestData);
   } catch (err) {
     console.log('ERROR:: getImdb', err);
+    throw err;
   }
 };
