@@ -49,11 +49,16 @@ exports.postTitle = async (req) => {
     active: true,
     video_file: req.body.videoFile || null,
     year: req.body.year || null,
+    imdb_data: JSON.stringify(req.body.imdbData),
   };
 
   await mysql.insertTitle(newTitle);
 
-  if (req.body.seasons && Array.isArray(req.body.seasons)) {
+  if (
+    req.body.seasons &&
+    Array.isArray(req.body.seasons) &&
+    req.body.seasons[0]
+  ) {
     const seasons = req.body.seasons;
 
     for (let x = 0; x < seasons.length; x++) {

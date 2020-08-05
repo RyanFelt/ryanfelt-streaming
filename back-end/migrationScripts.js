@@ -27,7 +27,7 @@ const main = async () => {
       };
 
       const res = await axios(requestData);
-      console.log(res.data);
+      console.log(titles[x].title, res.data.Title);
       // if (
       //   !res.data ||
       //   !res.data.Genre ||

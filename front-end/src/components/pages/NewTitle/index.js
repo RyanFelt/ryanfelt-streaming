@@ -20,6 +20,8 @@ export const NewTitle = () => {
   const [year, setYear] = useState('');
   const [seasons, setSeasons] = useState('');
   const [genres, setGenres] = useState('');
+  const [imdbData, setImdbData] = useState({});
+  const [imdbDataSpinner, setImdbDataSpinner] = useState(false);
   const [submitButtonSpinner, setSubmitButtonSpinner] = useState(false);
 
   const addExtension = (str, extension) => {
@@ -100,6 +102,10 @@ export const NewTitle = () => {
     setGenres(genres);
   };
 
+  const handleRawImdbDataChange = (event) => {
+    setImdbData(JSON.parse(event.target.value));
+  };
+
   const submitForm = async () => {
     setSubmitButtonSpinner(true);
 
@@ -124,6 +130,7 @@ export const NewTitle = () => {
         year,
         seasons: seasons.split(','),
         genres: genres.split(','),
+        imdbData,
       });
     } catch (e) {
       setErrorMessage(
@@ -144,9 +151,18 @@ export const NewTitle = () => {
     window.open(encodeURI(`https://katcr.to/usearch/${userInput}`), '_blank');
   };
 
-  const getGenres = async () => {
-    const data = await getImdb(userInput);
-    setGenres(data.Genre);
+  const getImdbData = async () => {
+    setImdbDataSpinner(true);
+    try {
+      const data = await getImdb(userInput);
+      if (data) {
+        setImdbData(data);
+        setGenres(data.Genre);
+      }
+    } catch (err) {
+      setErrorMessage(`ERROR fetching imdb data - ${err}`);
+    }
+    setImdbDataSpinner(false);
   };
 
   return (
@@ -258,23 +274,35 @@ export const NewTitle = () => {
           />
         </div>
       )}
+      <br />
+
+      <div className="d-flex">
+        <h2 className="h4">Imdb Data</h2>
+        <Button className="imdb-button" variant="dark" onClick={getImdbData}>
+          {imdbDataSpinner ? <Spinner animation="border" size="sm" /> : 'Get'}
+        </Button>
+      </div>
 
       <div className="form-item">
         <h3 className="h6">Genres (Comma seperated)</h3>
-        <div className="d-flex">
-          <FormControl
-            type="text"
-            value={genres}
-            placeholder="Seasons..."
-            maxLength="70"
-            className="mr-sm-2"
-            onChange={handleGenresChange}
-          />
+        <FormControl
+          type="text"
+          value={genres}
+          placeholder="Genres..."
+          maxLength="70"
+          className="mr-sm-2"
+          onChange={handleGenresChange}
+        />
+      </div>
 
-          <Button variant="dark" onClick={getGenres}>
-            Get
-          </Button>
-        </div>
+      <div className="form-item">
+        <h3 className="h6">Raw Imdb Data</h3>
+        <textarea
+          value={JSON.stringify(imdbData, undefined, 4)}
+          rows="15"
+          cols="109"
+          onChange={handleRawImdbDataChange}
+        />
       </div>
 
       <br />
