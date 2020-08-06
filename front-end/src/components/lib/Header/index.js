@@ -31,8 +31,8 @@ export const Header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="/?filter=series">Series</Nav.Link>
             <Nav.Link href="/?filter=movies">Movies</Nav.Link>
+            <Nav.Link href="/?filter=series">Series</Nav.Link>
             <NavDropdown title="Genres" id="basic-nav-dropdown">
               <NavDropdown.Item href="/?filter=action">Action</NavDropdown.Item>
               <NavDropdown.Item href="/?filter=adventure">
