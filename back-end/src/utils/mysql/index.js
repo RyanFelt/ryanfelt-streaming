@@ -5,6 +5,7 @@ const {
   getTitleByVideoFile,
   insertTitle,
   insertEpisode,
+  updateImdbData,
 } = require('./titles');
 const {
   getWatchHistory,
@@ -30,6 +31,7 @@ exports.initMysql = () => {
     getTitleByVideoFile,
     insertTitle,
     insertEpisode,
+    updateImdbData,
 
     getWatchHistory,
     insertWatchHistory,

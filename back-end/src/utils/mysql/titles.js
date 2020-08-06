@@ -1,3 +1,4 @@
+const { escape } = require('mysql');
 const { query } = require('./setup');
 const { ValidationError } = require('../errors');
 
@@ -78,7 +79,9 @@ exports.insertTitle = async ({
   try {
     return await query(`
       INSERT INTO ${TITLES_TABLE}(id, title, type, banner_image, active, video_file, year, imdb_data) 
-      VALUES ("${id}", "${title}", "${type}", "${banner_image}", ${active}, "${video_file}", "${year}", '${imdb_data}');
+      VALUES ("${id}", "${title}", "${type}", "${banner_image}", ${active}, "${video_file}", "${year}", ${escape(
+      imdb_data
+    )});
     `);
   } catch (err) {
     throw new ValidationError(`MYSQL - insertTitle - ERROR :: ${err}`);
@@ -102,5 +105,17 @@ exports.insertEpisode = async ({
     `);
   } catch (err) {
     throw new ValidationError(`MYSQL - insertEpisode - ERROR :: ${err}`);
+  }
+};
+
+exports.updateImdbData = async (title_id, imdb_data) => {
+  try {
+    return await query(`
+      UPDATE ${TITLES_TABLE}
+      SET imdb_data = ${escape(imdb_data)}
+      WHERE id = "${title_id}";
+    `);
+  } catch (err) {
+    throw new ValidationError(`MYSQL - updateImdbData - ERROR :: ${err}`);
   }
 };
