@@ -27,23 +27,13 @@ const main = async () => {
       };
 
       const res = await axios(requestData);
-      console.log(titles[x].title, res.data.Title);
-      // if (
-      //   !res.data ||
-      //   !res.data.Genre ||
-      //   res.data.Genre.includes('N/A') ||
-      //   res.data.Genre.includes('News') ||
-      //   res.data.Genre.includes('Short')
-      // ) {
-      //   console.log('NONE FOR', titles[x].title);
-      // } else {
-      //   // console.log(titles[x].title, res.data.Genre.split(','));
-      //   const genres = res.data.Genre.split(',');
-      //   for (let i = 0; i < genres.length; i++) {
-      //     await mysql.deleteGenre(titles[x].id, genres[i]);
-      //     await mysql.insertGenre(titles[x].id, genres[i].trim());
-      //   }
-      // }
+
+      if (res.data.Error === 'Movie not found!') {
+        console.log(titles[x].title);
+        continue;
+      }
+
+      // await mysql.updateImdbData(titles[x].id, JSON.stringify(res.data));
     }
   } catch (e) {
     console.log('ERRROR', e);
