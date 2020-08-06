@@ -7,6 +7,7 @@ import { FormControl, Button, Spinner } from 'react-bootstrap';
 import {
   titleDashLowerCase,
   titleUpperCase,
+  setNotificationMessage,
   setErrorMessage,
 } from 'utils/common';
 import { createNewTitle, getImdb } from 'utils/services';
@@ -132,6 +133,7 @@ export const NewTitle = () => {
         genres: genres.split(','),
         imdbData,
       });
+      setNotificationMessage('Title added!');
     } catch (e) {
       setErrorMessage(
         `ERROR - ${e.response.status} - ${e.response.data.message}`
