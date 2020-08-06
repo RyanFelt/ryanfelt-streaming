@@ -111,12 +111,7 @@ export const Home = () => {
               {visibleTitles.map((title) => {
                 return (
                   <TitleTile
-                    titleId={title.id}
-                    title={title.title}
-                    image={title.banner_image}
-                    type={title.type}
-                    videoFile={title.video_file}
-                    watchedPercentage={title.watched_percentage}
+                    record={title}
                     watchList={filter === 'watchlist'}
                     key={title.id}
                   />

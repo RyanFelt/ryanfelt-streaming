@@ -3,16 +3,17 @@ import { titleUpperCase, setNotificationMessage } from 'utils/common';
 import './index.css';
 import { createWatchList, deleteWatchList } from 'utils/services';
 
-export const TitleTile = ({
-  titleId,
-  title,
-  image,
-  type,
-  videoFile,
-  watchedPercentage,
-  watchList,
-}) => {
-  const href = type === 'SERIES' ? `/series/${title}` : `/watch?${videoFile}`;
+export const TitleTile = ({ record, watchList }) => {
+  const {
+    id: titleId,
+    title,
+    banner_image,
+    type,
+    video_file,
+    watched_percentage,
+  } = record;
+
+  const href = type === 'SERIES' ? `/series/${title}` : `/watch?${video_file}`;
 
   const onClickPostWatchList = () => {
     createWatchList(titleId);
@@ -37,7 +38,7 @@ export const TitleTile = ({
       <a href={href}>
         <img
           width="100%"
-          src={`${process.env.REACT_APP_BACKEND_URL}/images/${image}`}
+          src={`${process.env.REACT_APP_BACKEND_URL}/images/${banner_image}`}
           alt={title}
         />
 
@@ -48,7 +49,7 @@ export const TitleTile = ({
         <div
           className="watched-bar"
           style={{
-            width: `${watchedPercentage || 0}%`,
+            width: `${watched_percentage || 0}%`,
           }}
         />
       </a>

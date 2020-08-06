@@ -76,14 +76,7 @@ export const Search = () => {
               <h5>Results... {results.length}</h5>
               {results.map((title) => {
                 return (
-                  <TitleTile
-                    path={title.title}
-                    image={title.banner_image}
-                    imageLocation={'images'}
-                    type={title.type}
-                    videoFile={title.video_file}
-                    key={title.id}
-                  />
+                  <TitleTile record={title} watchList={false} key={title.id} />
                 );
               })}
             </>
