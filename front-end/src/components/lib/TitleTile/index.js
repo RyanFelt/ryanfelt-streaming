@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { titleUpperCase, setNotificationMessage } from 'utils/common';
 import './index.css';
 import { createWatchList, deleteWatchList } from 'utils/services';
@@ -14,6 +14,14 @@ export const TitleTile = ({ record, watchList }) => {
   } = record;
 
   const href = type === 'SERIES' ? `/series/${title}` : `/watch?${video_file}`;
+
+  const [src, setSrc] = useState(
+    `${process.env.REACT_APP_BACKEND_URL}/images/na.png`
+  );
+  const [didLoad, setLoad] = useState(false);
+  useEffect(() => {
+    setSrc(`${process.env.REACT_APP_BACKEND_URL}/images/${banner_image}`);
+  }, [didLoad]);
 
   const onClickPostWatchList = () => {
     createWatchList(titleId);
@@ -36,11 +44,7 @@ export const TitleTile = ({ record, watchList }) => {
       </button>
 
       <a href={href}>
-        <img
-          width="100%"
-          src={`${process.env.REACT_APP_BACKEND_URL}/images/${banner_image}`}
-          alt={title}
-        />
+        <img width="100%" src={src} alt={title} onLoad={() => setLoad(true)} />
 
         <div className="image-text">
           <b className="tile-font">{titleUpperCase(title)}</b>
