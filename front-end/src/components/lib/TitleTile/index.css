@@ -1,7 +1,16 @@
 .image-container {
-  position: relative;
-  font-family: Arial;
+  width: calc(100% - 4px);
+  margin: 2px;
   min-height: 75px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
 }
 
 .image-text {
@@ -11,8 +20,68 @@
   background-color: black;
   opacity: 0.7;
   color: white;
-  padding: 10px;
+  padding: 8px;
   border-radius: 7px;
+}
+
+.tile-font {
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 849px) {
+  .image-container {
+    width: calc(50% - 4px);
+  }
+
+  .image-text {
+    padding: 7px;
+  }
+
+  .tile-font {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 1199px) {
+  .image-container {
+    width: calc(33% - 4px);
+  }
+
+  .image-text {
+    padding: 6px;
+  }
+
+  .tile-font {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+  .image-container {
+    width: calc(25% - 4px);
+  }
+
+  .image-text {
+    padding: 5px;
+  }
+
+  .tile-font {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .image-container {
+    width: calc(20% - 4px);
+  }
+
+  .image-text {
+    padding: 5px;
+  }
+
+  .tile-font {
+    font-size: 14px;
+  }
 }
 
 .watch-list-button {
@@ -20,14 +89,15 @@
   top: 5%;
   right: 2%;
   background-color: black;
-  opacity: 0.7;
   color: white;
+  opacity: 0.7;
   padding: 10px;
   border-radius: 7px;
 }
 
-.tile-font {
-  font-size: 20px;
+.watch-list-button:hover {
+  background-color: grey;
+  color: black;
 }
 
 .watched-bar {

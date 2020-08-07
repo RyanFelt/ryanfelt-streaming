@@ -108,15 +108,17 @@ export const Home = () => {
                 <></>
               )}
 
-              {visibleTitles.map((title) => {
-                return (
-                  <TitleTile
-                    record={title}
-                    watchList={filter === 'watchlist'}
-                    key={title.id}
-                  />
-                );
-              })}
+              <div className="flex-row-wrap">
+                {visibleTitles.map((title) => {
+                  return (
+                    <TitleTile
+                      record={title}
+                      watchList={filter === 'watchlist'}
+                      key={title.id}
+                    />
+                  );
+                })}
+              </div>
             </div>
           </InfiniteScroll>
         )

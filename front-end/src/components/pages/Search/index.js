@@ -74,11 +74,18 @@ export const Search = () => {
           ) : (
             <>
               <h5>Results... {results.length}</h5>
-              {results.map((title) => {
-                return (
-                  <TitleTile record={title} watchList={false} key={title.id} />
-                );
-              })}
+
+              <div className="flex-row-wrap">
+                {results.map((title) => {
+                  return (
+                    <TitleTile
+                      record={title}
+                      watchList={false}
+                      key={title.id}
+                    />
+                  );
+                })}
+              </div>
             </>
           )}
         </>
