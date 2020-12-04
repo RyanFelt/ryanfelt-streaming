@@ -4,6 +4,8 @@ import { getAuthTokens, newAuthToken } from 'utils/auth';
 import { createWatchHistory, getWatchHistoryRecord } from 'utils/services';
 import './index.css';
 
+const { REACT_APP_WHR_INTERVAL } = process.env;
+
 export const Video = React.memo(({ title, playNextEpisode }) => {
   const [src, setSrc] = useState(null);
   const [firstPageLoad, setFirstPageLoad] = useState(true);
@@ -26,7 +28,7 @@ export const Video = React.memo(({ title, playNextEpisode }) => {
       createWatchHistory(title, vid.current.currentTime, watchedPercentage);
 
       if (playNextEpisode && watchedPercentage > 99) playNextEpisode();
-    }, 15000);
+    }, REACT_APP_WHR_INTERVAL);
 
     axios
       .get(`${process.env.REACT_APP_BACKEND_URL}/api/subscribed`, {

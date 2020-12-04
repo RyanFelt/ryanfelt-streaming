@@ -3,7 +3,7 @@ import { useLocation } from 'react-router';
 import 'App.css';
 import { titleUpperCase } from 'utils/common';
 import { Video } from 'components/lib/Video';
-import { LoadingSpinner } from 'components/lib/LoadingSpinner';
+// import { LoadingSpinner } from 'components/lib/LoadingSpinner';
 import { createWatchHistory, getAllTitles } from 'utils/services';
 
 export const Watch = () => {
@@ -29,17 +29,15 @@ export const Watch = () => {
 
   return (
     <div className="App">
-      {titleInfo.video_file ? (
+      <br />
+      {titleInfo.video_file && (
         <>
-          <br />
           <h1>{titleUpperCase(titleInfo.title)}</h1>
           <h5>{titleInfo.year} </h5>
-
-          <Video title={titleInfo} />
         </>
-      ) : (
-        <LoadingSpinner />
       )}
+
+      <Video title={titleInfo} />
     </div>
   );
 };

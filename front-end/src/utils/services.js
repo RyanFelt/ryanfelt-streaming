@@ -1,8 +1,6 @@
 import axios from 'axios';
 import { getAuthTokens, newAuthToken } from './auth';
 
-const { REACT_APP_RAPID_API_KEY } = process.env;
-
 const subscribedRequest = async (requestData, retry = 0) => {
   const { auth, refresh } = getAuthTokens();
 
