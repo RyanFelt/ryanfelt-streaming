@@ -64,6 +64,8 @@ export const Video = React.memo(({ title, playNextEpisode }) => {
     historyRecord && historyRecord.watched_percentage < 95
       ? (vid.current.currentTime = historyRecord.watched_time)
       : (vid.current.currentTime = '0');
+
+    vid.current.play();
   };
 
   useEffect(() => {
