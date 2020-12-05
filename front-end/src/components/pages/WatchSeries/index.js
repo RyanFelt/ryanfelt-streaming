@@ -27,14 +27,8 @@ export const WatchSeries = () => {
         setEpisode(allEpisodes[x]);
 
         const maxEp = allEpisodes.length - 1;
-        const prevEp =
-          x === 0
-            ? allEpisodes[maxEp].video_file
-            : allEpisodes[x - 1].video_file;
-        const nextEp =
-          x === maxEp
-            ? allEpisodes[0].video_file
-            : allEpisodes[x + 1].video_file;
+        const prevEp = x === 0 ? allEpisodes[maxEp] : allEpisodes[x - 1];
+        const nextEp = x === maxEp ? allEpisodes[0] : allEpisodes[x + 1];
 
         setEpisodeIndex({ previous: prevEp, next: nextEp });
         return;
@@ -61,8 +55,8 @@ export const WatchSeries = () => {
   }, [series]);
 
   const playNextEpisode = () => {
-    history.push(`${window.location.pathname}?${episodeIndex.next}`);
-    window.location.reload(false);
+    setEpisode(episodeIndex.next);
+    history.push(`${window.location.pathname}?${episodeIndex.next.video_file}`);
   };
 
   return (

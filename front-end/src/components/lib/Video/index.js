@@ -6,7 +6,7 @@ import './index.css';
 
 const { REACT_APP_WHR_INTERVAL } = process.env;
 
-export const Video = React.memo(({ title, playNextEpisode }) => {
+export const Video = ({ title, playNextEpisode }) => {
   const [src, setSrc] = useState(null);
   const [firstPageLoad, setFirstPageLoad] = useState(true);
   let WHR_CurrentTime = null;
@@ -23,14 +23,15 @@ export const Video = React.memo(({ title, playNextEpisode }) => {
 
     setInterval(() => {
       const { currentTime, duration } = vid.current;
+      const watchedPercentage = Math.floor((currentTime / duration) * 100);
 
       if (WHR_CurrentTime !== currentTime && currentTime !== 0) {
-        const watchedPercentage = Math.floor((currentTime / duration) * 100);
-
         createWatchHistory(title, currentTime, watchedPercentage);
         WHR_CurrentTime = currentTime;
+      }
 
-        if (playNextEpisode && watchedPercentage > 99) playNextEpisode();
+      if (playNextEpisode && watchedPercentage > 99) {
+        playNextEpisode();
       }
     }, REACT_APP_WHR_INTERVAL);
 
@@ -44,7 +45,7 @@ export const Video = React.memo(({ title, playNextEpisode }) => {
         );
       })
       .catch((err) => {
-        if (err.response.status === 401) {
+        if (err.response && err.response.status === 401) {
           newAuthToken(refresh)
             .then((res) => {
               signedInUser();
@@ -59,8 +60,6 @@ export const Video = React.memo(({ title, playNextEpisode }) => {
   const onCanPlayEvent = async () => {
     if (!firstPageLoad) return;
 
-    setFirstPageLoad(false);
-
     vid.current.pause();
 
     const historyRecord = await getWatchHistoryRecord(title.id);
@@ -72,11 +71,13 @@ export const Video = React.memo(({ title, playNextEpisode }) => {
       : (vid.current.currentTime = '0');
 
     vid.current.play();
+    setFirstPageLoad(false);
   };
 
   useEffect(() => {
     signedInUser();
-  }, []);
+    setFirstPageLoad(true);
+  }, [title]);
 
   return (
     <video
@@ -89,4 +90,4 @@ export const Video = React.memo(({ title, playNextEpisode }) => {
       onCanPlay={onCanPlayEvent}
     />
   );
-});
+};
