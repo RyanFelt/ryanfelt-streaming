@@ -9,6 +9,7 @@ const { REACT_APP_WHR_INTERVAL } = process.env;
 export const Video = React.memo(({ title, playNextEpisode }) => {
   const [src, setSrc] = useState(null);
   const [firstPageLoad, setFirstPageLoad] = useState(true);
+  let WHR_CurrentTime = null;
 
   const vid = useRef(null);
 
@@ -21,13 +22,16 @@ export const Video = React.memo(({ title, playNextEpisode }) => {
     }
 
     setInterval(() => {
-      const watchedPercentage = Math.floor(
-        (vid.current.currentTime / vid.current.duration) * 100
-      );
+      const { currentTime, duration } = vid.current;
 
-      createWatchHistory(title, vid.current.currentTime, watchedPercentage);
+      if (WHR_CurrentTime !== currentTime && currentTime !== 0) {
+        const watchedPercentage = Math.floor((currentTime / duration) * 100);
 
-      if (playNextEpisode && watchedPercentage > 99) playNextEpisode();
+        createWatchHistory(title, currentTime, watchedPercentage);
+        WHR_CurrentTime = currentTime;
+
+        if (playNextEpisode && watchedPercentage > 99) playNextEpisode();
+      }
     }, REACT_APP_WHR_INTERVAL);
 
     axios
@@ -60,6 +64,8 @@ export const Video = React.memo(({ title, playNextEpisode }) => {
     vid.current.pause();
 
     const historyRecord = await getWatchHistoryRecord(title.id);
+
+    WHR_CurrentTime = historyRecord.watched_time;
 
     historyRecord && historyRecord.watched_percentage < 95
       ? (vid.current.currentTime = historyRecord.watched_time)
