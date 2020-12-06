@@ -21,7 +21,9 @@ export const Video = ({ title, playNextEpisode }) => {
       return;
     }
 
-    setInterval(() => {
+    const postWHRLoop = setInterval(() => {
+      if (!vid) stopPostWHRLoop();
+
       const { currentTime, duration } = vid.current;
       const watchedPercentage = Math.floor((currentTime / duration) * 100);
 
@@ -34,6 +36,10 @@ export const Video = ({ title, playNextEpisode }) => {
         playNextEpisode();
       }
     }, REACT_APP_WHR_INTERVAL);
+
+    const stopPostWHRLoop = () => {
+      clearInterval(postWHRLoop);
+    };
 
     axios
       .get(`${process.env.REACT_APP_BACKEND_URL}/api/subscribed`, {
@@ -87,6 +93,7 @@ export const Video = ({ title, playNextEpisode }) => {
       width="75%"
       ref={vid}
       controls
+      autoPlay
       onCanPlay={onCanPlayEvent}
     />
   );
