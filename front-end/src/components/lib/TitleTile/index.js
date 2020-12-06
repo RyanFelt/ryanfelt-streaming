@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
 import { titleUpperCase, setNotificationMessage } from 'utils/common';
 import './index.css';
 import { createWatchList, deleteWatchList } from 'utils/services';
@@ -12,6 +13,8 @@ export const TitleTile = ({ record, watchList }) => {
     video_file,
     watched_percentage,
   } = record;
+
+  let history = useHistory();
 
   const href = type === 'SERIES' ? `/series/${title}` : `/watch?${video_file}`;
 
@@ -43,7 +46,7 @@ export const TitleTile = ({ record, watchList }) => {
         <b className="tile-font">{watchList ? 'x' : '+'}</b>
       </button>
 
-      <a href={href}>
+      <div className="on-hover-pointer" onClick={() => history.push(href)}>
         <img width="100%" src={src} alt={title} onLoad={() => setLoad(true)} />
 
         <div className="image-text">
@@ -56,7 +59,7 @@ export const TitleTile = ({ record, watchList }) => {
             width: `${watched_percentage || 0}%`,
           }}
         />
-      </a>
+      </div>
     </div>
   );
 };

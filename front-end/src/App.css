@@ -69,3 +69,7 @@ flex-row-buttons {
   width: 100px;
   height: 100px;
 }
+
+.on-hover-pointer {
+  cursor: pointer;
+}

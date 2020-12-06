@@ -66,7 +66,10 @@ export const WatchSeries = () => {
         <>
           <div className="flex-row">
             <div className="back-button">
-              <Button href={`/series/${series}`} variant="dark">
+              <Button
+                onClick={() => history.push(`/series/${series}`)}
+                variant="dark"
+              >
                 Back
               </Button>
             </div>
