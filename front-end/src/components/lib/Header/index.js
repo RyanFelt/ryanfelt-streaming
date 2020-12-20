@@ -48,6 +48,9 @@ export const Header = () => {
               <NavDropdown.Item href="/?filter=crime">Crime</NavDropdown.Item>
               <NavDropdown.Item href="/?filter=drama">Drama</NavDropdown.Item>
               <NavDropdown.Item href="/?filter=family">Family</NavDropdown.Item>
+              <NavDropdown.Item href="/?filter=holiday">
+                Holiday
+              </NavDropdown.Item>
               <NavDropdown.Item href="/?filter=mystery">
                 Mystery
               </NavDropdown.Item>

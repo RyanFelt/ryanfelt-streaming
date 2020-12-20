@@ -7,7 +7,7 @@ exports.insertGenre = async (title_id, genre) => {
   try {
     return await query(`
       INSERT INTO ${GENRES_TABLE}(title_id, genre) 
-      VALUES ("${title_id}", "${genre}");
+      VALUES ("${title_id}", "${genre.trim()}");
     `);
   } catch (err) {
     throw new ValidationError(`MYSQL - insertGenre - ERROR :: ${err}`);
