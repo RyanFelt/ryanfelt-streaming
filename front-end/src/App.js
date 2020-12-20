@@ -14,6 +14,7 @@ import { Search } from 'components/pages/Search';
 import { Admin } from 'components/pages/Admin';
 import { NewTitle } from 'components/pages/NewTitle';
 import { NewEpisodes } from 'components/pages/NewEpisodes';
+import { TestVideo } from 'components/pages/TestVideo';
 
 export function App() {
   return (
@@ -33,6 +34,7 @@ export function App() {
           path="/admin/new-episodes"
           component={NewEpisodes}
         />
+        <PrivateRoute exact path="/test-video" component={TestVideo} />
 
         <Route component={FourOFour} />
       </Switch>
