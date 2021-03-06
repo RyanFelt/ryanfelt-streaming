@@ -4,12 +4,8 @@ import { getAuthTokens, newAuthToken } from 'utils/auth';
 import { createWatchHistory, getWatchHistoryRecord } from 'utils/services';
 import './index.css';
 
-const { REACT_APP_WHR_INTERVAL } = process.env;
-
-export const Video = ({ title, playNextEpisode }) => {
+export const Video = React.memo(({ title, playNextEpisode }) => {
   const [src, setSrc] = useState(null);
-  const [firstPageLoad, setFirstPageLoad] = useState(true);
-  let WHR_CurrentTime = null;
 
   const vid = useRef(null);
 
@@ -21,25 +17,21 @@ export const Video = ({ title, playNextEpisode }) => {
       return;
     }
 
-    const postWHRLoop = setInterval(() => {
-      if (!vid) stopPostWHRLoop();
+    const historyRecord = await getWatchHistoryRecord(title.id);
 
-      const { currentTime, duration } = vid.current;
-      const watchedPercentage = Math.floor((currentTime / duration) * 100);
+    historyRecord && historyRecord.watched_percentage < 95
+      ? (vid.current.currentTime = historyRecord.watched_time)
+      : (vid.current.currentTime = '0');
 
-      if (WHR_CurrentTime !== currentTime && currentTime !== 0) {
-        createWatchHistory(title, currentTime, watchedPercentage);
-        WHR_CurrentTime = currentTime;
-      }
+    setInterval(() => {
+      const watchedPercentage = Math.floor(
+        (vid.current.currentTime / vid.current.duration) * 100
+      );
 
-      if (playNextEpisode && watchedPercentage > 99) {
-        playNextEpisode();
-      }
-    }, REACT_APP_WHR_INTERVAL);
+      createWatchHistory(title, vid.current.currentTime, watchedPercentage);
 
-    const stopPostWHRLoop = () => {
-      clearInterval(postWHRLoop);
-    };
+      if (playNextEpisode && watchedPercentage > 99) playNextEpisode();
+    }, 15000);
 
     axios
       .get(`${process.env.REACT_APP_BACKEND_URL}/api/subscribed`, {
@@ -51,7 +43,7 @@ export const Video = ({ title, playNextEpisode }) => {
         );
       })
       .catch((err) => {
-        if (err.response && err.response.status === 401) {
+        if (err.response.status === 401) {
           newAuthToken(refresh)
             .then((res) => {
               signedInUser();
@@ -63,27 +55,9 @@ export const Video = ({ title, playNextEpisode }) => {
       });
   };
 
-  const onCanPlayEvent = async () => {
-    if (!firstPageLoad) return;
-
-    vid.current.pause();
-
-    const historyRecord = await getWatchHistoryRecord(title.id);
-
-    WHR_CurrentTime = historyRecord.watched_time;
-
-    historyRecord && historyRecord.watched_percentage < 95
-      ? (vid.current.currentTime = historyRecord.watched_time)
-      : (vid.current.currentTime = '0');
-
-    vid.current.play();
-    setFirstPageLoad(false);
-  };
-
   useEffect(() => {
     signedInUser();
-    setFirstPageLoad(true);
-  }, [title]);
+  }, []);
 
   return (
     <video
@@ -94,7 +68,6 @@ export const Video = ({ title, playNextEpisode }) => {
       ref={vid}
       controls
       autoPlay
-      onCanPlay={onCanPlayEvent}
     />
   );
-};
+});
