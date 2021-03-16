@@ -89,16 +89,21 @@ export const NewTitle = () => {
     setSeasons(seasons);
   };
 
-  const handleGenresChange = (event) => {
-    let genres = event.target.value;
-
+  const cleanUpGenresString = (genres) => {
     if (genres.slice(-1) !== ',') {
       genres = genres
         .split(',')
         .filter(Boolean)
         .map((u) => u.trim())
-        .toString();
+        .toString()
+        .trim();
     }
+
+    return genres;
+  };
+
+  const handleGenresChange = (event) => {
+    const genres = cleanUpGenresString(event.target.value);
 
     setGenres(genres);
   };
@@ -159,7 +164,8 @@ export const NewTitle = () => {
       const data = await getImdb(userInput);
       if (data) {
         setImdbData(data);
-        setGenres(data.Genre);
+        setGenres(cleanUpGenresString(data.Genre));
+        setYear(data.Year);
       }
     } catch (err) {
       setErrorMessage(`ERROR fetching imdb data - ${err}`);
@@ -265,7 +271,7 @@ export const NewTitle = () => {
         </>
       ) : (
         <div className="form-item">
-          <h3 className="h6">Seasons (Comma seperated)</h3>
+          <h3 className="h6">Seasons (Comma seperated, no space)</h3>
           <FormControl
             type="text"
             value={seasons}
@@ -286,7 +292,7 @@ export const NewTitle = () => {
       </div>
 
       <div className="form-item">
-        <h3 className="h6">Genres (Comma seperated)</h3>
+        <h3 className="h6">Genres (Comma seperated, no space)</h3>
         <FormControl
           type="text"
           value={genres}
