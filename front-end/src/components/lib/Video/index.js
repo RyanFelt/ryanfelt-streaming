@@ -51,17 +51,17 @@ export const Video = React.memo(({ title, playNextEpisode }) => {
   };
 
   const onCanPlayEvent = async () => {
-    if (!firstPageLoad) return;
-
-    setFirstPageLoad(false);
-
     vid.current.pause();
 
-    const historyRecord = await getWatchHistoryRecord(title.id);
+    if (firstPageLoad) {
+      setFirstPageLoad(false);
 
-    historyRecord && historyRecord.watched_percentage < 95
-      ? (vid.current.currentTime = historyRecord.watched_time)
-      : (vid.current.currentTime = '0');
+      const historyRecord = await getWatchHistoryRecord(title.id);
+
+      if (historyRecord && historyRecord.watched_percentage < 95) {
+        vid.current.currentTime = historyRecord.watched_time;
+      }
+    }
   };
 
   useEffect(() => {
