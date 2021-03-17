@@ -74,6 +74,32 @@ export const WatchSeries = () => {
               </Button>
             </div>
 
+            <Button
+              className="prev-next-button"
+              onClick={() => {
+                history.push(
+                  `/series/${series}/watch?${episodeIndex.previous.video_file}`
+                );
+                window.location.reload(false);
+              }}
+              variant="dark"
+            >
+              Prev
+            </Button>
+
+            <Button
+              className="prev-next-button"
+              onClick={() => {
+                history.push(
+                  `/series/${series}/watch?${episodeIndex.next.video_file}`
+                );
+                window.location.reload(false);
+              }}
+              variant="dark"
+            >
+              Next
+            </Button>
+
             {allEpisodes.length ? (
               <RandomEpisode series={series} allEpisodes={allEpisodes} />
             ) : (
